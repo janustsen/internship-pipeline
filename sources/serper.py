@@ -1,5 +1,6 @@
 from __future__ import annotations
 
+import re
 from typing import Any
 
 from http_client import RetryingHttpClient
@@ -7,6 +8,11 @@ from models import RawPosting
 
 
 SERPER_URL = "https://google.serper.dev/search"
+
+# Job-board *listing* pages (e.g. "1,000+ Finance Summer Internship jobs in
+# United States") are not real postings — drop them so they never reach the
+# judge. A genuine posting title is "2027 Summer Analyst Program", never "N jobs".
+_LISTING_PAGE_TITLE = re.compile(r"\d[\d,]*\+?\s+.*\bjobs\b", re.IGNORECASE)
 
 
 # Serper's FREE plan rejects advanced-operator queries (`site:`, `OR`, and
@@ -47,8 +53,12 @@ def fetch_serper(
         if not isinstance(organic, list):
             continue
         for item in organic:
-            if isinstance(item, dict):
-                postings.append(_posting_from_serper(item))
+            if not isinstance(item, dict):
+                continue
+            title = str(item.get("title") or "")
+            if _LISTING_PAGE_TITLE.search(title):
+                continue  # "1,000+ … jobs" aggregator listing page, not a posting
+            postings.append(_posting_from_serper(item))
     return postings
 
 

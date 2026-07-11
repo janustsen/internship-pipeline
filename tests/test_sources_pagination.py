@@ -5,6 +5,7 @@ from sources.adzuna import fetch_adzuna
 from sources.ats import fetch_ashby, fetch_smartrecruiters, fetch_workable
 from sources.handshake import fetch_handshake, read_handshake_csv
 from sources.linkedin import fetch_linkedin
+from sources.serper import fetch_serper
 from tests.conftest import FakeResponse, FakeSession
 
 
@@ -107,6 +108,22 @@ def test_ashby_reads_jobs_key_and_maps_live_fields() -> None:
     assert postings[0].link == "https://jobs.ashbyhq.com/ramp/abc"
     assert postings[0].location == "New York"
     assert postings[0].posted == "2026-07-09"
+
+
+def test_serper_drops_listing_pages_keeps_postings() -> None:
+    payload = {
+        "organic": [
+            {"title": "2027 Summer Analyst Program - Goldman Sachs", "link": "https://gs/1"},
+            {"title": "1,000+ Finance Summer Internship jobs in United States", "link": "https://li/x"},
+            {"title": "151 Private Equity Intern jobs in United States", "link": "https://li/y"},
+        ]
+    }
+    http = client_for([FakeResponse(payload)])
+
+    postings = fetch_serper(api_key="k", http=http, queries=["x"])
+
+    titles = [p.title for p in postings]
+    assert titles == ["2027 Summer Analyst Program - Goldman Sachs"]
 
 
 def test_handshake_skips_when_no_search_url() -> None:
