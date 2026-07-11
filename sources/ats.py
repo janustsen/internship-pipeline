@@ -2,7 +2,8 @@ from __future__ import annotations
 
 from typing import Any, Callable
 
-from http_client import RetryingHttpClient, TokenPruned
+from filters import firm_match
+from http_client import RetryingHttpClient, RetryableHttpError, TokenPruned
 from models import RawPosting
 
 
@@ -23,12 +24,13 @@ def fetch_greenhouse(
         if not isinstance(job, dict):
             continue
         location = job.get("location") or {}
+        location_name = location.get("name") if isinstance(location, dict) else location
         postings.append(
             RawPosting(
                 company=company or str(job.get("company_name") or token),
                 title=str(job.get("title") or ""),
                 link=str(job.get("absolute_url") or ""),
-                location=str(location.get("name") or ""),
+                location=str(location_name or ""),
                 posted=str(job.get("updated_at") or ""),
                 source="greenhouse",
                 raw=job,
@@ -55,12 +57,13 @@ def fetch_lever(
         if not isinstance(job, dict):
             continue
         categories = job.get("categories") or {}
+        location = categories.get("location") if isinstance(categories, dict) else ""
         postings.append(
             RawPosting(
                 company=company or token,
                 title=str(job.get("text") or ""),
                 link=str(job.get("hostedUrl") or job.get("applyUrl") or ""),
-                location=str(categories.get("location") or ""),
+                location=str(location or ""),
                 posted=str(job.get("createdAt") or ""),
                 source="lever",
                 raw=job,
@@ -164,22 +167,15 @@ def fetch_workable(
             prune_callback=prune_callback,
         )
         payload = response.json()
+        if not isinstance(payload, dict):
+            break
         jobs = payload.get("results") or payload.get("jobs") or []
         if not isinstance(jobs, list):
             jobs = []
         for job in jobs:
             if isinstance(job, dict):
                 postings.append(_workable_posting(job, company=company or token))
-        paging = payload.get("paging") or {}
-        next_value = paging.get("next") or payload.get("next")
-        if not next_value:
-            break
-        if isinstance(next_value, str) and next_value.startswith("http"):
-            next_url = next_value
-            cursor = None
-        else:
-            next_url = base_url
-            cursor = str(next_value)
+        next_url, cursor = _workable_next(payload, base_url=base_url)
     return postings
 
 
@@ -202,16 +198,17 @@ def fetch_ats_tokens(
         fetcher = fetchers.get(platform)
         if fetcher is None:
             continue
+        token_pruner = _platform_pruner(prune_callback, platform)
         try:
             postings.extend(
                 fetcher(
                     token_info["token"],
                     company=token_info.get("company", ""),
                     http=http,
-                    prune_callback=prune_callback,
+                    prune_callback=token_pruner,
                 )
             )
-        except TokenPruned:
+        except (TokenPruned, RetryableHttpError):
             continue
     return postings
 
@@ -219,7 +216,15 @@ def fetch_ats_tokens(
 def discover_tokens(candidates: list[dict[str, str]], store) -> int:
     # Discovery is intentionally queue-only. The collector must not call these
     # tokens until review_candidates promotes them into active_tokens.
-    return store.add_pending_tokens(candidates)
+    pending: list[dict[str, str]] = []
+    for candidate in candidates:
+        match = firm_match(candidate.get("company", ""))
+        if match is None:
+            continue
+        queued = dict(candidate)
+        queued["company"] = match["canonical"]
+        pending.append(queued)
+    return store.add_pending_tokens(pending)
 
 
 def _smartrecruiters_jobs(payload: Any) -> list[dict[str, Any]]:
@@ -242,11 +247,19 @@ def _smartrecruiters_total(payload: Any) -> int | None:
 def _smartrecruiters_posting(job: dict[str, Any], *, company: str) -> RawPosting:
     company_payload = job.get("company") or {}
     location = job.get("location") or {}
+    company_name = (
+        company_payload.get("name") if isinstance(company_payload, dict) else company_payload
+    )
+    location_name = ""
+    if isinstance(location, dict):
+        location_name = str(location.get("city") or location.get("name") or "")
+    else:
+        location_name = str(location or "")
     return RawPosting(
-        company=str(company_payload.get("name") or company),
+        company=str(company_name or company),
         title=str(job.get("name") or job.get("title") or ""),
         link=str(job.get("ref") or job.get("applyUrl") or job.get("url") or ""),
-        location=str(location.get("city") or location.get("name") or ""),
+        location=location_name,
         posted=str(job.get("releasedDate") or job.get("createdOn") or ""),
         source="smartrecruiters",
         raw=job,
@@ -264,3 +277,43 @@ def _workable_posting(job: dict[str, Any], *, company: str) -> RawPosting:
         source="workable",
         raw=job,
     )
+
+
+def _workable_next(payload: dict[str, Any], *, base_url: str) -> tuple[str | None, str | None]:
+    paging = payload.get("paging") if isinstance(payload.get("paging"), dict) else {}
+    for next_value in (paging.get("next"), payload.get("next")):
+        if not next_value:
+            continue
+        if isinstance(next_value, str):
+            if next_value.startswith("http"):
+                return next_value, None
+            return base_url, next_value
+        if isinstance(next_value, dict):
+            url = next_value.get("url") or next_value.get("href")
+            if isinstance(url, str) and url.startswith("http"):
+                return url, None
+            cursor = (
+                next_value.get("cursor")
+                or next_value.get("token")
+                or next_value.get("offset")
+                or next_value.get("next")
+            )
+            if cursor:
+                return base_url, str(cursor)
+    return None, None
+
+
+def _platform_pruner(
+    prune_callback: Callable[[str], None] | None,
+    platform: str,
+) -> Callable[[str], None] | None:
+    if prune_callback is None:
+        return None
+
+    def prune(token: str) -> None:
+        try:
+            prune_callback(token, platform=platform)  # type: ignore[call-arg]
+        except TypeError:
+            prune_callback(token)
+
+    return prune

@@ -8,9 +8,9 @@ from typing import Callable, Iterable
 
 import requests
 
-from filters import firm_match, is_relevant_posting
+from filters import firm_match, is_relevant_posting, normalize_company_name, normalize_title
 from handoff import validate_payload
-from target_firms import TIER_ORDER
+from target_firms import TARGET_FIRMS, TIER_ORDER
 
 
 @dataclass(frozen=True)
@@ -34,13 +34,19 @@ def default_fact_checker(candidate: dict[str, str]) -> FactCheckResult:
     if response.status_code != 200:
         return FactCheckResult(False, f"status_{response.status_code}")
     text = response.text.lower()
-    if any(marker in text for marker in ("job is no longer available", "position has closed", "no longer accepting")):
+    if any(
+        marker in text
+        for marker in (
+            "job is no longer available",
+            "position has closed",
+            "no longer accepting",
+        )
+    ):
         return FactCheckResult(False, "closed")
-    title = candidate.get("title", "").lower()
-    company = candidate.get("company", "").lower()
-    if title and title.split()[0] not in text:
+    normalized_page = normalize_title(response.text)
+    if not _page_mentions_role(normalized_page, candidate.get("title", "")):
         return FactCheckResult(False, "role_mismatch")
-    if company and company.split()[0] not in text:
+    if not _page_mentions_company(normalized_page, candidate.get("company", "")):
         return FactCheckResult(False, "firm_mismatch")
     deadline = _extract_deadline(response.text)
     return FactCheckResult(True, deadline=deadline)
@@ -114,3 +120,45 @@ def run_cloud_judge(
 def _extract_deadline(text: str) -> str:
     match = re.search(r"(deadline|apply by)[:\s]+([A-Za-z]+\s+\d{1,2},?\s+\d{4})", text)
     return match.group(2) if match else ""
+
+
+def _page_mentions_role(normalized_page: str, title: str) -> bool:
+    tokens = [
+        token
+        for token in normalize_title(title).split()
+        if token
+        not in {
+            "2027",
+            "2026",
+            "summer",
+            "program",
+            "internship",
+            "intern",
+            "new",
+            "opening",
+            "role",
+        }
+    ]
+    if not tokens:
+        return True
+    return any(token in normalized_page.split() for token in tokens)
+
+
+def _page_mentions_company(normalized_page: str, company: str) -> bool:
+    if not company:
+        return False
+    match = firm_match(company)
+    aliases = [company]
+    if match:
+        for firm in TARGET_FIRMS:
+            if firm["canonical"] == match["canonical"]:
+                firm_aliases = [str(alias) for alias in firm.get("aliases", [])]
+                aliases.extend([str(firm["canonical"]), *firm_aliases])
+                break
+    normalized_aliases = set()
+    for alias in aliases:
+        normalized = normalize_company_name(alias)
+        if normalized:
+            normalized_aliases.add(normalized)
+    padded_page = f" {normalized_page} "
+    return any(f" {alias} " in padded_page for alias in normalized_aliases)

@@ -32,6 +32,23 @@ class RetryingHttpClient:
 
     def __post_init__(self) -> None:
         self._last_by_host: dict[str, float] = {}
+        # Many ATS boards (Workable especially) reject the default python-requests
+        # User-Agent; present as a normal browser.
+        try:
+            headers = self.session.headers
+            if "User-Agent" not in headers or "python-requests" in headers.get("User-Agent", ""):
+                headers.update(
+                    {
+                        "User-Agent": (
+                            "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) "
+                            "AppleWebKit/537.36 (KHTML, like Gecko) "
+                            "Chrome/126.0 Safari/537.36"
+                        ),
+                        "Accept": "application/json, text/plain, */*",
+                    }
+                )
+        except AttributeError:
+            pass
 
     @property
     def max_attempts(self) -> int:

@@ -3,7 +3,7 @@ from __future__ import annotations
 import argparse
 import logging
 import subprocess
-from datetime import date
+from datetime import date, datetime, timezone
 from pathlib import Path
 from typing import Callable, Iterable
 
@@ -16,6 +16,7 @@ from models import Candidate, RawPosting, raw_posting_from_mapping
 from sources import adzuna, ats, handshake, linkedin, serper
 from store import InternshipStore
 from target_firms import all_source_tokens
+from tracker import append_tracker
 
 
 LOGGER = logging.getLogger("internship_collector")
@@ -30,6 +31,8 @@ def build_parser() -> argparse.ArgumentParser:
     parser.add_argument("--since", help="source-side lower bound date, YYYY-MM-DD")
     parser.add_argument("--db", default="seen_internships.db")
     parser.add_argument("--artifact", default="todays_candidates.json")
+    parser.add_argument("--tracker", default="Internship_Digest.xlsx")
+    parser.add_argument("--no-tracker", action="store_true", help="skip Excel tracker append")
     parser.add_argument("--env-file", default=".env")
     parser.add_argument("--strict-env", action="store_true")
     return parser
@@ -93,17 +96,20 @@ def run_collector(
         source_fetchers = {
             name: fetcher for name, fetcher in source_fetchers.items() if name in selected_sources
         }
-        filtered = collect_from_sources(source_fetchers, coverage=coverage)
+        filtered = collect_from_sources(source_fetchers, coverage=coverage, since=args.since)
         deduped = active_store.dedupe(filtered, dry_run=args.dry_run)
-        new_links = {candidate.link for candidate in deduped.new}
+        new_ids = {id(candidate) for candidate in deduped.new}
         for candidate in filtered:
             source_coverage = coverage.source(candidate.source)
-            if candidate.link in new_links:
+            if id(candidate) in new_ids:
                 source_coverage.keep()
             else:
                 source_coverage.drop("duplicate")
         coverage.assert_no_silent_drops()
         artifact = write_handoff(deduped.new, path=args.artifact, run_date=date.today().isoformat())
+        tracker_path = getattr(args, "tracker", None)
+        if not args.dry_run and not getattr(args, "no_tracker", False) and tracker_path:
+            append_tracker(deduped.new, path=tracker_path)
         commit_and_push(args.artifact, no_push=args.no_push, dry_run=args.dry_run, runner=git_runner)
         return CollectorResult(
             raw_candidates=filtered,
@@ -127,7 +133,11 @@ def default_fetchers(
     fetchers: dict[str, Callable[[], Iterable[RawPosting]]] = {}
     if "ats" in selected_sources:
         tokens = [*all_source_tokens(), *store.active_tokens()]
-        fetchers["ats"] = lambda: ats.fetch_ats_tokens(tokens, http=http)
+        fetchers["ats"] = lambda: ats.fetch_ats_tokens(
+            tokens,
+            http=http,
+            prune_callback=store.prune_active_token,
+        )
     if "adzuna" in selected_sources:
         env = config.require("ADZUNA_APP_ID", "ADZUNA_APP_KEY")
         fetchers["adzuna"] = lambda: adzuna.fetch_adzuna(
@@ -155,23 +165,34 @@ def collect_from_sources(
     fetchers: dict[str, Callable[[], Iterable[RawPosting | dict]]],
     *,
     coverage: CoverageReport | None = None,
+    since: str | None = None,
 ) -> list[Candidate]:
     report = coverage or CoverageReport()
+    since_date = parse_since_date(since)
     candidates: list[Candidate] = []
     for source, fetcher in fetchers.items():
-        source_coverage = report.source(source)
         try:
             raw_items = list(fetcher())
         except Exception as exc:  # one dead source must not abort the run
-            source_coverage.errors.append(str(exc))
+            fetch_coverage = report.source(source)
+            fetch_coverage.errors.append(str(exc))
             LOGGER.exception("source %s failed; continuing", source)
             continue
-        source_coverage.raw += len(raw_items)
+        if not raw_items:
+            report.source(source)
         for item in raw_items:
             try:
                 posting = coerce_posting(item, source)
             except ValueError:
-                source_coverage.drop("malformed")
+                fetch_coverage = report.source(source)
+                fetch_coverage.raw += 1
+                fetch_coverage.drop("malformed")
+                continue
+            posting_source = posting.source or source
+            source_coverage = report.source(posting_source)
+            source_coverage.raw += 1
+            if posted_before_since(posting.posted, since_date):
+                source_coverage.drop("before_since")
                 continue
             matched = firm_match(posting.company)
             if matched is None:
@@ -188,7 +209,7 @@ def collect_from_sources(
                     title=posting.title,
                     location=posting.location,
                     link=posting.link,
-                    source=posting.source or source,
+                    source=posting_source,
                     posted=posting.posted,
                 )
             )
@@ -200,6 +221,55 @@ def coerce_posting(item: RawPosting | dict, source: str) -> RawPosting:
     if not (posting.company and posting.title and posting.link):
         raise ValueError("malformed posting")
     return posting
+
+
+def parse_since_date(value: str | None) -> date | None:
+    if not value:
+        return None
+    try:
+        return date.fromisoformat(value)
+    except ValueError as exc:
+        raise ConfigError(f"--since must be YYYY-MM-DD: {value}") from exc
+
+
+def posted_before_since(posted: str, since_date: date | None) -> bool:
+    if since_date is None:
+        return False
+    parsed = parse_posted_date(posted)
+    if parsed is None:
+        return False
+    return parsed < since_date
+
+
+def parse_posted_date(value: str | int | float | None) -> date | None:
+    if value is None:
+        return None
+    text = str(value).strip()
+    if not text:
+        return None
+    if text.isdigit():
+        timestamp = float(text)
+        if timestamp > 10_000_000_000:
+            timestamp /= 1000
+        try:
+            return datetime.fromtimestamp(timestamp, tz=timezone.utc).date()
+        except (OverflowError, OSError, ValueError):
+            return None
+    try:
+        return date.fromisoformat(text[:10])
+    except ValueError:
+        pass
+    iso_text = text.replace("Z", "+00:00")
+    try:
+        return datetime.fromisoformat(iso_text).date()
+    except ValueError:
+        pass
+    for fmt in ("%b %d, %Y", "%B %d, %Y", "%m/%d/%Y"):
+        try:
+            return datetime.strptime(text, fmt).date()
+        except ValueError:
+            continue
+    return None
 
 
 if __name__ == "__main__":

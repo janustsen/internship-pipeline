@@ -26,18 +26,30 @@ CORPORATE_SUFFIXES = {
     "partners",
 }
 
-REJECT_TITLE_PATTERNS = [
+# Seniority / non-internship signals — ALWAYS reject, even at an allowlisted firm
+# and even when the title also contains an in-scope finance term (a "Senior
+# Investment Banking Analyst" is still out of scope).
+SENIORITY_REJECT_PATTERNS = [
     r"\bsenior\b",
     r"\bstaff\b",
     r"\bprincipal\b",
     r"\bdirector\b",
+    r"\bvice president\b",
+    r"\bmanaging director\b",
     r"\bph\.?d\b",
     r"\bdoctoral\b",
     r"\bpostdoc(?:toral)?\b",
     r"\bnew[- ]?grad(?:uate)?\b",
     r"\bgraduate program\b",
-    r"\bfull[- ]?time\b",
+    r"\brecent graduate\b",
     r"\bexperienced\b",
+]
+
+# Out-of-scope role DOMAINS (engineering / product / design). These are skipped
+# when the title clearly signals an in-scope finance/consulting/strategy role, so
+# "Financial Engineering Summer Analyst" survives while "Software Engineering
+# Intern" does not.
+DOMAIN_REJECT_PATTERNS = [
     r"\bsoftware\b",
     r"\bswe\b",
     r"\bdeveloper\b",
@@ -46,9 +58,52 @@ REJECT_TITLE_PATTERNS = [
     r"\bfull[- ]?stack\b",
     r"\bdata engineer\b",
     r"\bmachine learning engineer\b",
-    r"\bmechanical engineer\b",
+    r"\bengineer(?:ing)?\b",
+    r"\bmechanical engineer(?:ing)?\b",
+    r"\belectrical engineer(?:ing)?\b",
+    r"\bhardware\b",
     r"\baerospace\b",
+    r"\bux\b",
+    r"\bui\b",
     r"\bdesign(?:er)?\b",
+    r"\bnursing\b",
+    r"\bteacher\b",
+]
+
+# Title terms that mark a clearly in-scope role (finance / consulting / strategy /
+# business). Their presence suppresses the DOMAIN rejects only — never seniority.
+IN_SCOPE_TITLE_TERMS = [
+    "banking",
+    "finance",
+    "financial",
+    "investment",
+    "investing",
+    "equity",
+    "capital markets",
+    "markets",
+    "trading",
+    "trader",
+    "quant",
+    "portfolio",
+    "asset management",
+    "wealth",
+    "m&a",
+    "mergers",
+    "restructuring",
+    "private equity",
+    "venture capital",
+    "hedge fund",
+    "consult",
+    "strategy",
+    "strategic",
+    "corporate development",
+    "business development",
+    "bizops",
+    "business",
+    "economics",
+    "advisory",
+    "sales and trading",
+    "actuar",
 ]
 
 INTERNSHIP_SIGNALS = [
@@ -66,17 +121,21 @@ INTERNSHIP_SIGNALS = [
     "first-year",
     "second year",
     "second-year",
-    "diversity",
-    "scholars",
-    "fellow",
-    "fellowship",
+    "co-op",
+    "coop",
     "externship",
+    "campus",
+    "undergraduate",
 ]
 
+INTERNSHIP_SIGNAL_PATTERNS = [
+    r"\bsummer\b.*\b(analyst|associate|intern)\b",
+    r"\b(analyst|associate|intern)\b.*\bsummer\b",
+]
+
+# Underclassman / target-cycle signals — used as a ranking boost, NOT a hard gate.
 TARGET_CYCLE_SIGNALS = [
     "2027",
-    "summer 2027",
-    "2027 summer",
     "sophomore",
     "first year",
     "first-year",
@@ -88,6 +147,9 @@ TARGET_CYCLE_SIGNALS = [
     "diversity",
     "scholars",
 ]
+
+# Years earlier than the target cycle that are unambiguously stale.
+STALE_CYCLE_MAX_YEAR = 2025
 
 
 def normalize_company_name(value: str) -> str:
@@ -105,17 +167,29 @@ def normalize_title(value: str) -> str:
     return " ".join(text.split())
 
 
+_ALIAS_INDEX_CACHE: dict[str, dict[str, str]] | None = None
+
+
 def _firm_alias_index() -> dict[str, dict[str, str]]:
-    index: dict[str, dict[str, str]] = {}
-    for firm in target_firms.TARGET_FIRMS:
-        canonical = str(firm["canonical"])
-        tier = str(firm["tier"])
-        aliases = [canonical, *firm.get("aliases", [])]
-        for alias in aliases:
-            normalized = normalize_company_name(str(alias))
-            if normalized:
-                index[normalized] = {"canonical": canonical, "tier": tier}
-    return index
+    global _ALIAS_INDEX_CACHE
+    if _ALIAS_INDEX_CACHE is None:
+        index: dict[str, dict[str, str]] = {}
+        for firm in target_firms.TARGET_FIRMS:
+            canonical = str(firm["canonical"])
+            tier = str(firm["tier"])
+            aliases = [canonical, *firm.get("aliases", [])]
+            for alias in aliases:
+                normalized = normalize_company_name(str(alias))
+                if normalized:
+                    index[normalized] = {"canonical": canonical, "tier": tier}
+        _ALIAS_INDEX_CACHE = index
+    return _ALIAS_INDEX_CACHE
+
+
+def reset_caches() -> None:
+    """Clear memoized state (call after mutating target_firms.TARGET_FIRMS in tests)."""
+    global _ALIAS_INDEX_CACHE
+    _ALIAS_INDEX_CACHE = None
 
 
 def firm_match(company: str | None) -> dict[str, str] | None:
@@ -124,22 +198,60 @@ def firm_match(company: str | None) -> dict[str, str] | None:
     return _firm_alias_index().get(normalize_company_name(company))
 
 
-def _text_for(posting: RawPosting | dict[str, Any] | str) -> str:
+def _title_for(posting: RawPosting | dict[str, Any] | str) -> str:
     if isinstance(posting, str):
         return posting
     if isinstance(posting, RawPosting):
-        return " ".join([posting.title, posting.category, posting.description])
-    return " ".join(
-        str(posting.get(key) or "") for key in ("title", "category", "description", "content")
-    )
+        return posting.title
+    return str(posting.get("title") or posting.get("name") or "")
+
+
+def _signal_text_for(posting: RawPosting | dict[str, Any] | str) -> str:
+    """Text used for internship-signal detection: title + category (never description,
+    which routinely contains reject/off-cycle words that would kill recall)."""
+    if isinstance(posting, str):
+        return posting
+    if isinstance(posting, RawPosting):
+        return " ".join([posting.title, posting.category])
+    return " ".join(str(posting.get(key) or "") for key in ("title", "name", "category"))
 
 
 def exclusion_reason(posting: RawPosting | dict[str, Any] | str) -> str | None:
-    text = normalize_title(_text_for(posting))
-    for pattern in REJECT_TITLE_PATTERNS:
-        if re.search(pattern, text):
-            return "out_of_scope_role"
+    """Role-scope rejection, evaluated on the TITLE only."""
+    title = normalize_title(_title_for(posting))
+    if not title:
+        return None
+    for pattern in SENIORITY_REJECT_PATTERNS:
+        if re.search(pattern, title):
+            return "out_of_scope_seniority"
+    in_scope = any(term in title for term in IN_SCOPE_TITLE_TERMS)
+    if not in_scope:
+        for pattern in DOMAIN_REJECT_PATTERNS:
+            if re.search(pattern, title):
+                return "out_of_scope_role"
     return None
+
+
+def _mentions_stale_cycle(title: str, target_year: int) -> bool:
+    years = [int(y) for y in re.findall(r"\b(20\d{2})\b", title)]
+    if not years:
+        return False
+    if target_year in years or any(y >= target_year for y in years):
+        return False
+    return all(y <= STALE_CYCLE_MAX_YEAR for y in years)
+
+
+def has_internship_signal(posting: RawPosting | dict[str, Any] | str) -> bool:
+    text = normalize_title(_signal_text_for(posting))
+    return any(signal in text for signal in INTERNSHIP_SIGNALS) or any(
+        re.search(pattern, text) for pattern in INTERNSHIP_SIGNAL_PATTERNS
+    )
+
+
+def is_target_cycle(posting: RawPosting | dict[str, Any] | str) -> bool:
+    """Soft signal for ranking (does this look like the Summer 2027 / underclassman cycle)."""
+    title = normalize_title(_title_for(posting))
+    return "2027" in title or any(signal in title for signal in TARGET_CYCLE_SIGNALS)
 
 
 def is_relevant_posting(
@@ -147,19 +259,20 @@ def is_relevant_posting(
     *,
     target_year: int = 2027,
 ) -> bool:
-    text = normalize_title(_text_for(posting))
-    if not text:
+    """High-recall relevance gate. At an allowlisted firm, an internship signal is
+    sufficient; only clearly out-of-scope roles or explicitly-stale cycles are dropped.
+    Cycle targeting (2027/sophomore) is a boost, not a hard requirement, so an undated
+    'Summer Analyst' at a target firm is kept."""
+    title = normalize_title(_title_for(posting))
+    if not title:
         return False
-    if exclusion_reason(text):
+    if exclusion_reason(posting):
         return False
-
-    has_internship_signal = any(signal in text for signal in INTERNSHIP_SIGNALS)
-    has_cycle_signal = str(target_year) in text or any(
-        signal in text for signal in TARGET_CYCLE_SIGNALS
-    )
-
-    # At an allowlisted firm, a generic "2027 Summer Analyst Program" is enough.
-    return has_internship_signal and has_cycle_signal
+    if not has_internship_signal(posting):
+        return False
+    if _mentions_stale_cycle(title, target_year):
+        return False
+    return True
 
 
 def candidate_category(posting: RawPosting | dict[str, Any]) -> str:

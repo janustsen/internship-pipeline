@@ -84,6 +84,10 @@ class InternshipStore:
                 reason TEXT NOT NULL DEFAULT '',
                 PRIMARY KEY(platform, token)
             );
+
+            CREATE VIEW IF NOT EXISTS pending AS
+                SELECT id, platform, token, company, discovered_at, status, note
+                FROM pending_tokens;
             """
         )
         self.conn.commit()
@@ -250,6 +254,20 @@ class InternshipStore:
             "SELECT platform, token, company, tier FROM active_tokens ORDER BY platform, company"
         ).fetchall()
         return [dict(row) for row in rows]
+
+    def prune_active_token(self, token: str, *, platform: str | None = None) -> int:
+        if platform:
+            cursor = self.conn.execute(
+                "DELETE FROM active_tokens WHERE platform = ? AND token = ?",
+                (platform, token),
+            )
+        else:
+            cursor = self.conn.execute(
+                "DELETE FROM active_tokens WHERE token = ?",
+                (token,),
+            )
+        self.conn.commit()
+        return max(cursor.rowcount, 0)
 
     def _active_token_exists(self, platform: str, token: str) -> bool:
         row = self.conn.execute(

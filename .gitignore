@@ -8,3 +8,9 @@ Internship_Digest.xlsx
 handshake_jobs.csv
 handshake-scraper/handshake_jobs.csv
 .DS_Store
+
+# Factory / tooling run artifacts
+.octo/
+.claude-octopus/
+.pytest_cache/
+todays_candidates.json
