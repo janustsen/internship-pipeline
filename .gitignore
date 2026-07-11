@@ -1,0 +1,8 @@
+.env
+venv/
+__pycache__/
+*.pyc
+seen_internships.db
+Internship_Digest.xlsx
+handshake-scraper/handshake_jobs.csv
+.DS_Store
