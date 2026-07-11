@@ -360,3 +360,108 @@ endpoints/quirks below; execute every fix.
   silent drop is visible. This is the operational guardrail for the "every listing" mandate.
 - Tests: `firm_match` (aliases/near-miss/junk), title+cycle filter, pagination loops (mocked),
   dedup, artifact schema.
+
+---
+
+## Purpose
+
+Build a two-halves internship pipeline: a **local collector** (Python, all 5 sources incl.
+Selenium Handshake) that scrapes, gates through a curated cross-sector Tier-1/Tier-2 firm
+allowlist, dedups, and writes `todays_candidates.json`, committing it to a private git bridge;
+and a **cloud judge routine** (`internship-watch`, twin of `fellowship-watch`) that fact-checks
+each candidate and confirms Tier 1/2 membership before pushing a daily report. Prime directive:
+return **every or virtually every real listing at target firms** — precision on firms, high
+recall on their postings.
+
+## Actors
+
+- **Janus** — recipient of the daily push report; approves firms into the allowlist.
+- **Local collector** (`collector.py`) — runs daily ~06:00 PT via launchd.
+- **Cloud judge** (`internship-watch` routine) — runs daily ~08:00 PT, fresh session, push-only.
+- **Sources** — LinkedIn (Apify), Handshake (Selenium, logged-in Chrome profile), Adzuna API,
+  Serper career-page search, ATS APIs (Greenhouse, Lever, Ashby, SmartRecruiters, Workable).
+- **Git bridge** — private repo holding `todays_candidates.json`.
+
+## Behaviors
+
+1. **B1 — Allowlist gate:** every source filters each posting through
+   `firm_match(company) is not None`; non-matches are dropped. `firm_match` normalizes the
+   company string and alias-matches `target_firms.py`, returning the firm + tier.
+2. **B2 — Relevance filter:** keep postings that are internships for the target cycle
+   (Summer 2027 primary) including underclassman/sophomore/spring-week/early-insight signals;
+   exclude senior/staff/PhD/director/new-grad-full-time.
+3. **B3 — Recall fix:** the old `is_finance_domain` title keyword gate is **removed** — a
+   target firm + intern + cycle is sufficient (a generic "Summer Analyst Program" at a T1 firm
+   must NOT be dropped).
+4. **B4 — Full pagination:** SmartRecruiters pages via `offset += 100` until exhausted;
+   Workable follows its v3 response cursor; Adzuna pages until exhausted with `max_days_old=2`.
+5. **B5 — Resilience:** every HTTP call retries with exponential backoff + jitter; 404 → prune
+   token, transient 4xx/5xx → retry and keep token; per-host politeness delay preserved.
+6. **B6 — Discovery review queue:** ATS auto-discovery writes new tokens to a `pending`
+   candidate table instead of auto-scraping; a `review_candidates` CLI promotes/rejects.
+7. **B7 — Deduplication:** two-pass — exact URL, then semantic (company + `normalize_title`);
+   lifetime SQLite `jobs` table yields the NEW-since-last-run set.
+8. **B8 — Handoff artifact:** write `todays_candidates.json` (schema in §7) containing only the
+   NEW target-firm candidates, then git commit + push.
+9. **B9 — Coverage report:** per source, log `raw → kept → dropped (reason)` so no silent drop
+   is possible.
+10. **B10 — CLI:** `--dry-run`, `--no-push`, `--source <name>`, `--since <date>`.
+11. **B11 — Secrets:** all keys read from `.env` via `python-dotenv`; none hardcoded.
+12. **B12 — Cloud judge:** read `todays_candidates.json`; for each candidate fact-check via web
+    (real / open / link resolves / firm matches) and confirm Tier 1/2 against embedded
+    deep-research criteria; drop failures; compose the `fellowship-watch`-style "🔔 NEWLY OPEN"
+    report; deliver via push only.
+
+## Constraints
+
+- No secret value is ever committed to git or sent to an external LLM provider.
+- Handshake requires a logged-in local Chrome profile (`~/.handshake_chrome_profile`); it can
+  only run locally, never in the cloud routine.
+- Per-host politeness delay (~0.35s) and backoff must be respected (no aggressive hammering).
+- Delivery is **push only** (no email); Remote Control mobile is paired.
+- Role scope stays Janus's track (finance / quant / consulting / strategy / corp-dev / BizOps /
+  business); no SWE/aerospace/etc. even at allowlisted firms.
+- Prestige tiers are **cross-sector** T1/T2 (finance, consulting, big tech, hot startups,
+  marquee institutions incl. gov, reputable boutiques).
+
+## Dependencies
+
+- Python: `requests`, `pandas`, `openpyxl`, `python-dotenv`, `selenium`, `webdriver-manager`,
+  `apify-client`.
+- External services: ATS APIs (Greenhouse/Lever/Ashby/SmartRecruiters/Workable), Serper.dev,
+  Adzuna, Apify; a private git remote for the bridge; a dedicated cloud environment for the
+  routine.
+- `/deep-research` output defines the T1/T2 criteria + firm roster that populate
+  `target_firms.py` and the routine's embedded reference list.
+
+## Acceptance Criteria
+
+- `firm_match` unit tests: aliases match, near-misses reject, junk rejects.
+- Filter unit tests: S2027/sophomore titles pass; senior/PhD/new-grad reject; a generic
+  "Summer Analyst Program" at a T1 firm PASSES (B3 recall check).
+- Pagination test: a firm with >100 SmartRecruiters postings returns all of them (mocked).
+- Integration dry run: `todays_candidates.json` contains only allowlisted, on-track roles.
+- Coverage report prints `raw → kept → dropped` per source on every run.
+- No plaintext secret anywhere in the repo (`git grep` clean); `.env` git-ignored.
+- Cloud judge test fire: push lands; a known-closed posting is dropped by fact-check; a
+  non-T1/2 firm is dropped by tier-confirm; "nothing new" yields a ~3–5 line report.
+
+### Edge cases & error handling
+
+- Source returns 404 → prune the token from the DB; 429/5xx or timeout → retry with backoff,
+  keep the token (never silently drop a firm on a transient error).
+- Empty NEW set → still run; cloud judge emits a short "No new openings today" report.
+- Missing/invalid `.env` → fail fast with a clear message (never run with hardcoded fallback).
+- Handshake profile not logged in / Selenium error → log, skip the Handshake source, continue
+  the rest of the run (one dead source must not abort the pipeline).
+- Malformed source payload → skip the item, count it in the coverage report's `dropped`.
+
+### Preconditions
+
+- `.env` present with all keys; Chrome profile logged into Handshake; git remote configured;
+  `target_firms.py` populated from `/deep-research`.
+
+### Postconditions
+
+- `todays_candidates.json` written, committed, and pushed; lifetime DB updated with the new
+  jobs; coverage report logged; Excel tracker appended.
