@@ -70,3 +70,18 @@ def test_stale_cycle_year_is_rejected_but_current_is_kept() -> None:
     # 2026/2027 and mixed years that include the target are kept (recall-favoring).
     assert is_relevant_posting({"title": "Summer 2026 Investment Banking Intern"})
     assert is_relevant_posting({"title": "2026 & 2027 Summer Analyst Intern"})
+
+
+def test_intern_substring_inside_internal_or_international_does_not_match() -> None:
+    # "intern" is a substring of "internal"/"international" — a plain substring
+    # check on the title wrongly flagged these full-time roles as internships.
+    assert not is_relevant_posting({"title": "Internal Audit Manager"})
+    assert not is_relevant_posting({"title": "Internal Communications Lead"})
+    assert not is_relevant_posting({"title": "International Sector Analyst"})
+    assert not is_relevant_posting({"title": "Head of SOX and Internal Controls"})
+
+
+def test_winternship_still_matches_as_internship_signal() -> None:
+    # "Winternship" (winter + internship) is a real recruiting term; the word-boundary
+    # fix for the "internal"/"international" false positives must not break it.
+    assert is_relevant_posting({"title": "Women's Winternship", "company": "Virtu Financial"})

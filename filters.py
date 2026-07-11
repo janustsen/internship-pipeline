@@ -114,6 +114,7 @@ IN_SCOPE_TITLE_TERMS = [
 INTERNSHIP_SIGNALS = [
     "intern",
     "internship",
+    "winternship",
     "summer analyst",
     "summer associate",
     "analyst intern",
@@ -136,6 +137,13 @@ INTERNSHIP_SIGNALS = [
 INTERNSHIP_SIGNAL_PATTERNS = [
     r"\bsummer\b.*\b(analyst|associate|intern)\b",
     r"\b(analyst|associate|intern)\b.*\bsummer\b",
+]
+
+# Word-boundary matchers for INTERNSHIP_SIGNALS. A plain substring check would let
+# "intern" match inside "Internal" or "International" (e.g. "Internal Audit Lead",
+# "International Sector Analyst") and wrongly flag full-time roles as internships.
+_INTERNSHIP_SIGNAL_PATTERNS = [
+    re.compile(r"\b" + re.escape(signal) + r"\b") for signal in INTERNSHIP_SIGNALS
 ]
 
 # Underclassman / target-cycle signals — used as a ranking boost, NOT a hard gate.
@@ -248,7 +256,7 @@ def _mentions_stale_cycle(title: str, target_year: int) -> bool:
 
 def has_internship_signal(posting: RawPosting | dict[str, Any] | str) -> bool:
     text = normalize_title(_signal_text_for(posting))
-    return any(signal in text for signal in INTERNSHIP_SIGNALS) or any(
+    return any(pattern.search(text) for pattern in _INTERNSHIP_SIGNAL_PATTERNS) or any(
         re.search(pattern, text) for pattern in INTERNSHIP_SIGNAL_PATTERNS
     )
 
