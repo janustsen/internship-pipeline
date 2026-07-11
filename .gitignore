@@ -1,8 +1,10 @@
 .env
 venv/
+.venv/
 __pycache__/
 *.pyc
 seen_internships.db
 Internship_Digest.xlsx
+handshake_jobs.csv
 handshake-scraper/handshake_jobs.csv
 .DS_Store
