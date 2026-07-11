@@ -13,4 +13,8 @@ handshake-scraper/handshake_jobs.csv
 .octo/
 .claude-octopus/
 .pytest_cache/
-todays_candidates.json
+# NOTE: todays_candidates.json is intentionally NOT ignored — it is the git
+# bridge artifact the cloud internship-watch routine reads.
+
+# local run logs
+logs/

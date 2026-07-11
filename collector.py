@@ -75,7 +75,13 @@ def run_collector(
     git_runner: Callable[..., subprocess.CompletedProcess] = subprocess.run,
 ) -> CollectorResult:
     selected_sources = list(dict.fromkeys(args.source or SOURCE_NAMES))
-    required = required_env_for_sources(selected_sources) if fetchers is None else ()
+    # Only hard-require env under --strict-env; otherwise a source whose keys are
+    # missing is skipped (see default_fetchers) so the ATS layer runs friction-free.
+    required = (
+        required_env_for_sources(selected_sources)
+        if (fetchers is None and args.strict_env)
+        else ()
+    )
     config = Config.from_env(
         env_path=args.env_file,
         required=required,
@@ -139,22 +145,33 @@ def default_fetchers(
             prune_callback=store.prune_active_token,
         )
     if "adzuna" in selected_sources:
-        env = config.require("ADZUNA_APP_ID", "ADZUNA_APP_KEY")
-        fetchers["adzuna"] = lambda: adzuna.fetch_adzuna(
-            app_id=env["ADZUNA_APP_ID"],
-            app_key=env["ADZUNA_APP_KEY"],
-            http=http,
-            since=since,
-        )
+        try:
+            env = config.require("ADZUNA_APP_ID", "ADZUNA_APP_KEY")
+            fetchers["adzuna"] = lambda env=env: adzuna.fetch_adzuna(
+                app_id=env["ADZUNA_APP_ID"],
+                app_key=env["ADZUNA_APP_KEY"],
+                http=http,
+                since=since,
+            )
+        except ConfigError as exc:
+            LOGGER.warning("skipping adzuna (missing config): %s", exc)
     if "serper" in selected_sources:
-        env = config.require("SERPER_API_KEY")
-        fetchers["serper"] = lambda: serper.fetch_serper(api_key=env["SERPER_API_KEY"], http=http)
+        try:
+            env = config.require("SERPER_API_KEY")
+            fetchers["serper"] = lambda env=env: serper.fetch_serper(
+                api_key=env["SERPER_API_KEY"], http=http
+            )
+        except ConfigError as exc:
+            LOGGER.warning("skipping serper (missing config): %s", exc)
     if "linkedin" in selected_sources:
-        env = config.require("APIFY_TOKEN", "LINKEDIN_APIFY_ACTOR_ID")
-        fetchers["linkedin"] = lambda: linkedin.fetch_linkedin(
-            apify_token=env["APIFY_TOKEN"],
-            actor_id=env["LINKEDIN_APIFY_ACTOR_ID"],
-        )
+        try:
+            env = config.require("APIFY_TOKEN", "LINKEDIN_APIFY_ACTOR_ID")
+            fetchers["linkedin"] = lambda env=env: linkedin.fetch_linkedin(
+                apify_token=env["APIFY_TOKEN"],
+                actor_id=env["LINKEDIN_APIFY_ACTOR_ID"],
+            )
+        except ConfigError as exc:
+            LOGGER.warning("skipping linkedin (missing config): %s", exc)
     if "handshake" in selected_sources:
         script = config.get("HANDSHAKE_SCRAPER_PATH", "handshake_scraper.py")
         fetchers["handshake"] = lambda: handshake.fetch_handshake(script_path=script)

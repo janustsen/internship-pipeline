@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Local half: runs the internship collector daily at 06:00 local time.
+     Install:  cp deploy/com.janustsen.internship-collector.plist ~/Library/LaunchAgents/
+               launchctl bootstrap gui/$(id -u) ~/Library/LaunchAgents/com.janustsen.internship-collector.plist
+     Remove:   launchctl bootout gui/$(id -u)/com.janustsen.internship-collector
+     Run now:  launchctl kickstart -k gui/$(id -u)/com.janustsen.internship-collector -->
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+    <key>Label</key>
+    <string>com.janustsen.internship-collector</string>
+    <key>ProgramArguments</key>
+    <array>
+        <string>/bin/bash</string>
+        <string>/Users/janustsen/dev/internship-pipeline/bin/run.sh</string>
+    </array>
+    <key>StartCalendarInterval</key>
+    <dict>
+        <key>Hour</key>
+        <integer>6</integer>
+        <key>Minute</key>
+        <integer>0</integer>
+    </dict>
+    <key>StandardOutPath</key>
+    <string>/Users/janustsen/dev/internship-pipeline/logs/launchd.out.log</string>
+    <key>StandardErrorPath</key>
+    <string>/Users/janustsen/dev/internship-pipeline/logs/launchd.err.log</string>
+    <key>RunAtLoad</key>
+    <false/>
+</dict>
+</plist>
