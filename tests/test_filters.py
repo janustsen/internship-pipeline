@@ -57,6 +57,13 @@ def test_out_of_scope_domain_without_finance_term_is_rejected() -> None:
     assert not is_relevant_posting({"title": "Mechanical Engineering Summer Intern"})
 
 
+def test_full_time_roles_matching_campus_signal_are_rejected() -> None:
+    # "campus" is an internship signal, but a Campus Recruiter is a full-time role.
+    assert not is_relevant_posting({"title": "Campus Recruiter"})
+    assert not is_relevant_posting({"title": "Campus Recruiting Coordinator"})
+    assert not is_relevant_posting({"title": "Brand Ambassador"})
+
+
 def test_stale_cycle_year_is_rejected_but_current_is_kept() -> None:
     assert not is_relevant_posting({"title": "2024 Summer Analyst Internship"})
     assert not is_relevant_posting({"title": "Summer 2025 Investment Banking Intern"})

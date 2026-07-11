@@ -43,6 +43,11 @@ SENIORITY_REJECT_PATTERNS = [
     r"\bgraduate program\b",
     r"\brecent graduate\b",
     r"\bexperienced\b",
+    # Full-time roles that superficially match an internship/"campus" signal.
+    r"\brecruiter\b",
+    r"\brecruiting\b",
+    r"\btalent acquisition\b",
+    r"\bambassador\b",
 ]
 
 # Out-of-scope role DOMAINS (engineering / product / design). These are skipped
