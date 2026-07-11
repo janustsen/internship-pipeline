@@ -81,21 +81,31 @@ def fetch_ashby(
 ) -> list[RawPosting]:
     client = http or RetryingHttpClient()
     url = f"https://api.ashbyhq.com/posting-api/job-board/{token}"
-    response = client.get(url, token=token, prune_callback=prune_callback)
+    # The live Ashby posting API returns jobs under "jobs" (not "jobPostings"),
+    # with fields location/publishedAt/isListed. Keep "jobPostings" as a fallback
+    # in case the shape varies by org.
+    response = client.get(
+        url, params={"includeCompensation": "false"}, token=token, prune_callback=prune_callback
+    )
     payload = response.json()
-    jobs = payload.get("jobPostings", []) if isinstance(payload, dict) else []
+    if isinstance(payload, dict):
+        jobs = payload.get("jobs") or payload.get("jobPostings") or []
+    else:
+        jobs = []
     postings: list[RawPosting] = []
     for job in jobs:
         if not isinstance(job, dict):
             continue
-        location = job.get("locationName") or job.get("location") or ""
+        if job.get("isListed") is False:
+            continue
+        location = job.get("location") or job.get("locationName") or ""
         postings.append(
             RawPosting(
                 company=company or token,
                 title=str(job.get("title") or ""),
                 link=str(job.get("jobUrl") or job.get("applyUrl") or ""),
                 location=str(location),
-                posted=str(job.get("publishedDate") or ""),
+                posted=str(job.get("publishedAt") or job.get("publishedDate") or ""),
                 source="ashby",
                 raw=job,
             )

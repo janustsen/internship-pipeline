@@ -2,7 +2,7 @@ from __future__ import annotations
 
 from http_client import RetryingHttpClient
 from sources.adzuna import fetch_adzuna
-from sources.ats import fetch_smartrecruiters, fetch_workable
+from sources.ats import fetch_ashby, fetch_smartrecruiters, fetch_workable
 from tests.conftest import FakeResponse, FakeSession
 
 
@@ -66,6 +66,39 @@ def test_adzuna_pages_until_exhausted_with_max_days_old_two() -> None:
         "https://api.adzuna.com/v1/api/jobs/us/search/2",
     ]
     assert all(call[2]["params"]["max_days_old"] == 2 for call in http.session.requests)
+
+
+def test_ashby_reads_jobs_key_and_maps_live_fields() -> None:
+    # Live Ashby posting API returns "jobs" (not "jobPostings") with
+    # location/publishedAt/isListed fields. Regression guard for a real
+    # coverage bug that silently dropped every Ashby posting.
+    payload = {
+        "apiVersion": "1",
+        "jobs": [
+            {
+                "title": "2027 Summer Analyst Intern",
+                "jobUrl": "https://jobs.ashbyhq.com/ramp/abc",
+                "location": "New York",
+                "publishedAt": "2026-07-09",
+                "isListed": True,
+            },
+            {
+                "title": "Hidden Role",
+                "jobUrl": "https://jobs.ashbyhq.com/ramp/xyz",
+                "location": "Remote",
+                "isListed": False,
+            },
+        ],
+    }
+    http = client_for([FakeResponse(payload)])
+
+    postings = fetch_ashby("ramp", company="Ramp", http=http)
+
+    assert len(postings) == 1  # isListed=False is skipped
+    assert postings[0].title == "2027 Summer Analyst Intern"
+    assert postings[0].link == "https://jobs.ashbyhq.com/ramp/abc"
+    assert postings[0].location == "New York"
+    assert postings[0].posted == "2026-07-09"
 
 
 def _sr_job(index: int) -> dict:
