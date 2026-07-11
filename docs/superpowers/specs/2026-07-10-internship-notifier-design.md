@@ -298,3 +298,65 @@ claude.ai/code/routines:
 - **Non-goal (v1):** auto-applying / autofilling applications — this only *notifies*.
 - **Non-goal (v1):** manual deadline-calendar embed like the fellowship 70-program list; the
   DB's new-URL detection + cloud fact-check are the signal.
+
+---
+
+## Appendix A — Audit of the original scraper (secret-free) + improvements to execute
+
+Audited 2026-07-10 against the read-only original. **Secrets live only in the top-of-file
+CONFIG constants → move to `.env`; nothing here contains key values.** Preserve the exact
+endpoints/quirks below; execute every fix.
+
+### A.1 Source endpoints & quirks to PRESERVE
+
+| Source | Endpoint | Notes to keep |
+|--------|----------|---------------|
+| Greenhouse | `GET boards-api.greenhouse.io/v1/boards/{token}/jobs` | returns all jobs, no pagination; `?content=true` optional for descriptions |
+| Lever | `GET api.lever.co/v0/postings/{token}?mode=json` | returns a list; guard non-list responses |
+| Ashby | `GET api.ashbyhq.com/posting-api/job-board/{token}` | `jobPostings[]`; no pagination |
+| SmartRecruiters | `GET api.smartrecruiters.com/v1/companies/{token}/postings?status=PUBLIC&limit=100` | **see A.2 pagination** |
+| Workable | `POST apply.workable.com/api/v3/accounts/{token}/jobs` | **v3 quirk:** body `{"query":"","location":[],"workplace":[],"department":[]}` (no limit/offset); **Origin+Referer headers required** for CORS; **see A.2 pagination** |
+| Handshake | Selenium via vendored `handshake_scraper.py` subprocess | persistent Chrome profile `~/.handshake_chrome_profile` (SSO reused); args `-u -p -t`; outputs `handshake_jobs.csv`; `--lang=fr-FR` is a vendor quirk (switch to en-US) |
+
+### A.2 Coverage bugs to FIX (directly serves "return every/virtually every listing")
+
+1. **`is_finance_domain` is a recall bug.** It requires a finance keyword *in the title*, which
+   drops generic-titled roles at target firms ("2027 Summer Analyst Program", "Summer Intern"
+   at Blackstone/Jane Street). Since **every source now gates on `firm_match` (curated
+   prestigious firms), the extra title-domain gate is redundant and harmful.** → **Remove it as
+   a hard gate.** Keep only: `is_relevant_internship` (intern + cycle) AND `firm_match`. Role
+   on-track-ness is enforced by the allowlist's per-firm role scope + the cloud judge, not a
+   brittle title keyword.
+2. **SmartRecruiters pagination missing** — `limit=100` returns only the first 100; firms with
+   >100 postings lose roles. → **Loop `offset += 100` until `content` empty / `totalFound`.**
+3. **Workable pagination missing** — v3 returns a cursor (`paging.next` / `nextPage`). →
+   **Follow the cursor until exhausted.**
+4. **Adzuna** — only `page 1`, `results_per_page=50`, `max_days_old=1`. → **Page until
+   exhausted; use `max_days_old=2` with dedup to survive a missed run (gap day).**
+5. **Handshake `-p 3` caps ~75 jobs.** → **Raise to unlimited (`-p -1`) or a high page cap**
+   with throttle, so target-firm postings aren't truncated.
+6. **No retry/backoff anywhere** — a transient 429/timeout silently drops a firm for the day.
+   → **Add exponential backoff + jitter; distinguish 404 (prune token) from transient (retry,
+   keep token).**
+
+### A.3 Correctness & robustness
+
+- **Dedup:** `jobs.id = Link` + semantic (company + `normalize_title`) cross-source dedup is
+  sound; a firm re-post under a new URL re-alerts, which is correct for an opening-detector.
+- **Auto-discovery** permanently saved tokens & re-scraped forever (unbounded + unvetted) →
+  fixed by the review-queue design (§5).
+- **Per-host politeness** `POLITE_DELAY≈0.35s` — keep.
+- `TITLE_INCLUDE` has `new grad` / `analyst program` — ambiguous vs internships; tighten so
+  new-grad full-time roles don't slip in.
+
+### A.4 Structural improvements to execute
+
+- Secrets → `.env` (`python-dotenv`); `.env.example` committed.
+- Modularize: `target_firms.py`, `filters.py` (`firm_match` + title/cycle), `store.py`
+  (SQLite), `sources/` (one module per source), `handoff.py` (`todays_candidates.json`),
+  `collector.py` (entry point).
+- CLI flags for testing: `--dry-run`, `--no-push`, `--source <name>`, `--since <date>`.
+- **Per-run coverage report** — log `raw → kept → dropped (with reason)` per source, so a
+  silent drop is visible. This is the operational guardrail for the "every listing" mandate.
+- Tests: `firm_match` (aliases/near-miss/junk), title+cycle filter, pagination loops (mocked),
+  dedup, artifact schema.
