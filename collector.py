@@ -173,8 +173,16 @@ def default_fetchers(
         except ConfigError as exc:
             LOGGER.warning("skipping linkedin (missing config): %s", exc)
     if "handshake" in selected_sources:
-        script = config.get("HANDSHAKE_SCRAPER_PATH", "handshake_scraper.py")
-        fetchers["handshake"] = lambda: handshake.fetch_handshake(script_path=script)
+        search_url = config.get("HANDSHAKE_SEARCH_URL", "")
+        if search_url:
+            script = config.get("HANDSHAKE_SCRAPER_PATH", "handshake_scraper.py")
+            fetchers["handshake"] = lambda: handshake.fetch_handshake(
+                search_url=search_url, script_path=script
+            )
+        else:
+            LOGGER.warning(
+                "skipping handshake (set HANDSHAKE_SEARCH_URL to a school search URL)"
+            )
     return fetchers
 
 

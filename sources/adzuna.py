@@ -17,7 +17,8 @@ def fetch_adzuna(
     http: RetryingHttpClient | None = None,
     since: str | date | None = None,
     per_page: int = 50,
-    max_pages: int = 100,
+    max_pages: int = 20,
+    max_days_old: int = 7,
 ) -> list[RawPosting]:
     client = http or RetryingHttpClient()
     postings: list[RawPosting] = []
@@ -26,12 +27,15 @@ def fetch_adzuna(
             "app_id": app_id,
             "app_key": app_key,
             "results_per_page": per_page,
-            "max_days_old": 2,
-            "what": "2027 summer internship analyst associate strategy finance consulting",
+            "max_days_old": max_days_old,
+            # `what_or` = match ANY of these words. The previous `what` used AND
+            # semantics, so a multi-word string matched zero postings. "summer"
+            # / "analyst" catch finance "Summer Analyst" roles that omit
+            # "intern"; the firm gate + relevance filter downstream cut noise.
+            "what_or": "internship intern summer analyst",
+            "sort_by": "date",
             "content-type": "application/json",
         }
-        if since:
-            params["sort_by"] = "date"
         response = client.get(ADZUNA_URL.format(page=page), params=params)
         payload = response.json()
         results = payload.get("results", []) if isinstance(payload, dict) else []

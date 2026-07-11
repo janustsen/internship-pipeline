@@ -24,20 +24,28 @@ cp .env.example .env          # then fill in ROTATED keys (see below)
 
 ### Secrets (`.env`) — rotate first
 
-The original scraper had these keys hardcoded in plaintext; treat them as exposed and **rotate
-them** before use. `.env` is git-ignored.
+The keys were migrated from the original scraper, where they lived in plaintext; treat them as
+**exposed and rotate them** (then replace the values in `.env`, which is git-ignored).
 
 | Key | Used by | Needed? |
 |-----|---------|---------|
 | `ADZUNA_APP_ID`, `ADZUNA_APP_KEY` | Adzuna source | optional |
-| `SERPER_API_KEY` | Serper career-page source | optional |
+| `SERPER_API_KEY` | Serper career-page source (free plan: plain-keyword queries only) | optional |
 | `APIFY_TOKEN`, `LINKEDIN_APIFY_ACTOR_ID` | LinkedIn source | optional |
-| `HANDSHAKE_SCRAPER_PATH` | Handshake Selenium scraper path | optional |
+| `HANDSHAKE_SCRAPER_PATH`, `HANDSHAKE_SEARCH_URL` | Handshake Selenium scraper | optional |
 
 **The ATS layer (Greenhouse / Lever / Ashby / SmartRecruiters / Workable) needs no keys** and
 is the highest-signal source, so the pipeline runs usefully with an empty `.env` — sources
-whose keys are missing skip themselves. Handshake additionally needs the vendored
-`handshake_scraper.py` and a logged-in Chrome profile (`~/.handshake_chrome_profile`).
+whose keys are missing skip themselves. The aggregators cover the ~120 target firms that have
+no direct ATS token (bulge brackets, MBB, big tech, marquee corporates), so set the keys to
+watch those.
+
+**Handshake** is off unless `HANDSHAKE_SEARCH_URL` is set. To enable it: (1) do a one-time SSO
+login in a Chrome window so the session persists in `~/.handshake_chrome_profile`; (2) build a
+Handshake internship search on your school's Handshake, copy the URL (it must include `page=1`),
+and set it as `HANDSHAKE_SEARCH_URL`. It uniquely catches campus-exclusive sophomore/diversity
+programs that never reach public boards. The vendored `handshake_scraper.py` needs Chrome +
+`selenium` + `webdriver-manager` (already in `requirements.txt`).
 
 ## Run
 
