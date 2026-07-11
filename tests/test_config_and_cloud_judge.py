@@ -22,7 +22,7 @@ def test_cloud_judge_fact_checks_tier_sorts_and_pushes(tmp_path) -> None:
         "run_date": "2026-07-10",
         "candidate_count": 4,
         "candidates": [
-            _candidate("T2", "Evercore", "2027 Summer Analyst Program", "https://x/t2"),
+            _candidate("T2", "Jefferies", "2027 Summer Analyst Program", "https://x/t2"),
             _candidate("T1", "JPMorgan", "2027 Summer Analyst Program", "https://x/t1"),
             _candidate("T1", "JPMorgan", "2027 Summer Analyst Program", "https://x/closed"),
             _candidate("T1", "Random Startup", "2027 Summer Analyst Program", "https://x/random"),
@@ -42,7 +42,7 @@ def test_cloud_judge_fact_checks_tier_sorts_and_pushes(tmp_path) -> None:
 
     assert pushed == [report]
     assert report.startswith("🔔 NEWLY OPEN")
-    assert report.index("JPMorgan") < report.index("Evercore")
+    assert report.index("JPMorgan") < report.index("Jefferies")
     assert "closed" not in report
     assert "Random Startup" not in report
 
