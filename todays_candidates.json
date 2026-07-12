@@ -1,6 +1,437 @@
 {
-  "candidate_count": 0,
-  "candidates": [],
-  "generated_at": "2026-07-12T02:57:38+00:00",
+  "candidate_count": 43,
+  "candidates": [
+    {
+      "category": "business",
+      "company": "William Blair",
+      "link": "https://www.williamblair.com/Careers/job-description?gh_jid=5177228007",
+      "location": "Frankfurt, Germany",
+      "posted": "2026-07-01T12:36:04-04:00",
+      "source": "greenhouse",
+      "tier_hint": "T2",
+      "title": "Frankfurt Investment Banking Internship - April 2027"
+    },
+    {
+      "category": "business",
+      "company": "Lincoln International",
+      "link": "http://www.lincolninternational.com/greenhouse/?gh_jid=8029854",
+      "location": "Frankfurt, Germany",
+      "posted": "2026-06-30T18:00:00-04:00",
+      "source": "greenhouse",
+      "tier_hint": "T2",
+      "title": "Capital Advisory Internship (Q2 2027 - Master's Students Only)"
+    },
+    {
+      "category": "business",
+      "company": "Lincoln International",
+      "link": "http://www.lincolninternational.com/greenhouse/?gh_jid=8029856",
+      "location": "Frankfurt, Germany",
+      "posted": "2026-06-30T18:00:00-04:00",
+      "source": "greenhouse",
+      "tier_hint": "T2",
+      "title": "Capital Advisory Internship (Q3 2027 - Master's Students Only)"
+    },
+    {
+      "category": "business",
+      "company": "Lincoln International",
+      "link": "http://www.lincolninternational.com/greenhouse/?gh_jid=7775216",
+      "location": "Munich, Germany",
+      "posted": "2026-07-01T02:14:16-04:00",
+      "source": "greenhouse",
+      "tier_hint": "T2",
+      "title": "Female M&A Internship (Q2 2027 - Master's Students Only)"
+    },
+    {
+      "category": "business",
+      "company": "Lincoln International",
+      "link": "http://www.lincolninternational.com/greenhouse/?gh_jid=7954537",
+      "location": "Milan, Italy",
+      "posted": "2026-05-22T14:22:27-04:00",
+      "source": "greenhouse",
+      "tier_hint": "T2",
+      "title": "Intern, Capital Advisory"
+    },
+    {
+      "category": "business",
+      "company": "Lincoln International",
+      "link": "http://www.lincolninternational.com/greenhouse/?gh_jid=7840705",
+      "location": "Paris, France",
+      "posted": "2026-06-05T16:48:02-04:00",
+      "source": "greenhouse",
+      "tier_hint": "T2",
+      "title": "M&A Internship (January 2027)"
+    },
+    {
+      "category": "business",
+      "company": "Lincoln International",
+      "link": "http://www.lincolninternational.com/greenhouse/?gh_jid=7775215",
+      "location": "Frankfurt, Germany",
+      "posted": "2026-06-30T18:00:00-04:00",
+      "source": "greenhouse",
+      "tier_hint": "T2",
+      "title": "M&A Internship (Q2 2027 - Master's Students Only)"
+    },
+    {
+      "category": "business",
+      "company": "Lincoln International",
+      "link": "http://www.lincolninternational.com/greenhouse/?gh_jid=7171464",
+      "location": "Stockholm, Sweden",
+      "posted": "2026-05-05T17:40:56-04:00",
+      "source": "greenhouse",
+      "tier_hint": "T2",
+      "title": "M&A Internship Stockholm (Fall 2026)"
+    },
+    {
+      "category": "quant",
+      "company": "Jump Trading",
+      "link": "https://www.jumptrading.com/hr/job?gh_jid=7282220",
+      "location": "Shanghai; Singapore; Hong Kong",
+      "posted": "2026-07-08T21:05:38-04:00",
+      "source": "greenhouse",
+      "tier_hint": "T1",
+      "title": "Campus AI/ML Researcher (Fall 2026) "
+    },
+    {
+      "category": "quant",
+      "company": "Jump Trading",
+      "link": "https://www.jumptrading.com/hr/job?gh_jid=7217856",
+      "location": "London",
+      "posted": "2026-02-12T15:50:35-05:00",
+      "source": "greenhouse",
+      "tier_hint": "T1",
+      "title": "Campus Crypto Researcher (Full-Time)"
+    },
+    {
+      "category": "quant",
+      "company": "Jump Trading",
+      "link": "https://www.jumptrading.com/hr/job?gh_jid=7362318",
+      "location": "London",
+      "posted": "2026-02-12T15:50:36-05:00",
+      "source": "greenhouse",
+      "tier_hint": "T1",
+      "title": "Campus Crypto Researcher (Intern)"
+    },
+    {
+      "category": "quant",
+      "company": "Jump Trading",
+      "link": "https://www.jumptrading.com/hr/job?gh_jid=7728630",
+      "location": "Chicago; New York",
+      "posted": "2026-07-08T17:37:01-04:00",
+      "source": "greenhouse",
+      "tier_hint": "T1",
+      "title": "Campus Quantitative Researcher, UG/MS (Full-Time)"
+    },
+    {
+      "category": "quant",
+      "company": "Jump Trading",
+      "link": "https://www.jumptrading.com/hr/job?gh_jid=7982648",
+      "location": "Chicago; New York",
+      "posted": "2026-07-08T17:35:58-04:00",
+      "source": "greenhouse",
+      "tier_hint": "T1",
+      "title": "Campus Quantitative Researcher, UG/MS (Intern)"
+    },
+    {
+      "category": "quant",
+      "company": "Jump Trading",
+      "link": "https://www.jumptrading.com/hr/job?gh_jid=7982619",
+      "location": "Chicago; New York",
+      "posted": "2026-07-08T17:36:51-04:00",
+      "source": "greenhouse",
+      "tier_hint": "T1",
+      "title": "Campus Quantitative Trader (Full-Time)"
+    },
+    {
+      "category": "quant",
+      "company": "Jump Trading",
+      "link": "https://www.jumptrading.com/hr/job?gh_jid=7848371",
+      "location": "Chicago; New York",
+      "posted": "2026-07-08T17:35:47-04:00",
+      "source": "greenhouse",
+      "tier_hint": "T1",
+      "title": "Campus Quantitative Trader (Intern)"
+    },
+    {
+      "category": "quant",
+      "company": "Jump Trading",
+      "link": "https://www.jumptrading.com/hr/job?gh_jid=7565728",
+      "location": "Hong Kong",
+      "posted": "2026-02-12T15:50:38-05:00",
+      "source": "greenhouse",
+      "tier_hint": "T1",
+      "title": "Campus Trading Team Software Engineer  (Intern)"
+    },
+    {
+      "category": "business",
+      "company": "AQR",
+      "link": "https://careers.aqr.com/jobs?gh_jid=7926659&gh_jid=7926659",
+      "location": "Greenwich, CT",
+      "posted": "2026-07-01T08:56:25-04:00",
+      "source": "greenhouse",
+      "tier_hint": "T1",
+      "title": "2027 Business Development Summer Analyst "
+    },
+    {
+      "category": "quant",
+      "company": "AQR",
+      "link": "https://careers.aqr.com/jobs?gh_jid=7895562&gh_jid=7895562",
+      "location": "Greenwich, CT",
+      "posted": "2026-07-01T08:55:42-04:00",
+      "source": "greenhouse",
+      "tier_hint": "T1",
+      "title": "2027 Portfolio Implementation, Trading and Portfolio Finance Summer Analyst"
+    },
+    {
+      "category": "business",
+      "company": "AQR",
+      "link": "https://careers.aqr.com/jobs?gh_jid=8041362&gh_jid=8041362",
+      "location": "Greenwich, CT",
+      "posted": "2026-07-01T09:04:01-04:00",
+      "source": "greenhouse",
+      "tier_hint": "T1",
+      "title": "2027 Portfolio Solutions Group Summer Analyst"
+    },
+    {
+      "category": "quant",
+      "company": "AQR",
+      "link": "https://careers.aqr.com/jobs?gh_jid=7926704&gh_jid=7926704",
+      "location": "Greenwich, CT",
+      "posted": "2026-06-16T15:14:22-04:00",
+      "source": "greenhouse",
+      "tier_hint": "T1",
+      "title": "2027 Research Product Specialist Summer Analyst"
+    },
+    {
+      "category": "quant",
+      "company": "AQR",
+      "link": "https://careers.aqr.com/jobs?gh_jid=7895583&gh_jid=7895583",
+      "location": "Greenwich, CT",
+      "posted": "2026-07-01T08:55:18-04:00",
+      "source": "greenhouse",
+      "tier_hint": "T1",
+      "title": "2027 Research Summer Analyst"
+    },
+    {
+      "category": "business",
+      "company": "AQR",
+      "link": "https://careers.aqr.com/jobs?gh_jid=7926692&gh_jid=7926692",
+      "location": "Greenwich, CT",
+      "posted": "2026-06-16T15:14:22-04:00",
+      "source": "greenhouse",
+      "tier_hint": "T1",
+      "title": "2027 Risk Summer Analyst"
+    },
+    {
+      "category": "business",
+      "company": "Airbnb",
+      "link": "https://careers.airbnb.com/positions/7979270?gh_jid=7979270",
+      "location": "Milan, Italy",
+      "posted": "2026-06-05T14:01:02-04:00",
+      "source": "greenhouse",
+      "tier_hint": "T2",
+      "title": "Sales Operations Intern, Italy"
+    },
+    {
+      "category": "business",
+      "company": "Palantir",
+      "link": "https://jobs.lever.co/palantir/774cf5c9-bf6a-4d77-bf60-d50ef1beb1a0",
+      "location": "Paris, France",
+      "posted": "1778517108152",
+      "source": "lever",
+      "tier_hint": "T2",
+      "title": "Deployment Strategist, Internship"
+    },
+    {
+      "category": "business",
+      "company": "Palantir",
+      "link": "https://jobs.lever.co/palantir/a49d4181-a289-435a-b581-7f5af0497c8e",
+      "location": "Honolulu, HI",
+      "posted": "1765492275446",
+      "source": "lever",
+      "tier_hint": "T2",
+      "title": "Deployment Strategist, Internship - US Government"
+    },
+    {
+      "category": "business",
+      "company": "Snowflake",
+      "link": "https://jobs.ashbyhq.com/snowflake/3ac79875-b7bb-4078-b9c4-3bd5636e5d9c",
+      "location": "US-CA-Menlo Park",
+      "posted": "2026-06-16T14:49:37.892+00:00",
+      "source": "ashby",
+      "tier_hint": "T2",
+      "title": "Product Marketing Intern (Fall 2026)"
+    },
+    {
+      "category": "business",
+      "company": "Snowflake",
+      "link": "https://jobs.ashbyhq.com/snowflake/54c27993-5827-4a03-80c8-cc5f02b960f9",
+      "location": "FR-Paris",
+      "posted": "2026-07-08T15:37:44.775+00:00",
+      "source": "ashby",
+      "tier_hint": "T2",
+      "title": "Partner Marketing Intern - Paris "
+    },
+    {
+      "category": "business",
+      "company": "Snowflake",
+      "link": "https://jobs.ashbyhq.com/snowflake/8866f98e-ec0c-4d04-9b38-7c9299e858e8",
+      "location": "US-WA-Bellevue",
+      "posted": "2026-06-26T19:35:22.161+00:00",
+      "source": "ashby",
+      "tier_hint": "T2",
+      "title": "Marketing Operations Intern (Fall 2026)"
+    },
+    {
+      "category": "business",
+      "company": "Snowflake",
+      "link": "https://jobs.ashbyhq.com/snowflake/a4753822-7581-4cf3-8fcc-856f54d684b0",
+      "location": "DE-Munich-MSO",
+      "posted": "2026-07-09T14:36:08.354+00:00",
+      "source": "ashby",
+      "tier_hint": "T2",
+      "title": "SDR Intern - Munich "
+    },
+    {
+      "category": "business",
+      "company": "Snowflake",
+      "link": "https://jobs.ashbyhq.com/snowflake/b696164c-4865-43f4-940d-b5353755748f",
+      "location": "GB-London",
+      "posted": "2026-05-21T12:15:08.693+00:00",
+      "source": "ashby",
+      "tier_hint": "T2",
+      "title": "EMEA Communications Intern"
+    },
+    {
+      "category": "business",
+      "company": "Snowflake",
+      "link": "https://jobs.ashbyhq.com/snowflake/cade83ae-9727-4497-8e73-8a310a8b6a85",
+      "location": "US-DC-Remote",
+      "posted": "2026-06-16T14:45:29.232+00:00",
+      "source": "ashby",
+      "tier_hint": "T2",
+      "title": "Government Affairs Intern"
+    },
+    {
+      "category": "quant",
+      "company": "Snowflake",
+      "link": "https://jobs.ashbyhq.com/snowflake/e2412cd5-19dd-44f8-addd-c9ef3c99ff82",
+      "location": "PL-Warsaw",
+      "posted": "2026-06-02T11:42:28.233+00:00",
+      "source": "ashby",
+      "tier_hint": "T2",
+      "title": "Research Intern (AI) - 2026"
+    },
+    {
+      "category": "business",
+      "company": "SpaceX",
+      "link": "https://boards.greenhouse.io/spacex/jobs/8488313002?gh_jid=8488313002",
+      "location": "Bastrop, TX",
+      "posted": "2026-07-09T19:10:01-04:00",
+      "source": "greenhouse",
+      "tier_hint": "T1",
+      "title": "Bastrop Campus Planning Manager"
+    },
+    {
+      "category": "business",
+      "company": "SpaceX",
+      "link": "https://boards.greenhouse.io/spacex/jobs/8488317002?gh_jid=8488317002",
+      "location": "Bastrop, TX",
+      "posted": "2026-07-09T19:10:01-04:00",
+      "source": "greenhouse",
+      "tier_hint": "T1",
+      "title": "Campus Infrastructure Project Manager "
+    },
+    {
+      "category": "business",
+      "company": "SpaceX",
+      "link": "https://boards.greenhouse.io/spacex/jobs/8403205002?gh_jid=8403205002",
+      "location": "Flexible - Any SpaceX Site",
+      "posted": "2026-07-09T19:09:49-04:00",
+      "source": "greenhouse",
+      "tier_hint": "T1",
+      "title": "Fall 2026 Business Operations Internship/Co-op"
+    },
+    {
+      "category": "business",
+      "company": "Scale AI",
+      "link": "https://job-boards.greenhouse.io/scaleai/jobs/4703343005",
+      "location": "San Francisco, CA; New York, NY",
+      "posted": "2026-07-09T12:47:57-04:00",
+      "source": "greenhouse",
+      "tier_hint": "T1",
+      "title": "AI Builder Intern"
+    },
+    {
+      "category": "business",
+      "company": "Scale AI",
+      "link": "https://job-boards.greenhouse.io/scaleai/jobs/4611533005",
+      "location": "San Francisco, CA",
+      "posted": "2026-07-09T12:47:57-04:00",
+      "source": "greenhouse",
+      "tier_hint": "T1",
+      "title": "Technical Advisor Specialist (Part-Time Internship) "
+    },
+    {
+      "category": "business",
+      "company": "Perplexity",
+      "link": "https://jobs.ashbyhq.com/perplexity/79a07e2d-6150-4929-80fe-bbe13a641763",
+      "location": "London",
+      "posted": "2026-02-12T19:24:54.159+00:00",
+      "source": "ashby",
+      "tier_hint": "T2",
+      "title": "AI Inference Internship "
+    },
+    {
+      "category": "quant",
+      "company": "Cohere",
+      "link": "https://jobs.ashbyhq.com/cohere/73bd3e2b-6597-4124-b64b-1e5dbc32e785",
+      "location": "Canada",
+      "posted": "2026-05-01T20:26:46.572+00:00",
+      "source": "ashby",
+      "tier_hint": "T2",
+      "title": "Research Internship (Fall, 2026)"
+    },
+    {
+      "category": "business",
+      "company": "Cohere",
+      "link": "https://jobs.ashbyhq.com/cohere/36d1f52f-8270-4652-adf5-5303a0ff341b",
+      "location": "Canada",
+      "posted": "2026-05-13T17:16:14.014+00:00",
+      "source": "ashby",
+      "tier_hint": "T2",
+      "title": "Machine Learning Intern/Co-op  (Fall, 2026)"
+    },
+    {
+      "category": "consulting",
+      "company": "Boston Consulting Group",
+      "link": "https://careers.bcg.com/global/en/internship-opportunities",
+      "location": "",
+      "posted": "",
+      "source": "serper",
+      "tier_hint": "T1",
+      "title": "Internship Opportunities | Careers | Boston Consulting Group"
+    },
+    {
+      "category": "quant",
+      "company": "Optiver",
+      "link": "https://www.optiver.com/join-us/jobs/institutional-sales-and-trading/chicago/quantitative-intern-summer-2027/",
+      "location": "",
+      "posted": "",
+      "source": "serper",
+      "tier_hint": "T1",
+      "title": "Quantitative Intern (Summer 2027) - Optiver"
+    },
+    {
+      "category": "business",
+      "company": "SIG",
+      "link": "https://www.linkedin.com/jobs/view/growth-equity-investing-analyst-internship-summer-2027-at-susquehanna-international-group-4409640026?trk=public_jobs_topcard-title",
+      "location": "Bala-Cynwyd, PA",
+      "posted": "",
+      "source": "linkedin",
+      "tier_hint": "T1",
+      "title": "Growth Equity Investing Analyst Internship: Summer 2027"
+    }
+  ],
+  "generated_at": "2026-07-12T04:06:09+00:00",
   "run_date": "2026-07-11"
 }
