@@ -46,13 +46,13 @@ _ROSTER: list[tuple[str, str, list[str], list[tuple[str, str]]]] = [
     # ── Investment banking — Tier 2 boutiques / upper-middle-market ────────────
     ("Jefferies", "T2", ["Jefferies", "Jefferies Group", "Jefferies Financial Group"], []),
     ("Houlihan Lokey", "T2", ["Houlihan Lokey", "HL"], []),
-    ("LionTree", "T2", ["LionTree", "LionTree Advisors"], []),
+    ("LionTree", "T2", ["LionTree", "LionTree Advisors"], [("greenhouse", "liontree")]),  # verified 2026-07-11
     ("FT Partners", "T2", ["FT Partners", "Financial Technology Partners"], []),
     ("Allen & Company", "T2", ["Allen & Company", "Allen & Co"], []),
     ("Piper Sandler", "T2", ["Piper Sandler", "Piper Sandler Companies"], []),
     ("Baird", "T2", ["Baird", "Robert W. Baird", "Robert W Baird"], []),
-    ("William Blair", "T2", ["William Blair", "William Blair & Company"], []),
-    ("Lincoln International", "T2", ["Lincoln International"], []),
+    ("William Blair", "T2", ["William Blair", "William Blair & Company"], [("greenhouse", "williamblair")]),  # verified 2026-07-11
+    ("Lincoln International", "T2", ["Lincoln International"], [("greenhouse", "lincolninternational")]),  # verified 2026-07-11
     ("Harris Williams", "T2", ["Harris Williams"], []),
     ("Raine Group", "T2", ["Raine Group", "The Raine Group"], []),
     ("Solomon Partners", "T2", ["Solomon Partners"], []),
@@ -102,7 +102,7 @@ _ROSTER: list[tuple[str, str, list[str], list[tuple[str, str]]]] = [
     ("General Atlantic", "T1", ["General Atlantic"], [("greenhouse", "generalatlantic")]),  # verified
     ("Hellman & Friedman", "T1", ["Hellman & Friedman", "H&F"], []),
     ("Leonard Green & Partners", "T1", ["Leonard Green & Partners", "Leonard Green"], []),
-    ("EQT", "T1", ["EQT", "EQT Partners"], []),
+    ("EQT", "T1", ["EQT", "EQT Partners"], [("greenhouse", "eqtpartners")]),  # verified 2026-07-11
     ("CVC", "T1", ["CVC", "CVC Capital Partners"], []),
     ("Brookfield", "T1", ["Brookfield", "Brookfield Asset Management"], []),
     ("Insight Partners", "T1", ["Insight Partners"], []),
@@ -118,7 +118,7 @@ _ROSTER: list[tuple[str, str, list[str], list[tuple[str, str]]]] = [
     ("Millennium", "T1", ["Millennium", "Millennium Management"], []),
     ("Point72", "T1", ["Point72", "Point72 Asset Management"], [("greenhouse", "point72")]),  # verified
     ("Hudson River Trading", "T1", ["Hudson River Trading", "HRT"], []),
-    ("Jump Trading", "T1", ["Jump Trading", "Jump"], []),
+    ("Jump Trading", "T1", ["Jump Trading", "Jump"], [("greenhouse", "jumptrading")]),  # verified 2026-07-11
     ("DRW", "T1", ["DRW", "DRW Trading"], [("greenhouse", "drweng")]),  # verified
     ("Optiver", "T1", ["Optiver"], [("greenhouse", "optiverus")]),  # verified
     ("IMC Trading", "T1", ["IMC Trading", "IMC"], [("greenhouse", "imc")]),  # verified
@@ -128,9 +128,9 @@ _ROSTER: list[tuple[str, str, list[str], list[tuple[str, str]]]] = [
     ("Bridgewater Associates", "T1", ["Bridgewater Associates", "Bridgewater"],
         [("greenhouse", "bridgewater89")]),  # verified
     ("Renaissance Technologies", "T1", ["Renaissance Technologies", "RenTec"], []),
-    ("AQR", "T1", ["AQR", "AQR Capital Management"], []),
+    ("AQR", "T1", ["AQR", "AQR Capital Management"], [("greenhouse", "aqr")]),  # verified 2026-07-11
     ("Balyasny", "T1", ["Balyasny", "Balyasny Asset Management", "BAM"], []),
-    ("ExodusPoint", "T2", ["ExodusPoint", "ExodusPoint Capital"], []),
+    ("ExodusPoint", "T2", ["ExodusPoint", "ExodusPoint Capital"], [("greenhouse", "exoduspoint")]),  # verified 2026-07-11
     ("Wellington Management", "T2", ["Wellington Management", "Wellington"], []),
 
     # ── Asset & wealth management (BlackRock T1; rest T2) ──────────────────────
@@ -155,10 +155,10 @@ _ROSTER: list[tuple[str, str, list[str], list[tuple[str, str]]]] = [
     ("Netflix", "T2", ["Netflix"], []),
     ("Salesforce", "T2", ["Salesforce"], []),
     ("Adobe", "T2", ["Adobe"], []),
-    ("Airbnb", "T2", ["Airbnb"], []),
+    ("Airbnb", "T2", ["Airbnb"], [("greenhouse", "airbnb")]),  # verified 2026-07-11
     ("Uber", "T2", ["Uber", "Uber Technologies"], []),
-    ("Palantir", "T2", ["Palantir", "Palantir Technologies"], []),
-    ("Snowflake", "T2", ["Snowflake"], []),
+    ("Palantir", "T2", ["Palantir", "Palantir Technologies"], [("lever", "palantir")]),  # verified 2026-07-11
+    ("Snowflake", "T2", ["Snowflake"], [("ashby", "snowflake")]),  # verified 2026-07-11
     ("Tesla", "T2", ["Tesla", "Tesla Motors"], []),
     ("LinkedIn", "T2", ["LinkedIn"], []),
 
@@ -166,12 +166,12 @@ _ROSTER: list[tuple[str, str, list[str], list[tuple[str, str]]]] = [
     ("OpenAI", "T1", ["OpenAI"], [("ashby", "openai")]),  # verified
     ("Anthropic", "T1", ["Anthropic"], [("greenhouse", "anthropic")]),  # verified
     ("Stripe", "T1", ["Stripe", "Stripe Inc"], [("greenhouse", "stripe")]),  # verified
-    ("Databricks", "T1", ["Databricks"], []),
-    ("Anduril", "T1", ["Anduril", "Anduril Industries"], []),
-    ("SpaceX", "T1", ["SpaceX", "Space Exploration Technologies"], []),
-    ("Scale AI", "T1", ["Scale AI", "Scale"], []),
-    ("Figma", "T1", ["Figma"], []),
-    ("xAI", "T1", ["xAI"], []),
+    ("Databricks", "T1", ["Databricks"], [("greenhouse", "databricks")]),  # verified 2026-07-11
+    ("Anduril", "T1", ["Anduril", "Anduril Industries"], [("greenhouse", "andurilindustries")]),  # verified 2026-07-11
+    ("SpaceX", "T1", ["SpaceX", "Space Exploration Technologies"], [("greenhouse", "spacex")]),  # verified 2026-07-11
+    ("Scale AI", "T1", ["Scale AI", "Scale"], [("greenhouse", "scaleai")]),  # verified 2026-07-11
+    ("Figma", "T1", ["Figma"], [("greenhouse", "figma")]),  # verified 2026-07-11
+    ("xAI", "T1", ["xAI"], [("greenhouse", "xai")]),  # verified 2026-07-11
     ("Ramp", "T2", ["Ramp"], [("ashby", "ramp")]),  # verified
     ("Plaid", "T2", ["Plaid"], [("ashby", "plaid")]),  # verified
     ("Brex", "T2", ["Brex"], [("greenhouse", "brex")]),  # verified
@@ -179,14 +179,14 @@ _ROSTER: list[tuple[str, str, list[str], list[tuple[str, str]]]] = [
     ("Coinbase", "T2", ["Coinbase"], [("greenhouse", "coinbase")]),  # verified
     ("Robinhood", "T2", ["Robinhood"], [("greenhouse", "robinhood")]),  # verified
     ("Rippling", "T2", ["Rippling"], []),
-    ("Notion", "T2", ["Notion"], []),
-    ("Perplexity", "T2", ["Perplexity", "Perplexity AI"], []),
+    ("Notion", "T2", ["Notion"], [("ashby", "notion")]),  # verified 2026-07-11
+    ("Perplexity", "T2", ["Perplexity", "Perplexity AI"], [("ashby", "perplexity")]),  # verified 2026-07-11
     ("Mistral AI", "T2", ["Mistral AI", "Mistral"], []),
-    ("Cohere", "T2", ["Cohere"], []),
-    ("Mercury", "T2", ["Mercury"], []),
+    ("Cohere", "T2", ["Cohere"], [("ashby", "cohere")]),  # verified 2026-07-11
+    ("Mercury", "T2", ["Mercury"], [("greenhouse", "mercury")]),  # verified 2026-07-11
     ("Deel", "T2", ["Deel"], []),
     ("DoorDash", "T2", ["DoorDash"], []),
-    ("Instacart", "T2", ["Instacart", "Maplebear"], []),
+    ("Instacart", "T2", ["Instacart", "Maplebear"], [("greenhouse", "instacart")]),  # verified 2026-07-11
 
     # ── VC (T1) ───────────────────────────────────────────────────────────────
     ("Sequoia Capital", "T1", ["Sequoia Capital", "Sequoia"], []),
