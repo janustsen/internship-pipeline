@@ -1,0 +1,194 @@
+{
+  "Citi": [
+    {
+      "platform": "workday",
+      "token": "https://citi.wd5.myworkdayjobs.com/wday/cxs/citi/2/jobs"
+    }
+  ],
+  "Morgan Stanley": [
+    {
+      "platform": "workday",
+      "token": "https://ms.wd5.myworkdayjobs.com/wday/cxs/ms/External/jobs"
+    }
+  ],
+  "Capital Group": [
+    {
+      "platform": "workday",
+      "token": "https://capgroup.wd1.myworkdayjobs.com/wday/cxs/capgroup/capitalgroupcareers/jobs"
+    }
+  ],
+  "Raine Group": [
+    {
+      "platform": "lever",
+      "token": "raine"
+    }
+  ],
+  "State Street": [
+    {
+      "platform": "workday",
+      "token": "https://statestreet.wd1.myworkdayjobs.com/wday/cxs/statestreet/Global/jobs"
+    }
+  ],
+  "The Coca-Cola Company": [
+    {
+      "platform": "workday",
+      "token": "https://coke.wd1.myworkdayjobs.com/wday/cxs/coke/coca-cola-careers/jobs"
+    }
+  ],
+  "Wellington Management": [
+    {
+      "platform": "workday",
+      "token": "https://wellington.wd5.myworkdayjobs.com/wday/cxs/wellington/Campus/jobs"
+    }
+  ],
+  "Accenture": [
+    {
+      "platform": "workday",
+      "token": "https://accenture.wd103.myworkdayjobs.com/wday/cxs/accenture/AccentureCareers/jobs"
+    }
+  ],
+  "Piper Sandler": [
+    {
+      "platform": "workday",
+      "token": "https://pipersandler.wd501.myworkdayjobs.com/wday/cxs/pipersandler/Piper_Sandler_Careers/jobs"
+    }
+  ],
+  "Strategy&": [
+    {
+      "platform": "workday",
+      "token": "https://pwc.wd3.myworkdayjobs.com/wday/cxs/pwc/Global_Campus_Careers/jobs"
+    }
+  ],
+  "The Walt Disney Company": [
+    {
+      "platform": "workday",
+      "token": "https://disney.wd5.myworkdayjobs.com/wday/cxs/disney/disneycareer/jobs"
+    }
+  ],
+  "Wells Fargo": [
+    {
+      "platform": "workday",
+      "token": "https://wf.wd1.myworkdayjobs.com/wday/cxs/wf/WellsFargoJobs/jobs"
+    }
+  ],
+  "Baird": [
+    {
+      "platform": "workday",
+      "token": "https://baird.wd1.myworkdayjobs.com/wday/cxs/baird/Careers/jobs"
+    }
+  ],
+  "Barclays": [
+    {
+      "platform": "workday",
+      "token": "https://barclays.wd3.myworkdayjobs.com/wday/cxs/barclays/External_Career_Site_Barclays/jobs"
+    }
+  ],
+  "Visa": [
+    {
+      "platform": "workday",
+      "token": "https://visa.wd5.myworkdayjobs.com/wday/cxs/visa/Visa/jobs"
+    }
+  ],
+  "Boeing": [
+    {
+      "platform": "workday",
+      "token": "https://boeing.wd1.myworkdayjobs.com/wday/cxs/boeing/INTERN/jobs"
+    }
+  ],
+  "Salesforce": [
+    {
+      "platform": "workday",
+      "token": "https://salesforce.wd12.myworkdayjobs.com/wday/cxs/salesforce/External_Career_Site/jobs"
+    }
+  ],
+  "Vanguard": [
+    {
+      "platform": "workday",
+      "token": "https://vanguard.wd5.myworkdayjobs.com/wday/cxs/vanguard/vanguard_external/jobs"
+    }
+  ],
+  "Blackstone": [
+    {
+      "platform": "workday",
+      "token": "https://blackstone.wd1.myworkdayjobs.com/wday/cxs/blackstone/Blackstone_Campus_Careers/jobs"
+    }
+  ],
+  "Deutsche Bank": [
+    {
+      "platform": "workday",
+      "token": "https://db.wd3.myworkdayjobs.com/wday/cxs/db/DBWebsite/jobs"
+    }
+  ],
+  "Houlihan Lokey": [
+    {
+      "platform": "workday",
+      "token": "https://hl.wd1.myworkdayjobs.com/wday/cxs/hl/Campus/jobs"
+    }
+  ],
+  "Mastercard": [
+    {
+      "platform": "workday",
+      "token": "https://mastercard.wd1.myworkdayjobs.com/wday/cxs/mastercard/CorporateCareers/jobs"
+    }
+  ],
+  "Nvidia": [
+    {
+      "platform": "workday",
+      "token": "https://nvidia.wd5.myworkdayjobs.com/wday/cxs/nvidia/NVIDIAExternalCareerSite/jobs"
+    }
+  ],
+  "T. Rowe Price": [
+    {
+      "platform": "workday",
+      "token": "https://troweprice.wd5.myworkdayjobs.com/wday/cxs/troweprice/TRowePrice/jobs"
+    }
+  ],
+  "Booz Allen Hamilton": [
+    {
+      "platform": "workday",
+      "token": "https://bah.wd1.myworkdayjobs.com/wday/cxs/bah/BAH_Jobs/jobs"
+    }
+  ],
+  "Brookfield": [
+    {
+      "platform": "workday",
+      "token": "https://brookfield.wd5.myworkdayjobs.com/wday/cxs/brookfield/brookfield/jobs"
+    }
+  ],
+  "Fidelity": [
+    {
+      "platform": "workday",
+      "token": "https://fmr.wd1.myworkdayjobs.com/wday/cxs/fmr/FidelityCareers/jobs"
+    }
+  ],
+  "Guggenheim Securities": [
+    {
+      "platform": "workday",
+      "token": "https://guggenheim.wd1.myworkdayjobs.com/wday/cxs/guggenheim/Guggenheim_Careers_Campus/jobs"
+    }
+  ],
+  "Invesco": [
+    {
+      "platform": "workday",
+      "token": "https://invesco.wd1.myworkdayjobs.com/wday/cxs/invesco/IVZ/jobs"
+    }
+  ],
+  "Mizuho": [
+    {
+      "platform": "workday",
+      "token": "https://mizuho.wd1.myworkdayjobs.com/wday/cxs/mizuho/mizuhoamericas/jobs"
+    }
+  ],
+  "Moelis & Company": [
+    {
+      "platform": "workday",
+      "token": "https://moelis.wd1.myworkdayjobs.com/wday/cxs/moelis/University-Hires/jobs"
+    }
+  ],
+  "RBC Capital Markets": [
+    {
+      "platform": "workday",
+      "token": "https://rbc.wd3.myworkdayjobs.com/wday/cxs/rbc/RBCEARLYTALENT1/jobs"
+    }
+  ]
+}

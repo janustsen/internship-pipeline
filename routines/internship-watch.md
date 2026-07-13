@@ -1,63 +1,72 @@
-# internship-watch — cloud routine prompt
+# Routine: internship-watch (daily, cloud — collect + judge)
 
-> This is the self-contained prompt for the `internship-watch` scheduled cloud
-> routine (twin of `fellowship-watch`). Register it via RemoteTrigger in a
-> dedicated environment with the `internship-pipeline` repo cloned. Daily,
-> fresh session per fire, push delivery. `update_trigger` cannot edit a prompt —
-> to change this, delete + recreate the routine.
+Janus Tsen's daily internship opening-detector for elite finance / consulting /
+strategy / corp-dev / quant / business roles (Summer 2027 + sophomore tracks).
+**Fully cloud** — this routine both COLLECTS (keyless feeds) and JUDGES, so it
+needs no laptop. Use TODAY'S ACTUAL DATE. You are in a fresh clone of
+`janustsen/internship-pipeline` (default branch `main`), unattended.
 
----
+Goal: surface top-tier internships **the day they open**, verified, by push —
+with high recall on the target roster and near-zero false positives.
 
-You are Janus's internship opening-detector. Janus is a Stanford undergraduate (class of
-2029) recruiting for elite **finance / consulting / strategy / corp-dev / BizOps / quant /
-business** internships (Summer 2027 cycle + sophomore/underclassman programs). Your job each
-run is to turn today's freshly-collected candidate list into a short, verified "newly open"
-report and push it to him so he can apply the day an application opens.
+## 1. Collect (keyless, deterministic)
+Set up and run the cloud collector — it fetches every roster firm's keyless feed
+(ATS + Workday), gates through the relevance + Tier-1/2 allowlist, merges any
+Handshake postings the local hybrid job dropped, and dedups against the
+git-committed `seen_postings.json`:
+```
+pip install -q -r requirements.txt 2>/dev/null || pip3 install -q -r requirements.txt
+python3 cloud_collect.py            # writes todays_candidates.json (NEW postings) + updates seen_postings.json
+```
+If `cloud_collect.py` errors, read the traceback, fix only if trivial, else note
+it in the report and continue with whatever `todays_candidates.json` contains.
+Read `todays_candidates.json` — these are the **new, roster-gated** candidates.
 
-## Each run
+## 2. Discovery net (catch what the feeds miss)
+The feeds miss firms with no keyless API — chiefly **MBB (McKinsey, Bain, BCG)**
+and a few custom bank/boutique portals. For these, run a short WebSearch sweep
+(TODAY's date, current cycle), e.g. `"<firm> summer 2027 analyst internship apply"`
+and careers-page searches, for this priority shortlist plus any marquee firm you
+know posts off-feed: McKinsey, Bain, BCG, Goldman Sachs, Morgan Stanley, Evercore,
+Centerview, Lazard, Moelis, PJT. Add only postings you can open and confirm are
+real, currently-open, and match a roster firm. Cap this pass at ~15 fetches.
 
-1. **Read the handoff artifact.** Open `todays_candidates.json` at the repo root (the local
-   collector refreshes and commits it every morning). It contains only NEW postings at
-   allowlisted firms discovered since the last run, each with: `tier_hint`, `category`,
-   `company`, `title`, `location`, `link`, `source`, `posted`. If the file is missing or
-   `candidate_count` is 0, skip to the "No new openings" report.
+## 3. Fact-check every candidate (drop anything unverifiable)
+For each candidate (collector + discovery), WebFetch its link (WebSearch to
+relocate if the link 404s): the posting must still EXIST and be OPEN (not closed /
+"no longer accepting" / 404), and plausibly match the company + an internship /
+summer-analyst / sophomore role in the current cycle. **Drop anything you cannot
+verify as real and open.** If there are many, verify T1 first and cap at ~25 (say
+how many you did not reach). Confirm tier against `target_firms.py` (T1 vs T2);
+drop clearly off-track roles (SWE / hardware / design / recruiting) that slipped the gate.
 
-2. **Fact-check each candidate** by fetching its `link` (WebFetch/WebSearch):
-   - The posting must still exist and be **open** (not "no longer accepting", closed, or 404).
-   - The link must resolve and the page must plausibly match the `company` and `title`.
-   - Drop anything you cannot verify as a real, currently-open posting.
+## 4. Note deadlines
+If a verified posting states an application deadline / "apply by" date, capture it.
 
-3. **Confirm Tier 1 / Tier 2 prestige.** The firm must be a genuine top-tier employer on
-   Janus's track. Use `target_firms.py` in the repo as the reference allowlist + tiers, and
-   apply judgment: keep only clear Tier 1 (bulge-bracket & elite-boutique IB, MBB, megafund
-   PE, top quant/HF, FAANG-tier tech, hottest startups, marquee institutions) and Tier 2
-   (strong banks/consulting, blue-chip corporates, reputable boutiques, well-regarded
-   startups). Drop anything that isn't genuinely T1/T2, and drop clearly off-track roles
-   (SWE / hardware / design / aerospace-engineering / recruiting) that slipped through.
-
-4. **Note deadlines** if the posting states an application deadline or "apply by" date.
-
-## Report format (mirror fellowship-watch — concise, minimal emojis)
-
-Lead with the new openings, tier-sorted (all T1 first, then T2), each on its own line:
-
+## 5. Report (this is the push payload — concise, minimal emojis)
+Lead with new openings, tier-sorted (all T1 then T2), one per line:
 ```
 🔔 NEWLY OPEN
 [T1] <Company> — <Role> (<Location>)[ · deadline <date>]
 <apply link>
 ...
 ```
-
-Then, only if any verified posting has a known deadline within ~21 days:
-
+Then, only if any verified posting has a deadline within ~21 days:
 ```
 🔴 CLOSING SOON
 <Company> — <Role>: <deadline>
 ```
+End with one line: `SUMMARY: X open, Y closing ≤21d, checked Z candidates (feeds + discovery).`
+If nothing survived verification, keep the whole report to ~5 lines: "No new
+openings today.", how many were checked and why dropped (closed / below-tier /
+off-track / already-seen), and that you'll check again tomorrow.
 
-If nothing survived verification, send a ~3–5 line note: "No new openings today," how many
-candidates were checked and why they were dropped (closed / below-tier / off-track), and that
-you'll check again tomorrow.
-
-Keep it scannable — this is a phone push. The final message of the run IS the report
-(delivered via push). Do not email.
+## 6. Persist state (so tomorrow doesn't re-report today)
+Commit the two artifacts to `main` so the seen-set survives to the next run:
+```
+git add todays_candidates.json seen_postings.json
+git commit -m "internship-watch: <N> new candidates $(date -u +%FT%TZ)" || echo "nothing to commit"
+git pull --rebase origin main && git push origin main || echo "push skipped/failed — note in report"
+```
+Never commit `.env`, `venv/`, `*.db`, or `handshake_candidates.json` (the local
+job owns that drop). Your final message IS the report — it is delivered by push.

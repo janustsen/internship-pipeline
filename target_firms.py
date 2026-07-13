@@ -236,19 +236,51 @@ TARGET_FIRMS: list[dict[str, Any]] = [
 TIER_ORDER = {"T1": 0, "T2": 1}
 
 
+import json as _json
+from pathlib import Path as _Path
+
+# Enrichment feeds discovered 2026-07-11 (Workday/ATS endpoints for the marquee
+# roster firms that ship no inline source). Kept in a data file so the roster
+# literal above stays clean and the feeds are easy to re-verify / extend.
+_FEEDS_PATH = _Path(__file__).with_name("firm_feeds.json")
+# Only these platforms are fetchable keyless by the collector; "careers" URLs in
+# the feeds file are reference for the routine's WebSearch discovery net.
+_KEYLESS_PLATFORMS = {"greenhouse", "lever", "ashby", "smartrecruiters", "workable", "workday"}
+
+
+def _load_firm_feeds() -> dict[str, list[dict[str, str]]]:
+    try:
+        data = _json.loads(_FEEDS_PATH.read_text(encoding="utf-8"))
+        return data if isinstance(data, dict) else {}
+    except (OSError, ValueError):
+        return {}
+
+
 def all_source_tokens() -> list[dict[str, str]]:
     tokens: list[dict[str, str]] = []
+    seen: set[tuple[str, str]] = set()
+    tier_by_canonical = {f["canonical"]: f["tier"] for f in TARGET_FIRMS}
+
+    def _add(platform: str, token: str, company: str, tier: str) -> None:
+        platform, token = platform.strip().lower(), token.strip()
+        if platform and token and (platform, token) not in seen:
+            seen.add((platform, token))
+            tokens.append({"platform": platform, "token": token, "company": company, "tier": tier})
+
+    # 1. Inline roster sources.
     for firm in TARGET_FIRMS:
         for source in firm.get("sources", []):
-            platform = str(source.get("platform") or "").strip()
-            token = str(source.get("token") or "").strip()
-            if platform and token:
-                tokens.append(
-                    {
-                        "platform": platform,
-                        "token": token,
-                        "company": firm["canonical"],
-                        "tier": firm["tier"],
-                    }
-                )
+            _add(str(source.get("platform") or ""), str(source.get("token") or ""),
+                 firm["canonical"], firm["tier"])
+
+    # 2. Enrichment feeds — only for roster firms (allowlist integrity), keyless only.
+    for canonical, feeds in _load_firm_feeds().items():
+        tier = tier_by_canonical.get(canonical)
+        if not tier or not isinstance(feeds, list):
+            continue
+        for source in feeds:
+            if not isinstance(source, dict):
+                continue
+            if str(source.get("platform") or "").strip().lower() in _KEYLESS_PLATFORMS:
+                _add(str(source.get("platform") or ""), str(source.get("token") or ""), canonical, tier)
     return tokens
