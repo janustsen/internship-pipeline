@@ -1,6 +1,197 @@
 {
-  "candidate_count": 0,
-  "candidates": [],
-  "generated_at": "2026-07-13T03:28:05+00:00",
+  "candidate_count": 19,
+  "candidates": [
+    {
+      "category": "business",
+      "company": "Lincoln International",
+      "link": "http://www.lincolninternational.com/greenhouse/?gh_jid=8053030",
+      "location": "Amsterdam",
+      "posted": "2026-07-13T03:00:07-04:00",
+      "source": "greenhouse",
+      "tier_hint": "T2",
+      "title": "Intern M&A \u2013 Amsterdam (March 2027 \u2013 June 2027)"
+    },
+    {
+      "category": "quant",
+      "company": "Jump Trading",
+      "link": "https://www.jumptrading.com/hr/job?gh_jid=8050796",
+      "location": "London; Amsterdam",
+      "posted": "2026-07-13T08:37:05-04:00",
+      "source": "greenhouse",
+      "tier_hint": "T1",
+      "title": "Campus Quantitative Researcher (Full-Time)"
+    },
+    {
+      "category": "quant",
+      "company": "Jump Trading",
+      "link": "https://www.jumptrading.com/hr/job?gh_jid=8010307",
+      "location": "London, Amsterdam",
+      "posted": "2026-07-13T08:36:23-04:00",
+      "source": "greenhouse",
+      "tier_hint": "T1",
+      "title": "Campus Quantitative Researcher (Intern)"
+    },
+    {
+      "category": "quant",
+      "company": "Jump Trading",
+      "link": "https://www.jumptrading.com/hr/job?gh_jid=8059384",
+      "location": "London; Amsterdam",
+      "posted": "2026-07-13T08:37:10-04:00",
+      "source": "greenhouse",
+      "tier_hint": "T1",
+      "title": "Campus Quantitative Researcher (M1/M2 Intern)"
+    },
+    {
+      "category": "business",
+      "company": "DRW",
+      "link": "https://job-boards.greenhouse.io/drweng/jobs/7957735",
+      "location": "London",
+      "posted": "2026-07-13T05:09:21-04:00",
+      "source": "greenhouse",
+      "tier_hint": "T1",
+      "title": "Leadership Rotation Network Intern"
+    },
+    {
+      "category": "quant",
+      "company": "DRW",
+      "link": "https://job-boards.greenhouse.io/drweng/jobs/7981754",
+      "location": "Singapore",
+      "posted": "2026-07-13T02:22:07-04:00",
+      "source": "greenhouse",
+      "tier_hint": "T1",
+      "title": "Quantitative Developer Intern (Python)"
+    },
+    {
+      "category": "quant",
+      "company": "DRW",
+      "link": "https://job-boards.greenhouse.io/drweng/jobs/7957756",
+      "location": "London",
+      "posted": "2026-07-13T05:11:55-04:00",
+      "source": "greenhouse",
+      "tier_hint": "T1",
+      "title": "Quantitative Research Intern"
+    },
+    {
+      "category": "quant",
+      "company": "DRW",
+      "link": "https://job-boards.greenhouse.io/drweng/jobs/8014915",
+      "location": "Singapore",
+      "posted": "2026-07-13T02:23:01-04:00",
+      "source": "greenhouse",
+      "tier_hint": "T1",
+      "title": "Quantitative Research Intern "
+    },
+    {
+      "category": "quant",
+      "company": "DRW",
+      "link": "https://job-boards.greenhouse.io/drweng/jobs/7957243",
+      "location": "London",
+      "posted": "2026-07-13T05:11:25-04:00",
+      "source": "greenhouse",
+      "tier_hint": "T1",
+      "title": "Quantitative Trading Analyst Intern"
+    },
+    {
+      "category": "quant",
+      "company": "DRW",
+      "link": "https://job-boards.greenhouse.io/drweng/jobs/8014919",
+      "location": "Singapore",
+      "posted": "2026-07-13T02:23:15-04:00",
+      "source": "greenhouse",
+      "tier_hint": "T1",
+      "title": "Quantitative Trading Analyst Intern "
+    },
+    {
+      "category": "business",
+      "company": "Citi",
+      "link": "https://citi.wd5.myworkdayjobs.com/en-US/2/job/Kuala-Lumpur-Selangor-Malaysia/Internship--Kuala-Lumpur--Malaysia---APAC--2026_26947855",
+      "location": "Kuala Lumpur Selangor Malaysia",
+      "posted": "Posted 30+ Days Ago",
+      "source": "workday",
+      "tier_hint": "T1",
+      "title": "Internship, Kuala Lumpur, Malaysia \u2013 APAC, 2026"
+    },
+    {
+      "category": "business",
+      "company": "Citi",
+      "link": "https://citi.wd5.myworkdayjobs.com/en-US/2/job/Penang-Pulau-Pinang-penang-Malaysia/Internship--Penang--Malaysia---APAC--2026_26947868",
+      "location": "Penang Pulau Pinang (penang) Malaysia",
+      "posted": "Posted 30+ Days Ago",
+      "source": "workday",
+      "tier_hint": "T1",
+      "title": "Internship, Penang, Malaysia \u2013 APAC, 2026"
+    },
+    {
+      "category": "business",
+      "company": "Citi",
+      "link": "https://citi.wd5.myworkdayjobs.com/en-US/2/job/Sydney-New-South-Wales-Australia/Summer-Analyst-Program---Equity-Capital-Markets---Summer-Analyst--Sydney-Australia--APAC----2026_26952015",
+      "location": "Sydney New South Wales Australia",
+      "posted": "Posted Today",
+      "source": "workday",
+      "tier_hint": "T1",
+      "title": "Summer Analyst Program \u2013 Capital Markets - Summer Analyst, Sydney Australia (APAC) - 2026"
+    },
+    {
+      "category": "business",
+      "company": "Strategy&",
+      "link": "https://pwc.wd3.myworkdayjobs.com/en-US/Global_Campus_Careers/job/Palermo/Capital-Projects---Economics-Intern---ambito-Infrastrutture--Trasporti-e-Logistica--Palermo-_614318WD",
+      "location": "Palermo",
+      "posted": "Posted Today",
+      "source": "workday",
+      "tier_hint": "T2",
+      "title": "Capital Projects & Economics Intern - ambito Infrastrutture, Trasporti e Logistica (Palermo)"
+    },
+    {
+      "category": "business",
+      "company": "Strategy&",
+      "link": "https://pwc.wd3.myworkdayjobs.com/en-US/Global_Campus_Careers/job/Singapore/Assurance-Risk-Management-Off-Cycle-Internship_744119WD",
+      "location": "Singapore",
+      "posted": "Posted Today",
+      "source": "workday",
+      "tier_hint": "T2",
+      "title": "Assurance Risk Management Off-Cycle Internship"
+    },
+    {
+      "category": "business",
+      "company": "The Walt Disney Company",
+      "link": "https://disney.wd5.myworkdayjobs.com/en-US/disneycareer/job/Warsaw-Poland/Studio---Integrated-Marketing-Intern_10153668-2",
+      "location": "Warsaw, Poland",
+      "posted": "Posted Today",
+      "source": "workday",
+      "tier_hint": "T2",
+      "title": "Studio & Integrated Marketing Intern"
+    },
+    {
+      "category": "business",
+      "company": "The Walt Disney Company",
+      "link": "https://disney.wd5.myworkdayjobs.com/en-US/disneycareer/job/Warsaw-Poland/Licensing-Products-Intern_10155119",
+      "location": "Warsaw, Poland",
+      "posted": "Posted Today",
+      "source": "workday",
+      "tier_hint": "T2",
+      "title": "Licensing Products Intern"
+    },
+    {
+      "category": "business",
+      "company": "The Walt Disney Company",
+      "link": "https://disney.wd5.myworkdayjobs.com/en-US/disneycareer/job/Madrid-Spain/Social-Media-Intern_10152474-2",
+      "location": "Madrid, Spain",
+      "posted": "Posted Today",
+      "source": "workday",
+      "tier_hint": "T2",
+      "title": "Social Media Intern"
+    },
+    {
+      "category": "business",
+      "company": "The Walt Disney Company",
+      "link": "https://disney.wd5.myworkdayjobs.com/en-US/disneycareer/job/Madrid-Spain/Studio-Marketing-Intern_10152471",
+      "location": "Madrid, Spain",
+      "posted": "Posted Today",
+      "source": "workday",
+      "tier_hint": "T2",
+      "title": "Studio Marketing Intern"
+    }
+  ],
+  "generated_at": "2026-07-13T13:30:39+00:00",
   "run_date": "2026-07-13"
 }
