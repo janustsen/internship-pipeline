@@ -1,0 +1,18 @@
+{
+  "blocklist": {
+    "Blockchain Capital": "Blockchain.com",
+    "Electric Capital": "electric.ai",
+    "Highland Capital Partners": "vet clinic",
+    "Amplify Partners": "Amplify edtech",
+    "Menlo Ventures": "Menlo security/robotics",
+    "Pantheon": "Pantheon.io hosting",
+    "Sequoia Capital": "Sequoia benefits",
+    "Thrive Capital": "Thrive Global/Market",
+    "Paradigm": "generic slug",
+    "Tiger Global": "generic 'tiger'",
+    "Playground Global": "generic 'playground'",
+    "LinkedIn": "own careers, suspicious gh",
+    "Uber": "proprietary; SR board @1 job",
+    "Visa": "on Workday; SR board @2 jobs"
+  }
+}

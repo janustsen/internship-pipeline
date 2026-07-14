@@ -219,6 +219,73 @@ _ROSTER: list[tuple[str, str, list[str], list[tuple[str, str]]]] = [
     ("Federal Reserve", "T2", ["Federal Reserve", "Federal Reserve Bank", "The Fed"], []),
     ("World Bank", "T2", ["World Bank", "The World Bank"], []),
     ("International Monetary Fund", "T2", ["International Monetary Fund", "IMF"], []),
+
+    # ── Roster expansion 2026-07-14 — feeds discovered + live-verified via
+    #    discover_ats.py / discover_workday.py (see roster_ats_discovered.json). ──
+    # Consulting
+    ("Brattle Group", "T3", ["Brattle Group", "The Brattle Group", "Brattle"], [("greenhouse", "thebrattlegroup")]),
+    ("Charles River Associates", "T3", ["Charles River Associates", "CRA", "CRA International"], [("greenhouse", "charlesriverassociates")]),
+    ("ClearView Healthcare Partners", "T3", ["ClearView Healthcare Partners", "ClearView"], [("greenhouse", "clearviewhealthcarepartners")]),
+    ("Huron Consulting Group", "T3", ["Huron Consulting Group", "Huron", "Huron Consulting"], [("workday", "https://huron.wd1.myworkdayjobs.com/wday/cxs/huron/huroncareers/jobs")]),
+    ("Putnam Associates", "T3", ["Putnam Associates", "Putnam"], [("greenhouse", "putnamassociatesllc")]),
+    ("ghSMART", "T3", ["ghSMART", "GH SMART"], [("lever", "ghsmartjobs")]),
+    # Investment banking
+    ("Ducera Partners", "T3", ["Ducera Partners", "Ducera"], [("greenhouse", "ducerapartners")]),
+    ("ING", "T2", ["ING", "ING Group", "ING Bank"], [("workday", "https://ing.wd3.myworkdayjobs.com/wday/cxs/ing/ICSGBLCOR/jobs")]),
+    # Private equity
+    ("Adams Street Partners", "T2", ["Adams Street Partners", "Adams Street"], [("greenhouse", "adamsstreetpartners")]),
+    ("Alpine Investors", "T3", ["Alpine Investors", "Alpine"], [("greenhouse", "alpineinvestors")]),
+    ("Audax Group", "T2", ["Audax Group", "Audax", "Audax Private Equity"], [("greenhouse", "audaxgroup")]),
+    ("DigitalBridge", "T3", ["DigitalBridge", "Digital Bridge"], [("greenhouse", "digitalbridge")]),
+    ("H.I.G. Capital", "T3", ["H.I.G. Capital", "HIG Capital", "H.I.G."], [("workday", "https://higcapital.wd5.myworkdayjobs.com/wday/cxs/higcapital/LinkedIn/jobs")]),
+    ("Level Equity", "T3", ["Level Equity"], [("greenhouse", "levelequity")]),
+    ("Oaktree Capital", "T2", ["Oaktree Capital", "Oaktree", "Oaktree Capital Management"], [("workday", "https://oaktree.wd1.myworkdayjobs.com/wday/cxs/oaktree/oaktree/jobs")]),
+    ("Providence Equity Partners", "T2", ["Providence Equity Partners", "Providence Equity"], [("workday", "https://provequity.wd5.myworkdayjobs.com/wday/cxs/provequity/PEP_External_Career_Site/jobs")]),
+    ("The Riverside Company", "T3", ["The Riverside Company", "Riverside Company", "Riverside"], [("greenhouse", "theriversidecompany")]),
+    # Venture capital
+    ("5AM Ventures", "T3", ["5AM Ventures", "5AM"], [("lever", "5amventures")]),
+    ("8VC", "T2", ["8VC"], [("ashby", "8vc")]),
+    ("Bain Capital Ventures", "T2", ["Bain Capital Ventures", "BCV"], [("greenhouse", "baincapitalventures")]),
+    ("Breakthrough Energy Ventures", "T3", ["Breakthrough Energy Ventures", "Breakthrough Energy", "BEV"], [("greenhouse", "breakthroughenergy")]),
+    ("First Round Capital", "T2", ["First Round Capital", "First Round"], [("ashby", "firstround")]),
+    ("Flagship Pioneering", "T2", ["Flagship Pioneering", "Flagship"], [("greenhouse", "flagshippioneeringinc")]),
+    ("Georgian", "T2", ["Georgian", "Georgian Partners"], [("ashby", "georgian")]),
+    ("Polychain Capital", "T3", ["Polychain Capital", "Polychain"], [("greenhouse", "polychaincapital")]),
+    ("Samsung NEXT", "T3", ["Samsung NEXT"], [("greenhouse", "samsungnext")]),
+    # Corporate strategy / BizOps
+    ("3M", "T2", ["3M", "3M Company"], [("workday", "https://3m.wd1.myworkdayjobs.com/wday/cxs/3m/Search/jobs")]),
+    ("Amgen", "T2", ["Amgen"], [("workday", "https://amgen.wd1.myworkdayjobs.com/wday/cxs/amgen/Careers/jobs")]),
+    ("Block", "T2", ["Block", "Block Inc", "Square"], [("greenhouse", "block")]),
+    ("Comcast", "T2", ["Comcast", "NBCUniversal"], [("workday", "https://comcast.wd5.myworkdayjobs.com/wday/cxs/comcast/Comcast_Careers/jobs")]),
+    ("Datadog", "T2", ["Datadog"], [("greenhouse", "datadog")]),
+    ("Elevance Health", "T2", ["Elevance Health", "Elevance", "Anthem"], [("workday", "https://elevancehealth.wd1.myworkdayjobs.com/wday/cxs/elevancehealth/ANT/jobs")]),
+    ("Gilead Sciences", "T2", ["Gilead Sciences", "Gilead"], [("workday", "https://gilead.wd1.myworkdayjobs.com/wday/cxs/gilead/gileadcareers/jobs")]),
+    ("Intel", "T1", ["Intel", "Intel Corporation"], [("workday", "https://intel.wd1.myworkdayjobs.com/wday/cxs/intel/External/jobs")]),
+    ("Lyft", "T2", ["Lyft"], [("greenhouse", "lyft")]),
+    ("Medtronic", "T2", ["Medtronic"], [("workday", "https://medtronic.wd1.myworkdayjobs.com/wday/cxs/medtronic/MedtronicCareers/jobs")]),
+    ("Spotify", "T2", ["Spotify"], [("lever", "spotify")]),
+    ("T-Mobile", "T2", ["T-Mobile", "T Mobile", "TMobile"], [("workday", "https://tmobile.wd1.myworkdayjobs.com/wday/cxs/tmobile/External/jobs")]),
+    ("Target", "T2", ["Target", "Target Corporation"], [("workday", "https://target.wd5.myworkdayjobs.com/wday/cxs/target/targetcareers/jobs")]),
+    ("Vercel", "T2", ["Vercel"], [("greenhouse", "vercel")]),
+
+    # ── Roster expansion pass 2 (2026-07-14) — discover_ats2.py deep sweep ──
+    # Investment banking
+    ("BMO Capital Markets", "T2", ["BMO Capital Markets", "BMO", "Bank of Montreal"], [("workday", "https://bmo.wd3.myworkdayjobs.com/wday/cxs/bmo/External/jobs")]),
+    # Private equity
+    ("GI Partners", "T3", ["GI Partners"], [("smartrecruiters", "GiPartners")]),
+    # Venture capital
+    ("Madrona Venture Group", "T3", ["Madrona Venture Group", "Madrona"], [("smartrecruiters", "MadronaVentureGroup")]),
+    ("Pantera Capital", "T3", ["Pantera Capital", "Pantera"], [("greenhouse", "panteracapitalcareers")]),
+    ("Y Combinator", "T2", ["Y Combinator", "YC"], [("ashby", "ycombinator")]),
+    ("a16z Crypto", "T2", ["a16z Crypto", "Andreessen Horowitz Crypto"], [("ashby", "a16z-crypto")]),
+    # Corporate strategy / BizOps
+    ("Dropbox", "T2", ["Dropbox"], [("greenhouse", "dropbox")]),
+    ("Micron Technology", "T1", ["Micron Technology", "Micron"], [("workday", "https://micron.wd1.myworkdayjobs.com/wday/cxs/micron/External/jobs")]),
+    ("Okta", "T2", ["Okta"], [("greenhouse", "okta")]),
+    ("Roblox", "T2", ["Roblox"], [("greenhouse", "roblox")]),
+    ("Roku", "T2", ["Roku"], [("greenhouse", "roku")]),
+    ("ServiceNow", "T1", ["ServiceNow"], [("smartrecruiters", "Servicenow")]),
+    ("Twilio", "T2", ["Twilio"], [("greenhouse", "twilio")]),
 ]
 
 
@@ -233,7 +300,7 @@ TARGET_FIRMS: list[dict[str, Any]] = [
 ]
 
 
-TIER_ORDER = {"T1": 0, "T2": 1}
+TIER_ORDER = {"T1": 0, "T2": 1, "T3": 2}
 
 
 import json as _json

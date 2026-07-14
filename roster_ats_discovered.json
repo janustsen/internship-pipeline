@@ -1,0 +1,3956 @@
+[
+  {
+    "name": "Bain & Company",
+    "domain": "consulting",
+    "tier": "T1",
+    "note": "proprietary",
+    "feed": null
+  },
+  {
+    "name": "Boston Consulting Group",
+    "domain": "consulting",
+    "tier": "T1",
+    "note": "proprietary",
+    "feed": null
+  },
+  {
+    "name": "McKinsey & Company",
+    "domain": "consulting",
+    "tier": "T1",
+    "note": "proprietary",
+    "feed": null
+  },
+  {
+    "name": "Accenture Strategy",
+    "domain": "consulting",
+    "tier": "T2",
+    "note": "",
+    "feed": {
+      "platform": "workday",
+      "token": "https://accenture.wd103.myworkdayjobs.com/wday/cxs/accenture/AccentureCareers/jobs",
+      "jobs": 80,
+      "source": "seed",
+      "sample": {
+        "title": "Motion Designer intern",
+        "location": "",
+        "link": "https://accenture.wd103.myworkdayjobs.com/en-US/AccentureCareers/job/Milano-Via-Privata-Nino-Bonnet-10/Motion-Designer-intern_R00323122"
+      }
+    }
+  },
+  {
+    "name": "Arthur D. Little",
+    "domain": "consulting",
+    "tier": "T2",
+    "note": "icims",
+    "feed": null
+  },
+  {
+    "name": "Booz Allen Hamilton",
+    "domain": "consulting",
+    "tier": "T2",
+    "note": "proprietary",
+    "feed": null
+  },
+  {
+    "name": "EY-Parthenon",
+    "domain": "consulting",
+    "tier": "T2",
+    "note": "proprietary",
+    "feed": null
+  },
+  {
+    "name": "KPMG Strategy",
+    "domain": "consulting",
+    "tier": "T2",
+    "note": "avature",
+    "feed": null
+  },
+  {
+    "name": "Kearney",
+    "domain": "consulting",
+    "tier": "T2",
+    "note": "",
+    "feed": null
+  },
+  {
+    "name": "L.E.K. Consulting",
+    "domain": "consulting",
+    "tier": "T2",
+    "note": "",
+    "feed": null
+  },
+  {
+    "name": "Monitor Deloitte",
+    "domain": "consulting",
+    "tier": "T2",
+    "note": "proprietary",
+    "feed": null
+  },
+  {
+    "name": "Oliver Wyman",
+    "domain": "consulting",
+    "tier": "T2",
+    "note": "proprietary",
+    "feed": {
+      "platform": "lever",
+      "token": "oliverwyman",
+      "jobs": 2,
+      "source": "guess2",
+      "needs_review": true,
+      "sample": {
+        "title": "Account Executive",
+        "location": "San Francisco, CA",
+        "link": "https://jobs.lever.co/oliverwyman/e33b4189-d112-401e-affe-85fba0114eb4"
+      }
+    }
+  },
+  {
+    "name": "Roland Berger",
+    "domain": "consulting",
+    "tier": "T2",
+    "note": "proprietary",
+    "feed": {
+      "platform": "smartrecruiters",
+      "token": "RolandBerger",
+      "jobs": 209,
+      "source": "guess2",
+      "needs_review": true,
+      "sample": {
+        "title": "Consulting Analyst Program (6 months)",
+        "location": "Ho Chi Minh City",
+        "link": "https://api.smartrecruiters.com/v1/companies/RolandBerger/postings/744000137592199"
+      }
+    }
+  },
+  {
+    "name": "Strategy&",
+    "domain": "consulting",
+    "tier": "T2",
+    "note": "",
+    "feed": {
+      "platform": "workday",
+      "token": "https://pwc.wd3.myworkdayjobs.com/wday/cxs/pwc/Global_Campus_Careers/jobs",
+      "jobs": 40,
+      "source": "seed",
+      "sample": {
+        "title": "Internship Identity and Access Management",
+        "location": "Amsterdam",
+        "link": "https://pwc.wd3.myworkdayjobs.com/en-US/Global_Campus_Careers/job/Amsterdam/Internship-Identity-and-Access-Management_733590WD"
+      }
+    }
+  },
+  {
+    "name": "AlixPartners",
+    "domain": "consulting",
+    "tier": "T3",
+    "note": "",
+    "feed": {
+      "platform": "greenhouse",
+      "token": "alixpartners",
+      "jobs": 106,
+      "source": "guess",
+      "needs_review": true,
+      "sample": {
+        "title": "Accounts Payable Senior Analyst",
+        "location": "Milan",
+        "link": "https://www.alixpartners.com/careers/7551626003?gh_jid=7551626003"
+      }
+    }
+  },
+  {
+    "name": "Altman Solon",
+    "domain": "consulting",
+    "tier": "T3",
+    "note": "",
+    "feed": null
+  },
+  {
+    "name": "Alvarez & Marsal",
+    "domain": "consulting",
+    "tier": "T3",
+    "note": "proprietary",
+    "feed": null
+  },
+  {
+    "name": "Analysis Group",
+    "domain": "consulting",
+    "tier": "T3",
+    "note": "icims",
+    "feed": null
+  },
+  {
+    "name": "Avasant",
+    "domain": "consulting",
+    "tier": "T3",
+    "note": "applytojob",
+    "feed": null
+  },
+  {
+    "name": "Bates White",
+    "domain": "consulting",
+    "tier": "T3",
+    "note": "proprietary",
+    "feed": null
+  },
+  {
+    "name": "Brattle Group",
+    "domain": "consulting",
+    "tier": "T3",
+    "note": "",
+    "feed": {
+      "platform": "greenhouse",
+      "token": "thebrattlegroup",
+      "jobs": 21,
+      "source": "seed",
+      "sample": {
+        "title": "2026 Research Analyst - Competition",
+        "location": "London, England, United Kingdom",
+        "link": "https://job-boards.greenhouse.io/thebrattlegroup/jobs/4689623005"
+      }
+    }
+  },
+  {
+    "name": "Charles River Associates",
+    "domain": "consulting",
+    "tier": "T3",
+    "note": "",
+    "feed": {
+      "platform": "greenhouse",
+      "token": "charlesriverassociates",
+      "jobs": 72,
+      "source": "guess",
+      "needs_review": true,
+      "sample": {
+        "title": "Administrative Coordinator (Labor & Employment practice)",
+        "location": "College Station, TX, United States",
+        "link": "https://job-boards.greenhouse.io/charlesriverassociates/jobs/6302295"
+      }
+    }
+  },
+  {
+    "name": "ClearView Healthcare Partners",
+    "domain": "consulting",
+    "tier": "T3",
+    "note": "",
+    "feed": {
+      "platform": "greenhouse",
+      "token": "clearviewhealthcarepartners",
+      "jobs": 35,
+      "source": "seed",
+      "sample": {
+        "title": "Administrative Assistant ",
+        "location": "San Francisco, California, United States",
+        "link": "https://job-boards.greenhouse.io/clearviewhealthcarepartners/jobs/5214875008"
+      }
+    }
+  },
+  {
+    "name": "Compass Lexecon",
+    "domain": "consulting",
+    "tier": "T3",
+    "note": "",
+    "feed": null
+  },
+  {
+    "name": "Copenhagen Economics",
+    "domain": "consulting",
+    "tier": "T3",
+    "note": "proprietary",
+    "feed": null
+  },
+  {
+    "name": "Cornerstone Research",
+    "domain": "consulting",
+    "tier": "T3",
+    "note": "",
+    "feed": {
+      "platform": "workday",
+      "token": "https://cornerstone.wd501.myworkdayjobs.com/wday/cxs/cornerstone/CornerstoneResearch_Careers/jobs",
+      "jobs": 9,
+      "source": "seed",
+      "sample": {
+        "title": "Senior Developer, BI Reporting",
+        "location": "6 Locations",
+        "link": "https://cornerstone.wd501.myworkdayjobs.com/en-US/CornerstoneResearch_Careers/job/San-Francisco-CA/Senior-Developer--BI-Reporting_R95"
+      }
+    }
+  },
+  {
+    "name": "E.CA Economics",
+    "domain": "consulting",
+    "tier": "T3",
+    "note": "personio",
+    "feed": null
+  },
+  {
+    "name": "Economists Incorporated",
+    "domain": "consulting",
+    "tier": "T3",
+    "note": "cannot-confirm",
+    "feed": null
+  },
+  {
+    "name": "Edgeworth Economics",
+    "domain": "consulting",
+    "tier": "T3",
+    "note": "proprietary",
+    "feed": null
+  },
+  {
+    "name": "FTI Consulting",
+    "domain": "consulting",
+    "tier": "T3",
+    "note": "selectminds",
+    "feed": null
+  },
+  {
+    "name": "Frontier Economics",
+    "domain": "consulting",
+    "tier": "T3",
+    "note": "proprietary",
+    "feed": null
+  },
+  {
+    "name": "Health Advances",
+    "domain": "consulting",
+    "tier": "T3",
+    "note": "hrmdirect",
+    "feed": null
+  },
+  {
+    "name": "Horvath",
+    "domain": "consulting",
+    "tier": "T3",
+    "note": "proprietary",
+    "feed": null
+  },
+  {
+    "name": "Huron Consulting Group",
+    "domain": "consulting",
+    "tier": "T3",
+    "note": "",
+    "feed": {
+      "platform": "workday",
+      "token": "https://huron.wd1.myworkdayjobs.com/wday/cxs/huron/huroncareers/jobs",
+      "jobs": 42,
+      "source": "seed",
+      "sample": {
+        "title": "Internal Auditor -  Director",
+        "location": "Chicago - 550 Van Buren",
+        "link": "https://huron.wd1.myworkdayjobs.com/en-US/huroncareers/job/Chicago---550-Van-Buren/Internal-Auditor----Director_JR-0015853"
+      }
+    }
+  },
+  {
+    "name": "Kaiser Associates",
+    "domain": "consulting",
+    "tier": "T3",
+    "note": "cannot-confirm",
+    "feed": null
+  },
+  {
+    "name": "Marakon",
+    "domain": "consulting",
+    "tier": "T3",
+    "note": "cannot-confirm",
+    "feed": null
+  },
+  {
+    "name": "NERA Economic Consulting",
+    "domain": "consulting",
+    "tier": "T3",
+    "note": "proprietary",
+    "feed": null
+  },
+  {
+    "name": "Nova Reperta",
+    "domain": "consulting",
+    "tier": "T3",
+    "note": "proprietary",
+    "feed": null
+  },
+  {
+    "name": "OC&C Strategy Consultants",
+    "domain": "consulting",
+    "tier": "T3",
+    "note": "",
+    "feed": null
+  },
+  {
+    "name": "Oslo Economics",
+    "domain": "consulting",
+    "tier": "T3",
+    "note": "proprietary",
+    "feed": null
+  },
+  {
+    "name": "Oxera",
+    "domain": "consulting",
+    "tier": "T3",
+    "note": "proprietary",
+    "feed": null
+  },
+  {
+    "name": "Putnam Associates",
+    "domain": "consulting",
+    "tier": "T3",
+    "note": "",
+    "feed": {
+      "platform": "greenhouse",
+      "token": "putnamassociatesllc",
+      "jobs": 19,
+      "source": "seed",
+      "sample": {
+        "title": " Advanced Data Analytics Lead ",
+        "location": "Boston, Massachusetts",
+        "link": "https://job-boards.greenhouse.io/putnamassociatesllc/jobs/7688164"
+      }
+    }
+  },
+  {
+    "name": "RBB Economics",
+    "domain": "consulting",
+    "tier": "T3",
+    "note": "proprietary",
+    "feed": null
+  },
+  {
+    "name": "Simon-Kucher",
+    "domain": "consulting",
+    "tier": "T3",
+    "note": "csod",
+    "feed": null
+  },
+  {
+    "name": "Stax",
+    "domain": "consulting",
+    "tier": "T3",
+    "note": "trakstar",
+    "feed": null
+  },
+  {
+    "name": "The Value Engineers",
+    "domain": "consulting",
+    "tier": "T3",
+    "note": "cannot-confirm",
+    "feed": null
+  },
+  {
+    "name": "Trinity Life Sciences",
+    "domain": "consulting",
+    "tier": "T3",
+    "note": "proprietary",
+    "feed": null
+  },
+  {
+    "name": "Vivaldi Group",
+    "domain": "consulting",
+    "tier": "T3",
+    "note": "cannot-confirm",
+    "feed": null
+  },
+  {
+    "name": "ZS Associates",
+    "domain": "consulting",
+    "tier": "T3",
+    "note": "proprietary",
+    "feed": null
+  },
+  {
+    "name": "ghSMART",
+    "domain": "consulting",
+    "tier": "T3",
+    "note": "",
+    "feed": {
+      "platform": "lever",
+      "token": "ghsmartjobs",
+      "jobs": 6,
+      "source": "seed",
+      "sample": {
+        "title": "Assistant Controller",
+        "location": "United States",
+        "link": "https://jobs.lever.co/ghsmartjobs/41bc729c-0790-498c-a47d-606cb72b3188"
+      }
+    }
+  },
+  {
+    "name": "Adobe",
+    "domain": "corp",
+    "tier": "T1",
+    "note": "",
+    "feed": {
+      "platform": "workday",
+      "token": "https://adobe.wd5.myworkdayjobs.com/wday/cxs/adobe/external_experienced/jobs",
+      "jobs": 43,
+      "source": "seed",
+      "sample": {
+        "title": "2026 Intern - Research Scientist/Engineer",
+        "location": "7 Locations",
+        "link": "https://adobe.wd5.myworkdayjobs.com/en-US/external_experienced/job/San-Jose/XMLNAME-2026-Intern---Research-Scientist-Engineer_R160317"
+      }
+    }
+  },
+  {
+    "name": "Airbnb",
+    "domain": "corp",
+    "tier": "T1",
+    "note": "",
+    "feed": {
+      "platform": "greenhouse",
+      "token": "airbnb",
+      "jobs": 203,
+      "source": "guess",
+      "needs_review": true,
+      "sample": {
+        "title": "Acquisition Manager",
+        "location": "Berlin, Germany ",
+        "link": "https://careers.airbnb.com/positions/7995153?gh_jid=7995153"
+      }
+    }
+  },
+  {
+    "name": "Amazon",
+    "domain": "corp",
+    "tier": "T1",
+    "note": "proprietary",
+    "feed": null
+  },
+  {
+    "name": "Apple",
+    "domain": "corp",
+    "tier": "T1",
+    "note": "proprietary",
+    "feed": null
+  },
+  {
+    "name": "Broadcom",
+    "domain": "corp",
+    "tier": "T1",
+    "note": "proprietary",
+    "feed": null
+  },
+  {
+    "name": "Cisco",
+    "domain": "corp",
+    "tier": "T1",
+    "note": "proprietary",
+    "feed": null
+  },
+  {
+    "name": "Dell Technologies",
+    "domain": "corp",
+    "tier": "T1",
+    "note": "proprietary",
+    "feed": null
+  },
+  {
+    "name": "Google",
+    "domain": "corp",
+    "tier": "T1",
+    "note": "proprietary",
+    "feed": null
+  },
+  {
+    "name": "IBM",
+    "domain": "corp",
+    "tier": "T1",
+    "note": "proprietary",
+    "feed": null
+  },
+  {
+    "name": "Intel",
+    "domain": "corp",
+    "tier": "T1",
+    "note": "",
+    "feed": {
+      "platform": "workday",
+      "token": "https://intel.wd1.myworkdayjobs.com/wday/cxs/intel/External/jobs",
+      "jobs": 40,
+      "source": "seed",
+      "sample": {
+        "title": "Finance Intern",
+        "location": "Malaysia, Penang",
+        "link": "https://intel.wd1.myworkdayjobs.com/en-US/External/job/Malaysia-Penang/Finance-Intern_JR0285186"
+      }
+    }
+  },
+  {
+    "name": "Intuit",
+    "domain": "corp",
+    "tier": "T1",
+    "note": "proprietary",
+    "feed": null
+  },
+  {
+    "name": "LinkedIn",
+    "domain": "corp",
+    "tier": "T1",
+    "note": "proprietary",
+    "feed": null,
+    "feed_rejected": {
+      "platform": "greenhouse",
+      "token": "linkedin",
+      "jobs": 53,
+      "source": "guess2",
+      "needs_review": true,
+      "sample": {
+        "title": "123123",
+        "location": "Los Angeles",
+        "link": "https://job-boards.greenhouse.io/linkedin/jobs/4864936"
+      },
+      "reason": "collision → own careers, suspicious gh"
+    }
+  },
+  {
+    "name": "Meta",
+    "domain": "corp",
+    "tier": "T1",
+    "note": "proprietary",
+    "feed": null
+  },
+  {
+    "name": "Micron Technology",
+    "domain": "corp",
+    "tier": "T1",
+    "note": "proprietary",
+    "feed": {
+      "platform": "workday",
+      "token": "https://micron.wd1.myworkdayjobs.com/wday/cxs/micron/External/jobs",
+      "jobs": 2865,
+      "sample": {
+        "title": "半導体製造 EUVフォトマスク検査・管理スタッフ（技術職）",
+        "location": "Hiroshima - Fab 15, Japan"
+      },
+      "source": "workday-sweep",
+      "needs_review": true
+    }
+  },
+  {
+    "name": "Microsoft",
+    "domain": "corp",
+    "tier": "T1",
+    "note": "eightfold",
+    "feed": null
+  },
+  {
+    "name": "Netflix",
+    "domain": "corp",
+    "tier": "T1",
+    "note": "proprietary",
+    "feed": null
+  },
+  {
+    "name": "Nvidia",
+    "domain": "corp",
+    "tier": "T1",
+    "note": "proprietary",
+    "feed": null
+  },
+  {
+    "name": "Oracle",
+    "domain": "corp",
+    "tier": "T1",
+    "note": "oraclecloud",
+    "feed": null
+  },
+  {
+    "name": "Palantir",
+    "domain": "corp",
+    "tier": "T1",
+    "note": "",
+    "feed": {
+      "platform": "lever",
+      "token": "palantir",
+      "jobs": 276,
+      "source": "seed",
+      "sample": {
+        "title": "Administrative Business Partner - Security",
+        "location": "Palo Alto, CA",
+        "link": "https://jobs.lever.co/palantir/0bbfd4f4-41ff-4ec6-b73f-5200efd5d4d3"
+      }
+    }
+  },
+  {
+    "name": "Qualcomm",
+    "domain": "corp",
+    "tier": "T1",
+    "note": "workday",
+    "feed": null
+  },
+  {
+    "name": "SAP",
+    "domain": "corp",
+    "tier": "T1",
+    "note": "successfactors",
+    "feed": null
+  },
+  {
+    "name": "Salesforce",
+    "domain": "corp",
+    "tier": "T1",
+    "note": "proprietary",
+    "feed": null
+  },
+  {
+    "name": "ServiceNow",
+    "domain": "corp",
+    "tier": "T1",
+    "note": "proprietary",
+    "feed": {
+      "platform": "smartrecruiters",
+      "token": "Servicenow",
+      "jobs": 421,
+      "source": "guess2",
+      "needs_review": true,
+      "sample": {
+        "title": "Senior Product Marketing Manager, Developer & AI Demo Experiences",
+        "location": "Santa Clara",
+        "link": "https://api.smartrecruiters.com/v1/companies/Servicenow/postings/744000137709589"
+      }
+    }
+  },
+  {
+    "name": "Snowflake",
+    "domain": "corp",
+    "tier": "T1",
+    "note": "",
+    "feed": {
+      "platform": "ashby",
+      "token": "snowflake",
+      "jobs": 415,
+      "source": "seed",
+      "sample": {
+        "title": "Senior Solution Engineer",
+        "location": "US-NC-Remote",
+        "link": "https://jobs.ashbyhq.com/snowflake/00898e37-87aa-47e6-9df7-aefabac4ab01"
+      }
+    }
+  },
+  {
+    "name": "Stripe",
+    "domain": "corp",
+    "tier": "T1",
+    "note": "",
+    "feed": {
+      "platform": "greenhouse",
+      "token": "stripe",
+      "jobs": 524,
+      "source": "guess",
+      "needs_review": true,
+      "sample": {
+        "title": "Account Executive, AI Sales (Grower)",
+        "location": "San Francisco, CA",
+        "link": "https://stripe.com/jobs/search?gh_jid=7954688"
+      }
+    }
+  },
+  {
+    "name": "Tesla",
+    "domain": "corp",
+    "tier": "T1",
+    "note": "proprietary",
+    "feed": null
+  },
+  {
+    "name": "Uber",
+    "domain": "corp",
+    "tier": "T1",
+    "note": "proprietary",
+    "feed": null,
+    "feed_rejected": {
+      "platform": "smartrecruiters",
+      "token": "Uber",
+      "jobs": 1,
+      "source": "guess2",
+      "needs_review": true,
+      "sample": {
+        "title": "Test UAT",
+        "location": "San Francisco",
+        "link": "https://api.smartrecruiters.com/v1/companies/Uber/postings/3743990000051828"
+      },
+      "reason": "collision → proprietary; SR board @1 job"
+    }
+  },
+  {
+    "name": "3M",
+    "domain": "corp",
+    "tier": "T2",
+    "note": "workday",
+    "feed": {
+      "platform": "workday",
+      "token": "https://3m.wd1.myworkdayjobs.com/wday/cxs/3m/Search/jobs",
+      "jobs": 661,
+      "source": "workday-discovery",
+      "sample": {
+        "title": "Business Integration Manager, EMEA Logistics (m/f/x)",
+        "location": "PL, WROCLAW"
+      }
+    }
+  },
+  {
+    "name": "AT&T",
+    "domain": "corp",
+    "tier": "T2",
+    "note": "workday",
+    "feed": null
+  },
+  {
+    "name": "American Airlines",
+    "domain": "corp",
+    "tier": "T2",
+    "note": "workday",
+    "feed": null
+  },
+  {
+    "name": "American Express",
+    "domain": "corp",
+    "tier": "T2",
+    "note": "taleo",
+    "feed": null
+  },
+  {
+    "name": "Amgen",
+    "domain": "corp",
+    "tier": "T2",
+    "note": "workday",
+    "feed": {
+      "platform": "workday",
+      "token": "https://amgen.wd1.myworkdayjobs.com/wday/cxs/amgen/Careers/jobs",
+      "jobs": 1637,
+      "source": "workday-discovery",
+      "sample": {
+        "title": "Rare diseases Marketing Associate",
+        "location": "Argentina - Buenos Aires"
+      }
+    }
+  },
+  {
+    "name": "Atlassian",
+    "domain": "corp",
+    "tier": "T2",
+    "note": "proprietary",
+    "feed": null
+  },
+  {
+    "name": "Block",
+    "domain": "corp",
+    "tier": "T2",
+    "note": "",
+    "feed": {
+      "platform": "greenhouse",
+      "token": "block",
+      "jobs": 203,
+      "source": "guess",
+      "needs_review": true,
+      "sample": {
+        "title": "Account Manager, SMB",
+        "location": "Sydney, Australia",
+        "link": "http://block.xyz/careers/jobs/5317296008?gh_jid=5317296008"
+      }
+    }
+  },
+  {
+    "name": "Boeing",
+    "domain": "corp",
+    "tier": "T2",
+    "note": "workday",
+    "feed": null
+  },
+  {
+    "name": "CVS Health",
+    "domain": "corp",
+    "tier": "T2",
+    "note": "workday",
+    "feed": null
+  },
+  {
+    "name": "Capital One",
+    "domain": "corp",
+    "tier": "T2",
+    "note": "proprietary",
+    "feed": null
+  },
+  {
+    "name": "Caterpillar",
+    "domain": "corp",
+    "tier": "T2",
+    "note": "workday",
+    "feed": null
+  },
+  {
+    "name": "Citadel",
+    "domain": "corp",
+    "tier": "T2",
+    "note": "proprietary",
+    "feed": null
+  },
+  {
+    "name": "Citadel Securities",
+    "domain": "corp",
+    "tier": "T2",
+    "note": "proprietary",
+    "feed": null
+  },
+  {
+    "name": "Comcast",
+    "domain": "corp",
+    "tier": "T2",
+    "note": "workday",
+    "feed": {
+      "platform": "workday",
+      "token": "https://comcast.wd5.myworkdayjobs.com/wday/cxs/comcast/Comcast_Careers/jobs",
+      "jobs": 840,
+      "source": "workday-discovery",
+      "sample": {
+        "title": "Xfinity Retail Sales Consultant",
+        "location": "CO - Lakewood, 7400 W Alaska Dr - Retail XFR3352"
+      }
+    }
+  },
+  {
+    "name": "Costco Wholesale",
+    "domain": "corp",
+    "tier": "T2",
+    "note": "proprietary",
+    "feed": null
+  },
+  {
+    "name": "Datadog",
+    "domain": "corp",
+    "tier": "T2",
+    "note": "",
+    "feed": {
+      "platform": "greenhouse",
+      "token": "datadog",
+      "jobs": 421,
+      "source": "seed",
+      "sample": {
+        "title": "AI Research Engineer - Datadog AI Research (DAIR)",
+        "location": "Paris, France",
+        "link": "https://careers.datadoghq.com/detail/7194969/?gh_jid=7194969"
+      }
+    }
+  },
+  {
+    "name": "Delta Air Lines",
+    "domain": "corp",
+    "tier": "T2",
+    "note": "workday",
+    "feed": null
+  },
+  {
+    "name": "Discover Financial",
+    "domain": "corp",
+    "tier": "T2",
+    "note": "workday",
+    "feed": null
+  },
+  {
+    "name": "DoorDash",
+    "domain": "corp",
+    "tier": "T2",
+    "note": "proprietary",
+    "feed": null
+  },
+  {
+    "name": "Dropbox",
+    "domain": "corp",
+    "tier": "T2",
+    "note": "proprietary",
+    "feed": {
+      "platform": "greenhouse",
+      "token": "dropbox",
+      "jobs": 39,
+      "source": "guess2",
+      "needs_review": true,
+      "sample": {
+        "title": "Account Executive",
+        "location": "Remote - US: Select locations",
+        "link": "https://jobs.dropbox.com/listing/7908701?gh_jid=7908701"
+      }
+    }
+  },
+  {
+    "name": "Electronic Arts",
+    "domain": "corp",
+    "tier": "T2",
+    "note": "avature",
+    "feed": null
+  },
+  {
+    "name": "Elevance Health",
+    "domain": "corp",
+    "tier": "T2",
+    "note": "workday",
+    "feed": {
+      "platform": "workday",
+      "token": "https://elevancehealth.wd1.myworkdayjobs.com/wday/cxs/elevancehealth/ANT/jobs",
+      "jobs": 391,
+      "source": "workday-discovery",
+      "sample": {
+        "title": "Regional Account Liaison - BioPlus Specialty Infusion- Lousiana & East Texas",
+        "location": "5 Locations"
+      }
+    }
+  },
+  {
+    "name": "Estee Lauder",
+    "domain": "corp",
+    "tier": "T2",
+    "note": "workday",
+    "feed": null
+  },
+  {
+    "name": "FedEx",
+    "domain": "corp",
+    "tier": "T2",
+    "note": "proprietary",
+    "feed": null
+  },
+  {
+    "name": "General Electric",
+    "domain": "corp",
+    "tier": "T2",
+    "note": "workday",
+    "feed": null
+  },
+  {
+    "name": "Gilead Sciences",
+    "domain": "corp",
+    "tier": "T2",
+    "note": "workday",
+    "feed": {
+      "platform": "workday",
+      "token": "https://gilead.wd1.myworkdayjobs.com/wday/cxs/gilead/gileadcareers/jobs",
+      "jobs": 300,
+      "source": "workday-discovery",
+      "sample": {
+        "title": "Director, Biostatistics",
+        "location": "2 Locations"
+      }
+    }
+  },
+  {
+    "name": "HP",
+    "domain": "corp",
+    "tier": "T2",
+    "note": "proprietary",
+    "feed": null
+  },
+  {
+    "name": "Honeywell",
+    "domain": "corp",
+    "tier": "T2",
+    "note": "workday",
+    "feed": null
+  },
+  {
+    "name": "Hudson River Trading",
+    "domain": "corp",
+    "tier": "T2",
+    "note": "proprietary",
+    "feed": null
+  },
+  {
+    "name": "Jane Street",
+    "domain": "corp",
+    "tier": "T2",
+    "note": "",
+    "feed": {
+      "platform": "greenhouse",
+      "token": "janestreet",
+      "jobs": 216,
+      "source": "guess",
+      "needs_review": true,
+      "sample": {
+        "title": "AML Onboarding Analyst",
+        "location": "New York, New York, United States",
+        "link": "https://job-boards.greenhouse.io/janestreet/jobs/8347073002"
+      }
+    }
+  },
+  {
+    "name": "Johnson & Johnson",
+    "domain": "corp",
+    "tier": "T2",
+    "note": "workday",
+    "feed": null
+  },
+  {
+    "name": "Lockheed Martin",
+    "domain": "corp",
+    "tier": "T2",
+    "note": "workday",
+    "feed": null
+  },
+  {
+    "name": "Lyft",
+    "domain": "corp",
+    "tier": "T2",
+    "note": "",
+    "feed": {
+      "platform": "greenhouse",
+      "token": "lyft",
+      "jobs": 156,
+      "source": "seed",
+      "sample": {
+        "title": "Account Manager, Healthcare & Transit Partnerships",
+        "location": "San Francisco, CA",
+        "link": "https://app.careerpuck.com/job-board/lyft/job/8609709002?gh_jid=8609709002"
+      }
+    }
+  },
+  {
+    "name": "Mastercard",
+    "domain": "corp",
+    "tier": "T2",
+    "note": "",
+    "feed": {
+      "platform": "workday",
+      "token": "https://mastercard.wd1.myworkdayjobs.com/wday/cxs/mastercard/CorporateCareers/jobs",
+      "jobs": 40,
+      "source": "seed",
+      "sample": {
+        "title": "Principal Technical Program Manager. SE Guild",
+        "location": "Mexico City, Mexico",
+        "link": "https://mastercard.wd1.myworkdayjobs.com/en-US/CorporateCareers/job/Mexico-City-Mexico/Principal--Program-Management_R-274963"
+      }
+    }
+  },
+  {
+    "name": "McDonald's",
+    "domain": "corp",
+    "tier": "T2",
+    "note": "workday",
+    "feed": null
+  },
+  {
+    "name": "Medtronic",
+    "domain": "corp",
+    "tier": "T2",
+    "note": "workday",
+    "feed": {
+      "platform": "workday",
+      "token": "https://medtronic.wd1.myworkdayjobs.com/wday/cxs/medtronic/MedtronicCareers/jobs",
+      "jobs": 1117,
+      "source": "workday-discovery",
+      "sample": {
+        "title": "Distribution Manager",
+        "location": "Memphis, Tennessee, United States of America"
+      }
+    }
+  },
+  {
+    "name": "Nike",
+    "domain": "corp",
+    "tier": "T2",
+    "note": "workday",
+    "feed": null
+  },
+  {
+    "name": "Okta",
+    "domain": "corp",
+    "tier": "T2",
+    "note": "proprietary",
+    "feed": {
+      "platform": "greenhouse",
+      "token": "okta",
+      "jobs": 339,
+      "source": "guess2",
+      "needs_review": true,
+      "sample": {
+        "title": "Account Executive, Auth0",
+        "location": "Tokyo, Japan",
+        "link": "https://www.okta.com/company/careers/opportunity/7439531?gh_jid=7439531"
+      }
+    }
+  },
+  {
+    "name": "Paramount Global",
+    "domain": "corp",
+    "tier": "T2",
+    "note": "workday",
+    "feed": null
+  },
+  {
+    "name": "PayPal",
+    "domain": "corp",
+    "tier": "T2",
+    "note": "proprietary",
+    "feed": null
+  },
+  {
+    "name": "PepsiCo",
+    "domain": "corp",
+    "tier": "T2",
+    "note": "workday",
+    "feed": null
+  },
+  {
+    "name": "Procter & Gamble",
+    "domain": "corp",
+    "tier": "T2",
+    "note": "workday",
+    "feed": null
+  },
+  {
+    "name": "RTX",
+    "domain": "corp",
+    "tier": "T2",
+    "note": "workday",
+    "feed": null
+  },
+  {
+    "name": "Roblox",
+    "domain": "corp",
+    "tier": "T2",
+    "note": "proprietary",
+    "feed": {
+      "platform": "greenhouse",
+      "token": "roblox",
+      "jobs": 226,
+      "source": "guess2",
+      "needs_review": true,
+      "sample": {
+        "title": "[2026] Data Scientist, Social ",
+        "location": "San Mateo, CA, United States",
+        "link": "https://careers.roblox.com/jobs/7463634?gh_jid=7463634"
+      }
+    }
+  },
+  {
+    "name": "Roku",
+    "domain": "corp",
+    "tier": "T2",
+    "note": "proprietary",
+    "feed": {
+      "platform": "greenhouse",
+      "token": "roku",
+      "jobs": 230,
+      "source": "guess2",
+      "needs_review": true,
+      "sample": {
+        "title": "Account Coordinator",
+        "location": "New York, New York",
+        "link": "https://www.weareroku.com/jobs/8023364?gh_jid=8023364"
+      }
+    }
+  },
+  {
+    "name": "Shopify",
+    "domain": "corp",
+    "tier": "T2",
+    "note": "proprietary",
+    "feed": null
+  },
+  {
+    "name": "Snap",
+    "domain": "corp",
+    "tier": "T2",
+    "note": "proprietary",
+    "feed": null
+  },
+  {
+    "name": "Spotify",
+    "domain": "corp",
+    "tier": "T2",
+    "note": "greenhouse",
+    "feed": {
+      "platform": "lever",
+      "token": "spotify",
+      "jobs": 109,
+      "source": "guess",
+      "needs_review": true,
+      "sample": {
+        "title": "Advertiser Solutions Vendor Lead - Programmatic and Direct Support",
+        "location": "London",
+        "link": "https://jobs.lever.co/spotify/66acb66f-de37-4d95-a353-874db92838ef"
+      }
+    }
+  },
+  {
+    "name": "Starbucks",
+    "domain": "corp",
+    "tier": "T2",
+    "note": "workday",
+    "feed": null
+  },
+  {
+    "name": "T-Mobile",
+    "domain": "corp",
+    "tier": "T2",
+    "note": "workday",
+    "feed": {
+      "platform": "workday",
+      "token": "https://tmobile.wd1.myworkdayjobs.com/wday/cxs/tmobile/External/jobs",
+      "jobs": 1975,
+      "source": "workday-discovery",
+      "sample": {
+        "title": "Mobile Associate - Retail Sales",
+        "location": "Muscle Shoals, Alabama"
+      }
+    }
+  },
+  {
+    "name": "Target",
+    "domain": "corp",
+    "tier": "T2",
+    "note": "workday",
+    "feed": {
+      "platform": "workday",
+      "token": "https://target.wd5.myworkdayjobs.com/wday/cxs/target/targetcareers/jobs",
+      "jobs": 2000,
+      "source": "workday-discovery",
+      "sample": {
+        "title": "Sr Admin Assistant - Litigation, Intellectual Property & Target Brands",
+        "location": "1000 Nicollet Mall, Minneapolis,MN 55403-2542"
+      }
+    }
+  },
+  {
+    "name": "The Coca-Cola Company",
+    "domain": "corp",
+    "tier": "T2",
+    "note": "",
+    "feed": {
+      "platform": "workday",
+      "token": "https://coke.wd1.myworkdayjobs.com/wday/cxs/coke/coca-cola-careers/jobs",
+      "jobs": 40,
+      "source": "seed",
+      "sample": {
+        "title": "Material Operations - Intern",
+        "location": "Brazil - Manus",
+        "link": "https://coke.wd1.myworkdayjobs.com/en-US/coca-cola-careers/job/Brazil---Manus/Material-Operations---Intern_R-141691"
+      }
+    }
+  },
+  {
+    "name": "The Home Depot",
+    "domain": "corp",
+    "tier": "T2",
+    "note": "workday",
+    "feed": null
+  },
+  {
+    "name": "The Walt Disney Company",
+    "domain": "corp",
+    "tier": "T2",
+    "note": "workday",
+    "feed": {
+      "platform": "workday",
+      "token": "https://disney.wd5.myworkdayjobs.com/wday/cxs/disney/disneycareer/jobs",
+      "jobs": 639,
+      "source": "workday-discovery",
+      "sample": {
+        "title": "Sr Software Engineer (Project Hire)",
+        "location": "Lake Buena Vista, FL, USA"
+      }
+    }
+  },
+  {
+    "name": "Twilio",
+    "domain": "corp",
+    "tier": "T2",
+    "note": "proprietary",
+    "feed": {
+      "platform": "greenhouse",
+      "token": "twilio",
+      "jobs": 152,
+      "source": "guess2",
+      "needs_review": true,
+      "sample": {
+        "title": "Account Executive",
+        "location": "Remote - Australia",
+        "link": "https://job-boards.greenhouse.io/twilio/jobs/7936698"
+      }
+    }
+  },
+  {
+    "name": "UPS",
+    "domain": "corp",
+    "tier": "T2",
+    "note": "workday",
+    "feed": null
+  },
+  {
+    "name": "United Airlines",
+    "domain": "corp",
+    "tier": "T2",
+    "note": "proprietary",
+    "feed": null
+  },
+  {
+    "name": "Vercel",
+    "domain": "corp",
+    "tier": "T2",
+    "note": "",
+    "feed": {
+      "platform": "greenhouse",
+      "token": "vercel",
+      "jobs": 68,
+      "source": "guess",
+      "needs_review": true,
+      "sample": {
+        "title": "Account Executive, Majors",
+        "location": "Hybrid - London",
+        "link": "https://job-boards.greenhouse.io/vercel/jobs/5999792004"
+      }
+    }
+  },
+  {
+    "name": "Verizon",
+    "domain": "corp",
+    "tier": "T2",
+    "note": "proprietary",
+    "feed": null
+  },
+  {
+    "name": "Visa",
+    "domain": "corp",
+    "tier": "T2",
+    "note": "proprietary",
+    "feed": null,
+    "feed_rejected": {
+      "platform": "smartrecruiters",
+      "token": "Visa",
+      "jobs": 2,
+      "source": "guess2",
+      "needs_review": true,
+      "sample": {
+        "title": "Sr. Manager",
+        "location": "Austin",
+        "link": "https://api.smartrecruiters.com/v1/companies/Visa/postings/744000133907678"
+      },
+      "reason": "collision → on Workday; SR board @2 jobs"
+    }
+  },
+  {
+    "name": "Walmart",
+    "domain": "corp",
+    "tier": "T2",
+    "note": "workday",
+    "feed": null
+  },
+  {
+    "name": "Warner Bros. Discovery",
+    "domain": "corp",
+    "tier": "T2",
+    "note": "workday",
+    "feed": null
+  },
+  {
+    "name": "Wells Fargo",
+    "domain": "corp",
+    "tier": "T2",
+    "note": "proprietary",
+    "feed": null
+  },
+  {
+    "name": "Workday",
+    "domain": "corp",
+    "tier": "T2",
+    "note": "proprietary",
+    "feed": null
+  },
+  {
+    "name": "World Wide Technology",
+    "domain": "corp",
+    "tier": "T2",
+    "note": "proprietary",
+    "feed": null
+  },
+  {
+    "name": "Zoom",
+    "domain": "corp",
+    "tier": "T2",
+    "note": "proprietary",
+    "feed": null
+  },
+  {
+    "name": "Allen & Company",
+    "domain": "ib",
+    "tier": "T1",
+    "note": "no-ats",
+    "feed": null
+  },
+  {
+    "name": "Centerview Partners",
+    "domain": "ib",
+    "tier": "T1",
+    "note": "email",
+    "feed": null
+  },
+  {
+    "name": "Evercore",
+    "domain": "ib",
+    "tier": "T1",
+    "note": "oleeo",
+    "feed": null
+  },
+  {
+    "name": "Goldman Sachs",
+    "domain": "ib",
+    "tier": "T1",
+    "note": "oleeo",
+    "feed": null
+  },
+  {
+    "name": "J.P. Morgan",
+    "domain": "ib",
+    "tier": "T1",
+    "note": "proprietary",
+    "feed": null
+  },
+  {
+    "name": "Lazard",
+    "domain": "ib",
+    "tier": "T1",
+    "note": "oleeo",
+    "feed": null
+  },
+  {
+    "name": "Morgan Stanley",
+    "domain": "ib",
+    "tier": "T1",
+    "note": "workday",
+    "feed": null
+  },
+  {
+    "name": "Qatalyst Partners",
+    "domain": "ib",
+    "tier": "T1",
+    "note": "proprietary",
+    "feed": null
+  },
+  {
+    "name": "BMO Capital Markets",
+    "domain": "ib",
+    "tier": "T2",
+    "note": "proprietary",
+    "feed": {
+      "platform": "workday",
+      "token": "https://bmo.wd3.myworkdayjobs.com/wday/cxs/bmo/External/jobs",
+      "jobs": 1184,
+      "sample": {
+        "title": "Bank Manager",
+        "location": "Middleton, WI, USA"
+      },
+      "source": "workday-sweep",
+      "needs_review": true
+    }
+  },
+  {
+    "name": "BNP Paribas",
+    "domain": "ib",
+    "tier": "T2",
+    "note": "proprietary",
+    "feed": null
+  },
+  {
+    "name": "Bank of America",
+    "domain": "ib",
+    "tier": "T2",
+    "note": "proprietary",
+    "feed": null
+  },
+  {
+    "name": "Barclays",
+    "domain": "ib",
+    "tier": "T2",
+    "note": "proprietary",
+    "feed": null
+  },
+  {
+    "name": "Citi",
+    "domain": "ib",
+    "tier": "T2",
+    "note": "proprietary",
+    "feed": null
+  },
+  {
+    "name": "Credit Agricole CIB",
+    "domain": "ib",
+    "tier": "T2",
+    "note": "proprietary",
+    "feed": null
+  },
+  {
+    "name": "Daiwa",
+    "domain": "ib",
+    "tier": "T2",
+    "note": "proprietary",
+    "feed": null
+  },
+  {
+    "name": "Deutsche Bank",
+    "domain": "ib",
+    "tier": "T2",
+    "note": "proprietary",
+    "feed": null
+  },
+  {
+    "name": "Guggenheim Securities",
+    "domain": "ib",
+    "tier": "T2",
+    "note": "proprietary",
+    "feed": null
+  },
+  {
+    "name": "HSBC",
+    "domain": "ib",
+    "tier": "T2",
+    "note": "eightfold",
+    "feed": null
+  },
+  {
+    "name": "Houlihan Lokey",
+    "domain": "ib",
+    "tier": "T2",
+    "note": "proprietary",
+    "feed": null
+  },
+  {
+    "name": "ING",
+    "domain": "ib",
+    "tier": "T2",
+    "note": "",
+    "feed": {
+      "platform": "workday",
+      "token": "https://ing.wd3.myworkdayjobs.com/wday/cxs/ing/ICSGBLCOR/jobs",
+      "jobs": 42,
+      "source": "seed",
+      "sample": {
+        "title": "Software Engineering / IT Automation Intern",
+        "location": "WP (Rotterdam - Wilgenplas)",
+        "link": "https://ing.wd3.myworkdayjobs.com/en-US/ICSGBLCOR/job/WP-Rotterdam---Wilgenplas/Software-Engineering---IT-Automation-Intern_REQ-10117918"
+      }
+    }
+  },
+  {
+    "name": "Jefferies",
+    "domain": "ib",
+    "tier": "T2",
+    "note": "oleeo",
+    "feed": null
+  },
+  {
+    "name": "Macquarie",
+    "domain": "ib",
+    "tier": "T2",
+    "note": "proprietary",
+    "feed": null
+  },
+  {
+    "name": "Mizuho",
+    "domain": "ib",
+    "tier": "T2",
+    "note": "proprietary",
+    "feed": null
+  },
+  {
+    "name": "Moelis & Company",
+    "domain": "ib",
+    "tier": "T2",
+    "note": "oleeo",
+    "feed": null
+  },
+  {
+    "name": "Nomura",
+    "domain": "ib",
+    "tier": "T2",
+    "note": "proprietary",
+    "feed": null
+  },
+  {
+    "name": "PJT Partners",
+    "domain": "ib",
+    "tier": "T2",
+    "note": "proprietary",
+    "feed": null
+  },
+  {
+    "name": "Perella Weinberg Partners",
+    "domain": "ib",
+    "tier": "T2",
+    "note": "oleeo",
+    "feed": null
+  },
+  {
+    "name": "RBC Capital Markets",
+    "domain": "ib",
+    "tier": "T2",
+    "note": "proprietary",
+    "feed": null
+  },
+  {
+    "name": "Rothschild & Co",
+    "domain": "ib",
+    "tier": "T2",
+    "note": "proprietary",
+    "feed": null
+  },
+  {
+    "name": "SMBC Nikko",
+    "domain": "ib",
+    "tier": "T2",
+    "note": "proprietary",
+    "feed": null
+  },
+  {
+    "name": "Santander",
+    "domain": "ib",
+    "tier": "T2",
+    "note": "proprietary",
+    "feed": null
+  },
+  {
+    "name": "Scotiabank",
+    "domain": "ib",
+    "tier": "T2",
+    "note": "proprietary",
+    "feed": null
+  },
+  {
+    "name": "Societe Generale",
+    "domain": "ib",
+    "tier": "T2",
+    "note": "taleo",
+    "feed": null
+  },
+  {
+    "name": "Standard Chartered",
+    "domain": "ib",
+    "tier": "T2",
+    "note": "proprietary",
+    "feed": null
+  },
+  {
+    "name": "TD Securities",
+    "domain": "ib",
+    "tier": "T2",
+    "note": "proprietary",
+    "feed": null
+  },
+  {
+    "name": "UBS",
+    "domain": "ib",
+    "tier": "T2",
+    "note": "proprietary",
+    "feed": null
+  },
+  {
+    "name": "ARMA Partners",
+    "domain": "ib",
+    "tier": "T3",
+    "note": "trakstar",
+    "feed": null
+  },
+  {
+    "name": "Alantra",
+    "domain": "ib",
+    "tier": "T3",
+    "note": "proprietary",
+    "feed": null
+  },
+  {
+    "name": "Baird",
+    "domain": "ib",
+    "tier": "T3",
+    "note": "proprietary",
+    "feed": null
+  },
+  {
+    "name": "Cain Brothers",
+    "domain": "ib",
+    "tier": "T3",
+    "note": "icims",
+    "feed": null
+  },
+  {
+    "name": "Canaccord Genuity",
+    "domain": "ib",
+    "tier": "T3",
+    "note": "proprietary",
+    "feed": null
+  },
+  {
+    "name": "Cantor Fitzgerald",
+    "domain": "ib",
+    "tier": "T3",
+    "note": "proprietary",
+    "feed": null
+  },
+  {
+    "name": "DBO Partners",
+    "domain": "ib",
+    "tier": "T3",
+    "note": "",
+    "feed": null
+  },
+  {
+    "name": "Ducera Partners",
+    "domain": "ib",
+    "tier": "T3",
+    "note": "",
+    "feed": {
+      "platform": "greenhouse",
+      "token": "ducerapartners",
+      "jobs": 6,
+      "source": "guess",
+      "needs_review": true,
+      "sample": {
+        "title": "Analyst - Investment Banking - Los Angeles",
+        "location": "Los Angeles, California, United States",
+        "link": "https://job-boards.greenhouse.io/ducerapartners/jobs/7603125003"
+      }
+    }
+  },
+  {
+    "name": "FT Partners",
+    "domain": "ib",
+    "tier": "T3",
+    "note": "",
+    "feed": {
+      "platform": "greenhouse",
+      "token": "financialtechnologypartners",
+      "jobs": 16,
+      "source": "seed",
+      "sample": {
+        "title": "Administrative Assistant",
+        "location": "San Francisco ",
+        "link": "https://job-boards.greenhouse.io/financialtechnologypartners/jobs/8499371002"
+      }
+    }
+  },
+  {
+    "name": "Foros",
+    "domain": "ib",
+    "tier": "T3",
+    "note": "",
+    "feed": null
+  },
+  {
+    "name": "Greenhill",
+    "domain": "ib",
+    "tier": "T3",
+    "note": "email",
+    "feed": null
+  },
+  {
+    "name": "Harris Williams",
+    "domain": "ib",
+    "tier": "T3",
+    "note": "",
+    "feed": {
+      "platform": "workday",
+      "token": "https://pnc.wd5.myworkdayjobs.com/wday/cxs/pnc/HarrisWilliams/jobs",
+      "jobs": 8,
+      "source": "seed",
+      "sample": {
+        "title": "Accounting Manager",
+        "location": "VA - Richmond (23219)",
+        "link": "https://pnc.wd5.myworkdayjobs.com/en-US/HarrisWilliams/job/VA---Richmond-23219/Accounting-Manager_R224834"
+      }
+    }
+  },
+  {
+    "name": "KBW",
+    "domain": "ib",
+    "tier": "T3",
+    "note": "icims",
+    "feed": null
+  },
+  {
+    "name": "Leerink Partners",
+    "domain": "ib",
+    "tier": "T3",
+    "note": "",
+    "feed": null
+  },
+  {
+    "name": "Lincoln International",
+    "domain": "ib",
+    "tier": "T3",
+    "note": "",
+    "feed": {
+      "platform": "greenhouse",
+      "token": "lincolninternational",
+      "jobs": 40,
+      "source": "guess",
+      "needs_review": true,
+      "sample": {
+        "title": "Associate, Business Services M&A (Asset & Wealth Management)",
+        "location": "New York, NY",
+        "link": "http://www.lincolninternational.com/greenhouse/?gh_jid=8047295"
+      }
+    }
+  },
+  {
+    "name": "LionTree",
+    "domain": "ib",
+    "tier": "T3",
+    "note": "",
+    "feed": {
+      "platform": "greenhouse",
+      "token": "liontree",
+      "jobs": 1,
+      "source": "guess",
+      "needs_review": true,
+      "sample": {
+        "title": "Capital Markets - Research Associate ",
+        "location": "New York ",
+        "link": "https://job-boards.greenhouse.io/liontree/jobs/5153692007"
+      }
+    }
+  },
+  {
+    "name": "MUFG",
+    "domain": "ib",
+    "tier": "T3",
+    "note": "cannot-confirm",
+    "feed": null
+  },
+  {
+    "name": "Marathon Capital",
+    "domain": "ib",
+    "tier": "T3",
+    "note": "applytojob",
+    "feed": null
+  },
+  {
+    "name": "Needham & Company",
+    "domain": "ib",
+    "tier": "T3",
+    "note": "oleeo",
+    "feed": null
+  },
+  {
+    "name": "Oppenheimer",
+    "domain": "ib",
+    "tier": "T3",
+    "note": "hrmdirect",
+    "feed": null
+  },
+  {
+    "name": "Piper Sandler",
+    "domain": "ib",
+    "tier": "T3",
+    "note": "",
+    "feed": {
+      "platform": "workday",
+      "token": "https://pipersandler.wd501.myworkdayjobs.com/wday/cxs/pipersandler/Piper_Sandler_Careers/jobs",
+      "jobs": 28,
+      "source": "seed",
+      "sample": {
+        "title": "Investment Banking Real Estate Associate - Special District Group",
+        "location": "Denver, CO",
+        "link": "https://pipersandler.wd501.myworkdayjobs.com/en-US/Piper_Sandler_Careers/job/Denver-CO/Investment-Banking-Real-Estate-Associate---Special-District-Group_R-100347"
+      }
+    }
+  },
+  {
+    "name": "Raymond James",
+    "domain": "ib",
+    "tier": "T3",
+    "note": "taleo",
+    "feed": null
+  },
+  {
+    "name": "Solomon Partners",
+    "domain": "ib",
+    "tier": "T3",
+    "note": "",
+    "feed": null
+  },
+  {
+    "name": "Stephens",
+    "domain": "ib",
+    "tier": "T3",
+    "note": "proprietary",
+    "feed": null
+  },
+  {
+    "name": "Stifel",
+    "domain": "ib",
+    "tier": "T3",
+    "note": "icims",
+    "feed": null
+  },
+  {
+    "name": "TD Cowen",
+    "domain": "ib",
+    "tier": "T3",
+    "note": "proprietary",
+    "feed": null
+  },
+  {
+    "name": "Truist Securities",
+    "domain": "ib",
+    "tier": "T3",
+    "note": "proprietary",
+    "feed": null
+  },
+  {
+    "name": "Union Square Advisors",
+    "domain": "ib",
+    "tier": "T3",
+    "note": "",
+    "feed": null
+  },
+  {
+    "name": "Wells Fargo Securities",
+    "domain": "ib",
+    "tier": "T3",
+    "note": "proprietary",
+    "feed": null
+  },
+  {
+    "name": "William Blair",
+    "domain": "ib",
+    "tier": "T3",
+    "note": "",
+    "feed": {
+      "platform": "greenhouse",
+      "token": "williamblair",
+      "jobs": 36,
+      "source": "guess",
+      "needs_review": true,
+      "sample": {
+        "title": "Associate I, Client Relations",
+        "location": "Chicago, Illinois, United States",
+        "link": "https://www.williamblair.com/Careers/job-description?gh_jid=5175283007"
+      }
+    }
+  },
+  {
+    "name": "Zaoui & Co",
+    "domain": "ib",
+    "tier": "T3",
+    "note": "email",
+    "feed": null
+  },
+  {
+    "name": "Advent International",
+    "domain": "pe",
+    "tier": "T1",
+    "note": "",
+    "feed": {
+      "platform": "workday",
+      "token": "https://adventinternational.wd12.myworkdayjobs.com/wday/cxs/adventinternational/AdventAgency/jobs",
+      "jobs": 1,
+      "source": "seed",
+      "sample": {
+        "title": "Analyst, Finance - Exempt",
+        "location": "Boston, USA",
+        "link": "https://adventinternational.wd12.myworkdayjobs.com/en-US/AdventAgency/job/Boston-USA/Analyst--Finance---Exempt_JR100002-1"
+      }
+    }
+  },
+  {
+    "name": "Apollo Global Management",
+    "domain": "pe",
+    "tier": "T1",
+    "note": "",
+    "feed": {
+      "platform": "workday",
+      "token": "https://athene.wd5.myworkdayjobs.com/wday/cxs/athene/Apollo_Careers/jobs",
+      "jobs": 42,
+      "source": "seed",
+      "sample": {
+        "title": "2026 Summer Associate, Treasury & Business Management",
+        "location": "El Segundo, California",
+        "link": "https://athene.wd5.myworkdayjobs.com/en-US/Apollo_Careers/job/El-Segundo-California/XMLNAME-2026-Summer-Associate--Treasury---Business-Management_R253683"
+      }
+    }
+  },
+  {
+    "name": "Ares Management",
+    "domain": "pe",
+    "tier": "T1",
+    "note": "",
+    "feed": null
+  },
+  {
+    "name": "Bain Capital",
+    "domain": "pe",
+    "tier": "T1",
+    "note": "",
+    "feed": null
+  },
+  {
+    "name": "Blackstone",
+    "domain": "pe",
+    "tier": "T1",
+    "note": "",
+    "feed": {
+      "platform": "workday",
+      "token": "https://blackstone.wd1.myworkdayjobs.com/wday/cxs/blackstone/Blackstone_Careers/jobs",
+      "jobs": 40,
+      "source": "seed",
+      "sample": {
+        "title": "Global Head of Strategic Sourcing, SVP - Procurement",
+        "location": "Miami",
+        "link": "https://blackstone.wd1.myworkdayjobs.com/en-US/Blackstone_Careers/job/Miami/Global-Head-of-Strategic-Sourcing--SVP---Procurement_40221"
+      }
+    }
+  },
+  {
+    "name": "Brookfield",
+    "domain": "pe",
+    "tier": "T1",
+    "note": "",
+    "feed": {
+      "platform": "workday",
+      "token": "https://brookfield.wd5.myworkdayjobs.com/wday/cxs/brookfield/brookfield/jobs",
+      "jobs": 113,
+      "source": "workday-discovery",
+      "sample": {
+        "title": "Manager, Trade Operations",
+        "location": "Toronto, Ontario"
+      }
+    }
+  },
+  {
+    "name": "CVC Capital Partners",
+    "domain": "pe",
+    "tier": "T1",
+    "note": "cannot-confirm",
+    "feed": null
+  },
+  {
+    "name": "Clayton Dubilier & Rice",
+    "domain": "pe",
+    "tier": "T1",
+    "note": "cannot-confirm",
+    "feed": null
+  },
+  {
+    "name": "EQT",
+    "domain": "pe",
+    "tier": "T1",
+    "note": "",
+    "feed": null
+  },
+  {
+    "name": "General Atlantic",
+    "domain": "pe",
+    "tier": "T1",
+    "note": "",
+    "feed": {
+      "platform": "greenhouse",
+      "token": "generalatlantic",
+      "jobs": 18,
+      "source": "guess",
+      "needs_review": true,
+      "sample": {
+        "title": "2027 Investment Intern, Munich Q1 - Q4",
+        "location": "Germany",
+        "link": "https://job-boards.greenhouse.io/generalatlantic/jobs/6100666004"
+      }
+    }
+  },
+  {
+    "name": "Hellman & Friedman",
+    "domain": "pe",
+    "tier": "T1",
+    "note": "cannot-confirm",
+    "feed": null
+  },
+  {
+    "name": "Hg",
+    "domain": "pe",
+    "tier": "T1",
+    "note": "pinpoint",
+    "feed": null
+  },
+  {
+    "name": "Insight Partners",
+    "domain": "pe",
+    "tier": "T1",
+    "note": "",
+    "feed": null
+  },
+  {
+    "name": "KKR",
+    "domain": "pe",
+    "tier": "T1",
+    "note": "",
+    "feed": null
+  },
+  {
+    "name": "Partners Group",
+    "domain": "pe",
+    "tier": "T1",
+    "note": "proprietary",
+    "feed": null
+  },
+  {
+    "name": "Silver Lake",
+    "domain": "pe",
+    "tier": "T1",
+    "note": "",
+    "feed": null
+  },
+  {
+    "name": "TPG",
+    "domain": "pe",
+    "tier": "T1",
+    "note": "",
+    "feed": {
+      "platform": "greenhouse",
+      "token": "tpgcareers",
+      "jobs": 17,
+      "source": "guess2",
+      "needs_review": true,
+      "sample": {
+        "title": "Asset-Based Finance, Asset Management, Analyst",
+        "location": "New York - 245 Park Avenue",
+        "link": "https://job-boards.greenhouse.io/tpgcareers/jobs/7804828003"
+      }
+    }
+  },
+  {
+    "name": "The Carlyle Group",
+    "domain": "pe",
+    "tier": "T1",
+    "note": "proprietary",
+    "feed": null
+  },
+  {
+    "name": "Thoma Bravo",
+    "domain": "pe",
+    "tier": "T1",
+    "note": "cannot-confirm",
+    "feed": null
+  },
+  {
+    "name": "Vista Equity Partners",
+    "domain": "pe",
+    "tier": "T1",
+    "note": "",
+    "feed": null
+  },
+  {
+    "name": "Warburg Pincus",
+    "domain": "pe",
+    "tier": "T1",
+    "note": "",
+    "feed": {
+      "platform": "greenhouse",
+      "token": "warburgpincusllc",
+      "jobs": 4,
+      "source": "seed",
+      "sample": {
+        "title": "Berlin Investing - Internship",
+        "location": "Berlin",
+        "link": "https://job-boards.greenhouse.io/warburgpincusllc/jobs/4980971008"
+      }
+    }
+  },
+  {
+    "name": "Adams Street Partners",
+    "domain": "pe",
+    "tier": "T2",
+    "note": "cannot-confirm",
+    "feed": {
+      "platform": "greenhouse",
+      "token": "adamsstreetpartners",
+      "jobs": 13,
+      "source": "guess",
+      "needs_review": true,
+      "sample": {
+        "title": " Associate, Accounts Payable",
+        "location": "Chicago, Illinois, United States",
+        "link": "https://www.adamsstreetpartners.com/careers-job-post/?gh_jid=5170496007"
+      }
+    }
+  },
+  {
+    "name": "Apax Partners",
+    "domain": "pe",
+    "tier": "T2",
+    "note": "",
+    "feed": null
+  },
+  {
+    "name": "Ardian",
+    "domain": "pe",
+    "tier": "T2",
+    "note": "",
+    "feed": null
+  },
+  {
+    "name": "Audax Group",
+    "domain": "pe",
+    "tier": "T2",
+    "note": "",
+    "feed": {
+      "platform": "greenhouse",
+      "token": "audaxgroup",
+      "jobs": 11,
+      "source": "guess",
+      "needs_review": true,
+      "sample": {
+        "title": "Associate, Private Debt",
+        "location": "New York, NY",
+        "link": "https://job-boards.greenhouse.io/audaxgroup/jobs/4642673005"
+      }
+    }
+  },
+  {
+    "name": "BC Partners",
+    "domain": "pe",
+    "tier": "T2",
+    "note": "cannot-confirm",
+    "feed": null
+  },
+  {
+    "name": "Cerberus Capital Management",
+    "domain": "pe",
+    "tier": "T2",
+    "note": "proprietary",
+    "feed": null
+  },
+  {
+    "name": "Cinven",
+    "domain": "pe",
+    "tier": "T2",
+    "note": "pinpoint",
+    "feed": null
+  },
+  {
+    "name": "Clearlake Capital",
+    "domain": "pe",
+    "tier": "T2",
+    "note": "cannot-confirm",
+    "feed": null
+  },
+  {
+    "name": "Fortress Investment Group",
+    "domain": "pe",
+    "tier": "T2",
+    "note": "proprietary",
+    "feed": null
+  },
+  {
+    "name": "Francisco Partners",
+    "domain": "pe",
+    "tier": "T2",
+    "note": "",
+    "feed": null
+  },
+  {
+    "name": "GTCR",
+    "domain": "pe",
+    "tier": "T2",
+    "note": "cannot-confirm",
+    "feed": null
+  },
+  {
+    "name": "General Catalyst",
+    "domain": "pe",
+    "tier": "T2",
+    "note": "",
+    "feed": {
+      "platform": "greenhouse",
+      "token": "generalcatalyst",
+      "jobs": 4,
+      "source": "guess",
+      "needs_review": true,
+      "sample": {
+        "title": "AP Lead",
+        "location": "New York City",
+        "link": "https://job-boards.greenhouse.io/generalcatalyst/jobs/7691551003"
+      }
+    }
+  },
+  {
+    "name": "Genstar Capital",
+    "domain": "pe",
+    "tier": "T2",
+    "note": "no-ats",
+    "feed": null
+  },
+  {
+    "name": "Hamilton Lane",
+    "domain": "pe",
+    "tier": "T2",
+    "note": "",
+    "feed": null
+  },
+  {
+    "name": "HarbourVest Partners",
+    "domain": "pe",
+    "tier": "T2",
+    "note": "",
+    "feed": null
+  },
+  {
+    "name": "L Catterton",
+    "domain": "pe",
+    "tier": "T2",
+    "note": "",
+    "feed": null
+  },
+  {
+    "name": "Leonard Green & Partners",
+    "domain": "pe",
+    "tier": "T2",
+    "note": "cannot-confirm",
+    "feed": null
+  },
+  {
+    "name": "Lone Star Funds",
+    "domain": "pe",
+    "tier": "T2",
+    "note": "no-ats",
+    "feed": null
+  },
+  {
+    "name": "Madison Dearborn Partners",
+    "domain": "pe",
+    "tier": "T2",
+    "note": "email",
+    "feed": null
+  },
+  {
+    "name": "Neuberger Berman",
+    "domain": "pe",
+    "tier": "T2",
+    "note": "workday",
+    "feed": null
+  },
+  {
+    "name": "New Mountain Capital",
+    "domain": "pe",
+    "tier": "T2",
+    "note": "",
+    "feed": null
+  },
+  {
+    "name": "Oaktree Capital",
+    "domain": "pe",
+    "tier": "T2",
+    "note": "",
+    "feed": {
+      "platform": "workday",
+      "token": "https://oaktree.wd1.myworkdayjobs.com/wday/cxs/oaktree/oaktree/jobs",
+      "jobs": 54,
+      "source": "workday-discovery",
+      "sample": {
+        "title": "Vice President, Residential Credit Analyst",
+        "location": "New York"
+      }
+    }
+  },
+  {
+    "name": "Onex Partners",
+    "domain": "pe",
+    "tier": "T2",
+    "note": "proprietary",
+    "feed": null
+  },
+  {
+    "name": "Pantheon",
+    "domain": "pe",
+    "tier": "T2",
+    "note": "cannot-confirm",
+    "feed": null,
+    "feed_rejected": {
+      "platform": "greenhouse",
+      "token": "pantheon",
+      "jobs": 36,
+      "source": "guess2",
+      "needs_review": true,
+      "sample": {
+        "title": "Director of Engineering - Hosting",
+        "location": "United States (Remote)",
+        "link": "https://pantheon.io/about/careers/detail?gh_jid=8002320"
+      },
+      "reason": "collision → Pantheon.io hosting"
+    }
+  },
+  {
+    "name": "Permira",
+    "domain": "pe",
+    "tier": "T2",
+    "note": "",
+    "feed": null
+  },
+  {
+    "name": "Platinum Equity",
+    "domain": "pe",
+    "tier": "T2",
+    "note": "cannot-confirm",
+    "feed": null
+  },
+  {
+    "name": "Providence Equity Partners",
+    "domain": "pe",
+    "tier": "T2",
+    "note": "",
+    "feed": {
+      "platform": "workday",
+      "token": "https://provequity.wd5.myworkdayjobs.com/wday/cxs/provequity/PEP_External_Career_Site/jobs",
+      "jobs": 3,
+      "source": "seed",
+      "sample": {
+        "title": "Administrative Assistant",
+        "location": "UK London (72 Welbeck Street)",
+        "link": "https://provequity.wd5.myworkdayjobs.com/en-US/PEP_External_Career_Site/job/UK-London-72-Welbeck-Street/Administrative-Assistant_R553"
+      }
+    }
+  },
+  {
+    "name": "Searchlight Capital Partners",
+    "domain": "pe",
+    "tier": "T2",
+    "note": "cannot-confirm",
+    "feed": null
+  },
+  {
+    "name": "Summit Partners",
+    "domain": "pe",
+    "tier": "T2",
+    "note": "",
+    "feed": {
+      "platform": "greenhouse",
+      "token": "summitpartnerslp",
+      "jobs": 2,
+      "source": "seed",
+      "sample": {
+        "title": "Associate (2027): Investment Team",
+        "location": "Boston, MA and Menlo Park, CA",
+        "link": "https://job-boards.greenhouse.io/summitpartnerslp/jobs/8533639002"
+      }
+    }
+  },
+  {
+    "name": "Sycamore Partners",
+    "domain": "pe",
+    "tier": "T2",
+    "note": "cannot-confirm",
+    "feed": null
+  },
+  {
+    "name": "TA Associates",
+    "domain": "pe",
+    "tier": "T2",
+    "note": "getro",
+    "feed": {
+      "platform": "smartrecruiters",
+      "token": "TaAssociates",
+      "jobs": 1,
+      "source": "guess2",
+      "needs_review": true,
+      "sample": {
+        "title": "Help Desk Representative",
+        "location": "Boston",
+        "link": "https://api.smartrecruiters.com/v1/companies/TaAssociates/postings/743999809856111"
+      }
+    }
+  },
+  {
+    "name": "Thomas H. Lee Partners",
+    "domain": "pe",
+    "tier": "T2",
+    "note": "email",
+    "feed": null
+  },
+  {
+    "name": "Tiger Global",
+    "domain": "pe",
+    "tier": "T2",
+    "note": "cannot-confirm",
+    "feed": null,
+    "feed_rejected": {
+      "platform": "ashby",
+      "token": "tiger",
+      "jobs": 4,
+      "source": "guess2",
+      "needs_review": true,
+      "sample": {
+        "title": "Director of Platform Engineering",
+        "location": "San Francisco",
+        "link": "https://jobs.ashbyhq.com/tiger/531eb50a-6f68-4635-a84e-22fcdd810985"
+      },
+      "reason": "collision → generic 'tiger'"
+    }
+  },
+  {
+    "name": "ABRY Partners",
+    "domain": "pe",
+    "tier": "T3",
+    "note": "cannot-confirm",
+    "feed": null
+  },
+  {
+    "name": "Alpine Investors",
+    "domain": "pe",
+    "tier": "T3",
+    "note": "",
+    "feed": {
+      "platform": "greenhouse",
+      "token": "alpineinvestors",
+      "jobs": 2,
+      "source": "guess",
+      "needs_review": true,
+      "sample": {
+        "title": "Elevation | Sourcing Associate",
+        "location": "Austin, Texas, United States",
+        "link": "https://job-boards.greenhouse.io/alpineinvestors/jobs/8222524002"
+      }
+    }
+  },
+  {
+    "name": "Altaris Capital Partners",
+    "domain": "pe",
+    "tier": "T3",
+    "note": "cannot-confirm",
+    "feed": null
+  },
+  {
+    "name": "Aquiline Capital Partners",
+    "domain": "pe",
+    "tier": "T3",
+    "note": "cannot-confirm",
+    "feed": null
+  },
+  {
+    "name": "Arcline Investment Management",
+    "domain": "pe",
+    "tier": "T3",
+    "note": "cannot-confirm",
+    "feed": null
+  },
+  {
+    "name": "Arctos Partners",
+    "domain": "pe",
+    "tier": "T3",
+    "note": "cannot-confirm",
+    "feed": null
+  },
+  {
+    "name": "Arlington Capital Partners",
+    "domain": "pe",
+    "tier": "T3",
+    "note": "cannot-confirm",
+    "feed": null
+  },
+  {
+    "name": "Arsenal Capital Partners",
+    "domain": "pe",
+    "tier": "T3",
+    "note": "cannot-confirm",
+    "feed": null
+  },
+  {
+    "name": "Battery Ventures",
+    "domain": "pe",
+    "tier": "T3",
+    "note": "",
+    "feed": null
+  },
+  {
+    "name": "Bow River Capital",
+    "domain": "pe",
+    "tier": "T3",
+    "note": "cannot-confirm",
+    "feed": null
+  },
+  {
+    "name": "Bridgepoint",
+    "domain": "pe",
+    "tier": "T3",
+    "note": "",
+    "feed": null
+  },
+  {
+    "name": "Charlesbank Capital Partners",
+    "domain": "pe",
+    "tier": "T3",
+    "note": "cannot-confirm",
+    "feed": null
+  },
+  {
+    "name": "DigitalBridge",
+    "domain": "pe",
+    "tier": "T3",
+    "note": "",
+    "feed": {
+      "platform": "greenhouse",
+      "token": "digitalbridge",
+      "jobs": 3,
+      "source": "guess",
+      "needs_review": true,
+      "sample": {
+        "title": "Accounts Payable Specialist",
+        "location": "Boca Raton, Florida",
+        "link": "https://job-boards.greenhouse.io/digitalbridge/jobs/5045757007"
+      }
+    }
+  },
+  {
+    "name": "EIG",
+    "domain": "pe",
+    "tier": "T3",
+    "note": "cannot-confirm",
+    "feed": null
+  },
+  {
+    "name": "Flexpoint Ford",
+    "domain": "pe",
+    "tier": "T3",
+    "note": "cannot-confirm",
+    "feed": null
+  },
+  {
+    "name": "GI Partners",
+    "domain": "pe",
+    "tier": "T3",
+    "note": "cannot-confirm",
+    "feed": {
+      "platform": "smartrecruiters",
+      "token": "GiPartners",
+      "jobs": 1,
+      "source": "guess2",
+      "needs_review": true,
+      "sample": {
+        "title": "Virtual Assistant",
+        "location": "San Francisco",
+        "link": "https://api.smartrecruiters.com/v1/companies/GiPartners/postings/743999800979570"
+      }
+    }
+  },
+  {
+    "name": "Golden Gate Capital",
+    "domain": "pe",
+    "tier": "T3",
+    "note": "cannot-confirm",
+    "feed": null
+  },
+  {
+    "name": "Great Hill Partners",
+    "domain": "pe",
+    "tier": "T3",
+    "note": "cannot-confirm",
+    "feed": null
+  },
+  {
+    "name": "Gridiron Capital",
+    "domain": "pe",
+    "tier": "T3",
+    "note": "cannot-confirm",
+    "feed": null
+  },
+  {
+    "name": "H.I.G. Capital",
+    "domain": "pe",
+    "tier": "T3",
+    "note": "",
+    "feed": {
+      "platform": "workday",
+      "token": "https://higcapital.wd5.myworkdayjobs.com/wday/cxs/higcapital/LinkedIn/jobs",
+      "jobs": 5,
+      "source": "seed",
+      "sample": {
+        "title": "Senior Analyst, Human Resources Operations",
+        "location": "Coral Gables-Remote",
+        "link": "https://higcapital.wd5.myworkdayjobs.com/en-US/LinkedIn/job/Coral-Gables-Remote/Senior-Analyst--Human-Resources-Operations_JOBREQ-317"
+      }
+    }
+  },
+  {
+    "name": "HGGC",
+    "domain": "pe",
+    "tier": "T3",
+    "note": "cannot-confirm",
+    "feed": null
+  },
+  {
+    "name": "K1 Investment Management",
+    "domain": "pe",
+    "tier": "T3",
+    "note": "cannot-confirm",
+    "feed": null
+  },
+  {
+    "name": "KSL Capital Partners",
+    "domain": "pe",
+    "tier": "T3",
+    "note": "cannot-confirm",
+    "feed": null
+  },
+  {
+    "name": "Kinderhook Industries",
+    "domain": "pe",
+    "tier": "T3",
+    "note": "cannot-confirm",
+    "feed": null
+  },
+  {
+    "name": "Kohlberg & Company",
+    "domain": "pe",
+    "tier": "T3",
+    "note": "cannot-confirm",
+    "feed": null
+  },
+  {
+    "name": "Level Equity",
+    "domain": "pe",
+    "tier": "T3",
+    "note": "cannot-confirm",
+    "feed": {
+      "platform": "greenhouse",
+      "token": "levelequity",
+      "jobs": 1,
+      "source": "guess",
+      "needs_review": true,
+      "sample": {
+        "title": "Investment Team - Lateral Hires",
+        "location": "NYC",
+        "link": "https://job-boards.greenhouse.io/levelequity/jobs/4328947007"
+      }
+    }
+  },
+  {
+    "name": "Lime Rock Partners",
+    "domain": "pe",
+    "tier": "T3",
+    "note": "cannot-confirm",
+    "feed": null
+  },
+  {
+    "name": "Lincolnshire Management",
+    "domain": "pe",
+    "tier": "T3",
+    "note": "cannot-confirm",
+    "feed": null
+  },
+  {
+    "name": "Mainsail Partners",
+    "domain": "pe",
+    "tier": "T3",
+    "note": "",
+    "feed": null
+  },
+  {
+    "name": "Marlin Equity Partners",
+    "domain": "pe",
+    "tier": "T3",
+    "note": "cannot-confirm",
+    "feed": null
+  },
+  {
+    "name": "NGP",
+    "domain": "pe",
+    "tier": "T3",
+    "note": "cannot-confirm",
+    "feed": null
+  },
+  {
+    "name": "NMS Capital",
+    "domain": "pe",
+    "tier": "T3",
+    "note": "cannot-confirm",
+    "feed": null
+  },
+  {
+    "name": "Oak Hill Capital",
+    "domain": "pe",
+    "tier": "T3",
+    "note": "cannot-confirm",
+    "feed": null
+  },
+  {
+    "name": "One Rock Capital Partners",
+    "domain": "pe",
+    "tier": "T3",
+    "note": "cannot-confirm",
+    "feed": null
+  },
+  {
+    "name": "Paine Schwartz Partners",
+    "domain": "pe",
+    "tier": "T3",
+    "note": "cannot-confirm",
+    "feed": null
+  },
+  {
+    "name": "Parthenon Capital Partners",
+    "domain": "pe",
+    "tier": "T3",
+    "note": "cannot-confirm",
+    "feed": null
+  },
+  {
+    "name": "Primus Capital",
+    "domain": "pe",
+    "tier": "T3",
+    "note": "cannot-confirm",
+    "feed": null
+  },
+  {
+    "name": "Reverence Capital Partners",
+    "domain": "pe",
+    "tier": "T3",
+    "note": "cannot-confirm",
+    "feed": null
+  },
+  {
+    "name": "Riverstone Holdings",
+    "domain": "pe",
+    "tier": "T3",
+    "note": "cannot-confirm",
+    "feed": null
+  },
+  {
+    "name": "Rotunda Capital Partners",
+    "domain": "pe",
+    "tier": "T3",
+    "note": "cannot-confirm",
+    "feed": null
+  },
+  {
+    "name": "STG Partners",
+    "domain": "pe",
+    "tier": "T3",
+    "note": "cannot-confirm",
+    "feed": null
+  },
+  {
+    "name": "Sentinel Capital Partners",
+    "domain": "pe",
+    "tier": "T3",
+    "note": "cannot-confirm",
+    "feed": null
+  },
+  {
+    "name": "Serent Capital",
+    "domain": "pe",
+    "tier": "T3",
+    "note": "cannot-confirm",
+    "feed": null
+  },
+  {
+    "name": "Sumeru Equity Partners",
+    "domain": "pe",
+    "tier": "T3",
+    "note": "cannot-confirm",
+    "feed": null
+  },
+  {
+    "name": "Sun Capital Partners",
+    "domain": "pe",
+    "tier": "T3",
+    "note": "cannot-confirm",
+    "feed": null
+  },
+  {
+    "name": "TSG Consumer Partners",
+    "domain": "pe",
+    "tier": "T3",
+    "note": "cannot-confirm",
+    "feed": null
+  },
+  {
+    "name": "The Riverside Company",
+    "domain": "pe",
+    "tier": "T3",
+    "note": "",
+    "feed": {
+      "platform": "greenhouse",
+      "token": "theriversidecompany",
+      "jobs": 6,
+      "source": "guess",
+      "needs_review": true,
+      "sample": {
+        "title": "2026 Fundraising Support Analyst, Fundraising and Investor Relations",
+        "location": "New York, NY",
+        "link": "https://job-boards.greenhouse.io/theriversidecompany/jobs/8632882002"
+      }
+    }
+  },
+  {
+    "name": "Thompson Street Capital Partners",
+    "domain": "pe",
+    "tier": "T3",
+    "note": "cannot-confirm",
+    "feed": null
+  },
+  {
+    "name": "Twin Brook Capital Partners",
+    "domain": "pe",
+    "tier": "T3",
+    "note": "proprietary",
+    "feed": null
+  },
+  {
+    "name": "Vistria Group",
+    "domain": "pe",
+    "tier": "T3",
+    "note": "cannot-confirm",
+    "feed": null
+  },
+  {
+    "name": "Waud Capital Partners",
+    "domain": "pe",
+    "tier": "T3",
+    "note": "cannot-confirm",
+    "feed": null
+  },
+  {
+    "name": "Wind Point Partners",
+    "domain": "pe",
+    "tier": "T3",
+    "note": "cannot-confirm",
+    "feed": null
+  },
+  {
+    "name": "Accel",
+    "domain": "vc",
+    "tier": "T1",
+    "note": "consider",
+    "feed": null
+  },
+  {
+    "name": "Andreessen Horowitz",
+    "domain": "vc",
+    "tier": "T1",
+    "note": "",
+    "feed": null
+  },
+  {
+    "name": "Benchmark",
+    "domain": "vc",
+    "tier": "T1",
+    "note": "no-ats",
+    "feed": null
+  },
+  {
+    "name": "Bessemer Venture Partners",
+    "domain": "vc",
+    "tier": "T1",
+    "note": "",
+    "feed": {
+      "platform": "greenhouse",
+      "token": "bvpanalyst",
+      "jobs": 1,
+      "source": "seed",
+      "sample": {
+        "title": "Summer Analyst 2027",
+        "location": "New York, New York, United States",
+        "link": "https://job-boards.greenhouse.io/bvpanalyst/jobs/4633431005"
+      }
+    }
+  },
+  {
+    "name": "Coatue Management",
+    "domain": "vc",
+    "tier": "T1",
+    "note": "consider",
+    "feed": null
+  },
+  {
+    "name": "Dragoneer Investment Group",
+    "domain": "vc",
+    "tier": "T1",
+    "note": "cannot-confirm",
+    "feed": {
+      "platform": "greenhouse",
+      "token": "dragoneerinvestmentgroup",
+      "jobs": 1,
+      "source": "guess",
+      "needs_review": true,
+      "sample": {
+        "title": "SAMPLE: Executive Assistant",
+        "location": "San Francisco, California, United States",
+        "link": "https://job-boards.greenhouse.io/dragoneerinvestmentgroup/jobs/4187627009"
+      }
+    }
+  },
+  {
+    "name": "Founders Fund",
+    "domain": "vc",
+    "tier": "T1",
+    "note": "cannot-confirm",
+    "feed": null
+  },
+  {
+    "name": "Greylock",
+    "domain": "vc",
+    "tier": "T1",
+    "note": "consider",
+    "feed": null
+  },
+  {
+    "name": "Index Ventures",
+    "domain": "vc",
+    "tier": "T1",
+    "note": "proprietary",
+    "feed": null
+  },
+  {
+    "name": "Khosla Ventures",
+    "domain": "vc",
+    "tier": "T1",
+    "note": "consider",
+    "feed": null
+  },
+  {
+    "name": "Kleiner Perkins",
+    "domain": "vc",
+    "tier": "T1",
+    "note": "consider",
+    "feed": null
+  },
+  {
+    "name": "Lightspeed Venture Partners",
+    "domain": "vc",
+    "tier": "T1",
+    "note": "consider",
+    "feed": null
+  },
+  {
+    "name": "New Enterprise Associates",
+    "domain": "vc",
+    "tier": "T1",
+    "note": "consider",
+    "feed": null
+  },
+  {
+    "name": "Sequoia Capital",
+    "domain": "vc",
+    "tier": "T1",
+    "note": "consider",
+    "feed": null,
+    "feed_rejected": {
+      "platform": "ashby",
+      "token": "sequoia",
+      "jobs": 17,
+      "source": "guess2",
+      "needs_review": true,
+      "sample": {
+        "title": "Product Marketing Analyst",
+        "location": "International (Remote.com)",
+        "link": "https://jobs.ashbyhq.com/sequoia/04298ae4-9e27-41cf-9430-82fb91f3f43b"
+      },
+      "reason": "collision → Sequoia benefits"
+    }
+  },
+  {
+    "name": "SoftBank Vision Fund",
+    "domain": "vc",
+    "tier": "T1",
+    "note": "ventureloop",
+    "feed": null
+  },
+  {
+    "name": "Thrive Capital",
+    "domain": "vc",
+    "tier": "T1",
+    "note": "cannot-confirm",
+    "feed": null,
+    "feed_rejected": {
+      "platform": "greenhouse",
+      "token": "thrive",
+      "jobs": 3,
+      "source": "guess2",
+      "needs_review": true,
+      "sample": {
+        "title": "Join Our Talent Community!",
+        "location": "Atlanta",
+        "link": "https://job-boards.greenhouse.io/thrive/jobs/4765726004"
+      },
+      "reason": "collision → Thrive Global/Market"
+    }
+  },
+  {
+    "name": "8VC",
+    "domain": "vc",
+    "tier": "T2",
+    "note": "",
+    "feed": {
+      "platform": "ashby",
+      "token": "8vc",
+      "jobs": 9,
+      "source": "seed",
+      "sample": {
+        "title": "Software Engineer - MeritFirst",
+        "location": "Austin, TX",
+        "link": "https://jobs.ashbyhq.com/8vc/143acb7e-6342-48b3-9310-9caa68db9307"
+      }
+    }
+  },
+  {
+    "name": "ARCH Venture Partners",
+    "domain": "vc",
+    "tier": "T2",
+    "note": "email",
+    "feed": null
+  },
+  {
+    "name": "Accel-KKR",
+    "domain": "vc",
+    "tier": "T2",
+    "note": "cannot-confirm",
+    "feed": null
+  },
+  {
+    "name": "B Capital",
+    "domain": "vc",
+    "tier": "T2",
+    "note": "cannot-confirm",
+    "feed": null
+  },
+  {
+    "name": "Bain Capital Ventures",
+    "domain": "vc",
+    "tier": "T2",
+    "note": "consider",
+    "feed": {
+      "platform": "greenhouse",
+      "token": "baincapitalventures",
+      "jobs": 2,
+      "source": "guess",
+      "needs_review": true,
+      "sample": {
+        "title": "BCV Engineering Talent Network",
+        "location": "San Francisco, CA",
+        "link": "https://job-boards.greenhouse.io/baincapitalventures/jobs/4319994005"
+      }
+    }
+  },
+  {
+    "name": "CPP Investments",
+    "domain": "vc",
+    "tier": "T2",
+    "note": "",
+    "feed": null
+  },
+  {
+    "name": "DCVC",
+    "domain": "vc",
+    "tier": "T2",
+    "note": "consider",
+    "feed": null
+  },
+  {
+    "name": "DST Global",
+    "domain": "vc",
+    "tier": "T2",
+    "note": "cannot-confirm",
+    "feed": null
+  },
+  {
+    "name": "Felicis Ventures",
+    "domain": "vc",
+    "tier": "T2",
+    "note": "consider",
+    "feed": null
+  },
+  {
+    "name": "First Round Capital",
+    "domain": "vc",
+    "tier": "T2",
+    "note": "",
+    "feed": {
+      "platform": "ashby",
+      "token": "firstround",
+      "jobs": 1,
+      "source": "seed",
+      "sample": {
+        "title": "Executive Assistant ",
+        "location": "San Francisco, CA",
+        "link": "https://jobs.ashbyhq.com/firstround/12742568-aa96-45dd-b85f-7ef58cf91a5a"
+      }
+    }
+  },
+  {
+    "name": "Flagship Pioneering",
+    "domain": "vc",
+    "tier": "T2",
+    "note": "",
+    "feed": {
+      "platform": "greenhouse",
+      "token": "flagshippioneeringinc",
+      "jobs": 94,
+      "source": "seed",
+      "sample": {
+        "title": "Accountant",
+        "location": "Cambridge, MA USA",
+        "link": "https://boards.greenhouse.io/flagshippioneeringinc/jobs/8598619002?gh_jid=8598619002"
+      }
+    }
+  },
+  {
+    "name": "GGV Capital",
+    "domain": "vc",
+    "tier": "T2",
+    "note": "consider",
+    "feed": null
+  },
+  {
+    "name": "GV",
+    "domain": "vc",
+    "tier": "T2",
+    "note": "consider",
+    "feed": null
+  },
+  {
+    "name": "Georgian",
+    "domain": "vc",
+    "tier": "T2",
+    "note": "cannot-confirm",
+    "feed": {
+      "platform": "ashby",
+      "token": "georgian",
+      "jobs": 4,
+      "source": "guess",
+      "needs_review": true,
+      "sample": {
+        "title": "Lead AI Advocate",
+        "location": "Toronto Headquarters",
+        "link": "https://jobs.ashbyhq.com/georgian/c0cdfc6d-d752-47dc-acb9-3ba290c1212b"
+      }
+    }
+  },
+  {
+    "name": "Highland Capital Partners",
+    "domain": "vc",
+    "tier": "T2",
+    "note": "cannot-confirm",
+    "feed": null,
+    "feed_rejected": {
+      "platform": "greenhouse",
+      "token": "highland",
+      "jobs": 2,
+      "source": "guess2",
+      "needs_review": true,
+      "sample": {
+        "title": "DVM Student Externship/Preceptorship Program - Highland Animal Hospital",
+        "location": "Needham Heights, MA",
+        "link": "https://boards.greenhouse.io/highland/jobs/5040386002?gh_jid=5040386002"
+      },
+      "reason": "collision → vet clinic"
+    }
+  },
+  {
+    "name": "ICONIQ Growth",
+    "domain": "vc",
+    "tier": "T2",
+    "note": "proprietary",
+    "feed": null
+  },
+  {
+    "name": "IVP",
+    "domain": "vc",
+    "tier": "T2",
+    "note": "consider",
+    "feed": null
+  },
+  {
+    "name": "Lux Capital",
+    "domain": "vc",
+    "tier": "T2",
+    "note": "consider",
+    "feed": null
+  },
+  {
+    "name": "Menlo Ventures",
+    "domain": "vc",
+    "tier": "T2",
+    "note": "consider",
+    "feed": null,
+    "feed_rejected": {
+      "platform": "ashby",
+      "token": "menlo",
+      "jobs": 22,
+      "source": "guess2",
+      "needs_review": true,
+      "sample": {
+        "title": "Robotics AI Engineer",
+        "location": "Ho Chi Minh City",
+        "link": "https://jobs.ashbyhq.com/menlo/da98653d-8d51-4aaa-8500-6af9927f9716"
+      },
+      "reason": "collision → Menlo security/robotics"
+    }
+  },
+  {
+    "name": "Meritech Capital Partners",
+    "domain": "vc",
+    "tier": "T2",
+    "note": "cannot-confirm",
+    "feed": null
+  },
+  {
+    "name": "Mubadala Capital",
+    "domain": "vc",
+    "tier": "T2",
+    "note": "careers-page",
+    "feed": null
+  },
+  {
+    "name": "NewView Capital",
+    "domain": "vc",
+    "tier": "T2",
+    "note": "cannot-confirm",
+    "feed": null
+  },
+  {
+    "name": "Norwest Venture Partners",
+    "domain": "vc",
+    "tier": "T2",
+    "note": "consider",
+    "feed": null
+  },
+  {
+    "name": "Paradigm",
+    "domain": "vc",
+    "tier": "T2",
+    "note": "consider",
+    "feed": null,
+    "feed_rejected": {
+      "platform": "greenhouse",
+      "token": "paradigm",
+      "jobs": 1,
+      "source": "guess2",
+      "needs_review": true,
+      "sample": {
+        "title": "General Application",
+        "location": "Remote",
+        "link": "https://job-boards.greenhouse.io/paradigm/jobs/6162068002"
+      },
+      "reason": "collision → generic slug"
+    }
+  },
+  {
+    "name": "Prosus Ventures",
+    "domain": "vc",
+    "tier": "T2",
+    "note": "",
+    "feed": {
+      "platform": "lever-eu",
+      "token": "prosus",
+      "jobs": 11,
+      "source": "guess2",
+      "needs_review": true,
+      "sample": {
+        "title": "AI Engineer – 0 to 1 Products",
+        "location": "",
+        "link": "https://jobs.eu.lever.co/prosus/cf643dd2-0266-46ad-a5df-5da05a6b3a32"
+      }
+    }
+  },
+  {
+    "name": "QED Investors",
+    "domain": "vc",
+    "tier": "T2",
+    "note": "consider",
+    "feed": null
+  },
+  {
+    "name": "Redpoint Ventures",
+    "domain": "vc",
+    "tier": "T2",
+    "note": "consider",
+    "feed": null
+  },
+  {
+    "name": "Ribbit Capital",
+    "domain": "vc",
+    "tier": "T2",
+    "note": "cannot-confirm",
+    "feed": null
+  },
+  {
+    "name": "Sapphire Ventures",
+    "domain": "vc",
+    "tier": "T2",
+    "note": "consider",
+    "feed": null
+  },
+  {
+    "name": "Scale Venture Partners",
+    "domain": "vc",
+    "tier": "T2",
+    "note": "cannot-confirm",
+    "feed": null
+  },
+  {
+    "name": "Social Capital",
+    "domain": "vc",
+    "tier": "T2",
+    "note": "",
+    "feed": null
+  },
+  {
+    "name": "TCV",
+    "domain": "vc",
+    "tier": "T2",
+    "note": "consider",
+    "feed": null
+  },
+  {
+    "name": "TPG Growth",
+    "domain": "vc",
+    "tier": "T2",
+    "note": "cannot-confirm",
+    "feed": null
+  },
+  {
+    "name": "Union Square Ventures",
+    "domain": "vc",
+    "tier": "T2",
+    "note": "consider",
+    "feed": null
+  },
+  {
+    "name": "WestCap",
+    "domain": "vc",
+    "tier": "T2",
+    "note": "cannot-confirm",
+    "feed": null
+  },
+  {
+    "name": "Y Combinator",
+    "domain": "vc",
+    "tier": "T2",
+    "note": "proprietary",
+    "feed": {
+      "platform": "ashby",
+      "token": "ycombinator",
+      "jobs": 6,
+      "source": "guess2",
+      "needs_review": true,
+      "sample": {
+        "title": "Product Engineer, Internal Tools",
+        "location": "San Francisco Bay Area",
+        "link": "https://jobs.ashbyhq.com/ycombinator/bbf8f36d-60bf-4168-b2b8-fac91bc4534c"
+      }
+    }
+  },
+  {
+    "name": "a16z Crypto",
+    "domain": "vc",
+    "tier": "T2",
+    "note": "consider",
+    "feed": {
+      "platform": "ashby",
+      "token": "a16z-crypto",
+      "jobs": 1,
+      "source": "guess2",
+      "needs_review": true,
+      "sample": {
+        "title": "Connect with a16z crypto talent team",
+        "location": "a16z",
+        "link": "https://jobs.ashbyhq.com/a16z-crypto/2dc6805f-6966-4d40-95a5-7feb29e3be4e"
+      }
+    }
+  },
+  {
+    "name": "5AM Ventures",
+    "domain": "vc",
+    "tier": "T3",
+    "note": "cannot-confirm",
+    "feed": {
+      "platform": "lever",
+      "token": "5amventures",
+      "jobs": 7,
+      "source": "guess",
+      "needs_review": true,
+      "sample": {
+        "title": "Associate Director, Corporate Development",
+        "location": "Berkeley, CA",
+        "link": "https://jobs.lever.co/5amventures/5f15d69a-4481-464a-8ad7-77b1a5f13eed"
+      }
+    }
+  },
+  {
+    "name": "Amplify Partners",
+    "domain": "vc",
+    "tier": "T3",
+    "note": "",
+    "feed": null,
+    "feed_rejected": {
+      "platform": "ashby",
+      "token": "amplify",
+      "jobs": 34,
+      "source": "guess2",
+      "needs_review": true,
+      "sample": {
+        "title": "Director, PreSales Operations",
+        "location": "Remote - United States",
+        "link": "https://jobs.ashbyhq.com/amplify/02b3096e-a43d-4a15-b2c2-b3b33c2a7cff"
+      },
+      "reason": "collision → Amplify edtech"
+    }
+  },
+  {
+    "name": "Atlas Venture",
+    "domain": "vc",
+    "tier": "T3",
+    "note": "cannot-confirm",
+    "feed": null
+  },
+  {
+    "name": "BMW i Ventures",
+    "domain": "vc",
+    "tier": "T3",
+    "note": "cannot-confirm",
+    "feed": null
+  },
+  {
+    "name": "Blockchain Capital",
+    "domain": "vc",
+    "tier": "T3",
+    "note": "cannot-confirm",
+    "feed": null,
+    "feed_rejected": {
+      "platform": "greenhouse",
+      "token": "blockchain",
+      "jobs": 33,
+      "source": "guess2",
+      "needs_review": true,
+      "sample": {
+        "title": "Android Engineer",
+        "location": "Buenos Aires",
+        "link": "https://job-boards.greenhouse.io/blockchain/jobs/7700625"
+      },
+      "reason": "collision → Blockchain.com"
+    }
+  },
+  {
+    "name": "BoxGroup",
+    "domain": "vc",
+    "tier": "T3",
+    "note": "cannot-confirm",
+    "feed": null
+  },
+  {
+    "name": "Breakthrough Energy Ventures",
+    "domain": "vc",
+    "tier": "T3",
+    "note": "consider",
+    "feed": {
+      "platform": "greenhouse",
+      "token": "breakthroughenergy",
+      "jobs": 2,
+      "source": "guess",
+      "needs_review": true,
+      "sample": {
+        "title": "Operations Specialist",
+        "location": "Denver, CO",
+        "link": "https://job-boards.greenhouse.io/breakthroughenergy/jobs/7775563003"
+      }
+    }
+  },
+  {
+    "name": "Cisco Investments",
+    "domain": "vc",
+    "tier": "T3",
+    "note": "cannot-confirm",
+    "feed": null
+  },
+  {
+    "name": "Congruent Ventures",
+    "domain": "vc",
+    "tier": "T3",
+    "note": "cannot-confirm",
+    "feed": null
+  },
+  {
+    "name": "Craft Ventures",
+    "domain": "vc",
+    "tier": "T3",
+    "note": "cannot-confirm",
+    "feed": null
+  },
+  {
+    "name": "Deerfield Management",
+    "domain": "vc",
+    "tier": "T3",
+    "note": "cannot-confirm",
+    "feed": null
+  },
+  {
+    "name": "Electric Capital",
+    "domain": "vc",
+    "tier": "T3",
+    "note": "cannot-confirm",
+    "feed": null,
+    "feed_rejected": {
+      "platform": "ashby",
+      "token": "electric",
+      "jobs": 3,
+      "source": "guess2",
+      "needs_review": true,
+      "sample": {
+        "title": "Technical Solutions Engineer, GTM",
+        "location": "Remote",
+        "link": "https://jobs.ashbyhq.com/electric/88f6007d-a88a-459c-80e3-8739e45ca8fc"
+      },
+      "reason": "collision → electric.ai"
+    }
+  },
+  {
+    "name": "Energy Impact Partners",
+    "domain": "vc",
+    "tier": "T3",
+    "note": "cannot-confirm",
+    "feed": null
+  },
+  {
+    "name": "F-Prime Capital",
+    "domain": "vc",
+    "tier": "T3",
+    "note": "cannot-confirm",
+    "feed": null
+  },
+  {
+    "name": "FirstMark Capital",
+    "domain": "vc",
+    "tier": "T3",
+    "note": "cannot-confirm",
+    "feed": null
+  },
+  {
+    "name": "Homebrew",
+    "domain": "vc",
+    "tier": "T3",
+    "note": "cannot-confirm",
+    "feed": null
+  },
+  {
+    "name": "Initialized Capital",
+    "domain": "vc",
+    "tier": "T3",
+    "note": "cannot-confirm",
+    "feed": null
+  },
+  {
+    "name": "Intel Capital",
+    "domain": "vc",
+    "tier": "T3",
+    "note": "cannot-confirm",
+    "feed": null
+  },
+  {
+    "name": "Lerer Hippeau",
+    "domain": "vc",
+    "tier": "T3",
+    "note": "cannot-confirm",
+    "feed": null
+  },
+  {
+    "name": "Lowercarbon Capital",
+    "domain": "vc",
+    "tier": "T3",
+    "note": "getro",
+    "feed": null
+  },
+  {
+    "name": "M12",
+    "domain": "vc",
+    "tier": "T3",
+    "note": "cannot-confirm",
+    "feed": null
+  },
+  {
+    "name": "Madrona Venture Group",
+    "domain": "vc",
+    "tier": "T3",
+    "note": "cannot-confirm",
+    "feed": {
+      "platform": "smartrecruiters",
+      "token": "MadronaVentureGroup",
+      "jobs": 1,
+      "source": "guess2",
+      "needs_review": true,
+      "sample": {
+        "title": "Talent Hub Director",
+        "location": "Seattle",
+        "link": "https://api.smartrecruiters.com/v1/companies/MadronaVentureGroup/postings/743999667505899"
+      }
+    }
+  },
+  {
+    "name": "Nyca Partners",
+    "domain": "vc",
+    "tier": "T3",
+    "note": "cannot-confirm",
+    "feed": null
+  },
+  {
+    "name": "OrbiMed Advisors",
+    "domain": "vc",
+    "tier": "T3",
+    "note": "cannot-confirm",
+    "feed": null
+  },
+  {
+    "name": "Pantera Capital",
+    "domain": "vc",
+    "tier": "T3",
+    "note": "cannot-confirm",
+    "feed": {
+      "platform": "greenhouse",
+      "token": "panteracapitalcareers",
+      "jobs": 11,
+      "source": "guess2",
+      "needs_review": true,
+      "sample": {
+        "title": "Accounting Junior-Associate",
+        "location": "San Juan, Puerto Rico",
+        "link": "https://panteracapital.com/careers/?gh_jid=5249389008"
+      }
+    }
+  },
+  {
+    "name": "Playground Global",
+    "domain": "vc",
+    "tier": "T3",
+    "note": "cannot-confirm",
+    "feed": null,
+    "feed_rejected": {
+      "platform": "ashby",
+      "token": "playground",
+      "jobs": 14,
+      "source": "guess2",
+      "needs_review": true,
+      "sample": {
+        "title": "Senior Product Designer",
+        "location": "New York City",
+        "link": "https://jobs.ashbyhq.com/playground/004ceedf-eb3d-495c-a61a-84d9e16cf699"
+      },
+      "reason": "collision → generic 'playground'"
+    }
+  },
+  {
+    "name": "Polychain Capital",
+    "domain": "vc",
+    "tier": "T3",
+    "note": "cannot-confirm",
+    "feed": {
+      "platform": "greenhouse",
+      "token": "polychaincapital",
+      "jobs": 2,
+      "source": "guess",
+      "needs_review": true,
+      "sample": {
+        "title": "Head of Capital Formation",
+        "location": "San Francisco",
+        "link": "https://job-boards.greenhouse.io/polychaincapital/jobs/6073131"
+      }
+    }
+  },
+  {
+    "name": "Qualcomm Ventures",
+    "domain": "vc",
+    "tier": "T3",
+    "note": "cannot-confirm",
+    "feed": null
+  },
+  {
+    "name": "RRE Ventures",
+    "domain": "vc",
+    "tier": "T3",
+    "note": "cannot-confirm",
+    "feed": null
+  },
+  {
+    "name": "Radical Ventures",
+    "domain": "vc",
+    "tier": "T3",
+    "note": "cannot-confirm",
+    "feed": null
+  },
+  {
+    "name": "SOSV",
+    "domain": "vc",
+    "tier": "T3",
+    "note": "cannot-confirm",
+    "feed": null
+  },
+  {
+    "name": "Salesforce Ventures",
+    "domain": "vc",
+    "tier": "T3",
+    "note": "cannot-confirm",
+    "feed": null
+  },
+  {
+    "name": "Samsung NEXT",
+    "domain": "vc",
+    "tier": "T3",
+    "note": "cannot-confirm",
+    "feed": {
+      "platform": "greenhouse",
+      "token": "samsungnext",
+      "jobs": 1,
+      "source": "guess",
+      "needs_review": true,
+      "sample": {
+        "title": "Investor - AI and Robotics",
+        "location": "Mountain View",
+        "link": "https://job-boards.greenhouse.io/samsungnext/jobs/8562926002"
+      }
+    }
+  },
+  {
+    "name": "Slow Ventures",
+    "domain": "vc",
+    "tier": "T3",
+    "note": "cannot-confirm",
+    "feed": null
+  },
+  {
+    "name": "Susa Ventures",
+    "domain": "vc",
+    "tier": "T3",
+    "note": "cannot-confirm",
+    "feed": null
+  },
+  {
+    "name": "Third Rock Ventures",
+    "domain": "vc",
+    "tier": "T3",
+    "note": "cannot-confirm",
+    "feed": null
+  },
+  {
+    "name": "Toyota Ventures",
+    "domain": "vc",
+    "tier": "T3",
+    "note": "cannot-confirm",
+    "feed": null
+  },
+  {
+    "name": "Upfront Ventures",
+    "domain": "vc",
+    "tier": "T3",
+    "note": "cannot-confirm",
+    "feed": null
+  },
+  {
+    "name": "Valar Ventures",
+    "domain": "vc",
+    "tier": "T3",
+    "note": "cannot-confirm",
+    "feed": null
+  },
+  {
+    "name": "Versant Ventures",
+    "domain": "vc",
+    "tier": "T3",
+    "note": "cannot-confirm",
+    "feed": null
+  },
+  {
+    "name": "Zetta Venture Partners",
+    "domain": "vc",
+    "tier": "T3",
+    "note": "cannot-confirm",
+    "feed": null
+  }
+]

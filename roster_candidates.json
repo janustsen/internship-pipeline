@@ -1,0 +1,2462 @@
+[
+  {
+    "name": "McKinsey & Company",
+    "domain": "consulting",
+    "tier": "T1",
+    "note": "proprietary"
+  },
+  {
+    "name": "Boston Consulting Group",
+    "domain": "consulting",
+    "tier": "T1",
+    "note": "proprietary"
+  },
+  {
+    "name": "Bain & Company",
+    "domain": "consulting",
+    "tier": "T1",
+    "note": "proprietary"
+  },
+  {
+    "name": "Oliver Wyman",
+    "domain": "consulting",
+    "tier": "T2",
+    "note": "proprietary"
+  },
+  {
+    "name": "Strategy&",
+    "domain": "consulting",
+    "tier": "T2",
+    "note": ""
+  },
+  {
+    "name": "EY-Parthenon",
+    "domain": "consulting",
+    "tier": "T2",
+    "note": "proprietary"
+  },
+  {
+    "name": "Monitor Deloitte",
+    "domain": "consulting",
+    "tier": "T2",
+    "note": "proprietary"
+  },
+  {
+    "name": "KPMG Strategy",
+    "domain": "consulting",
+    "tier": "T2",
+    "note": "avature"
+  },
+  {
+    "name": "Kearney",
+    "domain": "consulting",
+    "tier": "T2",
+    "note": ""
+  },
+  {
+    "name": "L.E.K. Consulting",
+    "domain": "consulting",
+    "tier": "T2",
+    "note": ""
+  },
+  {
+    "name": "Roland Berger",
+    "domain": "consulting",
+    "tier": "T2",
+    "note": "proprietary"
+  },
+  {
+    "name": "Accenture Strategy",
+    "domain": "consulting",
+    "tier": "T2",
+    "note": ""
+  },
+  {
+    "name": "Booz Allen Hamilton",
+    "domain": "consulting",
+    "tier": "T2",
+    "note": "proprietary"
+  },
+  {
+    "name": "Arthur D. Little",
+    "domain": "consulting",
+    "tier": "T2",
+    "note": "icims"
+  },
+  {
+    "name": "Simon-Kucher",
+    "domain": "consulting",
+    "tier": "T3",
+    "note": "csod"
+  },
+  {
+    "name": "ZS Associates",
+    "domain": "consulting",
+    "tier": "T3",
+    "note": "proprietary"
+  },
+  {
+    "name": "OC&C Strategy Consultants",
+    "domain": "consulting",
+    "tier": "T3",
+    "note": ""
+  },
+  {
+    "name": "Analysis Group",
+    "domain": "consulting",
+    "tier": "T3",
+    "note": "icims"
+  },
+  {
+    "name": "Cornerstone Research",
+    "domain": "consulting",
+    "tier": "T3",
+    "note": ""
+  },
+  {
+    "name": "Charles River Associates",
+    "domain": "consulting",
+    "tier": "T3",
+    "note": ""
+  },
+  {
+    "name": "Brattle Group",
+    "domain": "consulting",
+    "tier": "T3",
+    "note": ""
+  },
+  {
+    "name": "Bates White",
+    "domain": "consulting",
+    "tier": "T3",
+    "note": "proprietary"
+  },
+  {
+    "name": "Alvarez & Marsal",
+    "domain": "consulting",
+    "tier": "T3",
+    "note": "proprietary"
+  },
+  {
+    "name": "AlixPartners",
+    "domain": "consulting",
+    "tier": "T3",
+    "note": ""
+  },
+  {
+    "name": "FTI Consulting",
+    "domain": "consulting",
+    "tier": "T3",
+    "note": "selectminds"
+  },
+  {
+    "name": "Huron Consulting Group",
+    "domain": "consulting",
+    "tier": "T3",
+    "note": ""
+  },
+  {
+    "name": "ghSMART",
+    "domain": "consulting",
+    "tier": "T3",
+    "note": ""
+  },
+  {
+    "name": "Stax",
+    "domain": "consulting",
+    "tier": "T3",
+    "note": "trakstar"
+  },
+  {
+    "name": "Putnam Associates",
+    "domain": "consulting",
+    "tier": "T3",
+    "note": ""
+  },
+  {
+    "name": "ClearView Healthcare Partners",
+    "domain": "consulting",
+    "tier": "T3",
+    "note": ""
+  },
+  {
+    "name": "Health Advances",
+    "domain": "consulting",
+    "tier": "T3",
+    "note": "hrmdirect"
+  },
+  {
+    "name": "Altman Solon",
+    "domain": "consulting",
+    "tier": "T3",
+    "note": ""
+  },
+  {
+    "name": "Avasant",
+    "domain": "consulting",
+    "tier": "T3",
+    "note": "applytojob"
+  },
+  {
+    "name": "NERA Economic Consulting",
+    "domain": "consulting",
+    "tier": "T3",
+    "note": "proprietary"
+  },
+  {
+    "name": "Compass Lexecon",
+    "domain": "consulting",
+    "tier": "T3",
+    "note": ""
+  },
+  {
+    "name": "Edgeworth Economics",
+    "domain": "consulting",
+    "tier": "T3",
+    "note": "proprietary"
+  },
+  {
+    "name": "Economists Incorporated",
+    "domain": "consulting",
+    "tier": "T3",
+    "note": "cannot-confirm"
+  },
+  {
+    "name": "Frontier Economics",
+    "domain": "consulting",
+    "tier": "T3",
+    "note": "proprietary"
+  },
+  {
+    "name": "Oxera",
+    "domain": "consulting",
+    "tier": "T3",
+    "note": "proprietary"
+  },
+  {
+    "name": "Copenhagen Economics",
+    "domain": "consulting",
+    "tier": "T3",
+    "note": "proprietary"
+  },
+  {
+    "name": "RBB Economics",
+    "domain": "consulting",
+    "tier": "T3",
+    "note": "proprietary"
+  },
+  {
+    "name": "E.CA Economics",
+    "domain": "consulting",
+    "tier": "T3",
+    "note": "personio"
+  },
+  {
+    "name": "Oslo Economics",
+    "domain": "consulting",
+    "tier": "T3",
+    "note": "proprietary"
+  },
+  {
+    "name": "Vivaldi Group",
+    "domain": "consulting",
+    "tier": "T3",
+    "note": "cannot-confirm"
+  },
+  {
+    "name": "The Value Engineers",
+    "domain": "consulting",
+    "tier": "T3",
+    "note": "cannot-confirm"
+  },
+  {
+    "name": "Horvath",
+    "domain": "consulting",
+    "tier": "T3",
+    "note": "proprietary"
+  },
+  {
+    "name": "Nova Reperta",
+    "domain": "consulting",
+    "tier": "T3",
+    "note": "proprietary"
+  },
+  {
+    "name": "Marakon",
+    "domain": "consulting",
+    "tier": "T3",
+    "note": "cannot-confirm"
+  },
+  {
+    "name": "Kaiser Associates",
+    "domain": "consulting",
+    "tier": "T3",
+    "note": "cannot-confirm"
+  },
+  {
+    "name": "Trinity Life Sciences",
+    "domain": "consulting",
+    "tier": "T3",
+    "note": "proprietary"
+  },
+  {
+    "name": "Goldman Sachs",
+    "domain": "ib",
+    "tier": "T1",
+    "note": "oleeo"
+  },
+  {
+    "name": "Morgan Stanley",
+    "domain": "ib",
+    "tier": "T1",
+    "note": "workday"
+  },
+  {
+    "name": "J.P. Morgan",
+    "domain": "ib",
+    "tier": "T1",
+    "note": "proprietary"
+  },
+  {
+    "name": "Evercore",
+    "domain": "ib",
+    "tier": "T1",
+    "note": "oleeo"
+  },
+  {
+    "name": "Centerview Partners",
+    "domain": "ib",
+    "tier": "T1",
+    "note": "email"
+  },
+  {
+    "name": "Lazard",
+    "domain": "ib",
+    "tier": "T1",
+    "note": "oleeo"
+  },
+  {
+    "name": "Qatalyst Partners",
+    "domain": "ib",
+    "tier": "T1",
+    "note": "proprietary"
+  },
+  {
+    "name": "Allen & Company",
+    "domain": "ib",
+    "tier": "T1",
+    "note": "no-ats"
+  },
+  {
+    "name": "PJT Partners",
+    "domain": "ib",
+    "tier": "T2",
+    "note": "proprietary"
+  },
+  {
+    "name": "Moelis & Company",
+    "domain": "ib",
+    "tier": "T2",
+    "note": "oleeo"
+  },
+  {
+    "name": "Perella Weinberg Partners",
+    "domain": "ib",
+    "tier": "T2",
+    "note": "oleeo"
+  },
+  {
+    "name": "Rothschild & Co",
+    "domain": "ib",
+    "tier": "T2",
+    "note": "proprietary"
+  },
+  {
+    "name": "Guggenheim Securities",
+    "domain": "ib",
+    "tier": "T2",
+    "note": "proprietary"
+  },
+  {
+    "name": "Houlihan Lokey",
+    "domain": "ib",
+    "tier": "T2",
+    "note": "proprietary"
+  },
+  {
+    "name": "Jefferies",
+    "domain": "ib",
+    "tier": "T2",
+    "note": "oleeo"
+  },
+  {
+    "name": "Bank of America",
+    "domain": "ib",
+    "tier": "T2",
+    "note": "proprietary"
+  },
+  {
+    "name": "Citi",
+    "domain": "ib",
+    "tier": "T2",
+    "note": "proprietary"
+  },
+  {
+    "name": "Barclays",
+    "domain": "ib",
+    "tier": "T2",
+    "note": "proprietary"
+  },
+  {
+    "name": "UBS",
+    "domain": "ib",
+    "tier": "T2",
+    "note": "proprietary"
+  },
+  {
+    "name": "Deutsche Bank",
+    "domain": "ib",
+    "tier": "T2",
+    "note": "proprietary"
+  },
+  {
+    "name": "RBC Capital Markets",
+    "domain": "ib",
+    "tier": "T2",
+    "note": "proprietary"
+  },
+  {
+    "name": "HSBC",
+    "domain": "ib",
+    "tier": "T2",
+    "note": "eightfold"
+  },
+  {
+    "name": "BNP Paribas",
+    "domain": "ib",
+    "tier": "T2",
+    "note": "proprietary"
+  },
+  {
+    "name": "Credit Agricole CIB",
+    "domain": "ib",
+    "tier": "T2",
+    "note": "proprietary"
+  },
+  {
+    "name": "Societe Generale",
+    "domain": "ib",
+    "tier": "T2",
+    "note": "taleo"
+  },
+  {
+    "name": "Nomura",
+    "domain": "ib",
+    "tier": "T2",
+    "note": "proprietary"
+  },
+  {
+    "name": "Mizuho",
+    "domain": "ib",
+    "tier": "T2",
+    "note": "proprietary"
+  },
+  {
+    "name": "Macquarie",
+    "domain": "ib",
+    "tier": "T2",
+    "note": "proprietary"
+  },
+  {
+    "name": "Standard Chartered",
+    "domain": "ib",
+    "tier": "T2",
+    "note": "proprietary"
+  },
+  {
+    "name": "TD Securities",
+    "domain": "ib",
+    "tier": "T2",
+    "note": "proprietary"
+  },
+  {
+    "name": "Santander",
+    "domain": "ib",
+    "tier": "T2",
+    "note": "proprietary"
+  },
+  {
+    "name": "SMBC Nikko",
+    "domain": "ib",
+    "tier": "T2",
+    "note": "proprietary"
+  },
+  {
+    "name": "Daiwa",
+    "domain": "ib",
+    "tier": "T2",
+    "note": "proprietary"
+  },
+  {
+    "name": "BMO Capital Markets",
+    "domain": "ib",
+    "tier": "T2",
+    "note": "proprietary"
+  },
+  {
+    "name": "Scotiabank",
+    "domain": "ib",
+    "tier": "T2",
+    "note": "proprietary"
+  },
+  {
+    "name": "ING",
+    "domain": "ib",
+    "tier": "T2",
+    "note": ""
+  },
+  {
+    "name": "William Blair",
+    "domain": "ib",
+    "tier": "T3",
+    "note": ""
+  },
+  {
+    "name": "Baird",
+    "domain": "ib",
+    "tier": "T3",
+    "note": "proprietary"
+  },
+  {
+    "name": "Harris Williams",
+    "domain": "ib",
+    "tier": "T3",
+    "note": ""
+  },
+  {
+    "name": "Piper Sandler",
+    "domain": "ib",
+    "tier": "T3",
+    "note": ""
+  },
+  {
+    "name": "Raymond James",
+    "domain": "ib",
+    "tier": "T3",
+    "note": "taleo"
+  },
+  {
+    "name": "Stifel",
+    "domain": "ib",
+    "tier": "T3",
+    "note": "icims"
+  },
+  {
+    "name": "TD Cowen",
+    "domain": "ib",
+    "tier": "T3",
+    "note": "proprietary"
+  },
+  {
+    "name": "Lincoln International",
+    "domain": "ib",
+    "tier": "T3",
+    "note": ""
+  },
+  {
+    "name": "LionTree",
+    "domain": "ib",
+    "tier": "T3",
+    "note": ""
+  },
+  {
+    "name": "FT Partners",
+    "domain": "ib",
+    "tier": "T3",
+    "note": ""
+  },
+  {
+    "name": "Union Square Advisors",
+    "domain": "ib",
+    "tier": "T3",
+    "note": ""
+  },
+  {
+    "name": "Solomon Partners",
+    "domain": "ib",
+    "tier": "T3",
+    "note": ""
+  },
+  {
+    "name": "Ducera Partners",
+    "domain": "ib",
+    "tier": "T3",
+    "note": ""
+  },
+  {
+    "name": "Foros",
+    "domain": "ib",
+    "tier": "T3",
+    "note": ""
+  },
+  {
+    "name": "DBO Partners",
+    "domain": "ib",
+    "tier": "T3",
+    "note": ""
+  },
+  {
+    "name": "Leerink Partners",
+    "domain": "ib",
+    "tier": "T3",
+    "note": ""
+  },
+  {
+    "name": "Wells Fargo Securities",
+    "domain": "ib",
+    "tier": "T3",
+    "note": "proprietary"
+  },
+  {
+    "name": "Canaccord Genuity",
+    "domain": "ib",
+    "tier": "T3",
+    "note": "proprietary"
+  },
+  {
+    "name": "Stephens",
+    "domain": "ib",
+    "tier": "T3",
+    "note": "proprietary"
+  },
+  {
+    "name": "Cantor Fitzgerald",
+    "domain": "ib",
+    "tier": "T3",
+    "note": "proprietary"
+  },
+  {
+    "name": "Truist Securities",
+    "domain": "ib",
+    "tier": "T3",
+    "note": "proprietary"
+  },
+  {
+    "name": "Oppenheimer",
+    "domain": "ib",
+    "tier": "T3",
+    "note": "hrmdirect"
+  },
+  {
+    "name": "KBW",
+    "domain": "ib",
+    "tier": "T3",
+    "note": "icims"
+  },
+  {
+    "name": "Cain Brothers",
+    "domain": "ib",
+    "tier": "T3",
+    "note": "icims"
+  },
+  {
+    "name": "Marathon Capital",
+    "domain": "ib",
+    "tier": "T3",
+    "note": "applytojob"
+  },
+  {
+    "name": "Needham & Company",
+    "domain": "ib",
+    "tier": "T3",
+    "note": "oleeo"
+  },
+  {
+    "name": "ARMA Partners",
+    "domain": "ib",
+    "tier": "T3",
+    "note": "trakstar"
+  },
+  {
+    "name": "Zaoui & Co",
+    "domain": "ib",
+    "tier": "T3",
+    "note": "email"
+  },
+  {
+    "name": "Alantra",
+    "domain": "ib",
+    "tier": "T3",
+    "note": "proprietary"
+  },
+  {
+    "name": "Greenhill",
+    "domain": "ib",
+    "tier": "T3",
+    "note": "email"
+  },
+  {
+    "name": "MUFG",
+    "domain": "ib",
+    "tier": "T3",
+    "note": "cannot-confirm"
+  },
+  {
+    "name": "Blackstone",
+    "domain": "pe",
+    "tier": "T1",
+    "note": ""
+  },
+  {
+    "name": "KKR",
+    "domain": "pe",
+    "tier": "T1",
+    "note": ""
+  },
+  {
+    "name": "The Carlyle Group",
+    "domain": "pe",
+    "tier": "T1",
+    "note": "proprietary"
+  },
+  {
+    "name": "Apollo Global Management",
+    "domain": "pe",
+    "tier": "T1",
+    "note": ""
+  },
+  {
+    "name": "TPG",
+    "domain": "pe",
+    "tier": "T1",
+    "note": ""
+  },
+  {
+    "name": "Bain Capital",
+    "domain": "pe",
+    "tier": "T1",
+    "note": ""
+  },
+  {
+    "name": "Warburg Pincus",
+    "domain": "pe",
+    "tier": "T1",
+    "note": ""
+  },
+  {
+    "name": "Advent International",
+    "domain": "pe",
+    "tier": "T1",
+    "note": ""
+  },
+  {
+    "name": "Silver Lake",
+    "domain": "pe",
+    "tier": "T1",
+    "note": ""
+  },
+  {
+    "name": "Vista Equity Partners",
+    "domain": "pe",
+    "tier": "T1",
+    "note": ""
+  },
+  {
+    "name": "Thoma Bravo",
+    "domain": "pe",
+    "tier": "T1",
+    "note": "cannot-confirm"
+  },
+  {
+    "name": "EQT",
+    "domain": "pe",
+    "tier": "T1",
+    "note": ""
+  },
+  {
+    "name": "CVC Capital Partners",
+    "domain": "pe",
+    "tier": "T1",
+    "note": "cannot-confirm"
+  },
+  {
+    "name": "Hellman & Friedman",
+    "domain": "pe",
+    "tier": "T1",
+    "note": "cannot-confirm"
+  },
+  {
+    "name": "Brookfield",
+    "domain": "pe",
+    "tier": "T1",
+    "note": ""
+  },
+  {
+    "name": "Ares Management",
+    "domain": "pe",
+    "tier": "T1",
+    "note": ""
+  },
+  {
+    "name": "Partners Group",
+    "domain": "pe",
+    "tier": "T1",
+    "note": "proprietary"
+  },
+  {
+    "name": "Hg",
+    "domain": "pe",
+    "tier": "T1",
+    "note": "pinpoint"
+  },
+  {
+    "name": "General Atlantic",
+    "domain": "pe",
+    "tier": "T1",
+    "note": ""
+  },
+  {
+    "name": "Clayton Dubilier & Rice",
+    "domain": "pe",
+    "tier": "T1",
+    "note": "cannot-confirm"
+  },
+  {
+    "name": "Insight Partners",
+    "domain": "pe",
+    "tier": "T1",
+    "note": ""
+  },
+  {
+    "name": "HarbourVest Partners",
+    "domain": "pe",
+    "tier": "T2",
+    "note": ""
+  },
+  {
+    "name": "Hamilton Lane",
+    "domain": "pe",
+    "tier": "T2",
+    "note": ""
+  },
+  {
+    "name": "Adams Street Partners",
+    "domain": "pe",
+    "tier": "T2",
+    "note": "cannot-confirm"
+  },
+  {
+    "name": "Permira",
+    "domain": "pe",
+    "tier": "T2",
+    "note": ""
+  },
+  {
+    "name": "Leonard Green & Partners",
+    "domain": "pe",
+    "tier": "T2",
+    "note": "cannot-confirm"
+  },
+  {
+    "name": "GTCR",
+    "domain": "pe",
+    "tier": "T2",
+    "note": "cannot-confirm"
+  },
+  {
+    "name": "Francisco Partners",
+    "domain": "pe",
+    "tier": "T2",
+    "note": ""
+  },
+  {
+    "name": "Summit Partners",
+    "domain": "pe",
+    "tier": "T2",
+    "note": ""
+  },
+  {
+    "name": "TA Associates",
+    "domain": "pe",
+    "tier": "T2",
+    "note": "getro"
+  },
+  {
+    "name": "Providence Equity Partners",
+    "domain": "pe",
+    "tier": "T2",
+    "note": ""
+  },
+  {
+    "name": "Apax Partners",
+    "domain": "pe",
+    "tier": "T2",
+    "note": ""
+  },
+  {
+    "name": "Ardian",
+    "domain": "pe",
+    "tier": "T2",
+    "note": ""
+  },
+  {
+    "name": "BC Partners",
+    "domain": "pe",
+    "tier": "T2",
+    "note": "cannot-confirm"
+  },
+  {
+    "name": "Cinven",
+    "domain": "pe",
+    "tier": "T2",
+    "note": "pinpoint"
+  },
+  {
+    "name": "L Catterton",
+    "domain": "pe",
+    "tier": "T2",
+    "note": ""
+  },
+  {
+    "name": "Clearlake Capital",
+    "domain": "pe",
+    "tier": "T2",
+    "note": "cannot-confirm"
+  },
+  {
+    "name": "Genstar Capital",
+    "domain": "pe",
+    "tier": "T2",
+    "note": "no-ats"
+  },
+  {
+    "name": "Platinum Equity",
+    "domain": "pe",
+    "tier": "T2",
+    "note": "cannot-confirm"
+  },
+  {
+    "name": "New Mountain Capital",
+    "domain": "pe",
+    "tier": "T2",
+    "note": ""
+  },
+  {
+    "name": "Lone Star Funds",
+    "domain": "pe",
+    "tier": "T2",
+    "note": "no-ats"
+  },
+  {
+    "name": "Oaktree Capital",
+    "domain": "pe",
+    "tier": "T2",
+    "note": ""
+  },
+  {
+    "name": "Sycamore Partners",
+    "domain": "pe",
+    "tier": "T2",
+    "note": "cannot-confirm"
+  },
+  {
+    "name": "Madison Dearborn Partners",
+    "domain": "pe",
+    "tier": "T2",
+    "note": "email"
+  },
+  {
+    "name": "Onex Partners",
+    "domain": "pe",
+    "tier": "T2",
+    "note": "proprietary"
+  },
+  {
+    "name": "Cerberus Capital Management",
+    "domain": "pe",
+    "tier": "T2",
+    "note": "proprietary"
+  },
+  {
+    "name": "Fortress Investment Group",
+    "domain": "pe",
+    "tier": "T2",
+    "note": "proprietary"
+  },
+  {
+    "name": "Searchlight Capital Partners",
+    "domain": "pe",
+    "tier": "T2",
+    "note": "cannot-confirm"
+  },
+  {
+    "name": "Thomas H. Lee Partners",
+    "domain": "pe",
+    "tier": "T2",
+    "note": "email"
+  },
+  {
+    "name": "Audax Group",
+    "domain": "pe",
+    "tier": "T2",
+    "note": ""
+  },
+  {
+    "name": "General Catalyst",
+    "domain": "pe",
+    "tier": "T2",
+    "note": ""
+  },
+  {
+    "name": "Tiger Global",
+    "domain": "pe",
+    "tier": "T2",
+    "note": "cannot-confirm"
+  },
+  {
+    "name": "Neuberger Berman",
+    "domain": "pe",
+    "tier": "T2",
+    "note": "workday"
+  },
+  {
+    "name": "Pantheon",
+    "domain": "pe",
+    "tier": "T2",
+    "note": "cannot-confirm"
+  },
+  {
+    "name": "H.I.G. Capital",
+    "domain": "pe",
+    "tier": "T3",
+    "note": ""
+  },
+  {
+    "name": "Golden Gate Capital",
+    "domain": "pe",
+    "tier": "T3",
+    "note": "cannot-confirm"
+  },
+  {
+    "name": "Charlesbank Capital Partners",
+    "domain": "pe",
+    "tier": "T3",
+    "note": "cannot-confirm"
+  },
+  {
+    "name": "GI Partners",
+    "domain": "pe",
+    "tier": "T3",
+    "note": "cannot-confirm"
+  },
+  {
+    "name": "HGGC",
+    "domain": "pe",
+    "tier": "T3",
+    "note": "cannot-confirm"
+  },
+  {
+    "name": "Sun Capital Partners",
+    "domain": "pe",
+    "tier": "T3",
+    "note": "cannot-confirm"
+  },
+  {
+    "name": "Arcline Investment Management",
+    "domain": "pe",
+    "tier": "T3",
+    "note": "cannot-confirm"
+  },
+  {
+    "name": "Bridgepoint",
+    "domain": "pe",
+    "tier": "T3",
+    "note": ""
+  },
+  {
+    "name": "TSG Consumer Partners",
+    "domain": "pe",
+    "tier": "T3",
+    "note": "cannot-confirm"
+  },
+  {
+    "name": "KSL Capital Partners",
+    "domain": "pe",
+    "tier": "T3",
+    "note": "cannot-confirm"
+  },
+  {
+    "name": "Riverstone Holdings",
+    "domain": "pe",
+    "tier": "T3",
+    "note": "cannot-confirm"
+  },
+  {
+    "name": "EIG",
+    "domain": "pe",
+    "tier": "T3",
+    "note": "cannot-confirm"
+  },
+  {
+    "name": "NGP",
+    "domain": "pe",
+    "tier": "T3",
+    "note": "cannot-confirm"
+  },
+  {
+    "name": "Reverence Capital Partners",
+    "domain": "pe",
+    "tier": "T3",
+    "note": "cannot-confirm"
+  },
+  {
+    "name": "Parthenon Capital Partners",
+    "domain": "pe",
+    "tier": "T3",
+    "note": "cannot-confirm"
+  },
+  {
+    "name": "Vistria Group",
+    "domain": "pe",
+    "tier": "T3",
+    "note": "cannot-confirm"
+  },
+  {
+    "name": "K1 Investment Management",
+    "domain": "pe",
+    "tier": "T3",
+    "note": "cannot-confirm"
+  },
+  {
+    "name": "Battery Ventures",
+    "domain": "pe",
+    "tier": "T3",
+    "note": ""
+  },
+  {
+    "name": "Great Hill Partners",
+    "domain": "pe",
+    "tier": "T3",
+    "note": "cannot-confirm"
+  },
+  {
+    "name": "Alpine Investors",
+    "domain": "pe",
+    "tier": "T3",
+    "note": ""
+  },
+  {
+    "name": "ABRY Partners",
+    "domain": "pe",
+    "tier": "T3",
+    "note": "cannot-confirm"
+  },
+  {
+    "name": "Kohlberg & Company",
+    "domain": "pe",
+    "tier": "T3",
+    "note": "cannot-confirm"
+  },
+  {
+    "name": "Oak Hill Capital",
+    "domain": "pe",
+    "tier": "T3",
+    "note": "cannot-confirm"
+  },
+  {
+    "name": "One Rock Capital Partners",
+    "domain": "pe",
+    "tier": "T3",
+    "note": "cannot-confirm"
+  },
+  {
+    "name": "Sentinel Capital Partners",
+    "domain": "pe",
+    "tier": "T3",
+    "note": "cannot-confirm"
+  },
+  {
+    "name": "Arlington Capital Partners",
+    "domain": "pe",
+    "tier": "T3",
+    "note": "cannot-confirm"
+  },
+  {
+    "name": "Arsenal Capital Partners",
+    "domain": "pe",
+    "tier": "T3",
+    "note": "cannot-confirm"
+  },
+  {
+    "name": "Gridiron Capital",
+    "domain": "pe",
+    "tier": "T3",
+    "note": "cannot-confirm"
+  },
+  {
+    "name": "Marlin Equity Partners",
+    "domain": "pe",
+    "tier": "T3",
+    "note": "cannot-confirm"
+  },
+  {
+    "name": "STG Partners",
+    "domain": "pe",
+    "tier": "T3",
+    "note": "cannot-confirm"
+  },
+  {
+    "name": "DigitalBridge",
+    "domain": "pe",
+    "tier": "T3",
+    "note": ""
+  },
+  {
+    "name": "Lime Rock Partners",
+    "domain": "pe",
+    "tier": "T3",
+    "note": "cannot-confirm"
+  },
+  {
+    "name": "Altaris Capital Partners",
+    "domain": "pe",
+    "tier": "T3",
+    "note": "cannot-confirm"
+  },
+  {
+    "name": "Aquiline Capital Partners",
+    "domain": "pe",
+    "tier": "T3",
+    "note": "cannot-confirm"
+  },
+  {
+    "name": "Arctos Partners",
+    "domain": "pe",
+    "tier": "T3",
+    "note": "cannot-confirm"
+  },
+  {
+    "name": "The Riverside Company",
+    "domain": "pe",
+    "tier": "T3",
+    "note": ""
+  },
+  {
+    "name": "Paine Schwartz Partners",
+    "domain": "pe",
+    "tier": "T3",
+    "note": "cannot-confirm"
+  },
+  {
+    "name": "Wind Point Partners",
+    "domain": "pe",
+    "tier": "T3",
+    "note": "cannot-confirm"
+  },
+  {
+    "name": "Flexpoint Ford",
+    "domain": "pe",
+    "tier": "T3",
+    "note": "cannot-confirm"
+  },
+  {
+    "name": "Kinderhook Industries",
+    "domain": "pe",
+    "tier": "T3",
+    "note": "cannot-confirm"
+  },
+  {
+    "name": "Waud Capital Partners",
+    "domain": "pe",
+    "tier": "T3",
+    "note": "cannot-confirm"
+  },
+  {
+    "name": "Sumeru Equity Partners",
+    "domain": "pe",
+    "tier": "T3",
+    "note": "cannot-confirm"
+  },
+  {
+    "name": "Thompson Street Capital Partners",
+    "domain": "pe",
+    "tier": "T3",
+    "note": "cannot-confirm"
+  },
+  {
+    "name": "Mainsail Partners",
+    "domain": "pe",
+    "tier": "T3",
+    "note": ""
+  },
+  {
+    "name": "Serent Capital",
+    "domain": "pe",
+    "tier": "T3",
+    "note": "cannot-confirm"
+  },
+  {
+    "name": "Level Equity",
+    "domain": "pe",
+    "tier": "T3",
+    "note": "cannot-confirm"
+  },
+  {
+    "name": "Lincolnshire Management",
+    "domain": "pe",
+    "tier": "T3",
+    "note": "cannot-confirm"
+  },
+  {
+    "name": "Primus Capital",
+    "domain": "pe",
+    "tier": "T3",
+    "note": "cannot-confirm"
+  },
+  {
+    "name": "Rotunda Capital Partners",
+    "domain": "pe",
+    "tier": "T3",
+    "note": "cannot-confirm"
+  },
+  {
+    "name": "Bow River Capital",
+    "domain": "pe",
+    "tier": "T3",
+    "note": "cannot-confirm"
+  },
+  {
+    "name": "NMS Capital",
+    "domain": "pe",
+    "tier": "T3",
+    "note": "cannot-confirm"
+  },
+  {
+    "name": "Twin Brook Capital Partners",
+    "domain": "pe",
+    "tier": "T3",
+    "note": "proprietary"
+  },
+  {
+    "name": "Sequoia Capital",
+    "domain": "vc",
+    "tier": "T1",
+    "note": "consider"
+  },
+  {
+    "name": "Andreessen Horowitz",
+    "domain": "vc",
+    "tier": "T1",
+    "note": ""
+  },
+  {
+    "name": "Accel",
+    "domain": "vc",
+    "tier": "T1",
+    "note": "consider"
+  },
+  {
+    "name": "Benchmark",
+    "domain": "vc",
+    "tier": "T1",
+    "note": "no-ats"
+  },
+  {
+    "name": "Founders Fund",
+    "domain": "vc",
+    "tier": "T1",
+    "note": "cannot-confirm"
+  },
+  {
+    "name": "Greylock",
+    "domain": "vc",
+    "tier": "T1",
+    "note": "consider"
+  },
+  {
+    "name": "Kleiner Perkins",
+    "domain": "vc",
+    "tier": "T1",
+    "note": "consider"
+  },
+  {
+    "name": "Lightspeed Venture Partners",
+    "domain": "vc",
+    "tier": "T1",
+    "note": "consider"
+  },
+  {
+    "name": "Bessemer Venture Partners",
+    "domain": "vc",
+    "tier": "T1",
+    "note": ""
+  },
+  {
+    "name": "New Enterprise Associates",
+    "domain": "vc",
+    "tier": "T1",
+    "note": "consider"
+  },
+  {
+    "name": "Index Ventures",
+    "domain": "vc",
+    "tier": "T1",
+    "note": "proprietary"
+  },
+  {
+    "name": "Khosla Ventures",
+    "domain": "vc",
+    "tier": "T1",
+    "note": "consider"
+  },
+  {
+    "name": "Thrive Capital",
+    "domain": "vc",
+    "tier": "T1",
+    "note": "cannot-confirm"
+  },
+  {
+    "name": "Coatue Management",
+    "domain": "vc",
+    "tier": "T1",
+    "note": "consider"
+  },
+  {
+    "name": "SoftBank Vision Fund",
+    "domain": "vc",
+    "tier": "T1",
+    "note": "ventureloop"
+  },
+  {
+    "name": "Dragoneer Investment Group",
+    "domain": "vc",
+    "tier": "T1",
+    "note": "cannot-confirm"
+  },
+  {
+    "name": "TCV",
+    "domain": "vc",
+    "tier": "T2",
+    "note": "consider"
+  },
+  {
+    "name": "IVP",
+    "domain": "vc",
+    "tier": "T2",
+    "note": "consider"
+  },
+  {
+    "name": "ICONIQ Growth",
+    "domain": "vc",
+    "tier": "T2",
+    "note": "proprietary"
+  },
+  {
+    "name": "Bain Capital Ventures",
+    "domain": "vc",
+    "tier": "T2",
+    "note": "consider"
+  },
+  {
+    "name": "Menlo Ventures",
+    "domain": "vc",
+    "tier": "T2",
+    "note": "consider"
+  },
+  {
+    "name": "Redpoint Ventures",
+    "domain": "vc",
+    "tier": "T2",
+    "note": "consider"
+  },
+  {
+    "name": "Union Square Ventures",
+    "domain": "vc",
+    "tier": "T2",
+    "note": "consider"
+  },
+  {
+    "name": "First Round Capital",
+    "domain": "vc",
+    "tier": "T2",
+    "note": ""
+  },
+  {
+    "name": "Felicis Ventures",
+    "domain": "vc",
+    "tier": "T2",
+    "note": "consider"
+  },
+  {
+    "name": "Meritech Capital Partners",
+    "domain": "vc",
+    "tier": "T2",
+    "note": "cannot-confirm"
+  },
+  {
+    "name": "Sapphire Ventures",
+    "domain": "vc",
+    "tier": "T2",
+    "note": "consider"
+  },
+  {
+    "name": "Norwest Venture Partners",
+    "domain": "vc",
+    "tier": "T2",
+    "note": "consider"
+  },
+  {
+    "name": "GGV Capital",
+    "domain": "vc",
+    "tier": "T2",
+    "note": "consider"
+  },
+  {
+    "name": "B Capital",
+    "domain": "vc",
+    "tier": "T2",
+    "note": "cannot-confirm"
+  },
+  {
+    "name": "DST Global",
+    "domain": "vc",
+    "tier": "T2",
+    "note": "cannot-confirm"
+  },
+  {
+    "name": "Ribbit Capital",
+    "domain": "vc",
+    "tier": "T2",
+    "note": "cannot-confirm"
+  },
+  {
+    "name": "Accel-KKR",
+    "domain": "vc",
+    "tier": "T2",
+    "note": "cannot-confirm"
+  },
+  {
+    "name": "TPG Growth",
+    "domain": "vc",
+    "tier": "T2",
+    "note": "cannot-confirm"
+  },
+  {
+    "name": "WestCap",
+    "domain": "vc",
+    "tier": "T2",
+    "note": "cannot-confirm"
+  },
+  {
+    "name": "Prosus Ventures",
+    "domain": "vc",
+    "tier": "T2",
+    "note": ""
+  },
+  {
+    "name": "Mubadala Capital",
+    "domain": "vc",
+    "tier": "T2",
+    "note": "careers-page"
+  },
+  {
+    "name": "CPP Investments",
+    "domain": "vc",
+    "tier": "T2",
+    "note": ""
+  },
+  {
+    "name": "8VC",
+    "domain": "vc",
+    "tier": "T2",
+    "note": ""
+  },
+  {
+    "name": "Social Capital",
+    "domain": "vc",
+    "tier": "T2",
+    "note": ""
+  },
+  {
+    "name": "Scale Venture Partners",
+    "domain": "vc",
+    "tier": "T2",
+    "note": "cannot-confirm"
+  },
+  {
+    "name": "Highland Capital Partners",
+    "domain": "vc",
+    "tier": "T2",
+    "note": "cannot-confirm"
+  },
+  {
+    "name": "Georgian",
+    "domain": "vc",
+    "tier": "T2",
+    "note": "cannot-confirm"
+  },
+  {
+    "name": "NewView Capital",
+    "domain": "vc",
+    "tier": "T2",
+    "note": "cannot-confirm"
+  },
+  {
+    "name": "Y Combinator",
+    "domain": "vc",
+    "tier": "T2",
+    "note": "proprietary"
+  },
+  {
+    "name": "Flagship Pioneering",
+    "domain": "vc",
+    "tier": "T2",
+    "note": ""
+  },
+  {
+    "name": "ARCH Venture Partners",
+    "domain": "vc",
+    "tier": "T2",
+    "note": "email"
+  },
+  {
+    "name": "Lux Capital",
+    "domain": "vc",
+    "tier": "T2",
+    "note": "consider"
+  },
+  {
+    "name": "DCVC",
+    "domain": "vc",
+    "tier": "T2",
+    "note": "consider"
+  },
+  {
+    "name": "GV",
+    "domain": "vc",
+    "tier": "T2",
+    "note": "consider"
+  },
+  {
+    "name": "a16z Crypto",
+    "domain": "vc",
+    "tier": "T2",
+    "note": "consider"
+  },
+  {
+    "name": "Paradigm",
+    "domain": "vc",
+    "tier": "T2",
+    "note": "consider"
+  },
+  {
+    "name": "QED Investors",
+    "domain": "vc",
+    "tier": "T2",
+    "note": "consider"
+  },
+  {
+    "name": "Lowercarbon Capital",
+    "domain": "vc",
+    "tier": "T3",
+    "note": "getro"
+  },
+  {
+    "name": "Breakthrough Energy Ventures",
+    "domain": "vc",
+    "tier": "T3",
+    "note": "consider"
+  },
+  {
+    "name": "Energy Impact Partners",
+    "domain": "vc",
+    "tier": "T3",
+    "note": "cannot-confirm"
+  },
+  {
+    "name": "Congruent Ventures",
+    "domain": "vc",
+    "tier": "T3",
+    "note": "cannot-confirm"
+  },
+  {
+    "name": "Atlas Venture",
+    "domain": "vc",
+    "tier": "T3",
+    "note": "cannot-confirm"
+  },
+  {
+    "name": "Third Rock Ventures",
+    "domain": "vc",
+    "tier": "T3",
+    "note": "cannot-confirm"
+  },
+  {
+    "name": "5AM Ventures",
+    "domain": "vc",
+    "tier": "T3",
+    "note": "cannot-confirm"
+  },
+  {
+    "name": "Versant Ventures",
+    "domain": "vc",
+    "tier": "T3",
+    "note": "cannot-confirm"
+  },
+  {
+    "name": "OrbiMed Advisors",
+    "domain": "vc",
+    "tier": "T3",
+    "note": "cannot-confirm"
+  },
+  {
+    "name": "Deerfield Management",
+    "domain": "vc",
+    "tier": "T3",
+    "note": "cannot-confirm"
+  },
+  {
+    "name": "F-Prime Capital",
+    "domain": "vc",
+    "tier": "T3",
+    "note": "cannot-confirm"
+  },
+  {
+    "name": "Radical Ventures",
+    "domain": "vc",
+    "tier": "T3",
+    "note": "cannot-confirm"
+  },
+  {
+    "name": "Amplify Partners",
+    "domain": "vc",
+    "tier": "T3",
+    "note": ""
+  },
+  {
+    "name": "Zetta Venture Partners",
+    "domain": "vc",
+    "tier": "T3",
+    "note": "cannot-confirm"
+  },
+  {
+    "name": "FirstMark Capital",
+    "domain": "vc",
+    "tier": "T3",
+    "note": "cannot-confirm"
+  },
+  {
+    "name": "Playground Global",
+    "domain": "vc",
+    "tier": "T3",
+    "note": "cannot-confirm"
+  },
+  {
+    "name": "Craft Ventures",
+    "domain": "vc",
+    "tier": "T3",
+    "note": "cannot-confirm"
+  },
+  {
+    "name": "Initialized Capital",
+    "domain": "vc",
+    "tier": "T3",
+    "note": "cannot-confirm"
+  },
+  {
+    "name": "Homebrew",
+    "domain": "vc",
+    "tier": "T3",
+    "note": "cannot-confirm"
+  },
+  {
+    "name": "BoxGroup",
+    "domain": "vc",
+    "tier": "T3",
+    "note": "cannot-confirm"
+  },
+  {
+    "name": "Lerer Hippeau",
+    "domain": "vc",
+    "tier": "T3",
+    "note": "cannot-confirm"
+  },
+  {
+    "name": "Slow Ventures",
+    "domain": "vc",
+    "tier": "T3",
+    "note": "cannot-confirm"
+  },
+  {
+    "name": "Susa Ventures",
+    "domain": "vc",
+    "tier": "T3",
+    "note": "cannot-confirm"
+  },
+  {
+    "name": "Upfront Ventures",
+    "domain": "vc",
+    "tier": "T3",
+    "note": "cannot-confirm"
+  },
+  {
+    "name": "Madrona Venture Group",
+    "domain": "vc",
+    "tier": "T3",
+    "note": "cannot-confirm"
+  },
+  {
+    "name": "RRE Ventures",
+    "domain": "vc",
+    "tier": "T3",
+    "note": "cannot-confirm"
+  },
+  {
+    "name": "Valar Ventures",
+    "domain": "vc",
+    "tier": "T3",
+    "note": "cannot-confirm"
+  },
+  {
+    "name": "Nyca Partners",
+    "domain": "vc",
+    "tier": "T3",
+    "note": "cannot-confirm"
+  },
+  {
+    "name": "Pantera Capital",
+    "domain": "vc",
+    "tier": "T3",
+    "note": "cannot-confirm"
+  },
+  {
+    "name": "Polychain Capital",
+    "domain": "vc",
+    "tier": "T3",
+    "note": "cannot-confirm"
+  },
+  {
+    "name": "Electric Capital",
+    "domain": "vc",
+    "tier": "T3",
+    "note": "cannot-confirm"
+  },
+  {
+    "name": "Blockchain Capital",
+    "domain": "vc",
+    "tier": "T3",
+    "note": "cannot-confirm"
+  },
+  {
+    "name": "Intel Capital",
+    "domain": "vc",
+    "tier": "T3",
+    "note": "cannot-confirm"
+  },
+  {
+    "name": "Salesforce Ventures",
+    "domain": "vc",
+    "tier": "T3",
+    "note": "cannot-confirm"
+  },
+  {
+    "name": "M12",
+    "domain": "vc",
+    "tier": "T3",
+    "note": "cannot-confirm"
+  },
+  {
+    "name": "Qualcomm Ventures",
+    "domain": "vc",
+    "tier": "T3",
+    "note": "cannot-confirm"
+  },
+  {
+    "name": "Samsung NEXT",
+    "domain": "vc",
+    "tier": "T3",
+    "note": "cannot-confirm"
+  },
+  {
+    "name": "Cisco Investments",
+    "domain": "vc",
+    "tier": "T3",
+    "note": "cannot-confirm"
+  },
+  {
+    "name": "Toyota Ventures",
+    "domain": "vc",
+    "tier": "T3",
+    "note": "cannot-confirm"
+  },
+  {
+    "name": "BMW i Ventures",
+    "domain": "vc",
+    "tier": "T3",
+    "note": "cannot-confirm"
+  },
+  {
+    "name": "SOSV",
+    "domain": "vc",
+    "tier": "T3",
+    "note": "cannot-confirm"
+  },
+  {
+    "name": "Google",
+    "domain": "corp",
+    "tier": "T1",
+    "note": "proprietary"
+  },
+  {
+    "name": "Amazon",
+    "domain": "corp",
+    "tier": "T1",
+    "note": "proprietary"
+  },
+  {
+    "name": "Apple",
+    "domain": "corp",
+    "tier": "T1",
+    "note": "proprietary"
+  },
+  {
+    "name": "Meta",
+    "domain": "corp",
+    "tier": "T1",
+    "note": "proprietary"
+  },
+  {
+    "name": "Microsoft",
+    "domain": "corp",
+    "tier": "T1",
+    "note": "eightfold"
+  },
+  {
+    "name": "Nvidia",
+    "domain": "corp",
+    "tier": "T1",
+    "note": "proprietary"
+  },
+  {
+    "name": "Tesla",
+    "domain": "corp",
+    "tier": "T1",
+    "note": "proprietary"
+  },
+  {
+    "name": "Netflix",
+    "domain": "corp",
+    "tier": "T1",
+    "note": "proprietary"
+  },
+  {
+    "name": "Salesforce",
+    "domain": "corp",
+    "tier": "T1",
+    "note": "proprietary"
+  },
+  {
+    "name": "Oracle",
+    "domain": "corp",
+    "tier": "T1",
+    "note": "oraclecloud"
+  },
+  {
+    "name": "Adobe",
+    "domain": "corp",
+    "tier": "T1",
+    "note": ""
+  },
+  {
+    "name": "Stripe",
+    "domain": "corp",
+    "tier": "T1",
+    "note": ""
+  },
+  {
+    "name": "Uber",
+    "domain": "corp",
+    "tier": "T1",
+    "note": "proprietary"
+  },
+  {
+    "name": "Airbnb",
+    "domain": "corp",
+    "tier": "T1",
+    "note": ""
+  },
+  {
+    "name": "Palantir",
+    "domain": "corp",
+    "tier": "T1",
+    "note": ""
+  },
+  {
+    "name": "ServiceNow",
+    "domain": "corp",
+    "tier": "T1",
+    "note": "proprietary"
+  },
+  {
+    "name": "Snowflake",
+    "domain": "corp",
+    "tier": "T1",
+    "note": ""
+  },
+  {
+    "name": "Intuit",
+    "domain": "corp",
+    "tier": "T1",
+    "note": "proprietary"
+  },
+  {
+    "name": "Cisco",
+    "domain": "corp",
+    "tier": "T1",
+    "note": "proprietary"
+  },
+  {
+    "name": "IBM",
+    "domain": "corp",
+    "tier": "T1",
+    "note": "proprietary"
+  },
+  {
+    "name": "SAP",
+    "domain": "corp",
+    "tier": "T1",
+    "note": "successfactors"
+  },
+  {
+    "name": "LinkedIn",
+    "domain": "corp",
+    "tier": "T1",
+    "note": "proprietary"
+  },
+  {
+    "name": "Intel",
+    "domain": "corp",
+    "tier": "T1",
+    "note": ""
+  },
+  {
+    "name": "Qualcomm",
+    "domain": "corp",
+    "tier": "T1",
+    "note": "workday"
+  },
+  {
+    "name": "Broadcom",
+    "domain": "corp",
+    "tier": "T1",
+    "note": "proprietary"
+  },
+  {
+    "name": "Micron Technology",
+    "domain": "corp",
+    "tier": "T1",
+    "note": "proprietary"
+  },
+  {
+    "name": "Dell Technologies",
+    "domain": "corp",
+    "tier": "T1",
+    "note": "proprietary"
+  },
+  {
+    "name": "Visa",
+    "domain": "corp",
+    "tier": "T2",
+    "note": "proprietary"
+  },
+  {
+    "name": "Mastercard",
+    "domain": "corp",
+    "tier": "T2",
+    "note": ""
+  },
+  {
+    "name": "PayPal",
+    "domain": "corp",
+    "tier": "T2",
+    "note": "proprietary"
+  },
+  {
+    "name": "Block",
+    "domain": "corp",
+    "tier": "T2",
+    "note": ""
+  },
+  {
+    "name": "Shopify",
+    "domain": "corp",
+    "tier": "T2",
+    "note": "proprietary"
+  },
+  {
+    "name": "Workday",
+    "domain": "corp",
+    "tier": "T2",
+    "note": "proprietary"
+  },
+  {
+    "name": "Atlassian",
+    "domain": "corp",
+    "tier": "T2",
+    "note": "proprietary"
+  },
+  {
+    "name": "Datadog",
+    "domain": "corp",
+    "tier": "T2",
+    "note": ""
+  },
+  {
+    "name": "Twilio",
+    "domain": "corp",
+    "tier": "T2",
+    "note": "proprietary"
+  },
+  {
+    "name": "Okta",
+    "domain": "corp",
+    "tier": "T2",
+    "note": "proprietary"
+  },
+  {
+    "name": "Zoom",
+    "domain": "corp",
+    "tier": "T2",
+    "note": "proprietary"
+  },
+  {
+    "name": "Snap",
+    "domain": "corp",
+    "tier": "T2",
+    "note": "proprietary"
+  },
+  {
+    "name": "Spotify",
+    "domain": "corp",
+    "tier": "T2",
+    "note": "greenhouse"
+  },
+  {
+    "name": "Roblox",
+    "domain": "corp",
+    "tier": "T2",
+    "note": "proprietary"
+  },
+  {
+    "name": "Electronic Arts",
+    "domain": "corp",
+    "tier": "T2",
+    "note": "avature"
+  },
+  {
+    "name": "Roku",
+    "domain": "corp",
+    "tier": "T2",
+    "note": "proprietary"
+  },
+  {
+    "name": "DoorDash",
+    "domain": "corp",
+    "tier": "T2",
+    "note": "proprietary"
+  },
+  {
+    "name": "Lyft",
+    "domain": "corp",
+    "tier": "T2",
+    "note": ""
+  },
+  {
+    "name": "Dropbox",
+    "domain": "corp",
+    "tier": "T2",
+    "note": "proprietary"
+  },
+  {
+    "name": "HP",
+    "domain": "corp",
+    "tier": "T2",
+    "note": "proprietary"
+  },
+  {
+    "name": "Vercel",
+    "domain": "corp",
+    "tier": "T2",
+    "note": ""
+  },
+  {
+    "name": "Capital One",
+    "domain": "corp",
+    "tier": "T2",
+    "note": "proprietary"
+  },
+  {
+    "name": "American Express",
+    "domain": "corp",
+    "tier": "T2",
+    "note": "taleo"
+  },
+  {
+    "name": "Jane Street",
+    "domain": "corp",
+    "tier": "T2",
+    "note": ""
+  },
+  {
+    "name": "Citadel",
+    "domain": "corp",
+    "tier": "T2",
+    "note": "proprietary"
+  },
+  {
+    "name": "Citadel Securities",
+    "domain": "corp",
+    "tier": "T2",
+    "note": "proprietary"
+  },
+  {
+    "name": "Hudson River Trading",
+    "domain": "corp",
+    "tier": "T2",
+    "note": "proprietary"
+  },
+  {
+    "name": "Discover Financial",
+    "domain": "corp",
+    "tier": "T2",
+    "note": "workday"
+  },
+  {
+    "name": "Wells Fargo",
+    "domain": "corp",
+    "tier": "T2",
+    "note": "proprietary"
+  },
+  {
+    "name": "Johnson & Johnson",
+    "domain": "corp",
+    "tier": "T2",
+    "note": "workday"
+  },
+  {
+    "name": "CVS Health",
+    "domain": "corp",
+    "tier": "T2",
+    "note": "workday"
+  },
+  {
+    "name": "Elevance Health",
+    "domain": "corp",
+    "tier": "T2",
+    "note": "workday"
+  },
+  {
+    "name": "Amgen",
+    "domain": "corp",
+    "tier": "T2",
+    "note": "workday"
+  },
+  {
+    "name": "Gilead Sciences",
+    "domain": "corp",
+    "tier": "T2",
+    "note": "workday"
+  },
+  {
+    "name": "Medtronic",
+    "domain": "corp",
+    "tier": "T2",
+    "note": "workday"
+  },
+  {
+    "name": "Procter & Gamble",
+    "domain": "corp",
+    "tier": "T2",
+    "note": "workday"
+  },
+  {
+    "name": "The Coca-Cola Company",
+    "domain": "corp",
+    "tier": "T2",
+    "note": ""
+  },
+  {
+    "name": "PepsiCo",
+    "domain": "corp",
+    "tier": "T2",
+    "note": "workday"
+  },
+  {
+    "name": "Nike",
+    "domain": "corp",
+    "tier": "T2",
+    "note": "workday"
+  },
+  {
+    "name": "Walmart",
+    "domain": "corp",
+    "tier": "T2",
+    "note": "workday"
+  },
+  {
+    "name": "Costco Wholesale",
+    "domain": "corp",
+    "tier": "T2",
+    "note": "proprietary"
+  },
+  {
+    "name": "Starbucks",
+    "domain": "corp",
+    "tier": "T2",
+    "note": "workday"
+  },
+  {
+    "name": "Target",
+    "domain": "corp",
+    "tier": "T2",
+    "note": "workday"
+  },
+  {
+    "name": "The Home Depot",
+    "domain": "corp",
+    "tier": "T2",
+    "note": "workday"
+  },
+  {
+    "name": "McDonald's",
+    "domain": "corp",
+    "tier": "T2",
+    "note": "workday"
+  },
+  {
+    "name": "Estee Lauder",
+    "domain": "corp",
+    "tier": "T2",
+    "note": "workday"
+  },
+  {
+    "name": "The Walt Disney Company",
+    "domain": "corp",
+    "tier": "T2",
+    "note": "workday"
+  },
+  {
+    "name": "Comcast",
+    "domain": "corp",
+    "tier": "T2",
+    "note": "workday"
+  },
+  {
+    "name": "Warner Bros. Discovery",
+    "domain": "corp",
+    "tier": "T2",
+    "note": "workday"
+  },
+  {
+    "name": "Paramount Global",
+    "domain": "corp",
+    "tier": "T2",
+    "note": "workday"
+  },
+  {
+    "name": "AT&T",
+    "domain": "corp",
+    "tier": "T2",
+    "note": "workday"
+  },
+  {
+    "name": "Verizon",
+    "domain": "corp",
+    "tier": "T2",
+    "note": "proprietary"
+  },
+  {
+    "name": "T-Mobile",
+    "domain": "corp",
+    "tier": "T2",
+    "note": "workday"
+  },
+  {
+    "name": "Boeing",
+    "domain": "corp",
+    "tier": "T2",
+    "note": "workday"
+  },
+  {
+    "name": "Lockheed Martin",
+    "domain": "corp",
+    "tier": "T2",
+    "note": "workday"
+  },
+  {
+    "name": "RTX",
+    "domain": "corp",
+    "tier": "T2",
+    "note": "workday"
+  },
+  {
+    "name": "Honeywell",
+    "domain": "corp",
+    "tier": "T2",
+    "note": "workday"
+  },
+  {
+    "name": "General Electric",
+    "domain": "corp",
+    "tier": "T2",
+    "note": "workday"
+  },
+  {
+    "name": "3M",
+    "domain": "corp",
+    "tier": "T2",
+    "note": "workday"
+  },
+  {
+    "name": "Caterpillar",
+    "domain": "corp",
+    "tier": "T2",
+    "note": "workday"
+  },
+  {
+    "name": "UPS",
+    "domain": "corp",
+    "tier": "T2",
+    "note": "workday"
+  },
+  {
+    "name": "FedEx",
+    "domain": "corp",
+    "tier": "T2",
+    "note": "proprietary"
+  },
+  {
+    "name": "Delta Air Lines",
+    "domain": "corp",
+    "tier": "T2",
+    "note": "workday"
+  },
+  {
+    "name": "United Airlines",
+    "domain": "corp",
+    "tier": "T2",
+    "note": "proprietary"
+  },
+  {
+    "name": "American Airlines",
+    "domain": "corp",
+    "tier": "T2",
+    "note": "workday"
+  },
+  {
+    "name": "World Wide Technology",
+    "domain": "corp",
+    "tier": "T2",
+    "note": "proprietary"
+  }
+]

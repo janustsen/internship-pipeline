@@ -190,5 +190,59 @@
       "platform": "workday",
       "token": "https://rbc.wd3.myworkdayjobs.com/wday/cxs/rbc/RBCEARLYTALENT1/jobs"
     }
+  ],
+  "Cornerstone Research": [
+    {
+      "platform": "workday",
+      "token": "https://cornerstone.wd501.myworkdayjobs.com/wday/cxs/cornerstone/CornerstoneResearch_Careers/jobs"
+    }
+  ],
+  "Adobe": [
+    {
+      "platform": "workday",
+      "token": "https://adobe.wd5.myworkdayjobs.com/wday/cxs/adobe/external_experienced/jobs"
+    }
+  ],
+  "FT Partners": [
+    {
+      "platform": "greenhouse",
+      "token": "financialtechnologypartners"
+    }
+  ],
+  "Harris Williams": [
+    {
+      "platform": "workday",
+      "token": "https://pnc.wd5.myworkdayjobs.com/wday/cxs/pnc/HarrisWilliams/jobs"
+    }
+  ],
+  "Advent International": [
+    {
+      "platform": "workday",
+      "token": "https://adventinternational.wd12.myworkdayjobs.com/wday/cxs/adventinternational/AdventAgency/jobs"
+    }
+  ],
+  "Apollo": [
+    {
+      "platform": "workday",
+      "token": "https://athene.wd5.myworkdayjobs.com/wday/cxs/athene/Apollo_Careers/jobs"
+    }
+  ],
+  "Oliver Wyman": [
+    {
+      "platform": "lever",
+      "token": "oliverwyman"
+    }
+  ],
+  "Roland Berger": [
+    {
+      "platform": "smartrecruiters",
+      "token": "RolandBerger"
+    }
+  ],
+  "TA Associates": [
+    {
+      "platform": "smartrecruiters",
+      "token": "TaAssociates"
+    }
   ]
 }

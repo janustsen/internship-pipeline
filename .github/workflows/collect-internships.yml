@@ -1,0 +1,60 @@
+name: collect-internships
+
+# Path A of the pipeline: poll every roster firm's keyless ATS/Workday feed and
+# commit todays_candidates.json for the internship-watch judge routine to read.
+#
+# WHY GITHUB ACTIONS (not the Claude cloud routine): the collector makes DIRECT
+# HTTP calls to greenhouse/*.myworkdayjobs.com/etc. The Claude cloud sandbox
+# blocks that egress ("egress policy denied all ATS/Workday hosts" — see bin/run.sh),
+# which forced the collector onto a local Mac cron. Actions runners have open
+# egress, run for free, and need no laptop. Zero LLM tokens — pure Python.
+# NOTE: enabling this replaces the Mac launchd job — disable that plist to avoid
+# double-collection (both push the same artifacts to main).
+
+on:
+  schedule:
+    - cron: "0 10 * * *"   # ~06:00 ET — morning sweep
+    - cron: "0 22 * * *"   # ~18:00 ET — evening sweep
+  workflow_dispatch: {}     # manual "Run workflow" button
+
+permissions:
+  contents: write           # push the refreshed artifacts back to main
+
+concurrency:
+  group: collect-internships
+  cancel-in-progress: false
+
+jobs:
+  collect:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@34e114876b0b11c390a56381ad16ebd13914f8d5  # v4
+
+      - uses: actions/setup-python@a26af69be951a213d495a4c3e4e4022e16d87065  # v5
+        with:
+          python-version: "3.12"
+
+      - name: Install dependencies
+        run: pip install -r requirements.txt
+
+      - name: Poll ATS + Workday feeds → todays_candidates.json
+        run: python cloud_collect.py
+
+      - name: Commit & push artifacts
+        run: |
+          git config user.name "internship-collector[bot]"
+          git config user.email "internship-collector@users.noreply.github.com"
+          git add todays_candidates.json seen_postings.json
+          if git diff --cached --quiet; then
+            echo "no candidate changes to push"
+            exit 0
+          fi
+          git commit -m "collector: refresh candidates $(date -u +%FT%TZ) [skip ci]"
+          for attempt in 1 2 3; do
+            if git pull --rebase --autostash origin main && git push origin main; then
+              echo "pushed on attempt $attempt"; exit 0
+            fi
+            echo "push attempt $attempt failed — retry in 10s"; sleep 10
+          done
+          echo "::error::push never succeeded"; exit 1
