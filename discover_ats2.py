@@ -21,7 +21,7 @@ from pathlib import Path
 
 from http_client import RetryingHttpClient
 from models import RawPosting
-from sources import ats, workday
+from sources import ats
 
 ROOT = Path(__file__).resolve().parent
 DISC = ROOT / "roster_ats_discovered.json"
@@ -126,7 +126,6 @@ def _wd_probe(tenant: str, shard: str, site: str, http: RetryingHttpClient):
                       headers={"Content-Type": "application/json", "Accept": "application/json"})
     except Exception:
         return ("nohost", None)  # DNS/conn error → wrong shard
-    st = getattr(r, "status_code", None)
     try:
         p = r.json()
     except Exception:
