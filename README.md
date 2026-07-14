@@ -9,8 +9,12 @@ they open.
   allowlist** (`target_firms.py`), deduplicates against a lifetime SQLite store, and writes
   `todays_candidates.json`, committing it to this git repo (the "bridge").
 - **Cloud judge** (`routines/internship-watch.md`) — a scheduled Claude routine (twin of
-  `fellowship-watch`) that reads the artifact, **fact-checks** each candidate against the live
-  web, **confirms Tier 1/2/3**, and pushes a daily report. See that file for the routine prompt.
+  `fellowship-watch`) that **trusts** the ATS-sourced artifact as-is (Path A came from an
+  authoritative keyless feed, so it isn't re-verified), **web-searches the no-feed roster firms**
+  it can't otherwise see (Path B — curated marquees daily, the full list on Tuesdays; see
+  `no_feed.py`), **fact-checks only those discoveries**, then runs an **LLM relevance/fit pass**
+  that ranks Tier 1/2/3 and trims low-fit roles before pushing a daily report. See that file for
+  the routine prompt.
 
 Design spec: `docs/superpowers/specs/2026-07-10-internship-notifier-design.md`.
 
@@ -35,9 +39,9 @@ The keys were migrated from the original scraper, where they lived in plaintext;
 
 **The keyless feed layer (Greenhouse / Lever / Ashby / SmartRecruiters / Workable / Workday)
 needs no keys** and is the highest-signal source, so the pipeline runs usefully with an empty
-`.env` — sources whose keys are missing skip themselves. The aggregators cover the ~120 target
-firms that have no direct keyless feed (bulge brackets, MBB, big tech, marquee corporates), so
-set the keys to watch those.
+`.env` — sources whose keys are missing skip themselves. The aggregators cover the ~80 target
+firms that have no direct keyless feed (bulge brackets, MBB, big tech, marquee corporates;
+enumerated by `no_feed.py`), so set the keys to watch those.
 
 ## Run
 
