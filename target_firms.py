@@ -1,4 +1,4 @@
-"""Cross-sector Tier-1 / Tier-2 prestige allowlist — the collector's firm gate.
+"""Cross-sector Tier-1 / Tier-2 / Tier-3 prestige allowlist — the collector's firm gate.
 
 Roster sourced from the 2026-07-10 /deep-research pass (investment banking, MBB +
 strategy consulting, asset management — high-confidence, cited) combined with
@@ -8,7 +8,8 @@ marquee corporates. ATS `sources` tokens marked "verified" were live-checked on
 are watched via the name-gated aggregator sources (LinkedIn / Adzuna / Serper /
 Handshake) and by the discovery review queue.
 
-Tiers: T1 = most prestigious / most selective; T2 = still excellent / target.
+Tiers: T1 = most prestigious / most selective; T2 = still excellent / target;
+T3 = solid in-domain prestige (smaller / specialist boutiques). See docs/roster-tiers.md.
 Public API is unchanged: TARGET_FIRMS (list of dicts) + all_source_tokens().
 """
 from __future__ import annotations
