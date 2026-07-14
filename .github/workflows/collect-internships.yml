@@ -13,8 +13,11 @@ name: collect-internships
 
 on:
   schedule:
+    # Run ONCE per judge cycle, before the once-daily internship-watch judge.
+    # cloud_collect.py overwrites todays_candidates.json with only this run's
+    # not-yet-seen postings and advances seen_postings.json, so a second run
+    # before the judge reads the artifact would blank the first run's postings.
     - cron: "0 10 * * *"   # ~06:00 ET — morning sweep
-    - cron: "0 22 * * *"   # ~18:00 ET — evening sweep
   workflow_dispatch: {}     # manual "Run workflow" button
 
 permissions:
