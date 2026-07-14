@@ -16,7 +16,7 @@ import argparse
 
 from filters import is_relevant_posting
 from http_client import RetryableHttpError, RetryingHttpClient, TokenPruned
-from sources import ats
+from sources import ats, workday
 from target_firms import all_source_tokens
 
 FETCHERS = {
@@ -25,6 +25,7 @@ FETCHERS = {
     "ashby": ats.fetch_ashby,
     "smartrecruiters": ats.fetch_smartrecruiters,
     "workable": ats.fetch_workable,
+    "workday": workday.fetch_workday,
 }
 
 

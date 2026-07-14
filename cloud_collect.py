@@ -115,7 +115,7 @@ def gate(postings: list[RawPosting]) -> list[Candidate]:
         if not is_relevant_posting(p, target_year=TARGET_YEAR):
             continue
         match = firm_match(p.company)
-        if not match:  # not on the Tier-1/2 allowlist
+        if not match:  # not on the Tier-1/2/3 allowlist
             continue
         kept.append(Candidate(
             tier_hint=str(match.get("tier") or match.get("tier_hint") or ""),

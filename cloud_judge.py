@@ -63,7 +63,7 @@ def judge_candidates(
         if not isinstance(candidate, dict):
             continue
         match = firm_match(str(candidate.get("company") or ""))
-        if match is None or match["tier"] not in {"T1", "T2"}:
+        if match is None or match["tier"] not in {"T1", "T2", "T3"}:
             continue
         if not is_relevant_posting(candidate):
             continue
@@ -85,7 +85,7 @@ def compose_report(candidates: Iterable[dict[str, str]]) -> str:
         return "\n".join(
             [
                 "No new open internships today.",
-                "Checked the bridge artifact and filtered closed or non-T1/T2 postings.",
+                "Checked the bridge artifact and filtered closed or non-T1/T2/T3 postings.",
                 "Next run: tomorrow morning.",
             ]
         )
