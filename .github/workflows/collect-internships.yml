@@ -45,11 +45,30 @@ jobs:
         run: |
           git config user.name "internship-collector[bot]"
           git config user.email "internship-collector@users.noreply.github.com"
-          git add todays_candidates.json seen_postings.json
-          if git diff --cached --quiet; then
-            echo "no candidate changes to push"
+          # A whole-file diff is never empty: todays_candidates.json embeds a fresh
+          # generated_at and seen_postings.json a fresh updated on every run. Only a
+          # change to the .candidates array is a real change worth a commit — compare
+          # that array against what's committed and revert timestamp-only churn.
+          changed=$(python <<'PY'
+          import json, subprocess
+          def candidates(text):
+              return json.loads(text).get("candidates")
+          new = candidates(open("todays_candidates.json", encoding="utf-8").read())
+          try:
+              old = candidates(subprocess.run(
+                  ["git", "show", "HEAD:todays_candidates.json"],
+                  capture_output=True, text=True, check=True).stdout)
+          except subprocess.CalledProcessError:
+              old = None
+          print("yes" if new != old else "no")
+          PY
+          )
+          if [ "$changed" != "yes" ]; then
+            echo "no candidate changes — reverting timestamp-only churn"
+            git checkout -- todays_candidates.json seen_postings.json
             exit 0
           fi
+          git add todays_candidates.json seen_postings.json
           git commit -m "collector: refresh candidates $(date -u +%FT%TZ) [skip ci]"
           for attempt in 1 2 3; do
             if git pull --rebase --autostash origin main && git push origin main; then
