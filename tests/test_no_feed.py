@@ -22,6 +22,16 @@ def test_curated_daily_is_nonempty_subset_of_full() -> None:
     assert all(f["company"] in full for f in data["curated_daily"])
 
 
+def test_curated_marquees_are_roster_canonicals() -> None:
+    # Every CURATED_MARQUEES name must be a current roster canonical; a rename or typo
+    # would otherwise silently drop the firm from the daily curated web-search sweep.
+    from target_firms import TARGET_FIRMS
+
+    canonicals = {f["canonical"] for f in TARGET_FIRMS}
+    unknown = no_feed.CURATED_MARQUEES - canonicals
+    assert not unknown, f"CURATED_MARQUEES not in roster canonicals: {sorted(unknown)}"
+
+
 def test_fed_firms_are_not_in_no_feed() -> None:
     # A firm with a keyless token must never appear on the no-feed list.
     from target_firms import all_source_tokens
