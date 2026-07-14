@@ -1,3 +1,13 @@
+"""Deterministic judge for the collected candidate artifact (offline / no LLM).
+
+The LIVE daily judge is the `internship-watch` cloud routine (an LLM prompt) — it
+reads the same artifact, runs the Path-B web-search discovery, does the relevance
+pass, and pushes the digest. This module is the deterministic counterpart: same
+gate (roster tier + relevance), a plain-HTTP fact-checker, and the same report
+shape — useful for tests and for running the pipeline end-to-end without the LLM.
+Both keep the SAME rule for authoritative feeds: an ATS/Workday posting came from
+a live keyless feed, so it is not re-verified (see KEYLESS_SOURCES).
+"""
 from __future__ import annotations
 
 import json
@@ -11,6 +21,13 @@ import requests
 from filters import firm_match, is_relevant_posting, normalize_company_name, normalize_title
 from handoff import validate_payload
 from target_firms import TARGET_FIRMS, TIER_ORDER
+
+# Postings from these sources come from an authoritative keyless feed (a live 200
+# + a real posting), so they are already real+open and need no re-verification.
+# Skipping their fact-check saves work AND removes the single point of failure
+# that blanked a whole run when the fetch/proxy layer returned 403 — only
+# web-discovered (Path B) postings are actually verified.
+KEYLESS_SOURCES = {"greenhouse", "lever", "ashby", "smartrecruiters", "workable", "workday"}
 
 
 @dataclass(frozen=True)
@@ -67,7 +84,12 @@ def judge_candidates(
             continue
         if not is_relevant_posting(candidate):
             continue
-        check = fact_checker({key: str(value) for key, value in candidate.items()})
+        # Authoritative ATS/Workday postings are trusted as-is; only web-discovered
+        # (Path B) postings are fact-checked.
+        if str(candidate.get("source") or "").lower() in KEYLESS_SOURCES:
+            check = FactCheckResult(True)
+        else:
+            check = fact_checker({key: str(value) for key, value in candidate.items()})
         if not check.ok:
             continue
         row = {key: str(value) for key, value in candidate.items()}

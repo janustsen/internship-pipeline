@@ -54,6 +54,22 @@ def test_empty_cloud_report_is_short() -> None:
     assert "No new open internships today." in report
 
 
+def test_judge_trusts_ats_sourced_without_fact_check() -> None:
+    # An ATS/Workday posting came from a live keyless feed — it is trusted as-is,
+    # so even a rejecting fact_checker must not drop it (the 403-fragility fix).
+    payload = {
+        "generated_at": "2026-07-10T00:00:00+00:00",
+        "run_date": "2026-07-10",
+        "candidate_count": 1,
+        "candidates": [
+            {**_candidate("T1", "JPMorgan", "2027 Summer Analyst Program", "https://x/gh"),
+             "source": "greenhouse"},
+        ],
+    }
+    accepted = judge_candidates(payload, fact_checker=lambda _row: FactCheckResult(False, "closed"))
+    assert [row["company"] for row in accepted] == ["JPMorgan"]
+
+
 def test_judge_candidates_drops_role_mismatches() -> None:
     payload = {
         "generated_at": "2026-07-10T00:00:00+00:00",

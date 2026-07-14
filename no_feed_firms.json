@@ -1,0 +1,510 @@
+{
+  "curated_daily": [
+    {
+      "company": "Accel",
+      "tier": "T1"
+    },
+    {
+      "company": "Bain & Company",
+      "tier": "T1"
+    },
+    {
+      "company": "Bain Capital",
+      "tier": "T1"
+    },
+    {
+      "company": "Balyasny",
+      "tier": "T1"
+    },
+    {
+      "company": "Bank of America",
+      "tier": "T1"
+    },
+    {
+      "company": "Benchmark",
+      "tier": "T1"
+    },
+    {
+      "company": "Boston Consulting Group",
+      "tier": "T1"
+    },
+    {
+      "company": "CVC",
+      "tier": "T1"
+    },
+    {
+      "company": "Carlyle",
+      "tier": "T1"
+    },
+    {
+      "company": "Centerview Partners",
+      "tier": "T1"
+    },
+    {
+      "company": "Citadel",
+      "tier": "T1"
+    },
+    {
+      "company": "Citadel Securities",
+      "tier": "T1"
+    },
+    {
+      "company": "D.E. Shaw",
+      "tier": "T1"
+    },
+    {
+      "company": "Evercore",
+      "tier": "T1"
+    },
+    {
+      "company": "Founders Fund",
+      "tier": "T1"
+    },
+    {
+      "company": "Goldman Sachs",
+      "tier": "T1"
+    },
+    {
+      "company": "Greenhill & Co",
+      "tier": "T1"
+    },
+    {
+      "company": "Greylock",
+      "tier": "T1"
+    },
+    {
+      "company": "Hellman & Friedman",
+      "tier": "T1"
+    },
+    {
+      "company": "Hudson River Trading",
+      "tier": "T1"
+    },
+    {
+      "company": "Index Ventures",
+      "tier": "T1"
+    },
+    {
+      "company": "Insight Partners",
+      "tier": "T1"
+    },
+    {
+      "company": "JPMorgan",
+      "tier": "T1"
+    },
+    {
+      "company": "KKR",
+      "tier": "T1"
+    },
+    {
+      "company": "Kleiner Perkins",
+      "tier": "T1"
+    },
+    {
+      "company": "Lazard",
+      "tier": "T1"
+    },
+    {
+      "company": "Leonard Green & Partners",
+      "tier": "T1"
+    },
+    {
+      "company": "Lightspeed",
+      "tier": "T1"
+    },
+    {
+      "company": "McKinsey & Company",
+      "tier": "T1"
+    },
+    {
+      "company": "Millennium",
+      "tier": "T1"
+    },
+    {
+      "company": "PJT Partners",
+      "tier": "T1"
+    },
+    {
+      "company": "Perella Weinberg Partners",
+      "tier": "T1"
+    },
+    {
+      "company": "Qatalyst Partners",
+      "tier": "T1"
+    },
+    {
+      "company": "Renaissance Technologies",
+      "tier": "T1"
+    },
+    {
+      "company": "Rothschild & Co",
+      "tier": "T1"
+    },
+    {
+      "company": "SIG",
+      "tier": "T1"
+    },
+    {
+      "company": "Sequoia Capital",
+      "tier": "T1"
+    },
+    {
+      "company": "Silver Lake",
+      "tier": "T1"
+    },
+    {
+      "company": "Thoma Bravo",
+      "tier": "T1"
+    },
+    {
+      "company": "Thrive Capital",
+      "tier": "T1"
+    },
+    {
+      "company": "Two Sigma",
+      "tier": "T1"
+    },
+    {
+      "company": "UBS",
+      "tier": "T1"
+    },
+    {
+      "company": "Vista Equity Partners",
+      "tier": "T1"
+    }
+  ],
+  "full": [
+    {
+      "company": "Accel",
+      "tier": "T1"
+    },
+    {
+      "company": "Amazon",
+      "tier": "T1"
+    },
+    {
+      "company": "Apple",
+      "tier": "T1"
+    },
+    {
+      "company": "Bain & Company",
+      "tier": "T1"
+    },
+    {
+      "company": "Bain Capital",
+      "tier": "T1"
+    },
+    {
+      "company": "Balyasny",
+      "tier": "T1"
+    },
+    {
+      "company": "Bank of America",
+      "tier": "T1"
+    },
+    {
+      "company": "Benchmark",
+      "tier": "T1"
+    },
+    {
+      "company": "BlackRock",
+      "tier": "T1"
+    },
+    {
+      "company": "Boston Consulting Group",
+      "tier": "T1"
+    },
+    {
+      "company": "CVC",
+      "tier": "T1"
+    },
+    {
+      "company": "Carlyle",
+      "tier": "T1"
+    },
+    {
+      "company": "Centerview Partners",
+      "tier": "T1"
+    },
+    {
+      "company": "Citadel",
+      "tier": "T1"
+    },
+    {
+      "company": "Citadel Securities",
+      "tier": "T1"
+    },
+    {
+      "company": "D.E. Shaw",
+      "tier": "T1"
+    },
+    {
+      "company": "Evercore",
+      "tier": "T1"
+    },
+    {
+      "company": "Founders Fund",
+      "tier": "T1"
+    },
+    {
+      "company": "Goldman Sachs",
+      "tier": "T1"
+    },
+    {
+      "company": "Google",
+      "tier": "T1"
+    },
+    {
+      "company": "Greenhill & Co",
+      "tier": "T1"
+    },
+    {
+      "company": "Greylock",
+      "tier": "T1"
+    },
+    {
+      "company": "Hellman & Friedman",
+      "tier": "T1"
+    },
+    {
+      "company": "Hudson River Trading",
+      "tier": "T1"
+    },
+    {
+      "company": "Index Ventures",
+      "tier": "T1"
+    },
+    {
+      "company": "Insight Partners",
+      "tier": "T1"
+    },
+    {
+      "company": "JPMorgan",
+      "tier": "T1"
+    },
+    {
+      "company": "KKR",
+      "tier": "T1"
+    },
+    {
+      "company": "Kleiner Perkins",
+      "tier": "T1"
+    },
+    {
+      "company": "Lazard",
+      "tier": "T1"
+    },
+    {
+      "company": "Leonard Green & Partners",
+      "tier": "T1"
+    },
+    {
+      "company": "Lightspeed",
+      "tier": "T1"
+    },
+    {
+      "company": "McKinsey & Company",
+      "tier": "T1"
+    },
+    {
+      "company": "Meta",
+      "tier": "T1"
+    },
+    {
+      "company": "Microsoft",
+      "tier": "T1"
+    },
+    {
+      "company": "Millennium",
+      "tier": "T1"
+    },
+    {
+      "company": "NASA",
+      "tier": "T1"
+    },
+    {
+      "company": "PJT Partners",
+      "tier": "T1"
+    },
+    {
+      "company": "Perella Weinberg Partners",
+      "tier": "T1"
+    },
+    {
+      "company": "Qatalyst Partners",
+      "tier": "T1"
+    },
+    {
+      "company": "Renaissance Technologies",
+      "tier": "T1"
+    },
+    {
+      "company": "Rothschild & Co",
+      "tier": "T1"
+    },
+    {
+      "company": "SIG",
+      "tier": "T1"
+    },
+    {
+      "company": "Sequoia Capital",
+      "tier": "T1"
+    },
+    {
+      "company": "Silver Lake",
+      "tier": "T1"
+    },
+    {
+      "company": "Thoma Bravo",
+      "tier": "T1"
+    },
+    {
+      "company": "Thrive Capital",
+      "tier": "T1"
+    },
+    {
+      "company": "Two Sigma",
+      "tier": "T1"
+    },
+    {
+      "company": "UBS",
+      "tier": "T1"
+    },
+    {
+      "company": "Vista Equity Partners",
+      "tier": "T1"
+    },
+    {
+      "company": "Allen & Company",
+      "tier": "T2"
+    },
+    {
+      "company": "American Express",
+      "tier": "T2"
+    },
+    {
+      "company": "Analysis Group",
+      "tier": "T2"
+    },
+    {
+      "company": "BNP Paribas",
+      "tier": "T2"
+    },
+    {
+      "company": "Deel",
+      "tier": "T2"
+    },
+    {
+      "company": "Deloitte",
+      "tier": "T2"
+    },
+    {
+      "company": "DoorDash",
+      "tier": "T2"
+    },
+    {
+      "company": "EY",
+      "tier": "T2"
+    },
+    {
+      "company": "EY-Parthenon",
+      "tier": "T2"
+    },
+    {
+      "company": "Federal Reserve",
+      "tier": "T2"
+    },
+    {
+      "company": "HSBC",
+      "tier": "T2"
+    },
+    {
+      "company": "International Monetary Fund",
+      "tier": "T2"
+    },
+    {
+      "company": "Jefferies",
+      "tier": "T2"
+    },
+    {
+      "company": "KPMG",
+      "tier": "T2"
+    },
+    {
+      "company": "Kearney",
+      "tier": "T2"
+    },
+    {
+      "company": "L.E.K. Consulting",
+      "tier": "T2"
+    },
+    {
+      "company": "LinkedIn",
+      "tier": "T2"
+    },
+    {
+      "company": "Lockheed Martin",
+      "tier": "T2"
+    },
+    {
+      "company": "Macquarie",
+      "tier": "T2"
+    },
+    {
+      "company": "Mistral AI",
+      "tier": "T2"
+    },
+    {
+      "company": "Netflix",
+      "tier": "T2"
+    },
+    {
+      "company": "Nike",
+      "tier": "T2"
+    },
+    {
+      "company": "Nomura",
+      "tier": "T2"
+    },
+    {
+      "company": "PIMCO",
+      "tier": "T2"
+    },
+    {
+      "company": "PepsiCo",
+      "tier": "T2"
+    },
+    {
+      "company": "Procter & Gamble",
+      "tier": "T2"
+    },
+    {
+      "company": "PwC",
+      "tier": "T2"
+    },
+    {
+      "company": "Rippling",
+      "tier": "T2"
+    },
+    {
+      "company": "Solomon Partners",
+      "tier": "T2"
+    },
+    {
+      "company": "Tesla",
+      "tier": "T2"
+    },
+    {
+      "company": "Uber",
+      "tier": "T2"
+    },
+    {
+      "company": "World Bank",
+      "tier": "T2"
+    },
+    {
+      "company": "ZS Associates",
+      "tier": "T2"
+    }
+  ]
+}
