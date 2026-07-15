@@ -1,14 +1,15 @@
-"""cloud_collect.py — keyless, laptop-free collection for the cloud routine.
+"""cloud_collect.py — keyless, laptop-free collection (Path A).
 
-Runs inside the `internship-watch` cloud routine (a fresh clone of the repo, no
-API keys, no login). Fetches every roster firm's KEYLESS feed (ATS + Workday),
-gates through the same relevance + tier filters as the local collector, merges in
-Handshake postings dropped by the tiny local hybrid job, dedups against a
-git-committed `seen_postings.json` (persistent state lives in the repo, not a
-local SQLite), and writes `todays_candidates.json` for the judge half.
+Runs on GitHub Actions (open egress; the Claude cloud sandbox blocks direct feed
+egress, so it cannot run there). No API keys, no login. Fetches every roster
+firm's KEYLESS feed (ATS + Workday), gates through the same relevance + tier
+filters, dedups against a git-committed `seen_postings.json` (persistent state
+lives in the repo, not a local SQLite), and writes `todays_candidates.json` for
+the `internship-watch` judge routine.
 
-No network keys, no git here — the routine commits the artifacts. Idempotent per
-day: a posting is reported once (its fingerprint is remembered in seen_postings).
+Idempotent per judge cycle: a posting is reported once (its fingerprint is
+remembered in seen_postings). Run once per cycle, before the judge — see the
+workflow note; a second run before the judge would blank the first run's postings.
 
 Usage:  ./venv/bin/python cloud_collect.py            # writes todays_candidates.json + seen_postings.json
         ./venv/bin/python cloud_collect.py --dry-run  # no writes; prints summary
@@ -36,7 +37,6 @@ from sources import ats, workday
 from target_firms import all_source_tokens
 
 SEEN_PATH = Path("seen_postings.json")
-HANDSHAKE_DROP = Path("handshake_candidates.json")
 TARGET_YEAR = 2027
 
 # platform -> (fetcher, kind). ATS fetchers take an org slug; workday takes the
@@ -87,27 +87,6 @@ def fetch_all_keyless(http: RetryingHttpClient | None = None) -> list[RawPosting
     return postings
 
 
-def load_handshake_drop(path: Path = HANDSHAKE_DROP) -> list[RawPosting]:
-    """Merge in Handshake postings dropped by the local hybrid job (if present)."""
-    if not path.exists():
-        return []
-    try:
-        data = json.loads(path.read_text(encoding="utf-8"))
-    except (OSError, json.JSONDecodeError):
-        return []
-    # Accept the collector's handoff shape ({"candidates":[...]}) or a raw list.
-    items = data.get("candidates") or data.get("postings") or (data if isinstance(data, list) else [])
-    out = []
-    for j in items:
-        if isinstance(j, dict):
-            out.append(RawPosting(
-                company=str(j.get("company") or ""), title=str(j.get("title") or ""),
-                link=str(j.get("link") or ""), location=str(j.get("location") or ""),
-                posted=str(j.get("posted") or ""), source="handshake", raw=j,
-            ))
-    return out
-
-
 def gate(postings: list[RawPosting]) -> list[Candidate]:
     """Keep only real internships at roster firms; assign tier + category."""
     kept: list[Candidate] = []
@@ -133,7 +112,7 @@ def main(argv: list[str] | None = None) -> int:
     ap.add_argument("--artifact", default="todays_candidates.json")
     args = ap.parse_args(argv)
 
-    raw = fetch_all_keyless() + load_handshake_drop()
+    raw = fetch_all_keyless()
     candidates = gate(raw)
 
     # Dedup within-run (same fingerprint from two feeds) and against history.

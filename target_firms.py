@@ -5,8 +5,8 @@ strategy consulting, asset management — high-confidence, cited) combined with
 domain coverage for PE / hedge funds / quant / VC / big tech / hot startups /
 marquee corporates. ATS `sources` tokens marked "verified" were live-checked on
 2026-07-10 via verify_tokens.py (HTTP 200 + real postings); firms without a token
-are watched via the name-gated aggregator sources (LinkedIn / Adzuna / Serper /
-Handshake) and by the discovery review queue.
+have no keyless feed (see no_feed.py) and are found by the judge routine's Path-B
+web search.
 
 Tiers: T1 = most prestigious / most selective; T2 = still excellent / target;
 T3 = solid in-domain prestige (smaller / specialist boutiques). See docs/roster-tiers.md.

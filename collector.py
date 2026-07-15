@@ -13,14 +13,14 @@ from filters import candidate_category, firm_match, is_relevant_posting
 from handoff import commit_and_push, write_handoff
 from http_client import RetryingHttpClient
 from models import Candidate, RawPosting, raw_posting_from_mapping
-from sources import adzuna, ats, handshake, linkedin, serper
+from sources import adzuna, ats, linkedin, serper
 from store import InternshipStore
 from target_firms import all_source_tokens
 from tracker import append_tracker
 
 
 LOGGER = logging.getLogger("internship_collector")
-SOURCE_NAMES = ("ats", "adzuna", "serper", "linkedin", "handshake")
+SOURCE_NAMES = ("ats", "adzuna", "serper", "linkedin")
 
 
 def build_parser() -> argparse.ArgumentParser:
@@ -172,17 +172,6 @@ def default_fetchers(
             )
         except ConfigError as exc:
             LOGGER.warning("skipping linkedin (missing config): %s", exc)
-    if "handshake" in selected_sources:
-        search_url = config.get("HANDSHAKE_SEARCH_URL", "")
-        if search_url:
-            script = config.get("HANDSHAKE_SCRAPER_PATH", "handshake_scraper.py")
-            fetchers["handshake"] = lambda: handshake.fetch_handshake(
-                search_url=search_url, script_path=script
-            )
-        else:
-            LOGGER.warning(
-                "skipping handshake (set HANDSHAKE_SEARCH_URL to a school search URL)"
-            )
     return fetchers
 
 

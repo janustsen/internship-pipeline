@@ -3,7 +3,6 @@ from __future__ import annotations
 from http_client import RetryingHttpClient
 from sources.adzuna import fetch_adzuna
 from sources.ats import fetch_ashby, fetch_smartrecruiters, fetch_workable
-from sources.handshake import fetch_handshake, read_handshake_csv
 from sources.linkedin import fetch_linkedin
 from sources.serper import fetch_serper
 from tests.conftest import FakeResponse, FakeSession
@@ -124,36 +123,6 @@ def test_serper_drops_listing_pages_keeps_postings() -> None:
 
     titles = [p.title for p in postings]
     assert titles == ["2027 Summer Analyst Program - Goldman Sachs"]
-
-
-def test_handshake_skips_when_no_search_url() -> None:
-    calls = []
-
-    def runner(*args, **kwargs):  # must never be invoked
-        calls.append(args)
-
-    assert fetch_handshake(search_url="", runner=runner) == []
-    assert calls == []
-
-
-def test_handshake_reads_real_csv_columns(tmp_path) -> None:
-    # The vendored scraper writes "Company Name"/"Job Title"/"Job Link"/... —
-    # the wrapper previously read company/link/location and got blanks.
-    csv_path = tmp_path / "handshake_jobs.csv"
-    csv_path.write_text(
-        "Company Name,Job Title,Job Link,Job Location,Job PostedAt\n"
-        "Jane Street,2027 Summer Analyst,https://x/1,New York,2026-07-10\n",
-        encoding="utf-8",
-    )
-
-    postings = read_handshake_csv(str(csv_path))
-
-    assert len(postings) == 1
-    assert postings[0].company == "Jane Street"
-    assert postings[0].title == "2027 Summer Analyst"
-    assert postings[0].link == "https://x/1"
-    assert postings[0].location == "New York"
-    assert postings[0].posted == "2026-07-10"
 
 
 def test_linkedin_maps_actor_output_fields() -> None:

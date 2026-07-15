@@ -4,13 +4,17 @@ A two-halves internship **opening-detector** for elite finance / consulting / st
 / business roles (Summer 2027 + sophomore tracks), built to surface top-tier postings the day
 they open.
 
-- **Local collector** (`collector.py`) — scrapes 5 sources (ATS APIs, LinkedIn, Handshake,
-  Adzuna, Serper), gates every posting through a curated cross-sector **Tier-1/2/3 firm
+- **Local collector** (`collector.py`) — scrapes 4 sources (ATS APIs, LinkedIn, Adzuna,
+  Serper), gates every posting through a curated cross-sector **Tier-1/2/3 firm
   allowlist** (`target_firms.py`), deduplicates against a lifetime SQLite store, and writes
   `todays_candidates.json`, committing it to this git repo (the "bridge").
 - **Cloud judge** (`routines/internship-watch.md`) — a scheduled Claude routine (twin of
-  `fellowship-watch`) that reads the artifact, **fact-checks** each candidate against the live
-  web, **confirms Tier 1/2/3**, and pushes a daily report. See that file for the routine prompt.
+  `fellowship-watch`) that **trusts** the ATS-sourced artifact as-is (Path A came from an
+  authoritative keyless feed, so it isn't re-verified), **web-searches the no-feed roster firms**
+  it can't otherwise see (Path B — curated marquees daily, the full list on Tuesdays; see
+  `no_feed.py`), **fact-checks only those discoveries**, then runs an **LLM relevance/fit pass**
+  that ranks Tier 1/2/3 and trims low-fit roles before pushing a daily report. See that file for
+  the routine prompt.
 
 Design spec: `docs/superpowers/specs/2026-07-10-internship-notifier-design.md`.
 
@@ -19,7 +23,7 @@ Design spec: `docs/superpowers/specs/2026-07-10-internship-notifier-design.md`.
 ```bash
 python3 -m venv venv && ./venv/bin/pip install -r requirements.txt
 cp .env.example .env          # then fill in ROTATED keys (see below)
-./venv/bin/python -m pytest   # 25 tests
+./venv/bin/python -m pytest   # 34 tests
 ```
 
 ### Secrets (`.env`) — rotate first
@@ -32,20 +36,12 @@ The keys were migrated from the original scraper, where they lived in plaintext;
 | `ADZUNA_APP_ID`, `ADZUNA_APP_KEY` | Adzuna source | optional |
 | `SERPER_API_KEY` | Serper career-page source (free plan: plain-keyword queries only) | optional |
 | `APIFY_TOKEN`, `LINKEDIN_APIFY_ACTOR_ID` | LinkedIn source | optional |
-| `HANDSHAKE_SCRAPER_PATH`, `HANDSHAKE_SEARCH_URL` | Handshake Selenium scraper | optional |
 
 **The keyless feed layer (Greenhouse / Lever / Ashby / SmartRecruiters / Workable / Workday)
 needs no keys** and is the highest-signal source, so the pipeline runs usefully with an empty
-`.env` — sources whose keys are missing skip themselves. The aggregators cover the ~120 target
-firms that have no direct keyless feed (bulge brackets, MBB, big tech, marquee corporates), so
-set the keys to watch those.
-
-**Handshake** is off unless `HANDSHAKE_SEARCH_URL` is set. To enable it: (1) do a one-time SSO
-login in a Chrome window so the session persists in `~/.handshake_chrome_profile`; (2) build a
-Handshake internship search on your school's Handshake, copy the URL (it must include `page=1`),
-and set it as `HANDSHAKE_SEARCH_URL`. It uniquely catches campus-exclusive sophomore/diversity
-programs that never reach public boards. The vendored `handshake_scraper.py` needs Chrome +
-`selenium` + `webdriver-manager` (already in `requirements.txt`).
+`.env` — sources whose keys are missing skip themselves. The aggregators cover the ~80 target
+firms that have no direct keyless feed (bulge brackets, MBB, big tech, marquee corporates;
+enumerated by `no_feed.py`), so set the keys to watch those.
 
 ## Run
 
@@ -70,11 +66,10 @@ Mac or on GitHub Actions — pick one to avoid double-collection.
 via `cloud_collect.py` and commits `todays_candidates.json` + `seen_postings.json` to `main` —
 no laptop, no keys, zero LLM tokens (Actions runners have the open egress the Claude cloud
 sandbox lacks). It runs once daily on `cron: "0 10 * * *"` (~06:00 ET, before the judge) plus a
-manual **Run workflow** button, and needs only `contents: write`. It does **not** run Handshake
-(that needs the logged-in Mac Chrome profile). Enabling it **replaces** the launchd job below —
-disable that plist so both don't push the same artifacts.
+manual **Run workflow** button, and needs only `contents: write`. Enabling it **replaces** the
+launchd job below — disable that plist so both don't push the same artifacts.
 
-### Mac launchd (local, includes Handshake)
+### Mac launchd (local)
 
 ```bash
 cp deploy/com.janustsen.internship-collector.plist ~/Library/LaunchAgents/
@@ -82,7 +77,7 @@ launchctl bootstrap gui/$(id -u) ~/Library/LaunchAgents/com.janustsen.internship
 launchctl kickstart -k gui/$(id -u)/com.janustsen.internship-collector   # run once now
 ```
 
-Runs `bin/run.sh` daily at 06:00 local (Handshake + keyless ATS/Workday via `cloud_collect.py`);
+Runs `bin/run.sh` daily at 06:00 local (keyless ATS/Workday via `cloud_collect.py`);
 logs to `logs/`.
 
 ## Coverage discipline

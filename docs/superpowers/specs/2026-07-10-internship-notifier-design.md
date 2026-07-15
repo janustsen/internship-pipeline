@@ -5,6 +5,31 @@
 
 ---
 
+## Amendment 2026-07-14 (current architecture)
+
+The architecture evolved after this spec was written. The historical body below is preserved
+as-is for provenance, but the following supersedes it where they conflict:
+
+- **(a) Handshake retired.** No more Selenium, no logged-in SSO Chrome profile, no
+  `handshake_scraper.py`. The keyless 140-feed ATS/Workday spine replaces it.
+- **(b) Path A moved off the Mac.** Keyless collection runs in **GitHub Actions**
+  (`.github/workflows/collect-internships.yml`), which has the open egress the Claude cloud
+  sandbox lacks for direct ATS/Workday hosts. The launchd cron / `bin/run.sh` is now a
+  manual/backup runner, not the primary path.
+- **(c) Path B is data-driven.** Web-search discovery reads the no-feed roster from
+  `no_feed_firms.json` (derived by `no_feed.py`): the curated marquee subset sweeps **daily**,
+  the full no-feed list sweeps **Tuesdays** — not a hardcoded firm list.
+- **(d) T3 boutiques are kept** in the digest (they were being silently dropped by a T1/T2-only
+  filter).
+- **(e) ATS-sourced postings are trusted** and intentionally not re-verified — they come from an
+  authoritative live keyless feed. Only Path-B web-discovered postings are fact-checked.
+- **(f) LLM relevance/fit pass** ranks by tier then fit and trims low-fit roles.
+
+Current source of truth: `cloud_collect.py`, `no_feed.py`, `routines/internship-watch.md`, and
+`.github/workflows/collect-internships.yml`.
+
+---
+
 ## Purpose
 
 A two-halves internship pipeline. A **local collector** (Python; 5 sources incl. a Selenium
