@@ -1,52 +1,32 @@
 {
-  "candidate_count": 19,
+  "candidate_count": 111,
   "candidates": [
     {
-      "category": "business",
-      "company": "Lincoln International",
-      "link": "http://www.lincolninternational.com/greenhouse/?gh_jid=8053030",
-      "location": "Amsterdam",
-      "posted": "2026-07-13T03:00:07-04:00",
-      "source": "greenhouse",
-      "tier_hint": "T2",
-      "title": "Intern M&A \u2013 Amsterdam (March 2027 \u2013 June 2027)"
-    },
-    {
       "category": "quant",
-      "company": "Jump Trading",
-      "link": "https://www.jumptrading.com/hr/job?gh_jid=8050796",
-      "location": "London; Amsterdam",
-      "posted": "2026-07-13T08:37:05-04:00",
+      "company": "DRW",
+      "link": "https://job-boards.greenhouse.io/drweng/jobs/7991171",
+      "location": "Montreal",
+      "posted": "2026-07-13T10:30:03-04:00",
       "source": "greenhouse",
       "tier_hint": "T1",
-      "title": "Campus Quantitative Researcher (Full-Time)"
-    },
-    {
-      "category": "quant",
-      "company": "Jump Trading",
-      "link": "https://www.jumptrading.com/hr/job?gh_jid=8010307",
-      "location": "London, Amsterdam",
-      "posted": "2026-07-13T08:36:23-04:00",
-      "source": "greenhouse",
-      "tier_hint": "T1",
-      "title": "Campus Quantitative Researcher (Intern)"
-    },
-    {
-      "category": "quant",
-      "company": "Jump Trading",
-      "link": "https://www.jumptrading.com/hr/job?gh_jid=8059384",
-      "location": "London; Amsterdam",
-      "posted": "2026-07-13T08:37:10-04:00",
-      "source": "greenhouse",
-      "tier_hint": "T1",
-      "title": "Campus Quantitative Researcher (M1/M2 Intern)"
+      "title": "AI/ML Research Intern"
     },
     {
       "category": "business",
       "company": "DRW",
-      "link": "https://job-boards.greenhouse.io/drweng/jobs/7957735",
-      "location": "London",
-      "posted": "2026-07-13T05:09:21-04:00",
+      "link": "https://job-boards.greenhouse.io/drweng/jobs/8038923",
+      "location": "Chicago",
+      "posted": "2026-07-13T12:32:38-04:00",
+      "source": "greenhouse",
+      "tier_hint": "T1",
+      "title": "FPGA Intern"
+    },
+    {
+      "category": "business",
+      "company": "DRW",
+      "link": "https://job-boards.greenhouse.io/drweng/jobs/7993195",
+      "location": "Chicago, IL",
+      "posted": "2026-07-13T11:55:35-04:00",
       "source": "greenhouse",
       "tier_hint": "T1",
       "title": "Leadership Rotation Network Intern"
@@ -54,19 +34,9 @@
     {
       "category": "quant",
       "company": "DRW",
-      "link": "https://job-boards.greenhouse.io/drweng/jobs/7981754",
-      "location": "Singapore",
-      "posted": "2026-07-13T02:22:07-04:00",
-      "source": "greenhouse",
-      "tier_hint": "T1",
-      "title": "Quantitative Developer Intern (Python)"
-    },
-    {
-      "category": "quant",
-      "company": "DRW",
-      "link": "https://job-boards.greenhouse.io/drweng/jobs/7957756",
-      "location": "London",
-      "posted": "2026-07-13T05:11:55-04:00",
+      "link": "https://job-boards.greenhouse.io/drweng/jobs/7818540",
+      "location": "Chicago, New York City",
+      "posted": "2026-07-13T10:32:14-04:00",
       "source": "greenhouse",
       "tier_hint": "T1",
       "title": "Quantitative Research Intern"
@@ -74,124 +44,1074 @@
     {
       "category": "quant",
       "company": "DRW",
-      "link": "https://job-boards.greenhouse.io/drweng/jobs/8014915",
-      "location": "Singapore",
-      "posted": "2026-07-13T02:23:01-04:00",
-      "source": "greenhouse",
-      "tier_hint": "T1",
-      "title": "Quantitative Research Intern "
-    },
-    {
-      "category": "quant",
-      "company": "DRW",
-      "link": "https://job-boards.greenhouse.io/drweng/jobs/7957243",
-      "location": "London",
-      "posted": "2026-07-13T05:11:25-04:00",
+      "link": "https://job-boards.greenhouse.io/drweng/jobs/7668776",
+      "location": "Chicago, Illinois",
+      "posted": "2026-07-13T10:34:56-04:00",
       "source": "greenhouse",
       "tier_hint": "T1",
       "title": "Quantitative Trading Analyst Intern"
     },
     {
-      "category": "quant",
+      "category": "consulting",
       "company": "DRW",
-      "link": "https://job-boards.greenhouse.io/drweng/jobs/8014919",
-      "location": "Singapore",
-      "posted": "2026-07-13T02:23:15-04:00",
+      "link": "https://job-boards.greenhouse.io/drweng/jobs/7992670",
+      "location": "Chicago, IL",
+      "posted": "2026-07-14T14:55:39-04:00",
       "source": "greenhouse",
       "tier_hint": "T1",
-      "title": "Quantitative Trading Analyst Intern "
+      "title": "Strategy Intern"
     },
     {
       "category": "business",
-      "company": "Citi",
-      "link": "https://citi.wd5.myworkdayjobs.com/en-US/2/job/Kuala-Lumpur-Selangor-Malaysia/Internship--Kuala-Lumpur--Malaysia---APAC--2026_26947855",
-      "location": "Kuala Lumpur Selangor Malaysia",
-      "posted": "Posted 30+ Days Ago",
-      "source": "workday",
+      "company": "DRW",
+      "link": "https://job-boards.greenhouse.io/drweng/jobs/7993565",
+      "location": "Chicago, IL",
+      "posted": "2026-07-14T10:19:24-04:00",
+      "source": "greenhouse",
       "tier_hint": "T1",
-      "title": "Internship, Kuala Lumpur, Malaysia \u2013 APAC, 2026"
+      "title": "Trade Support Intern"
     },
     {
       "category": "business",
-      "company": "Citi",
-      "link": "https://citi.wd5.myworkdayjobs.com/en-US/2/job/Penang-Pulau-Pinang-penang-Malaysia/Internship--Penang--Malaysia---APAC--2026_26947868",
-      "location": "Penang Pulau Pinang (penang) Malaysia",
-      "posted": "Posted 30+ Days Ago",
-      "source": "workday",
+      "company": "DRW",
+      "link": "https://job-boards.greenhouse.io/drweng/jobs/7993004",
+      "location": "Chicago, IL",
+      "posted": "2026-07-14T10:20:14-04:00",
+      "source": "greenhouse",
       "tier_hint": "T1",
-      "title": "Internship, Penang, Malaysia \u2013 APAC, 2026"
+      "title": "Venture Capital Analyst Intern"
     },
     {
       "category": "business",
-      "company": "Citi",
-      "link": "https://citi.wd5.myworkdayjobs.com/en-US/2/job/Sydney-New-South-Wales-Australia/Summer-Analyst-Program---Equity-Capital-Markets---Summer-Analyst--Sydney-Australia--APAC----2026_26952015",
-      "location": "Sydney New South Wales Australia",
-      "posted": "Posted Today",
-      "source": "workday",
+      "company": "Optiver",
+      "link": "https://www.optiver.com/join-us/jobs/8498656002/?gh_jid=8498656002",
+      "location": "Austin, Texas, United States",
+      "posted": "2026-07-13T16:42:40-04:00",
+      "source": "greenhouse",
       "tier_hint": "T1",
-      "title": "Summer Analyst Program \u2013 Capital Markets - Summer Analyst, Sydney Australia (APAC) - 2026"
+      "title": "Campus Recruitment Coordinator (Contract)"
+    },
+    {
+      "category": "quant",
+      "company": "Akuna Capital",
+      "link": "https://www.akunacapital.com/careers/job/8021481/?gh_jid=8021481",
+      "location": "Chicago, IL",
+      "posted": "2026-07-14T13:56:16-04:00",
+      "source": "greenhouse",
+      "tier_hint": "T1",
+      "title": "Quantitative Development & Strategy Intern, Summer 2027"
+    },
+    {
+      "category": "quant",
+      "company": "Akuna Capital",
+      "link": "https://www.akunacapital.com/careers/job/8036614/?gh_jid=8036614",
+      "location": "Chicago, IL ",
+      "posted": "2026-07-14T14:29:20-04:00",
+      "source": "greenhouse",
+      "tier_hint": "T1",
+      "title": "Quantitative Research Intern, Summer 2027"
+    },
+    {
+      "category": "quant",
+      "company": "Virtu Financial",
+      "link": "https://job-boards.greenhouse.io/virtu/jobs/8631180002",
+      "location": "Dublin, Ireland",
+      "posted": "2026-07-14T09:39:40-04:00",
+      "source": "greenhouse",
+      "tier_hint": "T1",
+      "title": "2027 Internship - Quantitative Strategist and Research Intern"
     },
     {
       "category": "business",
-      "company": "Strategy&",
-      "link": "https://pwc.wd3.myworkdayjobs.com/en-US/Global_Campus_Careers/job/Palermo/Capital-Projects---Economics-Intern---ambito-Infrastrutture--Trasporti-e-Logistica--Palermo-_614318WD",
-      "location": "Palermo",
-      "posted": "Posted Today",
-      "source": "workday",
+      "company": "Virtu Financial",
+      "link": "https://job-boards.greenhouse.io/virtu/jobs/8445018002",
+      "location": "New York",
+      "posted": "2026-07-14T11:58:24-04:00",
+      "source": "greenhouse",
+      "tier_hint": "T1",
+      "title": "Women's Winternship"
+    },
+    {
+      "category": "quant",
+      "company": "AQR",
+      "link": "https://careers.aqr.com/jobs?gh_jid=7957728&gh_jid=7957728",
+      "location": "Greenwich, CT",
+      "posted": "2026-07-13T13:03:40-04:00",
+      "source": "greenhouse",
+      "tier_hint": "T1",
+      "title": "2027 Research and Portfolio Management Engineering Summer Analyst"
+    },
+    {
+      "category": "business",
+      "company": "Snowflake",
+      "link": "https://jobs.ashbyhq.com/snowflake/634e9517-583c-446c-9a13-c0c5fe5960bb",
+      "location": "US-CA-Menlo Park",
+      "posted": "2026-07-14T00:10:19.197+00:00",
+      "source": "ashby",
       "tier_hint": "T2",
-      "title": "Capital Projects & Economics Intern - ambito Infrastrutture, Trasporti e Logistica (Palermo)"
+      "title": "AI-Powered BI Intern: Fall 2026"
     },
     {
       "category": "business",
-      "company": "Strategy&",
-      "link": "https://pwc.wd3.myworkdayjobs.com/en-US/Global_Campus_Careers/job/Singapore/Assurance-Risk-Management-Off-Cycle-Internship_744119WD",
+      "company": "Charles River Associates",
+      "link": "https://job-boards.greenhouse.io/charlesriverassociates/jobs/4467334",
+      "location": "Brussels, Belgium",
+      "posted": "2026-01-27T15:55:22-05:00",
+      "source": "greenhouse",
+      "tier_hint": "T3",
+      "title": "Intern (European Competition practice)"
+    },
+    {
+      "category": "business",
+      "company": "Charles River Associates",
+      "link": "https://job-boards.greenhouse.io/charlesriverassociates/jobs/5174914",
+      "location": "Munich, Germany",
+      "posted": "2026-06-15T09:15:18-04:00",
+      "source": "greenhouse",
+      "tier_hint": "T3",
+      "title": "Intern (European Competition practice) - m/f/d"
+    },
+    {
+      "category": "business",
+      "company": "Charles River Associates",
+      "link": "https://job-boards.greenhouse.io/charlesriverassociates/jobs/6105448",
+      "location": "Dusseldorf, Germany",
+      "posted": "2026-06-17T05:14:05-04:00",
+      "source": "greenhouse",
+      "tier_hint": "T3",
+      "title": "Intern (European Competition practice) - m/f/d"
+    },
+    {
+      "category": "consulting",
+      "company": "ClearView Healthcare Partners",
+      "link": "https://job-boards.greenhouse.io/clearviewhealthcarepartners/jobs/5229154008",
+      "location": "Boston, Massachusetts, United States, New York, New York, United States, San Francisco, California, United States",
+      "posted": "2026-07-01T11:38:22-04:00",
+      "source": "greenhouse",
+      "tier_hint": "T3",
+      "title": "Life Sciences Strategy Analyst (Summer 2027 Start Dates)"
+    },
+    {
+      "category": "business",
+      "company": "ING",
+      "link": "https://ing.wd3.myworkdayjobs.com/en-US/ICSGBLCOR/job/Singapore/Intern--CF-A---Transaction---Regulatory_REQ-10102345-1",
       "location": "Singapore",
       "posted": "Posted Today",
       "source": "workday",
       "tier_hint": "T2",
-      "title": "Assurance Risk Management Off-Cycle Internship"
+      "title": "Intern, CF&A / Transaction & Regulatory"
     },
     {
       "category": "business",
-      "company": "The Walt Disney Company",
-      "link": "https://disney.wd5.myworkdayjobs.com/en-US/disneycareer/job/Warsaw-Poland/Studio---Integrated-Marketing-Intern_10153668-2",
-      "location": "Warsaw, Poland",
+      "company": "ING",
+      "link": "https://ing.wd3.myworkdayjobs.com/en-US/ICSGBLCOR/job/CDR-Amsterdam---Cedar/Internship---Interest-Rate-Risk-in-the-Banking-Book--IRRBB--team_REQ-10117877",
+      "location": "CDR (Amsterdam - Cedar)",
       "posted": "Posted Today",
       "source": "workday",
       "tier_hint": "T2",
-      "title": "Studio & Integrated Marketing Intern"
+      "title": "Internship - Interest Rate Risk in the Banking Book (IRRBB) team"
     },
     {
       "category": "business",
-      "company": "The Walt Disney Company",
-      "link": "https://disney.wd5.myworkdayjobs.com/en-US/disneycareer/job/Warsaw-Poland/Licensing-Products-Intern_10155119",
-      "location": "Warsaw, Poland",
+      "company": "ING",
+      "link": "https://ing.wd3.myworkdayjobs.com/en-US/ICSGBLCOR/job/ACT-Amsterdam---Acanthus/Intern---Finance-Business-Advice_REQ-10117920",
+      "location": "ACT (Amsterdam - Acanthus)",
       "posted": "Posted Today",
       "source": "workday",
       "tier_hint": "T2",
-      "title": "Licensing Products Intern"
+      "title": "Intern \u2013 Finance Business Advice"
     },
     {
       "category": "business",
-      "company": "The Walt Disney Company",
-      "link": "https://disney.wd5.myworkdayjobs.com/en-US/disneycareer/job/Madrid-Spain/Social-Media-Intern_10152474-2",
+      "company": "ING",
+      "link": "https://ing.wd3.myworkdayjobs.com/en-US/ICSGBLCOR/job/CDR-Amsterdam---Cedar/Intern---Global-Paid-Media---Media-Analytics_REQ-10117931",
+      "location": "CDR (Amsterdam - Cedar)",
+      "posted": "Posted Today",
+      "source": "workday",
+      "tier_hint": "T2",
+      "title": "Intern - Global Paid Media & Media Analytics"
+    },
+    {
+      "category": "business",
+      "company": "ING",
+      "link": "https://ing.wd3.myworkdayjobs.com/en-US/ICSGBLCOR/job/Bruxelles-Avenue-Marnix-ING/Internship-FEC-I-I_REQ-10117986",
+      "location": "Bruxelles Avenue Marnix (ING)",
+      "posted": "Posted Today",
+      "source": "workday",
+      "tier_hint": "T2",
+      "title": "Internship FEC I&I"
+    },
+    {
+      "category": "business",
+      "company": "ING",
+      "link": "https://ing.wd3.myworkdayjobs.com/en-US/ICSGBLCOR/job/ACT-Amsterdam---Acanthus/Internship-Brand---Social-Media--Creative_REQ-10118234",
+      "location": "ACT (Amsterdam - Acanthus)",
+      "posted": "Posted Today",
+      "source": "workday",
+      "tier_hint": "T2",
+      "title": "Internship Brand & Social Media: Creative"
+    },
+    {
+      "category": "business",
+      "company": "ING",
+      "link": "https://ing.wd3.myworkdayjobs.com/en-US/ICSGBLCOR/job/Bucharest---Dacia-One/Intern-for-Sustainability--ING-Hubs-Romania_REQ-10117625",
+      "location": "Bucharest - Dacia One",
+      "posted": "Posted Today",
+      "source": "workday",
+      "tier_hint": "T2",
+      "title": "Intern for Sustainability @ING Hubs Romania"
+    },
+    {
+      "category": "business",
+      "company": "ING",
+      "link": "https://ing.wd3.myworkdayjobs.com/en-US/ICSGBLCOR/job/CDR-Amsterdam---Cedar/Graduate-Internship---NFR-AI-Agent-Developer_REQ-10116402",
+      "location": "CDR (Amsterdam - Cedar)",
+      "posted": "Posted Yesterday",
+      "source": "workday",
+      "tier_hint": "T2",
+      "title": "Internship \u2013 Non-Financial Risk AI Agent Developer"
+    },
+    {
+      "category": "business",
+      "company": "ING",
+      "link": "https://ing.wd3.myworkdayjobs.com/en-US/ICSGBLCOR/job/CDR-Amsterdam---Cedar/Intern-ITP-Trainee-Management-Team-NL_REQ-10117242",
+      "location": "CDR (Amsterdam - Cedar)",
+      "posted": "Posted Yesterday",
+      "source": "workday",
+      "tier_hint": "T2",
+      "title": "Internship -  Trainee Management team"
+    },
+    {
+      "category": "consulting",
+      "company": "ING",
+      "link": "https://ing.wd3.myworkdayjobs.com/en-US/ICSGBLCOR/job/CDR-Amsterdam---Cedar/Intern-Digital-Strategy---Experience--COO-People----Amsterdam_REQ-10116563",
+      "location": "2 Locations",
+      "posted": "Posted Yesterday",
+      "source": "workday",
+      "tier_hint": "T2",
+      "title": "Intern - Digital Strategy & Experience"
+    },
+    {
+      "category": "business",
+      "company": "ING",
+      "link": "https://ing.wd3.myworkdayjobs.com/en-US/ICSGBLCOR/job/Luxembourg-Sige-Lux-House/INTERNSHIP---Business-Analyst---KYC---Customer-Data_REQ-10118158",
+      "location": "Luxembourg (Si\u00e8ge Lux House)",
+      "posted": "Posted Yesterday",
+      "source": "workday",
+      "tier_hint": "T2",
+      "title": "INTERNSHIP - Business Analyst - KYC & Customer Data"
+    },
+    {
+      "category": "business",
+      "company": "Providence Equity Partners",
+      "link": "https://provequity.wd5.myworkdayjobs.com/en-US/PEP_External_Career_Site/job/UK-London-72-Welbeck-Street/AI-Enablement-Intern_R541",
+      "location": "UK London (72 Welbeck Street)",
+      "posted": "Posted 30+ Days Ago",
+      "source": "workday",
+      "tier_hint": "T2",
+      "title": "AI Enablement Intern"
+    },
+    {
+      "category": "business",
+      "company": "The Riverside Company",
+      "link": "https://job-boards.greenhouse.io/theriversidecompany/jobs/8544672002",
+      "location": "Munich, Germany",
+      "posted": "2026-06-08T13:51:02-04:00",
+      "source": "greenhouse",
+      "tier_hint": "T3",
+      "title": "2026 Private Equity Intern, Riverside Europe"
+    },
+    {
+      "category": "business",
+      "company": "The Riverside Company",
+      "link": "https://job-boards.greenhouse.io/theriversidecompany/jobs/8622619002",
+      "location": "Brussels, Belgium",
+      "posted": "2026-07-08T11:43:09-04:00",
+      "source": "greenhouse",
+      "tier_hint": "T3",
+      "title": "2027 Private Equity Intern (January), Riverside Europe"
+    },
+    {
+      "category": "business",
+      "company": "The Riverside Company",
+      "link": "https://job-boards.greenhouse.io/theriversidecompany/jobs/8611818002",
       "location": "Madrid, Spain",
-      "posted": "Posted Today",
-      "source": "workday",
-      "tier_hint": "T2",
-      "title": "Social Media Intern"
+      "posted": "2026-07-14T15:31:22-04:00",
+      "source": "greenhouse",
+      "tier_hint": "T3",
+      "title": "2027 Private Equity Intern, Riverside Europe"
     },
     {
       "category": "business",
-      "company": "The Walt Disney Company",
-      "link": "https://disney.wd5.myworkdayjobs.com/en-US/disneycareer/job/Madrid-Spain/Studio-Marketing-Intern_10152471",
-      "location": "Madrid, Spain",
+      "company": "The Riverside Company",
+      "link": "https://job-boards.greenhouse.io/theriversidecompany/jobs/8099028002",
+      "location": "Cleveland, Ohio, or Los Angeles, CA",
+      "posted": "2026-07-13T10:23:55-04:00",
+      "source": "greenhouse",
+      "tier_hint": "T3",
+      "title": "2027 Riverside Micro Cap Summer Analyst"
+    },
+    {
+      "category": "consulting",
+      "company": "Flagship Pioneering",
+      "link": "https://boards.greenhouse.io/flagshippioneeringinc/jobs/8580062002?gh_jid=8580062002",
+      "location": "Cambridge, MA USA",
+      "posted": "2026-07-14T13:25:28-04:00",
+      "source": "greenhouse",
+      "tier_hint": "T2",
+      "title": "Serif Biomedicines, Market Intelligence and Strategy Internship"
+    },
+    {
+      "category": "business",
+      "company": "3M",
+      "link": "https://3m.wd1.myworkdayjobs.com/en-US/Search/job/CN-Shanghai/IATD-AE-Lab-Testing-Summer-Intern_R01165418",
+      "location": "CN, Shanghai",
+      "posted": "Posted 30+ Days Ago",
+      "source": "workday",
+      "tier_hint": "T2",
+      "title": "IATD AE Lab Testing Summer Intern"
+    },
+    {
+      "category": "business",
+      "company": "3M",
+      "link": "https://3m.wd1.myworkdayjobs.com/en-US/Search/job/TR-Turkey-Istanbul/Compulsory-Internship---Marketing-Department_R01167690",
+      "location": "TR, Turkey, Istanbul",
+      "posted": "Posted 6 Days Ago",
+      "source": "workday",
+      "tier_hint": "T2",
+      "title": "Compulsory Internship - Marketing Department"
+    },
+    {
+      "category": "business",
+      "company": "Amgen",
+      "link": "https://amgen.wd1.myworkdayjobs.com/en-US/Careers/job/Italy---Milan/Marketing-Immunology---Grad-Intern_R-248162",
+      "location": "Italy - Milan",
+      "posted": "Posted 7 Days Ago",
+      "source": "workday",
+      "tier_hint": "T2",
+      "title": "Marketing Immunology - Grad Intern"
+    },
+    {
+      "category": "business",
+      "company": "Amgen",
+      "link": "https://amgen.wd1.myworkdayjobs.com/en-US/Careers/job/Italy---Milan/Grad-Intern-Medical-Department_R-249592",
+      "location": "Italy - Milan",
+      "posted": "Posted 7 Days Ago",
+      "source": "workday",
+      "tier_hint": "T2",
+      "title": "Grad Intern Medical Department"
+    },
+    {
+      "category": "business",
+      "company": "Amgen",
+      "link": "https://amgen.wd1.myworkdayjobs.com/en-US/Careers/job/Portugal---Lisbon/Internship-Program---Technology_R-245174",
+      "location": "Portugal - Lisbon",
+      "posted": "Posted 7 Days Ago",
+      "source": "workday",
+      "tier_hint": "T2",
+      "title": "Internship Program - Technology"
+    },
+    {
+      "category": "business",
+      "company": "Amgen",
+      "link": "https://amgen.wd1.myworkdayjobs.com/en-US/Careers/job/Singapore-Affiliate---Duo-Tower/Medical-Affairs-Intern-for-Amgen-Southeast-Asia_R-242188",
+      "location": "Singapore Affiliate - Duo Tower",
+      "posted": "Posted 30+ Days Ago",
+      "source": "workday",
+      "tier_hint": "T2",
+      "title": "Medical Affairs Intern for Amgen Southeast Asia"
+    },
+    {
+      "category": "business",
+      "company": "Amgen",
+      "link": "https://amgen.wd1.myworkdayjobs.com/en-US/Careers/job/Portugal---Lisbon/Internship-Program---Business---Operations_R-245173",
+      "location": "Portugal - Lisbon",
+      "posted": "Posted 7 Days Ago",
+      "source": "workday",
+      "tier_hint": "T2",
+      "title": "Internship Program \u2013 Business & Operations"
+    },
+    {
+      "category": "business",
+      "company": "Comcast",
+      "link": "https://comcast.wd5.myworkdayjobs.com/en-US/Comcast_Careers/job/PA---Philadelphia-3601-S-Broad-St/Marketing-Intern_R440213",
+      "location": "PA - Philadelphia, 3601 S Broad St",
       "posted": "Posted Today",
       "source": "workday",
       "tier_hint": "T2",
-      "title": "Studio Marketing Intern"
+      "title": "Marketing Intern"
+    },
+    {
+      "category": "business",
+      "company": "Intel",
+      "link": "https://intel.wd1.myworkdayjobs.com/en-US/External/job/Malaysia-Penang/Finance-Intern_JR0285186",
+      "location": "Malaysia, Penang",
+      "posted": "Posted 19 Days Ago",
+      "source": "workday",
+      "tier_hint": "T1",
+      "title": "Finance Intern"
+    },
+    {
+      "category": "business",
+      "company": "Intel",
+      "link": "https://intel.wd1.myworkdayjobs.com/en-US/External/job/Malaysia-Penang/Finance-Intern_JR0285181",
+      "location": "Malaysia, Penang",
+      "posted": "Posted 18 Days Ago",
+      "source": "workday",
+      "tier_hint": "T1",
+      "title": "Finance Intern"
+    },
+    {
+      "category": "business",
+      "company": "Intel",
+      "link": "https://intel.wd1.myworkdayjobs.com/en-US/External/job/Mexico-Guadalajara/Memory-Validation-Intern_JR0283301",
+      "location": "Mexico, Guadalajara",
+      "posted": "Posted 30+ Days Ago",
+      "source": "workday",
+      "tier_hint": "T1",
+      "title": "Memory Validation Intern"
+    },
+    {
+      "category": "business",
+      "company": "Intel",
+      "link": "https://intel.wd1.myworkdayjobs.com/en-US/External/job/Mexico-Guadalajara/Electrical-Validation-Intern_JR0285377",
+      "location": "Mexico, Guadalajara",
+      "posted": "Posted 7 Days Ago",
+      "source": "workday",
+      "tier_hint": "T1",
+      "title": "Electrical Validation Intern"
+    },
+    {
+      "category": "business",
+      "company": "Intel",
+      "link": "https://intel.wd1.myworkdayjobs.com/en-US/External/job/Mexico-Guadalajara/AI-Tools-Development-Intern_JR0283292",
+      "location": "Mexico, Guadalajara",
+      "posted": "Posted 30+ Days Ago",
+      "source": "workday",
+      "tier_hint": "T1",
+      "title": "AI Tools Development Intern"
+    },
+    {
+      "category": "business",
+      "company": "Intel",
+      "link": "https://intel.wd1.myworkdayjobs.com/en-US/External/job/Virtual-Colombia/Retail-Sales-and-Marketing-Intern_JR0284369",
+      "location": "2 Locations",
+      "posted": "Posted 21 Days Ago",
+      "source": "workday",
+      "tier_hint": "T1",
+      "title": "Retail Sales and Marketing Intern"
+    },
+    {
+      "category": "business",
+      "company": "Intel",
+      "link": "https://intel.wd1.myworkdayjobs.com/en-US/External/job/Malaysia-Penang/Silicon-Validation-Eng-Undergraduate-Intern_JR0284892",
+      "location": "Malaysia, Penang",
+      "posted": "Posted 20 Days Ago",
+      "source": "workday",
+      "tier_hint": "T1",
+      "title": "Silicon Validation Eng Undergraduate Intern"
+    },
+    {
+      "category": "quant",
+      "company": "Intel",
+      "link": "https://intel.wd1.myworkdayjobs.com/en-US/External/job/Mexico-Guadalajara/AI-Algorithm-Research-Intern---Neuromorphic-Computing_JR0283303",
+      "location": "Mexico, Guadalajara",
+      "posted": "Posted 30+ Days Ago",
+      "source": "workday",
+      "tier_hint": "T1",
+      "title": "AI Algorithm Research Intern \u2013 Neuromorphic Computing"
+    },
+    {
+      "category": "business",
+      "company": "Intel",
+      "link": "https://intel.wd1.myworkdayjobs.com/en-US/External/job/Malaysia-Penang/Pre-Silicon-IP-System-Validation-Intern_JR0285543",
+      "location": "Malaysia, Penang",
+      "posted": "Posted 5 Days Ago",
+      "source": "workday",
+      "tier_hint": "T1",
+      "title": "Pre-Silicon IP System Validation Intern"
+    },
+    {
+      "category": "business",
+      "company": "Intel",
+      "link": "https://intel.wd1.myworkdayjobs.com/en-US/External/job/Mexico-Guadalajara/System-Validation-Intern--Power-and-Performance-_JR0285548",
+      "location": "Mexico, Guadalajara",
+      "posted": "Posted 4 Days Ago",
+      "source": "workday",
+      "tier_hint": "T1",
+      "title": "System Validation Intern (Power and Performance)"
+    },
+    {
+      "category": "business",
+      "company": "Intel",
+      "link": "https://intel.wd1.myworkdayjobs.com/en-US/External/job/US-New-Mexico-Albuquerque/New-Mexico-WPM-Manufacturing-Technician-Internship_JR0285454",
+      "location": "US, New Mexico, Albuquerque",
+      "posted": "Posted 4 Days Ago",
+      "source": "workday",
+      "tier_hint": "T1",
+      "title": "New Mexico WPM Manufacturing Technician Internship"
+    },
+    {
+      "category": "business",
+      "company": "Medtronic",
+      "link": "https://medtronic.wd1.myworkdayjobs.com/en-US/MedtronicCareers/job/Shanghai-Shanghai-China/MTC-Intern_R70480-1",
+      "location": "Shanghai, Shanghai, China",
+      "posted": "Posted 21 Days Ago",
+      "source": "workday",
+      "tier_hint": "T2",
+      "title": "MTC-Intern"
+    },
+    {
+      "category": "business",
+      "company": "Medtronic",
+      "link": "https://medtronic.wd1.myworkdayjobs.com/en-US/MedtronicCareers/job/Shanghai-Shanghai-China/NV-Intern_R71729-1",
+      "location": "Shanghai, Shanghai, China",
+      "posted": "Posted 5 Days Ago",
+      "source": "workday",
+      "tier_hint": "T2",
+      "title": "NV Intern"
+    },
+    {
+      "category": "business",
+      "company": "Medtronic",
+      "link": "https://medtronic.wd1.myworkdayjobs.com/en-US/MedtronicCareers/job/Zagreb-Zagreb-Croatia/Intern-Digital-Channel-Marketing---Analytics_R69832-2",
+      "location": "Zagreb, Zagreb, Croatia",
+      "posted": "Posted 20 Days Ago",
+      "source": "workday",
+      "tier_hint": "T2",
+      "title": "Intern Digital Channel Marketing & Analytics"
+    },
+    {
+      "category": "business",
+      "company": "Medtronic",
+      "link": "https://medtronic.wd1.myworkdayjobs.com/en-US/MedtronicCareers/job/Madrid-Madrid-Spain/Intern-Administrative-and-Business-Support_R70392-1",
+      "location": "Madrid, Madrid, Spain",
+      "posted": "Posted 8 Days Ago",
+      "source": "workday",
+      "tier_hint": "T2",
+      "title": "Intern Administrative and Business Support"
+    },
+    {
+      "category": "business",
+      "company": "Medtronic",
+      "link": "https://medtronic.wd1.myworkdayjobs.com/en-US/MedtronicCareers/job/Shanghai-Shanghai-China/Finance-Intern_R72134-1",
+      "location": "Shanghai, Shanghai, China",
+      "posted": "Posted Today",
+      "source": "workday",
+      "tier_hint": "T2",
+      "title": "Finance Intern"
+    },
+    {
+      "category": "business",
+      "company": "Medtronic",
+      "link": "https://medtronic.wd1.myworkdayjobs.com/en-US/MedtronicCareers/job/Shanghai-Shanghai-China/IT-Intern-_R68962-1",
+      "location": "Shanghai, Shanghai, China",
+      "posted": "Posted 30+ Days Ago",
+      "source": "workday",
+      "tier_hint": "T2",
+      "title": "IT Intern:"
+    },
+    {
+      "category": "business",
+      "company": "Medtronic",
+      "link": "https://medtronic.wd1.myworkdayjobs.com/en-US/MedtronicCareers/job/Istanbul-Istanbul-Trkiye/Training---Education-Intern_R70250-1",
+      "location": "Istanbul, Istanbul, T\u00fcrkiye",
+      "posted": "Posted Today",
+      "source": "workday",
+      "tier_hint": "T2",
+      "title": "Training & Education Intern"
+    },
+    {
+      "category": "business",
+      "company": "Medtronic",
+      "link": "https://medtronic.wd1.myworkdayjobs.com/en-US/MedtronicCareers/job/Warsaw-Mazowieckie-Poland/Training-Academy-Intern_R70173-1",
+      "location": "Warsaw, Mazowieckie, Poland",
+      "posted": "Posted 12 Days Ago",
+      "source": "workday",
+      "tier_hint": "T2",
+      "title": "Training Academy Intern"
+    },
+    {
+      "category": "business",
+      "company": "Medtronic",
+      "link": "https://medtronic.wd1.myworkdayjobs.com/en-US/MedtronicCareers/job/Shanghai-Shanghai-China/R-D-Intern--Tech_R70374-2",
+      "location": "Shanghai, Shanghai, China",
+      "posted": "Posted 22 Days Ago",
+      "source": "workday",
+      "tier_hint": "T2",
+      "title": "R&D Intern: Tech"
+    },
+    {
+      "category": "business",
+      "company": "Medtronic",
+      "link": "https://medtronic.wd1.myworkdayjobs.com/en-US/MedtronicCareers/job/Seoul-Seoul-Korea/Remote-Sales-Representative--Intern-_R70140-1",
+      "location": "Seoul, Seoul, Korea",
+      "posted": "Posted 21 Days Ago",
+      "source": "workday",
+      "tier_hint": "T2",
+      "title": "Remote Sales Representative (Intern)"
+    },
+    {
+      "category": "business",
+      "company": "Medtronic",
+      "link": "https://medtronic.wd1.myworkdayjobs.com/en-US/MedtronicCareers/job/Heerlen-Limburg-Netherlands/Intern-Business-Support-Benelux_R70695-1",
+      "location": "Heerlen, Limburg, Netherlands",
+      "posted": "Posted 18 Days Ago",
+      "source": "workday",
+      "tier_hint": "T2",
+      "title": "Intern Business Support Benelux"
+    },
+    {
+      "category": "business",
+      "company": "Medtronic",
+      "link": "https://medtronic.wd1.myworkdayjobs.com/en-US/MedtronicCareers/job/Amsterdam-Noord-Holland-Netherlands/NextGen-Academy-Intern--Sales_R70524-1",
+      "location": "2 Locations",
+      "posted": "Posted 5 Days Ago",
+      "source": "workday",
+      "tier_hint": "T2",
+      "title": "NextGen Academy Intern: Sales"
+    },
+    {
+      "category": "business",
+      "company": "Medtronic",
+      "link": "https://medtronic.wd1.myworkdayjobs.com/en-US/MedtronicCareers/job/Shanghai-Shanghai-China/Finance-Intern-Manufacturing-I_R71452",
+      "location": "Shanghai, Shanghai, China",
+      "posted": "Posted Yesterday",
+      "source": "workday",
+      "tier_hint": "T2",
+      "title": "Finance Intern_Manufacturing I"
+    },
+    {
+      "category": "business",
+      "company": "Medtronic",
+      "link": "https://medtronic.wd1.myworkdayjobs.com/en-US/MedtronicCareers/job/Shanghai-Shanghai-China/Finance-Intern--Manufacturing-II_R71453-1",
+      "location": "Shanghai, Shanghai, China",
+      "posted": "Posted Yesterday",
+      "source": "workday",
+      "tier_hint": "T2",
+      "title": "Finance Intern _Manufacturing II"
+    },
+    {
+      "category": "business",
+      "company": "Medtronic",
+      "link": "https://medtronic.wd1.myworkdayjobs.com/en-US/MedtronicCareers/job/Basel-Basel-Stadt-Switzerland/Intern-Commercial-Marketing---Omnichannel_R71464",
+      "location": "2 Locations",
+      "posted": "Posted Yesterday",
+      "source": "workday",
+      "tier_hint": "T2",
+      "title": "Intern Commercial Marketing & Omnichannel"
+    },
+    {
+      "category": "business",
+      "company": "Medtronic",
+      "link": "https://medtronic.wd1.myworkdayjobs.com/en-US/MedtronicCareers/job/Cape-Town-Western-Cape-South-Africa/Intern-Cardiac-Clinical-Technologist_R65647-1",
+      "location": "Cape Town, Western Cape, South Africa",
+      "posted": "Posted 30+ Days Ago",
+      "source": "workday",
+      "tier_hint": "T2",
+      "title": "Intern Cardiac Clinical Technologist"
+    },
+    {
+      "category": "business",
+      "company": "Medtronic",
+      "link": "https://medtronic.wd1.myworkdayjobs.com/en-US/MedtronicCareers/job/Trevoux-Rhne-Alpes-France/Stagiaire-en-Ergonomie-H-F_R65297",
+      "location": "Trevoux, Rh\u00f4ne Alpes, France",
+      "posted": "Posted 30+ Days Ago",
+      "source": "workday",
+      "tier_hint": "T2",
+      "title": "Intern: Graduate( Non-Tech)"
+    },
+    {
+      "category": "business",
+      "company": "Medtronic",
+      "link": "https://medtronic.wd1.myworkdayjobs.com/en-US/MedtronicCareers/job/Munich-area-Bavaria-Germany/Intern---Trainee--f-m-d-_R70393-1",
+      "location": "Munich area, Bavaria, Germany",
+      "posted": "Posted 22 Days Ago",
+      "source": "workday",
+      "tier_hint": "T2",
+      "title": "Intern / Trainee (f/m/d)"
+    },
+    {
+      "category": "business",
+      "company": "Medtronic",
+      "link": "https://medtronic.wd1.myworkdayjobs.com/en-US/MedtronicCareers/job/Shanghai-Shanghai-China/IT-Internship-Shanghai_R69692-1",
+      "location": "Shanghai, Shanghai, China",
+      "posted": "Posted 28 Days Ago",
+      "source": "workday",
+      "tier_hint": "T2",
+      "title": "IT Internship_Shanghai"
+    },
+    {
+      "category": "business",
+      "company": "ServiceNow",
+      "link": "https://api.smartrecruiters.com/v1/companies/Servicenow/postings/744000134688699",
+      "location": "Sydney",
+      "posted": "2026-06-29T03:09:05.827Z",
+      "source": "smartrecruiters",
+      "tier_hint": "T1",
+      "title": "Product Success Analyst Intern"
+    },
+    {
+      "category": "business",
+      "company": "ServiceNow",
+      "link": "https://api.smartrecruiters.com/v1/companies/Servicenow/postings/744000130359664",
+      "location": "Sydney",
+      "posted": "2026-06-05T04:59:51.668Z",
+      "source": "smartrecruiters",
+      "tier_hint": "T1",
+      "title": "Intern - Marketing Associate"
+    },
+    {
+      "category": "business",
+      "company": "ServiceNow",
+      "link": "https://api.smartrecruiters.com/v1/companies/Servicenow/postings/744000130359659",
+      "location": "Sydney",
+      "posted": "2026-06-05T04:58:58.346Z",
+      "source": "smartrecruiters",
+      "tier_hint": "T1",
+      "title": "Intern - Marketing Associate"
+    },
+    {
+      "category": "business",
+      "company": "The Coca-Cola Company",
+      "link": "https://coke.wd1.myworkdayjobs.com/en-US/coca-cola-careers/job/United-Kingdom---London/Coca-Cola-Ignite-Intern---People---Culture_R-139222-1",
+      "location": "United Kingdom - London",
+      "posted": "Posted Today",
+      "source": "workday",
+      "tier_hint": "T2",
+      "title": "Coca-Cola Ignite Intern - People & Culture"
+    },
+    {
+      "category": "business",
+      "company": "Accenture",
+      "link": "https://accenture.wd103.myworkdayjobs.com/en-US/AccentureCareers/job/Assago-Via-del-Mulino-11a/Proggettista-Reti-Gas-Junior---Industry-X_R00306360",
+      "location": "",
+      "posted": "Posted 12 Days Ago",
+      "source": "workday",
+      "tier_hint": "T2",
+      "title": "Progettista reti gas - Internship"
+    },
+    {
+      "category": "consulting",
+      "company": "Accenture",
+      "link": "https://accenture.wd103.myworkdayjobs.com/en-US/AccentureCareers/job/Milano/Technology-Strategy---Technology-Advisory-Intern_R00288639",
+      "location": "",
+      "posted": "Posted 12 Days Ago",
+      "source": "workday",
+      "tier_hint": "T2",
+      "title": "Technology Strategy & Advisory - Internship"
+    },
+    {
+      "category": "consulting",
+      "company": "Accenture",
+      "link": "https://accenture.wd103.myworkdayjobs.com/en-US/AccentureCareers/job/Prague/Consulting-Internship--Prague--Czech-Republic-_R00328088",
+      "location": "",
+      "posted": "Posted 30+ Days Ago",
+      "source": "workday",
+      "tier_hint": "T2",
+      "title": "Consulting Internship (Prague, Czech Republic)"
+    },
+    {
+      "category": "business",
+      "company": "Strategy&",
+      "link": "https://pwc.wd3.myworkdayjobs.com/en-US/Global_Campus_Careers/job/Hanoi/Intern--FS-S-O_737281WD-1",
+      "location": "Hanoi",
+      "posted": "Posted Today",
+      "source": "workday",
+      "tier_hint": "T2",
+      "title": "Intern, FS S&O - Credit Risk"
+    },
+    {
+      "category": "business",
+      "company": "Strategy&",
+      "link": "https://pwc.wd3.myworkdayjobs.com/en-US/Global_Campus_Careers/job/Johor-Bahru/Intern---Assurance--January---April-2027-intake-_744784WD",
+      "location": "Johor Bahru",
+      "posted": "Posted Today",
+      "source": "workday",
+      "tier_hint": "T2",
+      "title": "Intern - Assurance (January - April 2027 intake)"
+    },
+    {
+      "category": "business",
+      "company": "Strategy&",
+      "link": "https://pwc.wd3.myworkdayjobs.com/en-US/Global_Campus_Careers/job/Amsterdam/Internship-Identity-and-Access-Management_733590WD",
+      "location": "Amsterdam",
+      "posted": "Posted Today",
+      "source": "workday",
+      "tier_hint": "T2",
+      "title": "Internship Identity and Access Management"
+    },
+    {
+      "category": "business",
+      "company": "Strategy&",
+      "link": "https://pwc.wd3.myworkdayjobs.com/en-US/Global_Campus_Careers/job/Prague/Internship---Document-Automation_737167WD",
+      "location": "Prague",
+      "posted": "Posted Today",
+      "source": "workday",
+      "tier_hint": "T2",
+      "title": "Internship - Document Automation"
+    },
+    {
+      "category": "business",
+      "company": "Strategy&",
+      "link": "https://pwc.wd3.myworkdayjobs.com/en-US/Global_Campus_Careers/job/Brussels/School-Internship-in-Valuation---Modelling--2026-2027-_695469WD",
+      "location": "Brussels",
+      "posted": "Posted Today",
+      "source": "workday",
+      "tier_hint": "T2",
+      "title": "School Internship in Valuation & Modelling (2026-2027)"
+    },
+    {
+      "category": "business",
+      "company": "Strategy&",
+      "link": "https://pwc.wd3.myworkdayjobs.com/en-US/Global_Campus_Careers/job/Ho-Chi-Minh-City/Intern---Deal-Valuation_731334WD",
+      "location": "Ho Chi Minh City",
+      "posted": "Posted Today",
+      "source": "workday",
+      "tier_hint": "T2",
+      "title": "Intern - Deal Valuation"
+    },
+    {
+      "category": "business",
+      "company": "Strategy&",
+      "link": "https://pwc.wd3.myworkdayjobs.com/en-US/Global_Campus_Careers/job/Ho-Chi-Minh-City/Intern---Corporate-Finance--Deals-_730986WD",
+      "location": "Ho Chi Minh City",
+      "posted": "Posted Today",
+      "source": "workday",
+      "tier_hint": "T2",
+      "title": "Intern - Corporate Finance (Deals)"
+    },
+    {
+      "category": "consulting",
+      "company": "Strategy&",
+      "link": "https://pwc.wd3.myworkdayjobs.com/en-US/Global_Campus_Careers/job/Hanoi/Intern--Salesforce-Consulting_713491WD",
+      "location": "Hanoi",
+      "posted": "Posted Today",
+      "source": "workday",
+      "tier_hint": "T2",
+      "title": "Intern, Salesforce Consulting"
+    },
+    {
+      "category": "business",
+      "company": "Strategy&",
+      "link": "https://pwc.wd3.myworkdayjobs.com/en-US/Global_Campus_Careers/job/Rome/Capital-Markets---Accounting-Advisory---Intern---Roma--OTS-_732426WD",
+      "location": "Rome",
+      "posted": "Posted Yesterday",
+      "source": "workday",
+      "tier_hint": "T2",
+      "title": "Capital Markets & Accounting Advisory - Intern - Roma [OTS]"
+    },
+    {
+      "category": "quant",
+      "company": "Wells Fargo",
+      "link": "https://wf.wd1.myworkdayjobs.com/en-US/WellsFargoJobs/job/Bengaluru-India/XMLNAME-2027-Quantitative-Analytics-Program-Intern_R-558426",
+      "location": "Bengaluru, India",
+      "posted": "Posted Today",
+      "source": "workday",
+      "tier_hint": "T2",
+      "title": "2027 Quantitative Analytics Program Intern"
+    },
+    {
+      "category": "business",
+      "company": "Salesforce",
+      "link": "https://salesforce.wd12.myworkdayjobs.com/en-US/External_Career_Site/job/California---San-Francisco/Summer-2027-Intern---Associate-Product-Manager--APM-_JR348039-1",
+      "location": "California - San Francisco",
+      "posted": "Posted Yesterday",
+      "source": "workday",
+      "tier_hint": "T2",
+      "title": "Summer 2027 Intern - Associate Product Manager (APM)"
+    },
+    {
+      "category": "business",
+      "company": "Houlihan Lokey",
+      "link": "https://hl.wd1.myworkdayjobs.com/en-US/Campus/job/Hong-Kong-China/Off-Cycle-Intern--Financial-and-Valuation-Advisory--Hong-Kong-_R3096",
+      "location": "Hong Kong, China",
+      "posted": "Posted Today",
+      "source": "workday",
+      "tier_hint": "T2",
+      "title": "Off-Cycle Intern, Financial and Valuation Advisory (Hong Kong)"
+    },
+    {
+      "category": "business",
+      "company": "Apollo",
+      "link": "https://athene.wd5.myworkdayjobs.com/en-US/Apollo_Careers/job/El-Segundo-California/XMLNAME-2026-Summer-Associate--Treasury---Business-Management_R253683",
+      "location": "El Segundo, California",
+      "posted": "",
+      "source": "workday",
+      "tier_hint": "T1",
+      "title": "2026 Summer Associate, Treasury & Business Management"
+    },
+    {
+      "category": "business",
+      "company": "Roland Berger",
+      "link": "https://api.smartrecruiters.com/v1/companies/RolandBerger/postings/744000135421569",
+      "location": "Amsterdam",
+      "posted": "2026-07-02T07:00:35.502Z",
+      "source": "smartrecruiters",
+      "tier_hint": "T2",
+      "title": "Intern - Q3 2027 (start date July, August or September)"
+    },
+    {
+      "category": "business",
+      "company": "Roland Berger",
+      "link": "https://api.smartrecruiters.com/v1/companies/RolandBerger/postings/744000135420330",
+      "location": "Amsterdam",
+      "posted": "2026-07-02T06:57:24.408Z",
+      "source": "smartrecruiters",
+      "tier_hint": "T2",
+      "title": "Intern - Q2 2027 (start date April, May or June)"
+    },
+    {
+      "category": "business",
+      "company": "Roland Berger",
+      "link": "https://api.smartrecruiters.com/v1/companies/RolandBerger/postings/744000135419909",
+      "location": "Amsterdam",
+      "posted": "2026-07-02T06:48:32.234Z",
+      "source": "smartrecruiters",
+      "tier_hint": "T2",
+      "title": "Intern - Q1 2027 (start date January, February or March)"
+    },
+    {
+      "category": "business",
+      "company": "Roland Berger",
+      "link": "https://api.smartrecruiters.com/v1/companies/RolandBerger/postings/744000135419859",
+      "location": "Amsterdam",
+      "posted": "2026-07-02T06:47:53.667Z",
+      "source": "smartrecruiters",
+      "tier_hint": "T2",
+      "title": "Intern - Q4 2026 (start date October, November or December)"
+    },
+    {
+      "category": "business",
+      "company": "Roland Berger",
+      "link": "https://api.smartrecruiters.com/v1/companies/RolandBerger/postings/744000135419231",
+      "location": "Amsterdam",
+      "posted": "2026-07-02T06:47:17.222Z",
+      "source": "smartrecruiters",
+      "tier_hint": "T2",
+      "title": "Intern - Q3 2026 (start date July, August or September)"
+    },
+    {
+      "category": "business",
+      "company": "Roland Berger",
+      "link": "https://api.smartrecruiters.com/v1/companies/RolandBerger/postings/744000132777279",
+      "location": "Riyadh",
+      "posted": "2026-06-18T05:25:21.743Z",
+      "source": "smartrecruiters",
+      "tier_hint": "T2",
+      "title": "HR Generalist Intern"
+    },
+    {
+      "category": "consulting",
+      "company": "Roland Berger",
+      "link": "https://api.smartrecruiters.com/v1/companies/RolandBerger/postings/744000132642299",
+      "location": "Brussels",
+      "posted": "2026-06-17T13:26:24.445Z",
+      "source": "smartrecruiters",
+      "tier_hint": "T2",
+      "title": "Consulting Intern (all genders)"
+    },
+    {
+      "category": "consulting",
+      "company": "Roland Berger",
+      "link": "https://api.smartrecruiters.com/v1/companies/RolandBerger/postings/744000130459380",
+      "location": "Germany",
+      "posted": "2026-06-05T11:25:15.153Z",
+      "source": "smartrecruiters",
+      "tier_hint": "T2",
+      "title": "Deine Bewerbung als Consulting Intern (all genders)"
+    },
+    {
+      "category": "consulting",
+      "company": "Roland Berger",
+      "link": "https://api.smartrecruiters.com/v1/companies/RolandBerger/postings/744000130457151",
+      "location": "Munich",
+      "posted": "2026-06-05T11:24:31.661Z",
+      "source": "smartrecruiters",
+      "tier_hint": "T2",
+      "title": "Consulting Intern \u2013 Bewirb dich bis zum 4. September 2026 (all genders)"
+    },
+    {
+      "category": "business",
+      "company": "Roland Berger",
+      "link": "https://api.smartrecruiters.com/v1/companies/RolandBerger/postings/744000129974119",
+      "location": "Riyadh",
+      "posted": "2026-06-03T11:20:03.734Z",
+      "source": "smartrecruiters",
+      "tier_hint": "T2",
+      "title": "Hema Internship"
+    },
+    {
+      "category": "business",
+      "company": "Roland Berger",
+      "link": "https://api.smartrecruiters.com/v1/companies/RolandBerger/postings/744000127833779",
+      "location": "Abu Dhabi",
+      "posted": "2026-05-22T08:40:56.655Z",
+      "source": "smartrecruiters",
+      "tier_hint": "T2",
+      "title": "Hema Internship - Abu Dhabi, UAE"
+    },
+    {
+      "category": "consulting",
+      "company": "Roland Berger",
+      "link": "https://api.smartrecruiters.com/v1/companies/RolandBerger/postings/744000124848808",
+      "location": "Z\u00fcrich",
+      "posted": "2026-05-06T09:29:44.332Z",
+      "source": "smartrecruiters",
+      "tier_hint": "T2",
+      "title": "Consulting Intern Z\u00fcrich (all genders) - bewirb dich jetzt bis zum 27. September 2026"
+    },
+    {
+      "category": "consulting",
+      "company": "Roland Berger",
+      "link": "https://api.smartrecruiters.com/v1/companies/RolandBerger/postings/744000122435968",
+      "location": "Vienna",
+      "posted": "2026-04-23T11:24:20.856Z",
+      "source": "smartrecruiters",
+      "tier_hint": "T2",
+      "title": "Consulting Intern Wien (all genders) - bewirb dich jetzt bis zum 27. September 2026"
+    },
+    {
+      "category": "consulting",
+      "company": "Roland Berger",
+      "link": "https://api.smartrecruiters.com/v1/companies/RolandBerger/postings/744000121685521",
+      "location": "Munich",
+      "posted": "2026-04-20T06:37:06.255Z",
+      "source": "smartrecruiters",
+      "tier_hint": "T2",
+      "title": "GenAI Consulting Intern (all genders)"
+    },
+    {
+      "category": "consulting",
+      "company": "Roland Berger",
+      "link": "https://api.smartrecruiters.com/v1/companies/RolandBerger/postings/744000118055687",
+      "location": "Abu Dhabi",
+      "posted": "2026-04-01T06:08:05.877Z",
+      "source": "smartrecruiters",
+      "tier_hint": "T2",
+      "title": "Consulting Intern - Emiratization "
+    },
+    {
+      "category": "consulting",
+      "company": "Roland Berger",
+      "link": "https://api.smartrecruiters.com/v1/companies/RolandBerger/postings/744000103674990",
+      "location": "Munich",
+      "posted": "2026-01-15T09:14:48.414Z",
+      "source": "smartrecruiters",
+      "tier_hint": "T2",
+      "title": "Consulting Intern AI & Data (all genders)"
+    },
+    {
+      "category": "consulting",
+      "company": "Roland Berger",
+      "link": "https://api.smartrecruiters.com/v1/companies/RolandBerger/postings/744000102536790",
+      "location": "Kyiv",
+      "posted": "2026-01-09T09:29:39.802Z",
+      "source": "smartrecruiters",
+      "tier_hint": "T2",
+      "title": "Intern Consultant (all genders)"
     }
   ],
-  "generated_at": "2026-07-13T13:30:39+00:00",
-  "run_date": "2026-07-13"
+  "generated_at": "2026-07-15T05:24:07+00:00",
+  "run_date": "2026-07-15"
 }
