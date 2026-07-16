@@ -1,97 +1,157 @@
 {
-  "candidate_count": 9,
+  "candidate_count": 15,
   "candidates": [
+    {
+      "category": "quant",
+      "company": "Optiver",
+      "link": "https://www.optiver.com/join-us/jobs/8489582002/?gh_jid=8489582002",
+      "location": "Chicago, Illinois, United States",
+      "posted": "2026-07-15T18:12:29-04:00",
+      "source": "greenhouse",
+      "tier_hint": "T1",
+      "title": "Trading Automation and Operations Intern (Summer 2027)"
+    },
+    {
+      "category": "business",
+      "company": "Notion",
+      "link": "https://jobs.ashbyhq.com/notion/6ccbc30c-2de0-4395-af14-3641cd15961b",
+      "location": "San Francisco, California",
+      "posted": "2026-07-15T23:18:57.929+00:00",
+      "source": "ashby",
+      "tier_hint": "T2",
+      "title": "Governance, Risk, and Compliance Intern (Fall 2026)"
+    },
+    {
+      "category": "business",
+      "company": "Comcast",
+      "link": "https://comcast.wd5.myworkdayjobs.com/en-US/Comcast_Careers/job/PA---Philadelphia-3601-S-Broad-St/Video-Production-Intern_R440161",
+      "location": "PA - Philadelphia, 3601 S Broad St",
+      "posted": "Posted Yesterday",
+      "source": "workday",
+      "tier_hint": "T2",
+      "title": "Video Production Intern"
+    },
     {
       "category": "business",
       "company": "Medtronic",
-      "link": "https://medtronic.wd1.myworkdayjobs.com/en-US/MedtronicCareers/job/Shanghai-Shanghai-China/EHS-Intern_R71545",
+      "link": "https://medtronic.wd1.myworkdayjobs.com/en-US/MedtronicCareers/job/Shanghai-Shanghai-China/Admin-Intern_R72359-1",
       "location": "Shanghai, Shanghai, China",
       "posted": "Posted Today",
       "source": "workday",
       "tier_hint": "T2",
-      "title": "EHS Intern"
+      "title": "Admin Intern"
+    },
+    {
+      "category": "business",
+      "company": "Target",
+      "link": "https://target.wd5.myworkdayjobs.com/en-US/targetcareers/job/1090-73rd-Ave-NE-FridleyMN-55432-3407/Current-Interns-Only--Operations-Manager--Summer-2026-DC-Intern-Posting_R0000428284",
+      "location": "52 Locations",
+      "posted": "Posted Yesterday",
+      "source": "workday",
+      "tier_hint": "T2",
+      "title": "Current Interns Only- Operations Manager -Summer 2026 DC Intern Posting"
+    },
+    {
+      "category": "business",
+      "company": "The Coca-Cola Company",
+      "link": "https://coke.wd1.myworkdayjobs.com/en-US/coca-cola-careers/job/Brazil---Manus/Material-Operations---Intern_R-143711",
+      "location": "Brazil - Manus",
+      "posted": "Posted Yesterday",
+      "source": "workday",
+      "tier_hint": "T2",
+      "title": "Material Operations - Intern"
+    },
+    {
+      "category": "business",
+      "company": "The Coca-Cola Company",
+      "link": "https://coke.wd1.myworkdayjobs.com/en-US/coca-cola-careers/job/Poland---Warsaw/Coca-Cola-Ignite-Intern---Franchise-Operations_R-139274",
+      "location": "Poland - Warsaw",
+      "posted": "Posted Yesterday",
+      "source": "workday",
+      "tier_hint": "T2",
+      "title": "Coca-Cola Ignite Intern - Customer & Commercial Leadership"
     },
     {
       "category": "business",
       "company": "Strategy&",
-      "link": "https://pwc.wd3.myworkdayjobs.com/en-US/Global_Campus_Careers/job/Jakarta/FY-27---Intern---IFS---Human-Capital--Talent-Pool-_744847WD",
-      "location": "Jakarta",
-      "posted": "Posted Today",
+      "link": "https://pwc.wd3.myworkdayjobs.com/en-US/Global_Campus_Careers/job/Brussels/School-internship-HRBC_734644WD",
+      "location": "Brussels",
+      "posted": "Posted Yesterday",
       "source": "workday",
       "tier_hint": "T2",
-      "title": "FY 27 - Intern - IFS - Human Capital Transformation (Talent Pool)"
+      "title": "School internship HRBC"
     },
     {
       "category": "business",
       "company": "Strategy&",
-      "link": "https://pwc.wd3.myworkdayjobs.com/en-US/Global_Campus_Careers/job/Amsterdam/Cyber-Security-Internship--Offensive---Defensive-Security-_733549WD",
-      "location": "Amsterdam",
-      "posted": "Posted Today",
+      "link": "https://pwc.wd3.myworkdayjobs.com/en-US/Global_Campus_Careers/job/Brussels/School-internship-HR-Excellence_734652WD",
+      "location": "Brussels",
+      "posted": "Posted Yesterday",
       "source": "workday",
       "tier_hint": "T2",
-      "title": "Cyber Security Internship (Offensive & Defensive Security)"
+      "title": "School internship - HR Data & Technology"
     },
     {
       "category": "business",
       "company": "Strategy&",
-      "link": "https://pwc.wd3.myworkdayjobs.com/en-US/Global_Campus_Careers/job/Jakarta/Internship-Program---Advisory---DSO_734107WD",
-      "location": "Jakarta",
-      "posted": "Posted Today",
+      "link": "https://pwc.wd3.myworkdayjobs.com/en-US/Global_Campus_Careers/job/Brussels/School-internship-Payroll--CompBen---Fleet_734646WD",
+      "location": "Brussels",
+      "posted": "Posted Yesterday",
       "source": "workday",
       "tier_hint": "T2",
-      "title": "Internship Program - Advisory - DSO"
+      "title": "School internship Payroll, CompBen & Fleet"
     },
     {
       "category": "business",
       "company": "Strategy&",
-      "link": "https://pwc.wd3.myworkdayjobs.com/en-US/Global_Campus_Careers/job/Singapore/Marketing---Communications---Brand---Comms-Off-Cycle-Internship--Jul---Dec-26-_691014WD",
-      "location": "Singapore",
-      "posted": "Posted Today",
+      "link": "https://pwc.wd3.myworkdayjobs.com/en-US/Global_Campus_Careers/job/Brussels/School-internship-in-Employer-Branding-and-Recruitment-Events_735125WD",
+      "location": "Brussels",
+      "posted": "Posted Yesterday",
       "source": "workday",
       "tier_hint": "T2",
-      "title": "Marketing & Communications - Brand & Comms Off-Cycle Internship (Jul - Dec 26)"
+      "title": "School internship in Employer Branding and Recruitment Events"
     },
     {
-      "category": "consulting",
+      "category": "business",
       "company": "Strategy&",
-      "link": "https://pwc.wd3.myworkdayjobs.com/en-US/Global_Campus_Careers/job/Hanoi/Intern---Change-Management-Consulting_744522WD",
-      "location": "Hanoi",
-      "posted": "Posted Today",
+      "link": "https://pwc.wd3.myworkdayjobs.com/en-US/Global_Campus_Careers/job/Zrich/Aktuar--in---Intern-Trainee--Actuarial-Services--6-Monate-_736294WD",
+      "location": "Z\u00fcrich",
+      "posted": "Posted Yesterday",
       "source": "workday",
       "tier_hint": "T2",
-      "title": "Intern - Change Management Consulting"
+      "title": "Aktuar/-in - Intern/Trainee- Actuarial Services (6 Monate)"
     },
     {
       "category": "business",
       "company": "The Walt Disney Company",
-      "link": "https://disney.wd5.myworkdayjobs.com/en-US/disneycareer/job/Milan-Italy/Brand-Marketing-Intern_10155183",
-      "location": "Milan, Italy",
-      "posted": "Posted Today",
+      "link": "https://disney.wd5.myworkdayjobs.com/en-US/disneycareer/job/Burbank-CA-USA/Creative-Advertising-Intern--Fall-2026_10155523-1",
+      "location": "Burbank, CA, USA",
+      "posted": "Posted Yesterday",
       "source": "workday",
       "tier_hint": "T2",
-      "title": "Brand Marketing Intern"
+      "title": "Creative Advertising Intern, Fall 2026"
     },
     {
       "category": "business",
-      "company": "The Walt Disney Company",
-      "link": "https://disney.wd5.myworkdayjobs.com/en-US/disneycareer/job/Quarry-Bay-Hong-Kong/Marketing-Intern--Disney-Consumer-Products_10149892",
-      "location": "Quarry Bay, Hong Kong",
-      "posted": "Posted Today",
+      "company": "Deutsche Bank",
+      "link": "https://db.wd3.myworkdayjobs.com/en-US/DBWebsite/job/Mumbai-Nirlon-Knowledge-Pk-B1/DBAG-CA-Intern_R0442504",
+      "location": "Mumbai Nirlon Knowledge Pk B1",
+      "posted": "Posted Yesterday",
       "source": "workday",
-      "tier_hint": "T2",
-      "title": "Marketing Intern, Disney Consumer Products"
+      "tier_hint": "T1",
+      "title": "DBAG CA Intern"
     },
     {
       "category": "business",
-      "company": "Houlihan Lokey",
-      "link": "https://hl.wd1.myworkdayjobs.com/en-US/Campus/job/London-UK/Off-Cycle-Internship----Financial-Restructuring_R3388",
-      "location": "London, UK",
-      "posted": "Posted Today",
+      "company": "Deutsche Bank",
+      "link": "https://db.wd3.myworkdayjobs.com/en-US/DBWebsite/job/Milano-Via-Turati-25-27/Internship-Private-Equity--Club-Deal--Team--f-m-x-_R0435115",
+      "location": "Milano Via Turati 25-27",
+      "posted": "Posted 30+ Days Ago",
       "source": "workday",
-      "tier_hint": "T2",
-      "title": "Off-Cycle Internship  - Financial Restructuring"
+      "tier_hint": "T1",
+      "title": "Internship Private Equity (Club Deal) Team (f/m/x)"
     }
   ],
-  "generated_at": "2026-07-15T11:39:49+00:00",
-  "run_date": "2026-07-15"
+  "generated_at": "2026-07-16T11:44:31+00:00",
+  "run_date": "2026-07-16"
 }
