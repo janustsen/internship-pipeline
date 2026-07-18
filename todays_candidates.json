@@ -1,157 +1,97 @@
 {
-  "candidate_count": 15,
+  "candidate_count": 9,
   "candidates": [
     {
       "category": "business",
-      "company": "DRW",
-      "link": "https://job-boards.greenhouse.io/drweng/jobs/8070392",
-      "location": "London",
-      "posted": "2026-07-16T16:28:42-04:00",
+      "company": "Optiver",
+      "link": "https://www.optiver.com/join-us/jobs/8598834002/?gh_jid=8598834002",
+      "location": "Amsterdam, North Holland, Netherlands",
+      "posted": "2026-07-17T15:57:02-04:00",
       "source": "greenhouse",
       "tier_hint": "T1",
-      "title": "FPGA Intern"
+      "title": "Recruitment Intern (Working Student)"
     },
     {
-      "category": "business",
-      "company": "Databricks",
-      "link": "https://databricks.com/company/careers/open-positions/job?gh_jid=6883068002",
-      "location": "Bellevue, Washington; Mountain View, California; San Francisco, California",
-      "posted": "2026-07-16T22:39:34-04:00",
-      "source": "greenhouse",
-      "tier_hint": "T1",
-      "title": "Product Management Intern (Summer 2027)"
-    },
-    {
-      "category": "business",
+      "category": "quant",
       "company": "ING",
-      "link": "https://ing.wd3.myworkdayjobs.com/en-US/ICSGBLCOR/job/AME-Amsterdam---Maple/Intern---Global--Lending--Portfolio-Management-Transformation_REQ-10118356",
-      "location": "AME (Amsterdam - Maple)",
+      "link": "https://ing.wd3.myworkdayjobs.com/en-US/ICSGBLCOR/job/TRC-Amsterdam---Treasury-Center/MSc-Internship-Financial-Markets---Quantitative-Analytics_REQ-10118450",
+      "location": "TRC (Amsterdam - Treasury Center)",
       "posted": "Posted Yesterday",
       "source": "workday",
       "tier_hint": "T2",
-      "title": "Intern \u2013 Global (Lending) Portfolio Management Transformation"
-    },
-    {
-      "category": "business",
-      "company": "ING",
-      "link": "https://ing.wd3.myworkdayjobs.com/en-US/ICSGBLCOR/job/ACT-Amsterdam---Acanthus/AI---Finance-Transformation-Intern_REQ-10118227",
-      "location": "ACT (Amsterdam - Acanthus)",
-      "posted": "Posted Yesterday",
-      "source": "workday",
-      "tier_hint": "T2",
-      "title": "AI & Finance Transformation Intern"
-    },
-    {
-      "category": "business",
-      "company": "ING",
-      "link": "https://ing.wd3.myworkdayjobs.com/en-US/ICSGBLCOR/job/CDR-Amsterdam---Cedar/Internship-Digital-Content-Expert_REQ-10118129",
-      "location": "CDR (Amsterdam - Cedar)",
-      "posted": "Posted Yesterday",
-      "source": "workday",
-      "tier_hint": "T2",
-      "title": "Internship Digital Content Expert"
-    },
-    {
-      "category": "business",
-      "company": "ING",
-      "link": "https://ing.wd3.myworkdayjobs.com/en-US/ICSGBLCOR/job/CDR-Amsterdam---Cedar/Internship---HR-Talent---Learning---International-Talent-Programme_REQ-10117048",
-      "location": "CDR (Amsterdam - Cedar)",
-      "posted": "Posted Yesterday",
-      "source": "workday",
-      "tier_hint": "T2",
-      "title": "Internship\u00a0\u2013 HR Talent & Learning - International Talent Programme"
-    },
-    {
-      "category": "business",
-      "company": "Comcast",
-      "link": "https://comcast.wd5.myworkdayjobs.com/en-US/Comcast_Careers/job/PA---Philadelphia-3601-S-Broad-St/Legal-Intern---Fall-2026_R439378",
-      "location": "PA - Philadelphia, 3601 S Broad St",
-      "posted": "Posted Yesterday",
-      "source": "workday",
-      "tier_hint": "T2",
-      "title": "Legal Intern - Fall 2026"
+      "title": "MSc Internship Financial Markets | Quantitative Analytics"
     },
     {
       "category": "business",
       "company": "Intel",
-      "link": "https://intel.wd1.myworkdayjobs.com/en-US/External/job/Costa-Rica-San-Jose/Server-Quality-and-Reliability-Intern_JR0284940",
+      "link": "https://intel.wd1.myworkdayjobs.com/en-US/External/job/Costa-Rica-San-Jose/Technical-Analyst-Intern_JR0285645",
       "location": "Costa Rica, San Jose",
       "posted": "Posted Yesterday",
       "source": "workday",
       "tier_hint": "T1",
-      "title": "Server Quality and Reliability Intern"
-    },
-    {
-      "category": "business",
-      "company": "Intel",
-      "link": "https://intel.wd1.myworkdayjobs.com/en-US/External/job/PRC-Shanghai/MBA-Internship---Ecosystem-Development-Specialist_JR0285771",
-      "location": "3 Locations",
-      "posted": "Posted Today",
-      "source": "workday",
-      "tier_hint": "T1",
-      "title": "MBA Internship \u2013 Ecosystem Development Specialist"
+      "title": "Technical Analyst Intern"
     },
     {
       "category": "business",
       "company": "Medtronic",
-      "link": "https://medtronic.wd1.myworkdayjobs.com/en-US/MedtronicCareers/job/Eindhoven-Noord-Brabant-Netherlands/NextGen-Academy-Intern--Sales_R71339-1",
-      "location": "2 Locations",
-      "posted": "Posted Today",
+      "link": "https://medtronic.wd1.myworkdayjobs.com/en-US/MedtronicCareers/job/Alajuela-Coyol-Alajuela-Costa-Rica/Intern--High-School_R72520-1",
+      "location": "Alajuela Coyol, Alajuela, Costa Rica",
+      "posted": "Posted Yesterday",
       "source": "workday",
       "tier_hint": "T2",
-      "title": "NextGen Academy Intern: Field Support"
+      "title": "Intern: High School."
+    },
+    {
+      "category": "business",
+      "company": "Medtronic",
+      "link": "https://medtronic.wd1.myworkdayjobs.com/en-US/MedtronicCareers/job/Alajuela-Coyol-Alajuela-Costa-Rica/Intern--High-School_R72514-1",
+      "location": "Alajuela Coyol, Alajuela, Costa Rica",
+      "posted": "Posted Yesterday",
+      "source": "workday",
+      "tier_hint": "T2",
+      "title": "Intern: High School."
+    },
+    {
+      "category": "business",
+      "company": "BMO Capital Markets",
+      "link": "https://bmo.wd3.myworkdayjobs.com/en-US/External/job/Barrie-ON-CAN/Operations-Analyst--Fall-2026--Co-op-Internship----8-Months_R260013678-1",
+      "location": "Barrie, ON, CAN",
+      "posted": "Posted Yesterday",
+      "source": "workday",
+      "tier_hint": "T2",
+      "title": "Operations Analyst, Fall 2026 (Co-op/Internship) - 8 Months"
     },
     {
       "category": "business",
       "company": "Strategy&",
-      "link": "https://pwc.wd3.myworkdayjobs.com/en-US/Global_Campus_Careers/job/Tashkent/Intern--Trainee_745571WD",
-      "location": "Tashkent",
-      "posted": "Posted Today",
+      "link": "https://pwc.wd3.myworkdayjobs.com/en-US/Global_Campus_Careers/job/Guyana/GY-Assurance-Intern_745728WD",
+      "location": "Guyana",
+      "posted": "Posted Yesterday",
       "source": "workday",
       "tier_hint": "T2",
-      "title": "Intern/ Trainee"
-    },
-    {
-      "category": "consulting",
-      "company": "Strategy&",
-      "link": "https://pwc.wd3.myworkdayjobs.com/en-US/Global_Campus_Careers/job/Rome/EPM-Intern--Private-sector----Roma--ADV-_605255WD-2",
-      "location": "Rome",
-      "posted": "Posted Today",
-      "source": "workday",
-      "tier_hint": "T2",
-      "title": "Finance Transformation - Technology EPM Junior Consultant - Roma - Internship"
-    },
-    {
-      "category": "consulting",
-      "company": "Strategy&",
-      "link": "https://pwc.wd3.myworkdayjobs.com/en-US/Global_Campus_Careers/job/Kuala-Lumpur/Intern---Consulting--Workforce-Transformation--August-2026-Intake-_745448WD",
-      "location": "Kuala Lumpur",
-      "posted": "Posted Today",
-      "source": "workday",
-      "tier_hint": "T2",
-      "title": "Intern - Consulting, Workforce Transformation (August 2026 Intake)"
+      "title": "GY Assurance Intern"
     },
     {
       "category": "business",
       "company": "The Walt Disney Company",
-      "link": "https://disney.wd5.myworkdayjobs.com/en-US/disneycareer/job/Burbank-CA-USA/Creative-Advertising-Intern--Fall-2026_10155523-1",
+      "link": "https://disney.wd5.myworkdayjobs.com/en-US/disneycareer/job/Burbank-CA-USA/Studio-Workforce-Planning-Graduate-Intern--Fall-2026---Spring-2027_10155698",
       "location": "Burbank, CA, USA",
       "posted": "Posted Yesterday",
       "source": "workday",
       "tier_hint": "T2",
-      "title": "Studios Creative Advertising Intern, Fall 2026"
+      "title": "Studio Workforce Planning Graduate Intern, Fall 2026 - Spring 2027"
     },
     {
       "category": "business",
       "company": "Deutsche Bank",
-      "link": "https://db.wd3.myworkdayjobs.com/en-US/DBWebsite/job/Milano-Bicocca-Calendario-3/Internship---Global-Corporate-Coverage-Italy---Milan--f-m-x-_R0438621",
-      "location": "Milano Bicocca Calendario 3",
-      "posted": "Posted 10 Days Ago",
+      "link": "https://db.wd3.myworkdayjobs.com/en-US/DBWebsite/job/Napoli-Via-Santa-Brigida-10/Internship-Area-Crediti-e-Prestiti---Sede-di-Napoli---f-m-x-_R0436926",
+      "location": "Napoli Via Santa Brigida 10",
+      "posted": "Posted 30+ Days Ago",
       "source": "workday",
       "tier_hint": "T1",
-      "title": "Internship - Global Corporate Coverage Italy - Milan (f/m/x)"
+      "title": "Internship Area Crediti e Prestiti \u2013 Sede di Napoli \u00a0(f/m/x)"
     }
   ],
-  "generated_at": "2026-07-17T11:25:57+00:00",
-  "run_date": "2026-07-17"
+  "generated_at": "2026-07-18T11:08:11+00:00",
+  "run_date": "2026-07-18"
 }
