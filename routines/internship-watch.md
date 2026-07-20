@@ -46,17 +46,38 @@ real, currently open, and maps to that roster firm. Note how many firms you swep
 and cap total WebFetches at ~30 on normal days / ~60 on Tuesday (say how many you
 didn't reach).
 
-## 3. Verify ONLY the web-discovered postings
+## 3. Verify the web-discovered postings — and read a 403 correctly
 The artifact postings are already trusted (§1). For each posting **you** found via
-discovery (§2), WebFetch its link (WebSearch to relocate if it 404s): it must still
-EXIST and be OPEN (not closed / "no longer accepting" / 404) and plausibly match the
-company + an internship / summer-analyst / sophomore role in the current cycle.
-**Drop any discovery posting you cannot verify.** Capture any stated application
-deadline / "apply by" date.
+discovery (§2), WebFetch its link to confirm it's real, open, on-cycle, and matches
+the company. But the fetch has THREE outcomes, not two — never collapse them:
+
+- **200 + clearly open** (apply button / open req / "accepting applications", 2026/2027
+  cycle) → **VERIFIED OPEN.** Capture any stated "apply by" deadline.
+- **404 / redirect-to-closed / "no longer accepting" / "position filled"** → the role is
+  genuinely GONE → **drop it.**
+- **403 Forbidden / 401 / Cloudflare-or-WAF challenge / empty JS shell (Workday &c.)** →
+  the SITE IS BLOCKING THE FETCHER, which says NOTHING about whether the role is open.
+  The elite no-feed firms Janus most wants (KKR, and iCIMS / Avature / HireVue /
+  tal.net-class career sites) block the proxy by design. **Do NOT drop these as
+  "unverified."** Soft-verify from the §2 WebSearch evidence you already have: if the
+  search result puts a current-cycle (2026/2027) summer-analyst / sophomore posting on
+  the firm's OWN careers domain, keep it as **LIKELY OPEN** and carry the apply link.
+  Drop only if the sole evidence is a third-party aggregator or the cycle/role is unclear.
+
+A 403 is the NORM for exactly the marquee firms this routine exists to catch — silently
+dropping them is a false-negative that hollows out the report. Keep them, clearly
+labeled unverified (§5, 🟡).
+
+**Keep verification low-burst.** Fetch the discovery links sequentially (or in small
+batches), not as one large parallel swarm: a burst of ~30 simultaneous fetches from a
+single egress trips rate-based WAF rules and turns even normally-OK hosts (greenhouse,
+BofA) into 403s, manufacturing a false "100% blocked" run. Give a 403 at most ONE retry,
+not a hammering, and lean on the soft-verify path above instead.
 
 ## 4. Relevance pass — rank for fit to Janus, trim the weak
-Now judge the combined set (trusted artifact + verified discoveries) for FIT, not
-just validity. For each posting, weigh:
+Now judge the combined set (trusted artifact + verified discoveries + §3 likely-open
+403 leads) for FIT, not just validity. The likely-open leads are ranked and fit-filtered
+just like the rest — they simply land in the 🟡 tier (§5). For each posting, weigh:
 - **In-domain:** investment banking / M&A, PE / growth equity, VC, hedge fund /
   quant / trading, management & strategy consulting, corporate strategy / BizOps /
   corp-dev, economics. In scope. Off-track (SWE / hardware / design / data eng /
@@ -73,20 +94,30 @@ report. Keep the discovery net wide (§2) but the report tight.
 
 ## 5. Report (this is the push payload — concise, minimal emojis)
 ```
-🔔 NEWLY OPEN
+🔔 NEWLY OPEN            (verified — a live fetch confirmed an open posting)
 [T1] <Company> — <Role> (<Location>)[ · deadline <date>]
 <apply link>
 [T2] ...
 [T3] ...
+```
+Then the discovery leads that are almost certainly open but whose career site blocked
+hard verification (§3 403 path) — label them plainly; NEVER fold these into "nothing today":
+```
+🟡 LIKELY OPEN (couldn't hard-verify — site blocks the fetch)
+[T1] <Company> — <Role> (<Location>) · <apply link> · unverified (403)
+[T2] ...
 ```
 Then, only if a verified posting has a deadline within ~21 days:
 ```
 🔴 CLOSING SOON
 <Company> — <Role>: <deadline>
 ```
-End with: `SUMMARY: X open (A T1 / B T2 / C T3), Y closing ≤21d, swept Z no-feed
-firms (curated|full), checked W discoveries.`
-If nothing survives, keep it to ~5 lines: "No new openings today.", how many were
-checked and why dropped (closed / off-track / off-cycle / already-seen), whether it
-was the Tuesday full sweep, and that you'll check again tomorrow. Your final message
-IS the report — delivered by push.
+End with: `SUMMARY: X verified open (A T1 / B T2 / C T3), L likely-open (fetch-blocked),
+Y closing ≤21d, swept Z no-feed firms (curated|full), checked W discoveries (V verified /
+B blocked-403).`
+Only say "No new openings today." when discovery genuinely surfaced nothing (or every lead
+was truly closed / off-track / off-cycle / already-seen). **If leads surfaced but verification
+was 403-blocked, that is NOT a quiet day** — report them under 🟡 LIKELY OPEN and say plainly
+that verification was fetch-blocked, not that nothing opened. When it really is quiet, keep it
+to ~5 lines: how many were checked and why dropped, whether it was the Tuesday full sweep, and
+that you'll check again tomorrow. Your final message IS the report — delivered by push.
