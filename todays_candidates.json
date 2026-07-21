@@ -1,147 +1,137 @@
 {
-  "candidate_count": 14,
+  "candidate_count": 13,
   "candidates": [
     {
-      "category": "business",
-      "company": "LionTree",
-      "link": "https://job-boards.greenhouse.io/liontree/jobs/5067478007",
-      "location": "London",
-      "posted": "2026-07-20T04:58:03-04:00",
+      "category": "quant",
+      "company": "Optiver",
+      "link": "https://www.optiver.com/join-us/jobs/8642260002/?gh_jid=8642260002",
+      "location": "Singapore",
+      "posted": "2026-07-20T21:40:36-04:00",
       "source": "greenhouse",
-      "tier_hint": "T2",
-      "title": "Winter 2027 Off-Cycle Internship Programme"
+      "tier_hint": "T1",
+      "title": "Quantitative Trading Internship (Singapore) - 2027"
     },
     {
       "category": "quant",
-      "company": "ING",
-      "link": "https://ing.wd3.myworkdayjobs.com/en-US/ICSGBLCOR/job/CDR-Amsterdam---Cedar/Financial-Risk-Intern---Trading-Risk-Management--TRM-_REQ-10118493",
-      "location": "CDR (Amsterdam - Cedar)",
-      "posted": "Posted Today",
-      "source": "workday",
-      "tier_hint": "T2",
-      "title": "Financial Risk Intern \u2013 Trading Risk Management (TRM)"
+      "company": "Optiver",
+      "link": "https://www.optiver.com/join-us/jobs/8011956002/?gh_jid=8011956002",
+      "location": "Taipei, Taiwan",
+      "posted": "2026-07-20T21:52:07-04:00",
+      "source": "greenhouse",
+      "tier_hint": "T1",
+      "title": "Quantitative Trading Internship (Taiwan) - 2027"
     },
     {
       "category": "business",
-      "company": "Intel",
-      "link": "https://intel.wd1.myworkdayjobs.com/en-US/External/job/PRC-Beijing/Technical-Sales-Intern_JR0283289",
-      "location": "PRC, Beijing",
+      "company": "ING",
+      "link": "https://ing.wd3.myworkdayjobs.com/en-US/ICSGBLCOR/job/Manila-Arthaland-Century-Pacific-Tower/Corporate-Sector-Coverage---Financial-Institutions-Intern--Wholesale-Banking--Manila-Branch-_REQ-10118598-1",
+      "location": "Manila (Arthaland Century Pacific Tower)",
+      "posted": "Posted Today",
+      "source": "workday",
+      "tier_hint": "T2",
+      "title": "Corporate Sector Coverage & Financial Institutions Intern (Wholesale Banking, Manila Branch)"
+    },
+    {
+      "category": "business",
+      "company": "Medtronic",
+      "link": "https://medtronic.wd1.myworkdayjobs.com/en-US/MedtronicCareers/job/Lausanne-Vaud-Switzerland/Intern-AI-Vision-for-Equipment-Development_R72173-1",
+      "location": "Lausanne, Vaud, Switzerland",
+      "posted": "Posted Yesterday",
+      "source": "workday",
+      "tier_hint": "T2",
+      "title": "Intern AI Vision for Equipment Development"
+    },
+    {
+      "category": "business",
+      "company": "Micron Technology",
+      "link": "https://micron.wd1.myworkdayjobs.com/en-US/External/job/Taichung---Fab-16-Taiwan/XMLNAME---Apply-Now---2026-Autumn-Campus-Hiring-_JR104761",
+      "location": "5 Locations",
       "posted": "Posted Today",
       "source": "workday",
       "tier_hint": "T1",
-      "title": "Technical Sales Intern"
+      "title": "\u3010\u7acb\u5373\u61c9\u5fb5 Apply Now! \u30112026 Autumn Campus Hiring \u79cb\u5b63\u6821\u5712\u5fb5\u624d\u5c08\u5340"
+    },
+    {
+      "category": "business",
+      "company": "Micron Technology",
+      "link": "https://micron.wd1.myworkdayjobs.com/en-US/External/job/Fab-10A-Singapore/Intern---HIG-HBM-PACKAGE-PSE_JR83991",
+      "location": "Fab 10A, Singapore",
+      "posted": "Posted Today",
+      "source": "workday",
+      "tier_hint": "T1",
+      "title": "Intern - HIG HBM PACKAGE PSE"
+    },
+    {
+      "category": "business",
+      "company": "ServiceNow",
+      "link": "https://api.smartrecruiters.com/v1/companies/Servicenow/postings/744000138809854",
+      "location": "Munich",
+      "posted": "2026-07-21T08:24:26.506Z",
+      "source": "smartrecruiters",
+      "tier_hint": "T1",
+      "title": "Sales Intern"
+    },
+    {
+      "category": "business",
+      "company": "Morgan Stanley",
+      "link": "https://ms.wd5.myworkdayjobs.com/en-US/External/job/Orlando-Florida-United-States-of-America/Intern_JR040900",
+      "location": "Orlando, Florida, United States of America",
+      "posted": "Posted Yesterday",
+      "source": "workday",
+      "tier_hint": "T1",
+      "title": "Intern"
     },
     {
       "category": "consulting",
       "company": "Strategy&",
-      "link": "https://pwc.wd3.myworkdayjobs.com/en-US/Global_Campus_Careers/job/Singapore/Consulting--Clients---Markets-Year-End--Internship--Dec-26--Feb-27--_745837WD",
+      "link": "https://pwc.wd3.myworkdayjobs.com/en-US/Global_Campus_Careers/job/Jakarta/Internship---Consulting---Workforce-Transformation---Talent-Pool_641881WD",
+      "location": "Jakarta",
+      "posted": "Posted Today",
+      "source": "workday",
+      "tier_hint": "T2",
+      "title": "Internship - Consulting - Workforce Transformation - Talent Pool"
+    },
+    {
+      "category": "consulting",
+      "company": "Strategy&",
+      "link": "https://pwc.wd3.myworkdayjobs.com/en-US/Global_Campus_Careers/job/Singapore/Consulting---Clients---Markets-Off-Cycle-Internship--Jan---Jun--27-_746122WD",
       "location": "Singapore",
       "posted": "Posted Today",
       "source": "workday",
       "tier_hint": "T2",
-      "title": "Consulting- Clients & Markets Year End  Internship (Dec 26- Feb 27))"
-    },
-    {
-      "category": "business",
-      "company": "Strategy&",
-      "link": "https://pwc.wd3.myworkdayjobs.com/en-US/Global_Campus_Careers/job/Wellington---NZL/PwC-Intern-Programme---Assurance---Audit--Wellington-_745810WD-1",
-      "location": "Wellington - NZL",
-      "posted": "Posted Today",
-      "source": "workday",
-      "tier_hint": "T2",
-      "title": "PwC Intern Programme - Assurance - Audit (Wellington)"
-    },
-    {
-      "category": "consulting",
-      "company": "Strategy&",
-      "link": "https://pwc.wd3.myworkdayjobs.com/en-US/Global_Campus_Careers/job/Singapore/Consulting---Financial-Crime-Off-Cycle-Internship--Jan---Jun--27-_745817WD",
-      "location": "Singapore",
-      "posted": "Posted Today",
-      "source": "workday",
-      "tier_hint": "T2",
-      "title": "Consulting - Financial Crime Off Cycle Internship (Jan - Jun '27)"
-    },
-    {
-      "category": "consulting",
-      "company": "Strategy&",
-      "link": "https://pwc.wd3.myworkdayjobs.com/en-US/Global_Campus_Careers/job/Singapore/Consulting---Financial-Crime-Year-End-Internship--Dec--26---Feb--27-_745815WD",
-      "location": "Singapore",
-      "posted": "Posted Today",
-      "source": "workday",
-      "tier_hint": "T2",
-      "title": "Consulting - Financial Crime Year-End Internship (Dec '26 - Feb '27)"
-    },
-    {
-      "category": "consulting",
-      "company": "Strategy&",
-      "link": "https://pwc.wd3.myworkdayjobs.com/en-US/Global_Campus_Careers/job/Ulaanbaatar/Intern---Tax-Reporting-and-Strategy_742781WD",
-      "location": "Ulaanbaatar",
-      "posted": "Posted Today",
-      "source": "workday",
-      "tier_hint": "T2",
-      "title": "Intern \u2013 Tax Reporting and Strategy"
-    },
-    {
-      "category": "business",
-      "company": "Strategy&",
-      "link": "https://pwc.wd3.myworkdayjobs.com/en-US/Global_Campus_Careers/job/Kuala-Lumpur/Intern---Deals--Valuations--November-2026-Intake-_745800WD",
-      "location": "Kuala Lumpur",
-      "posted": "Posted Today",
-      "source": "workday",
-      "tier_hint": "T2",
-      "title": "Intern - Deals, Valuations (November 2026 Intake)"
-    },
-    {
-      "category": "business",
-      "company": "Strategy&",
-      "link": "https://pwc.wd3.myworkdayjobs.com/en-US/Global_Campus_Careers/job/Auckland---NZL/PwC-Intern-Programme---Internal-Firm-Services---AI-Centre-of-Excellence--Auckland-_745452WD",
-      "location": "Auckland - NZL",
-      "posted": "Posted Today",
-      "source": "workday",
-      "tier_hint": "T2",
-      "title": "PwC Intern Programme \u2013 Internal Firm Services - AI Centre of Excellence (Auckland)"
-    },
-    {
-      "category": "business",
-      "company": "Strategy&",
-      "link": "https://pwc.wd3.myworkdayjobs.com/en-US/Global_Campus_Careers/job/Christchurch---NZL/PwC-Intern-Programme---PwC-Private--Christchurch-_731627WD",
-      "location": "Christchurch - NZL",
-      "posted": "Posted Today",
-      "source": "workday",
-      "tier_hint": "T2",
-      "title": "PwC Intern Programme \u2013 PwC Private (Christchurch)"
-    },
-    {
-      "category": "business",
-      "company": "The Walt Disney Company",
-      "link": "https://disney.wd5.myworkdayjobs.com/en-US/disneycareer/job/Anaheim-CA-USA/Disneyland-Construction-Project-Management-Intern--Spring-2027_10155115",
-      "location": "Anaheim, CA, USA",
-      "posted": "Posted Today",
-      "source": "workday",
-      "tier_hint": "T2",
-      "title": "Disneyland Construction Project Management Intern, Spring 2027"
-    },
-    {
-      "category": "business",
-      "company": "The Walt Disney Company",
-      "link": "https://disney.wd5.myworkdayjobs.com/en-US/disneycareer/job/Anaheim-CA-USA/Disneyland-Construction-Superintendent-Intern--Spring-2027_10155117",
-      "location": "Anaheim, CA, USA",
-      "posted": "Posted Today",
-      "source": "workday",
-      "tier_hint": "T2",
-      "title": "Disneyland Construction Superintendent Intern, Spring 2027"
+      "title": "Consulting - Clients & Markets Off Cycle Internship (Jan - Jun '27)"
     },
     {
       "category": "business",
       "company": "Deutsche Bank",
-      "link": "https://db.wd3.myworkdayjobs.com/en-US/DBWebsite/job/Paris/Internship-Xtrackers-ETF-Sales-France---MENA_R0443003-1",
-      "location": "Paris",
+      "link": "https://db.wd3.myworkdayjobs.com/en-US/DBWebsite/job/Shanghai-Two-IFC/CFO---China-Treasury-Local-Intern_R0441775",
+      "location": "Shanghai Two IFC",
       "posted": "Posted Today",
       "source": "workday",
       "tier_hint": "T1",
-      "title": "Internship Xtrackers ETF Sales France & MENA"
+      "title": "CFO - China Treasury Local Intern"
+    },
+    {
+      "category": "business",
+      "company": "Brookfield",
+      "link": "https://brookfield.wd5.myworkdayjobs.com/en-US/brookfield/job/New-York-New-York/Intern--Investments---Real-Estate--Technology---Growth-Team_R2051681",
+      "location": "New York, New York",
+      "posted": "",
+      "source": "workday",
+      "tier_hint": "T1",
+      "title": "Intern, Investments ~ Real Estate, Technology & Growth Team"
+    },
+    {
+      "category": "business",
+      "company": "Harris Williams",
+      "link": "https://pnc.wd5.myworkdayjobs.com/en-US/HarrisWilliams/job/Harris-Williams-London---65-Davies-Street-UK012/UK-Analyst-Intern-1_R229900",
+      "location": "Harris Williams London - 65 Davies Street (UK012)",
+      "posted": "Posted Yesterday",
+      "source": "workday",
+      "tier_hint": "T2",
+      "title": "UK Analyst Intern-1"
     }
   ],
-  "generated_at": "2026-07-20T12:20:57+00:00",
-  "run_date": "2026-07-20"
+  "generated_at": "2026-07-21T11:50:15+00:00",
+  "run_date": "2026-07-21"
 }
