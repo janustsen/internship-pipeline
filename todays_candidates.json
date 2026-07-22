@@ -1,137 +1,217 @@
 {
-  "candidate_count": 13,
+  "candidate_count": 21,
   "candidates": [
     {
-      "category": "quant",
-      "company": "Optiver",
-      "link": "https://www.optiver.com/join-us/jobs/8642260002/?gh_jid=8642260002",
-      "location": "Singapore",
-      "posted": "2026-07-20T21:40:36-04:00",
+      "category": "business",
+      "company": "EQT",
+      "link": "https://job-boards.eu.greenhouse.io/eqtpartners/jobs/4934419101",
+      "location": "Amsterdam, North Holland, Netherlands",
+      "posted": "2026-07-22T06:21:40-04:00",
       "source": "greenhouse",
       "tier_hint": "T1",
-      "title": "Quantitative Trading Internship (Singapore) - 2027"
+      "title": "Investment Intern \u2013 Life Sciences - Dementia Team - Amsterdam"
     },
     {
       "category": "quant",
-      "company": "Optiver",
-      "link": "https://www.optiver.com/join-us/jobs/8011956002/?gh_jid=8011956002",
-      "location": "Taipei, Taiwan",
-      "posted": "2026-07-20T21:52:07-04:00",
+      "company": "Virtu Financial",
+      "link": "https://job-boards.greenhouse.io/virtu/jobs/8624408002",
+      "location": "Austin, TX; Chicago; New York",
+      "posted": "2026-07-21T15:54:05-04:00",
       "source": "greenhouse",
       "tier_hint": "T1",
-      "title": "Quantitative Trading Internship (Taiwan) - 2027"
+      "title": "Internship - Quantitative Trading"
+    },
+    {
+      "category": "business",
+      "company": "AQR",
+      "link": "https://careers.aqr.com/jobs?gh_jid=7895562&gh_jid=7895562",
+      "location": "Greenwich, CT",
+      "posted": "2026-07-21T11:28:32-04:00",
+      "source": "greenhouse",
+      "tier_hint": "T1",
+      "title": "2027 Portfolio Implementation Summer Analyst"
+    },
+    {
+      "category": "quant",
+      "company": "AQR",
+      "link": "https://careers.aqr.com/jobs?gh_jid=8077110&gh_jid=8077110",
+      "location": "Greenwich, CT",
+      "posted": "2026-07-21T11:43:37-04:00",
+      "source": "greenhouse",
+      "tier_hint": "T1",
+      "title": "2027 Trading Summer Analyst"
     },
     {
       "category": "business",
       "company": "ING",
-      "link": "https://ing.wd3.myworkdayjobs.com/en-US/ICSGBLCOR/job/Manila-Arthaland-Century-Pacific-Tower/Corporate-Sector-Coverage---Financial-Institutions-Intern--Wholesale-Banking--Manila-Branch-_REQ-10118598-1",
-      "location": "Manila (Arthaland Century Pacific Tower)",
+      "link": "https://ing.wd3.myworkdayjobs.com/en-US/ICSGBLCOR/job/HBP-Amsterdam---Haarlerbergpark/MBO---internship---Azure-Devops-CICD_REQ-10118267",
+      "location": "HBP (Amsterdam - Haarlerbergpark)",
       "posted": "Posted Today",
       "source": "workday",
       "tier_hint": "T2",
-      "title": "Corporate Sector Coverage & Financial Institutions Intern (Wholesale Banking, Manila Branch)"
+      "title": "MBO - internship - Azure Devops CICD"
+    },
+    {
+      "category": "business",
+      "company": "ING",
+      "link": "https://ing.wd3.myworkdayjobs.com/en-US/ICSGBLCOR/job/Madrid-Hubs-Spain/Recruitment-Intern_REQ-10117912",
+      "location": "Madrid (Hubs Spain)",
+      "posted": "Posted Today",
+      "source": "workday",
+      "tier_hint": "T2",
+      "title": "Recruitment Intern"
+    },
+    {
+      "category": "consulting",
+      "company": "ING",
+      "link": "https://ing.wd3.myworkdayjobs.com/en-US/ICSGBLCOR/job/HBP-Amsterdam---Haarlerbergpark/Intern---Credit-Risk-Consultant_REQ-10118687",
+      "location": "HBP (Amsterdam - Haarlerbergpark)",
+      "posted": "Posted Today",
+      "source": "workday",
+      "tier_hint": "T2",
+      "title": "Intern - Credit Risk Consultant"
+    },
+    {
+      "category": "business",
+      "company": "ING",
+      "link": "https://ing.wd3.myworkdayjobs.com/en-US/ICSGBLCOR/job/Luxembourg-Sige-Lux-House/INTERNSHIP---Fund-Middle-Officer_REQ-10118092",
+      "location": "Luxembourg (Si\u00e8ge Lux House)",
+      "posted": "Posted Today",
+      "source": "workday",
+      "tier_hint": "T2",
+      "title": "INTERNSHIP - Fund Middle Officer"
+    },
+    {
+      "category": "business",
+      "company": "ING",
+      "link": "https://ing.wd3.myworkdayjobs.com/en-US/ICSGBLCOR/job/Expo-Business-Park/Brand---Marketing-Internship--Temporary-6-months---ING-Bank_REQ-10118680",
+      "location": "Expo Business Park",
+      "posted": "Posted Yesterday",
+      "source": "workday",
+      "tier_hint": "T2",
+      "title": "Brand & Marketing Internship (Temporary 6 months) @ING Bank"
+    },
+    {
+      "category": "business",
+      "company": "Amgen",
+      "link": "https://amgen.wd1.myworkdayjobs.com/en-US/Careers/job/Netherlands---Breda/HR-Operations-Internship_R-250742",
+      "location": "Netherlands - Breda",
+      "posted": "Posted Yesterday",
+      "source": "workday",
+      "tier_hint": "T2",
+      "title": "HR Operations Internship"
+    },
+    {
+      "category": "business",
+      "company": "Intel",
+      "link": "https://intel.wd1.myworkdayjobs.com/en-US/External/job/PRC-Beijing/Executive-Assistant-Intern_JR0285840",
+      "location": "PRC, Beijing",
+      "posted": "Posted Today",
+      "source": "workday",
+      "tier_hint": "T1",
+      "title": "Executive Assistant Intern"
+    },
+    {
+      "category": "business",
+      "company": "Intel",
+      "link": "https://intel.wd1.myworkdayjobs.com/en-US/External/job/US-New-Mexico-Albuquerque/New-Mexico-Manufacturing-Technician-Internship_JR0284246",
+      "location": "US, New Mexico, Albuquerque",
+      "posted": "Posted Yesterday",
+      "source": "workday",
+      "tier_hint": "T1",
+      "title": "New Mexico Manufacturing Technician Internship"
     },
     {
       "category": "business",
       "company": "Medtronic",
-      "link": "https://medtronic.wd1.myworkdayjobs.com/en-US/MedtronicCareers/job/Lausanne-Vaud-Switzerland/Intern-AI-Vision-for-Equipment-Development_R72173-1",
-      "location": "Lausanne, Vaud, Switzerland",
+      "link": "https://medtronic.wd1.myworkdayjobs.com/en-US/MedtronicCareers/job/Madrid-Madrid-Spain/Intern-Digital-Health---Information-systems-_R72238-1",
+      "location": "Madrid, Madrid, Spain",
       "posted": "Posted Yesterday",
       "source": "workday",
       "tier_hint": "T2",
-      "title": "Intern AI Vision for Equipment Development"
+      "title": "Intern Digital Health  (Information systems)"
     },
     {
       "category": "business",
-      "company": "Micron Technology",
-      "link": "https://micron.wd1.myworkdayjobs.com/en-US/External/job/Taichung---Fab-16-Taiwan/XMLNAME---Apply-Now---2026-Autumn-Campus-Hiring-_JR104761",
-      "location": "5 Locations",
-      "posted": "Posted Today",
-      "source": "workday",
-      "tier_hint": "T1",
-      "title": "\u3010\u7acb\u5373\u61c9\u5fb5 Apply Now! \u30112026 Autumn Campus Hiring \u79cb\u5b63\u6821\u5712\u5fb5\u624d\u5c08\u5340"
-    },
-    {
-      "category": "business",
-      "company": "Micron Technology",
-      "link": "https://micron.wd1.myworkdayjobs.com/en-US/External/job/Fab-10A-Singapore/Intern---HIG-HBM-PACKAGE-PSE_JR83991",
-      "location": "Fab 10A, Singapore",
-      "posted": "Posted Today",
-      "source": "workday",
-      "tier_hint": "T1",
-      "title": "Intern - HIG HBM PACKAGE PSE"
-    },
-    {
-      "category": "business",
-      "company": "ServiceNow",
-      "link": "https://api.smartrecruiters.com/v1/companies/Servicenow/postings/744000138809854",
-      "location": "Munich",
-      "posted": "2026-07-21T08:24:26.506Z",
-      "source": "smartrecruiters",
-      "tier_hint": "T1",
-      "title": "Sales Intern"
-    },
-    {
-      "category": "business",
-      "company": "Morgan Stanley",
-      "link": "https://ms.wd5.myworkdayjobs.com/en-US/External/job/Orlando-Florida-United-States-of-America/Intern_JR040900",
-      "location": "Orlando, Florida, United States of America",
+      "company": "BMO Capital Markets",
+      "link": "https://bmo.wd3.myworkdayjobs.com/en-US/External/job/Toronto-ON-CAN/Data-Scientist--Fall-2026---Co-op-Internship----12-months_R260019879",
+      "location": "Toronto, ON, CAN",
       "posted": "Posted Yesterday",
       "source": "workday",
-      "tier_hint": "T1",
-      "title": "Intern"
+      "tier_hint": "T2",
+      "title": "Data Scientist, Fall 2026 ( Co-op/Internship) - 12 months"
     },
     {
-      "category": "consulting",
+      "category": "quant",
+      "company": "Micron Technology",
+      "link": "https://micron.wd1.myworkdayjobs.com/en-US/External/job/Fab-10NX-Singapore/Technology-Development--Research---Innovation-Internship--Singapore-_JR106777",
+      "location": "3 Locations",
+      "posted": "Posted Today",
+      "source": "workday",
+      "tier_hint": "T1",
+      "title": "Technology Development, Research & Innovation Internship (Singapore)"
+    },
+    {
+      "category": "business",
+      "company": "Micron Technology",
+      "link": "https://micron.wd1.myworkdayjobs.com/en-US/External/job/Fab-10NX-Singapore/AI--Data---Digital-Solutions-Internship--Singapore-_JR106776",
+      "location": "3 Locations",
+      "posted": "Posted Today",
+      "source": "workday",
+      "tier_hint": "T1",
+      "title": "AI, Data & Digital Solutions Internship (Singapore)"
+    },
+    {
+      "category": "business",
+      "company": "Micron Technology",
+      "link": "https://micron.wd1.myworkdayjobs.com/en-US/External/job/Fab-10NX-Singapore/Intern---Fab-Support-Tool-Technician_JR104203",
+      "location": "Fab 10N/X, Singapore",
+      "posted": "Posted Today",
+      "source": "workday",
+      "tier_hint": "T1",
+      "title": "Intern - Fab Support Tool Technician"
+    },
+    {
+      "category": "business",
       "company": "Strategy&",
-      "link": "https://pwc.wd3.myworkdayjobs.com/en-US/Global_Campus_Careers/job/Jakarta/Internship---Consulting---Workforce-Transformation---Talent-Pool_641881WD",
+      "link": "https://pwc.wd3.myworkdayjobs.com/en-US/Global_Campus_Careers/job/Kyiv/Accountant_746738WD",
+      "location": "Kyiv",
+      "posted": "Posted Today",
+      "source": "workday",
+      "tier_hint": "T2",
+      "title": "Intern / Junior Accountant"
+    },
+    {
+      "category": "business",
+      "company": "Strategy&",
+      "link": "https://pwc.wd3.myworkdayjobs.com/en-US/Global_Campus_Careers/job/Jakarta/IFS---Business-Development-Intern_653547WD",
       "location": "Jakarta",
       "posted": "Posted Today",
       "source": "workday",
       "tier_hint": "T2",
-      "title": "Internship - Consulting - Workforce Transformation - Talent Pool"
-    },
-    {
-      "category": "consulting",
-      "company": "Strategy&",
-      "link": "https://pwc.wd3.myworkdayjobs.com/en-US/Global_Campus_Careers/job/Singapore/Consulting---Clients---Markets-Off-Cycle-Internship--Jan---Jun--27-_746122WD",
-      "location": "Singapore",
-      "posted": "Posted Today",
-      "source": "workday",
-      "tier_hint": "T2",
-      "title": "Consulting - Clients & Markets Off Cycle Internship (Jan - Jun '27)"
+      "title": "IFS - Business Development Intern"
     },
     {
       "category": "business",
       "company": "Deutsche Bank",
-      "link": "https://db.wd3.myworkdayjobs.com/en-US/DBWebsite/job/Shanghai-Two-IFC/CFO---China-Treasury-Local-Intern_R0441775",
-      "location": "Shanghai Two IFC",
+      "link": "https://db.wd3.myworkdayjobs.com/en-US/DBWebsite/job/Istanbul-Bykdere-Caddesi-No175/Corporate-Coverage-Intern_R0443036",
+      "location": "Istanbul, B\u00fcy\u00fckdere Caddesi No:175",
       "posted": "Posted Today",
       "source": "workday",
       "tier_hint": "T1",
-      "title": "CFO - China Treasury Local Intern"
+      "title": "Corporate Coverage Intern"
     },
     {
       "category": "business",
-      "company": "Brookfield",
-      "link": "https://brookfield.wd5.myworkdayjobs.com/en-US/brookfield/job/New-York-New-York/Intern--Investments---Real-Estate--Technology---Growth-Team_R2051681",
-      "location": "New York, New York",
-      "posted": "",
-      "source": "workday",
-      "tier_hint": "T1",
-      "title": "Intern, Investments ~ Real Estate, Technology & Growth Team"
-    },
-    {
-      "category": "business",
-      "company": "Harris Williams",
-      "link": "https://pnc.wd5.myworkdayjobs.com/en-US/HarrisWilliams/job/Harris-Williams-London---65-Davies-Street-UK012/UK-Analyst-Intern-1_R229900",
-      "location": "Harris Williams London - 65 Davies Street (UK012)",
+      "company": "Deutsche Bank",
+      "link": "https://db.wd3.myworkdayjobs.com/en-US/DBWebsite/job/Milano-Bicocca-Calendario-3/Internship-Communications---CSR-Italy--f-m-x-_R0442874",
+      "location": "Milano Bicocca Calendario 3",
       "posted": "Posted Yesterday",
       "source": "workday",
-      "tier_hint": "T2",
-      "title": "UK Analyst Intern-1"
+      "tier_hint": "T1",
+      "title": "Internship Communications & CSR Italy (f/m/x)"
     }
   ],
-  "generated_at": "2026-07-21T11:50:15+00:00",
-  "run_date": "2026-07-21"
+  "generated_at": "2026-07-22T11:52:08+00:00",
+  "run_date": "2026-07-22"
 }
