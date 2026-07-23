@@ -200,7 +200,7 @@
   "Adobe": [
     {
       "platform": "workday",
-      "token": "https://adobe.wd5.myworkdayjobs.com/wday/cxs/adobe/external_experienced/jobs"
+      "token": "https://adobe.wd5.myworkdayjobs.com/wday/cxs/adobe/external_university/jobs"
     }
   ],
   "FT Partners": [
@@ -243,6 +243,16 @@
     {
       "platform": "smartrecruiters",
       "token": "TaAssociates"
+    }
+  ],
+  "PJT Partners": [
+    {
+      "platform": "workday",
+      "token": "https://pjtpartners.wd1.myworkdayjobs.com/wday/cxs/pjtpartners/Students/jobs"
+    },
+    {
+      "platform": "workday",
+      "token": "https://pjtpartners.wd1.myworkdayjobs.com/wday/cxs/pjtpartners/Careers/jobs"
     }
   ]
 }

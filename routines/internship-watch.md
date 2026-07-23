@@ -47,6 +47,16 @@ and cap total WebFetches at ~30 on normal days / ~60 on Tuesday (say how many yo
 didn't reach).
 
 ## 3. Verify the web-discovered postings — and read a 403 correctly
+**FETCH GUARD (run before any discovery fetch):** WebFetch `https://example.com` once
+as a control. Since 2026-07-13 the cloud environment's egress proxy has been returning
+403 on EVERY WebFetch — all domains uniformly, a platform-side allowlist, not the target
+sites. If the control fetch returns 403: make **no further WebFetch calls this run**
+(each will 403; retries only burn budget), route every §2 discovery lead through the
+soft-verify path below (search-snippet evidence, 🟡 LIKELY OPEN), and start the report's
+FIRST line with `⚠️ fetch-blocked (cloud proxy) — discovery leads snippet-verified only`.
+If the control fetch succeeds, say so in one line (the platform block has cleared) and
+proceed normally.
+
 The artifact postings are already trusted (§1). For each posting **you** found via
 discovery (§2), WebFetch its link to confirm it's real, open, on-cycle, and matches
 the company. But the fetch has THREE outcomes, not two — never collapse them:
