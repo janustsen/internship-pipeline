@@ -1,307 +1,267 @@
 {
-  "candidate_count": 30,
+  "candidate_count": 26,
   "candidates": [
     {
       "category": "business",
-      "company": "ING",
-      "link": "https://ing.wd3.myworkdayjobs.com/en-US/ICSGBLCOR/job/CDR-Amsterdam---Cedar/Internship-Credit-Risk-Model-Validation---Wholesale-Banking_REQ-10118806",
-      "location": "CDR (Amsterdam - Cedar)",
-      "posted": "Posted Today",
-      "source": "workday",
+      "company": "Snowflake",
+      "link": "https://jobs.ashbyhq.com/snowflake/54c27993-5827-4a03-80c8-cc5f02b960f9",
+      "location": "FR-Paris",
+      "posted": "2026-07-08T15:37:44.775+00:00",
+      "source": "ashby",
       "tier_hint": "T2",
-      "title": "Internship Credit Risk Model Validation - Wholesale Banking"
+      "title": "Partner Marketing Intern - Paris (French Speaking "
     },
     {
       "category": "business",
       "company": "ING",
-      "link": "https://ing.wd3.myworkdayjobs.com/en-US/ICSGBLCOR/job/CDR-Amsterdam---Cedar/Internship-Talent--Learning-leadership---DIB_REQ-10118804",
-      "location": "CDR (Amsterdam - Cedar)",
+      "link": "https://ing.wd3.myworkdayjobs.com/en-US/ICSGBLCOR/job/Luxembourg-Sige-Lux-House/INTERNSHIP---Corporate-Sector-Coverage-and-Real-Estate_REQ-10118918",
+      "location": "Luxembourg (Si\u00e8ge Lux House)",
       "posted": "Posted Today",
       "source": "workday",
       "tier_hint": "T2",
-      "title": "Internship Talent, Learning leadership & DIB"
+      "title": "INTERNSHIP - Corporate Sector Coverage and Real Estate"
     },
     {
       "category": "business",
       "company": "ING",
-      "link": "https://ing.wd3.myworkdayjobs.com/en-US/ICSGBLCOR/job/AME-Amsterdam---Maple/Internship-Debt-Capital-Markets--Investment-Grade-Corporate-team_REQ-10117671",
-      "location": "AME (Amsterdam - Maple)",
+      "link": "https://ing.wd3.myworkdayjobs.com/en-US/ICSGBLCOR/job/Singapore/Intern--Debt-Capital-Markets-APAC_REQ-10118893-1",
+      "location": "Singapore",
       "posted": "Posted Today",
       "source": "workday",
       "tier_hint": "T2",
-      "title": "Internship Debt Capital Markets  Investment Grade Corporate team"
+      "title": "Intern, Debt Capital Markets APAC"
     },
     {
       "category": "business",
       "company": "ING",
-      "link": "https://ing.wd3.myworkdayjobs.com/en-US/ICSGBLCOR/job/AME-Amsterdam---Maple/Internship-ING-Corporate-Finance--M-A-_REQ-10118638",
-      "location": "AME (Amsterdam - Maple)",
+      "link": "https://ing.wd3.myworkdayjobs.com/en-US/ICSGBLCOR/job/Singapore/Intern--TMT---Healthcare-Finance_REQ-10118884-2",
+      "location": "Singapore",
+      "posted": "Posted Today",
+      "source": "workday",
+      "tier_hint": "T2",
+      "title": "Intern, TMT & Healthcare Finance"
+    },
+    {
+      "category": "business",
+      "company": "Amgen",
+      "link": "https://amgen.wd1.myworkdayjobs.com/en-US/Careers/job/United-States---Remote/Grad-Intern---Commercialization-Project-Management_R-251067",
+      "location": "United States - Remote",
       "posted": "Posted Yesterday",
       "source": "workday",
       "tier_hint": "T2",
-      "title": "Internship ING Corporate Finance (M&A)"
+      "title": "Grad Intern \u2013 Commercialization Project Management"
     },
     {
       "category": "business",
-      "company": "Comcast",
-      "link": "https://comcast.wd5.myworkdayjobs.com/en-US/Comcast_Careers/job/PA---Philadelphia-3601-S-Broad-St/Intern--Special-Events---Hospitality_R438674",
-      "location": "PA - Philadelphia, 3601 S Broad St",
+      "company": "Elevance Health",
+      "link": "https://elevancehealth.wd1.myworkdayjobs.com/en-US/ANT/job/TX-GRAND-PRAIRIE-2505-N-HWY-360-STE-200--300/Intern--US-_JR192841",
+      "location": "TX-GRAND PRAIRIE, 2505 N HWY 360, STE 200 & 300",
       "posted": "Posted Yesterday",
       "source": "workday",
       "tier_hint": "T2",
-      "title": "Intern, Special Events & Hospitality"
+      "title": "Healthcare Networks Intern (US)"
     },
     {
       "category": "business",
       "company": "Intel",
-      "link": "https://intel.wd1.myworkdayjobs.com/en-US/External/job/Israel-Haifa/Student-Project-Management-Intern---Government--Policy---Community-Group_JR0285838",
-      "location": "Israel, Haifa",
-      "posted": "Posted Today",
+      "link": "https://intel.wd1.myworkdayjobs.com/en-US/External/job/US-Arizona-Phoenix/Undergraduate-Intern-Technical_JR0285782-1",
+      "location": "US, Arizona, Phoenix",
+      "posted": "Posted Yesterday",
       "source": "workday",
       "tier_hint": "T1",
-      "title": "Student Project Management Intern \u2013 Government, Policy & Community Group"
+      "title": "Undergraduate Intern Technical"
     },
     {
       "category": "business",
       "company": "Medtronic",
-      "link": "https://medtronic.wd1.myworkdayjobs.com/en-US/MedtronicCareers/job/Shanghai-Shanghai-China/IT-Intern_R72764",
-      "location": "Shanghai, Shanghai, China",
+      "link": "https://medtronic.wd1.myworkdayjobs.com/en-US/MedtronicCareers/job/Hong-Kong-Hong-Kong/Intern--Cardiovascular-Team--12-month-contract--Part-time-_R72762-1",
+      "location": "Hong Kong, Hong Kong",
       "posted": "Posted Today",
       "source": "workday",
       "tier_hint": "T2",
-      "title": "IT Intern"
+      "title": "Intern, Cardiovascular Team (12-month contract; Part-time)"
     },
     {
       "category": "business",
       "company": "Medtronic",
-      "link": "https://medtronic.wd1.myworkdayjobs.com/en-US/MedtronicCareers/job/Bogot-Bogota-Colombia/Intern--Tech-_R58927",
-      "location": "Bogot\u00e1, Bogota, Colombia",
+      "link": "https://medtronic.wd1.myworkdayjobs.com/en-US/MedtronicCareers/job/Alajuela-Coyol-Alajuela-Costa-Rica/Intern--Graduate--Tech-_R72974-1",
+      "location": "Alajuela Coyol, Alajuela, Costa Rica",
       "posted": "Posted Yesterday",
       "source": "workday",
       "tier_hint": "T2",
-      "title": "INTERN: HUMAN RESOURCES"
+      "title": "Intern: Graduate (Tech)."
     },
     {
       "category": "business",
-      "company": "Roblox",
-      "link": "https://careers.roblox.com/jobs/8075125?gh_jid=8075125",
-      "location": "San Mateo, CA, United States",
-      "posted": "2026-07-23T02:30:45-04:00",
-      "source": "greenhouse",
-      "tier_hint": "T2",
-      "title": "Global Security Manager, Campus Security"
-    },
-    {
-      "category": "business",
-      "company": "Citi",
-      "link": "https://citi.wd5.myworkdayjobs.com/en-US/2/job/Seef--Bahrain/Application-Development-Intern_26930673",
-      "location": "Seef  Bahrain",
-      "posted": "Posted Today",
-      "source": "workday",
-      "tier_hint": "T1",
-      "title": "Application Development Intern"
-    },
-    {
-      "category": "business",
-      "company": "Citi",
-      "link": "https://citi.wd5.myworkdayjobs.com/en-US/2/job/Singapore--Singapore/Services---Summer-Analyst--Singapore--2027_26978591",
-      "location": "Singapore  Singapore",
-      "posted": "Posted Today",
-      "source": "workday",
-      "tier_hint": "T1",
-      "title": "Services - Summer Analyst, Singapore, 2027"
-    },
-    {
-      "category": "business",
-      "company": "Citi",
-      "link": "https://citi.wd5.myworkdayjobs.com/en-US/2/job/Shanghai-Shanghai-China/Services---Summer-Analyst--China--2027_26978889",
-      "location": "Shanghai Shanghai China",
-      "posted": "Posted Today",
-      "source": "workday",
-      "tier_hint": "T1",
-      "title": "Services - Summer Analyst, China, 2027"
-    },
-    {
-      "category": "business",
-      "company": "Citi",
-      "link": "https://citi.wd5.myworkdayjobs.com/en-US/2/job/Hong-Kong--Hong-Kong/Services---Summer-Analyst--Hong-Kong--2027_26978589",
-      "location": "Hong Kong  Hong Kong",
-      "posted": "Posted Today",
-      "source": "workday",
-      "tier_hint": "T1",
-      "title": "Services - Summer Analyst, Hong Kong, 2027"
-    },
-    {
-      "category": "consulting",
-      "company": "Strategy&",
-      "link": "https://pwc.wd3.myworkdayjobs.com/en-US/Global_Campus_Careers/job/Brussels/School-Internship-in-Management-Consulting--Fit-for-Growth--2026-2027-_695450WD",
-      "location": "Brussels",
-      "posted": "Posted Today",
+      "company": "BMO Capital Markets",
+      "link": "https://bmo.wd3.myworkdayjobs.com/en-US/External/job/Toronto-ON-CAN/Finance-Analyst---Fall-2026--Co-op-Internship----4-Months_R260021829-1",
+      "location": "Toronto, ON, CAN",
+      "posted": "Posted Yesterday",
       "source": "workday",
       "tier_hint": "T2",
-      "title": "School Internship in Management Consulting: Fit for Growth (2026-2027)"
+      "title": "Finance Analyst - Fall 2026 (Co-op/Internship) - 4 Months"
     },
     {
-      "category": "consulting",
-      "company": "Strategy&",
-      "link": "https://pwc.wd3.myworkdayjobs.com/en-US/Global_Campus_Careers/job/Belgrade/Intern-Junior-Consultant-in-Bank---Corporate-Strategy--Transformation---Technology_747056WD",
-      "location": "Belgrade",
+      "category": "business",
+      "company": "Micron Technology",
+      "link": "https://micron.wd1.myworkdayjobs.com/en-US/External/job/Fab-10NX-Singapore/Intern---PIE-RDA-Technician_JR106071",
+      "location": "Fab 10N/X, Singapore",
       "posted": "Posted Today",
       "source": "workday",
-      "tier_hint": "T2",
-      "title": "Intern/Junior Consultant in Bank & Corporate Strategy, Transformation & Technology"
+      "tier_hint": "T1",
+      "title": "Intern - PIE RDA Technician"
+    },
+    {
+      "category": "business",
+      "company": "ServiceNow",
+      "link": "https://api.smartrecruiters.com/v1/companies/Servicenow/postings/744000139355576",
+      "location": "Munich",
+      "posted": "2026-07-23T19:36:45.949Z",
+      "source": "smartrecruiters",
+      "tier_hint": "T1",
+      "title": "Sales Intern"
     },
     {
       "category": "business",
       "company": "Strategy&",
-      "link": "https://pwc.wd3.myworkdayjobs.com/en-US/Global_Campus_Careers/job/Jakarta/FY-27---Intern---IFS---Marketing---Communications_746988WD",
+      "link": "https://pwc.wd3.myworkdayjobs.com/en-US/Global_Campus_Careers/job/Jakarta/FY-27---Internship---IFS---External-Communication--Electronic-Direct-Mail-_739928WD",
       "location": "Jakarta",
       "posted": "Posted Today",
       "source": "workday",
       "tier_hint": "T2",
-      "title": "FY 27 - Intern - IFS - Marketing & Communications"
+      "title": "FY 27 - Internship - IFS - External Communication (Electronic Direct Mail)"
+    },
+    {
+      "category": "business",
+      "company": "Strategy&",
+      "link": "https://pwc.wd3.myworkdayjobs.com/en-US/Global_Campus_Careers/job/Kuala-Lumpur/Internship---Assurance--PwC-Acceleration-Center-Kuala-Lumpur----January-2027-Intake_747299WD",
+      "location": "Kuala Lumpur",
+      "posted": "Posted Today",
+      "source": "workday",
+      "tier_hint": "T2",
+      "title": "Internship - Assurance (PwC Acceleration Center Kuala Lumpur) - January 2027 Intake"
+    },
+    {
+      "category": "consulting",
+      "company": "Strategy&",
+      "link": "https://pwc.wd3.myworkdayjobs.com/en-US/Global_Campus_Careers/job/Milan/Advisory---Intern---Milano---Financial-Services-Strategy--ADV-_678261WD",
+      "location": "Milan",
+      "posted": "Posted Yesterday",
+      "source": "workday",
+      "tier_hint": "T2",
+      "title": "Advisory - Intern - Milano - Financial Services Strategy [ADV]"
+    },
+    {
+      "category": "business",
+      "company": "Strategy&",
+      "link": "https://pwc.wd3.myworkdayjobs.com/en-US/Global_Campus_Careers/job/Rome/IT-Project-Management---INTERNSHIP---Roma_627026WD",
+      "location": "Rome",
+      "posted": "Posted Yesterday",
+      "source": "workday",
+      "tier_hint": "T2",
+      "title": "IT Project Management - INTERNSHIP - Roma"
+    },
+    {
+      "category": "consulting",
+      "company": "Strategy&",
+      "link": "https://pwc.wd3.myworkdayjobs.com/en-US/Global_Campus_Careers/job/Jakarta/Internship---Consulting---FS-Strategy---Operations_440940WD",
+      "location": "Jakarta",
+      "posted": "Posted Yesterday",
+      "source": "workday",
+      "tier_hint": "T2",
+      "title": "Internship - Consulting - FS Strategy & Operations"
+    },
+    {
+      "category": "consulting",
+      "company": "Strategy&",
+      "link": "https://pwc.wd3.myworkdayjobs.com/en-US/Global_Campus_Careers/job/Jakarta/Consulting---Internship---Strategy---Operations---Talent-Pool_641873WD",
+      "location": "Jakarta",
+      "posted": "Posted Yesterday",
+      "source": "workday",
+      "tier_hint": "T2",
+      "title": "Consulting - Internship - Strategy & Operations - Talent Pool"
+    },
+    {
+      "category": "business",
+      "company": "Boeing",
+      "link": "https://boeing.wd1.myworkdayjobs.com/en-US/INTERN/job/AUS---Brisbane-Australia/Global-Engagement-Intern_JR2026517374-3",
+      "location": "2 Locations",
+      "posted": "Posted Today",
+      "source": "workday",
+      "tier_hint": "T2",
+      "title": "Global Engagement Intern"
+    },
+    {
+      "category": "business",
+      "company": "Salesforce",
+      "link": "https://salesforce.wd12.myworkdayjobs.com/en-US/External_Career_Site/job/Brazil---Sao-Paulo/Business-Development-Associate_JR249467-1",
+      "location": "Brazil - Sao Paulo",
+      "posted": "Posted Yesterday",
+      "source": "workday",
+      "tier_hint": "T2",
+      "title": "LATAM Internship Program | Sales Intern [Brazil]"
     },
     {
       "category": "business",
       "company": "Deutsche Bank",
-      "link": "https://db.wd3.myworkdayjobs.com/en-US/DBWebsite/job/Luxembourg-2-Blvd-K-Adenauer/PB-WM-Internship_R0370752",
-      "location": "Luxembourg 2 Blvd K. Adenauer",
+      "link": "https://db.wd3.myworkdayjobs.com/en-US/DBWebsite/job/Milano-Bicocca-Calendario-3/Internship---Technology-Process-Team--f-m-x-_R0429474",
+      "location": "Milano Bicocca Calendario 3",
+      "posted": "Posted Today",
+      "source": "workday",
+      "tier_hint": "T1",
+      "title": "Internship - Technology Process Analysis (f/m/x)"
+    },
+    {
+      "category": "business",
+      "company": "Deutsche Bank",
+      "link": "https://db.wd3.myworkdayjobs.com/en-US/DBWebsite/job/Milano-Bicocca-Calendario-3/Internship----IT-Service-Governance-Team--f-m-x-_R0434847",
+      "location": "Milano Bicocca Calendario 3",
+      "posted": "Posted Today",
+      "source": "workday",
+      "tier_hint": "T1",
+      "title": "Internship - \u00a0IT Service Governance (f/m/x)"
+    },
+    {
+      "category": "business",
+      "company": "Houlihan Lokey",
+      "link": "https://hl.wd1.myworkdayjobs.com/en-US/Campus/job/Baltimore-MD-USA/XMLNAME-2027-Investment-Banking-Summer-Financial-Analyst--Class-of-2028----Baltimore-Business-Services_R2830",
+      "location": "Baltimore, MD, USA",
       "posted": "Posted Yesterday",
       "source": "workday",
-      "tier_hint": "T1",
-      "title": "PB WM Internship"
+      "tier_hint": "T2",
+      "title": "2027 Investment Banking Summer Financial Analyst (Class of 2028) \u2013 Baltimore Business Services"
     },
     {
       "category": "business",
-      "company": "Nvidia",
-      "link": "https://nvidia.wd5.myworkdayjobs.com/en-US/NVIDIAExternalCareerSite/job/China-Beijing/Solution-Architect-Manager---Intern-Program_JR2021277",
-      "location": "2 Locations",
-      "posted": "Posted Today",
-      "source": "workday",
-      "tier_hint": "T1",
-      "title": "Solution Architect Manager - Intern Program"
-    },
-    {
-      "category": "business",
-      "company": "T. Rowe Price",
-      "link": "https://troweprice.wd5.myworkdayjobs.com/en-US/TRowePrice/job/Baltimore-MD/XMLNAME-2027-Sales---Client-Engagement-Internship-Program_82674",
-      "location": "3 Locations",
-      "posted": "Posted Today",
+      "company": "Mastercard",
+      "link": "https://mastercard.wd1.myworkdayjobs.com/en-US/CorporateCareers/job/Bogota-Colombia/Internship-Program---Mastercard---2027---Bogota--Colombia_R-286675",
+      "location": "Bogota, Colombia",
+      "posted": "Posted Yesterday",
       "source": "workday",
       "tier_hint": "T2",
-      "title": "2027 Sales & Client Engagement Internship Program"
+      "title": "Internship Program @ Mastercard , 2027 \u2013 Bogota, Colombia"
     },
     {
-      "category": "business",
-      "company": "T. Rowe Price",
-      "link": "https://troweprice.wd5.myworkdayjobs.com/en-US/TRowePrice/job/Baltimore-MD/XMLNAME-2027-Technology-and-Data-Internship_82677",
-      "location": "2 Locations",
-      "posted": "Posted Today",
-      "source": "workday",
+      "category": "consulting",
+      "company": "Roland Berger",
+      "link": "https://api.smartrecruiters.com/v1/companies/RolandBerger/postings/744000139297260",
+      "location": "Germany",
+      "posted": "2026-07-23T14:10:49.718Z",
+      "source": "smartrecruiters",
       "tier_hint": "T2",
-      "title": "2027 Technology and Data Internship"
+      "title": "Deine Bewerbung als Consulting Intern (all genders)"
     },
     {
-      "category": "business",
-      "company": "T. Rowe Price",
-      "link": "https://troweprice.wd5.myworkdayjobs.com/en-US/TRowePrice/job/Owings-Mills-MD/XMLNAME-2027-Fund-Accounting-Internship-Program_82679",
-      "location": "Owings Mills, MD",
-      "posted": "Posted Today",
-      "source": "workday",
+      "category": "consulting",
+      "company": "Roland Berger",
+      "link": "https://api.smartrecruiters.com/v1/companies/RolandBerger/postings/744000139295342",
+      "location": "Munich",
+      "posted": "2026-07-23T14:10:14.962Z",
+      "source": "smartrecruiters",
       "tier_hint": "T2",
-      "title": "2027 Fund Accounting Internship Program"
-    },
-    {
-      "category": "business",
-      "company": "T. Rowe Price",
-      "link": "https://troweprice.wd5.myworkdayjobs.com/en-US/TRowePrice/job/Owings-Mills-MD/XMLNAME-2027-Procurement-Internship-Program_82691",
-      "location": "Owings Mills, MD",
-      "posted": "Posted Today",
-      "source": "workday",
-      "tier_hint": "T2",
-      "title": "2027 Procurement Internship Program"
-    },
-    {
-      "category": "business",
-      "company": "T. Rowe Price",
-      "link": "https://troweprice.wd5.myworkdayjobs.com/en-US/TRowePrice/job/Baltimore-MD/XMLNAME-2027-Global-Product-Internship-Program_82693",
-      "location": "Baltimore, MD",
-      "posted": "Posted Today",
-      "source": "workday",
-      "tier_hint": "T2",
-      "title": "2027 Global Product Internship Program"
-    },
-    {
-      "category": "business",
-      "company": "T. Rowe Price",
-      "link": "https://troweprice.wd5.myworkdayjobs.com/en-US/TRowePrice/job/Owings-Mills-MD/XMLNAME-2027-Client-Services-Internship-Program_82698",
-      "location": "Owings Mills, MD",
-      "posted": "Posted Today",
-      "source": "workday",
-      "tier_hint": "T2",
-      "title": "2027 Client Services Internship Program"
-    },
-    {
-      "category": "business",
-      "company": "T. Rowe Price",
-      "link": "https://troweprice.wd5.myworkdayjobs.com/en-US/TRowePrice/job/Owings-Mills-MD/XMLNAME-2027-Investment-Operations-Internship-Program_82680",
-      "location": "Owings Mills, MD",
-      "posted": "Posted Today",
-      "source": "workday",
-      "tier_hint": "T2",
-      "title": "2027 Investment Operations Internship Program"
-    },
-    {
-      "category": "business",
-      "company": "T. Rowe Price",
-      "link": "https://troweprice.wd5.myworkdayjobs.com/en-US/TRowePrice/job/Owings-Mills-MD/XMLNAME-2027-Financial-Planning---Analysis-Internship-Program_82681",
-      "location": "Owings Mills, MD",
-      "posted": "Posted Today",
-      "source": "workday",
-      "tier_hint": "T2",
-      "title": "2027 Financial Planning & Analysis Internship Program"
-    },
-    {
-      "category": "business",
-      "company": "T. Rowe Price",
-      "link": "https://troweprice.wd5.myworkdayjobs.com/en-US/TRowePrice/job/Owings-Mills-MD/XMLNAME-2027-Controllers---Global-Tax-Group-Internship-Program_82683",
-      "location": "Owings Mills, MD",
-      "posted": "Posted Today",
-      "source": "workday",
-      "tier_hint": "T2",
-      "title": "2027 Controllers & Global Tax Group Internship Program"
-    },
-    {
-      "category": "business",
-      "company": "T. Rowe Price",
-      "link": "https://troweprice.wd5.myworkdayjobs.com/en-US/TRowePrice/job/Owings-Mills-MD/XMLNAME-2027-Business-Enablement-Internship-Program_82685",
-      "location": "Owings Mills, MD",
-      "posted": "Posted Today",
-      "source": "workday",
-      "tier_hint": "T2",
-      "title": "2027 Business Enablement Internship Program"
-    },
-    {
-      "category": "quant",
-      "company": "T. Rowe Price",
-      "link": "https://troweprice.wd5.myworkdayjobs.com/en-US/TRowePrice/job/Baltimore-MD/XMLNAME-2027-Quantitative-Equity-Investing-Internship-Program_82699",
-      "location": "Baltimore, MD",
-      "posted": "Posted Today",
-      "source": "workday",
-      "tier_hint": "T2",
-      "title": "2027 Quantitative Equity Investing Internship Program"
-    },
-    {
-      "category": "quant",
-      "company": "T. Rowe Price",
-      "link": "https://troweprice.wd5.myworkdayjobs.com/en-US/TRowePrice/job/Baltimore-MD/XMLNAME-2027-Global-Trading-Internship-Program_82718",
-      "location": "Baltimore, MD",
-      "posted": "Posted Today",
-      "source": "workday",
-      "tier_hint": "T2",
-      "title": "2027 Global Trading Internship Program"
+      "title": "Consulting Intern \u2013 Bewirb dich bis zum 4. September 2026 (all genders)"
     }
   ],
-  "generated_at": "2026-07-23T11:54:14+00:00",
-  "run_date": "2026-07-23"
+  "generated_at": "2026-07-24T11:46:21+00:00",
+  "run_date": "2026-07-24"
 }
