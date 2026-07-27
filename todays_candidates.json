@@ -1,6 +1,137 @@
 {
-  "candidate_count": 0,
-  "candidates": [],
-  "generated_at": "2026-07-26T11:23:19+00:00",
-  "run_date": "2026-07-26"
+  "candidate_count": 13,
+  "candidates": [
+    {
+      "category": "business",
+      "company": "ING",
+      "link": "https://ing.wd3.myworkdayjobs.com/en-US/ICSGBLCOR/job/Gent-Fabiolalaan/Intern-Administrative-Support---Daily-Banking-Private-Individuals_REQ-10118508",
+      "location": "3 Locations",
+      "posted": "Posted Today",
+      "source": "workday",
+      "tier_hint": "T2",
+      "title": "Intern Administrative Support - Daily Banking Private Individuals"
+    },
+    {
+      "category": "business",
+      "company": "Medtronic",
+      "link": "https://medtronic.wd1.myworkdayjobs.com/en-US/MedtronicCareers/job/Shanghai-Shanghai-China/Marketing-Intern_R73156-1",
+      "location": "Shanghai, Shanghai, China",
+      "posted": "Posted Today",
+      "source": "workday",
+      "tier_hint": "T2",
+      "title": "Marketing Intern"
+    },
+    {
+      "category": "business",
+      "company": "Medtronic",
+      "link": "https://medtronic.wd1.myworkdayjobs.com/en-US/MedtronicCareers/job/Singapore-Singapore-Singapore/Intern--Non-Tech_R72778-1",
+      "location": "Singapore, Singapore, Singapore",
+      "posted": "Posted Today",
+      "source": "workday",
+      "tier_hint": "T2",
+      "title": "Intern: Non-Tech"
+    },
+    {
+      "category": "business",
+      "company": "Micron Technology",
+      "link": "https://micron.wd1.myworkdayjobs.com/en-US/External/job/Fab-10NX-Singapore/Intern---AI-Driven-Process-Development-Deposition---Ion-implantation_JR100559",
+      "location": "Fab 10N/X, Singapore",
+      "posted": "Posted Today",
+      "source": "workday",
+      "tier_hint": "T1",
+      "title": "Intern - AI\u2011Driven Process Development Deposition & Ion implantation"
+    },
+    {
+      "category": "business",
+      "company": "Strategy&",
+      "link": "https://pwc.wd3.myworkdayjobs.com/en-US/Global_Campus_Careers/job/Kuala-Lumpur/Internship---Corporate-Sustainability_720576WD",
+      "location": "Kuala Lumpur",
+      "posted": "Posted Today",
+      "source": "workday",
+      "tier_hint": "T2",
+      "title": "Internship - Corporate Sustainability"
+    },
+    {
+      "category": "business",
+      "company": "Strategy&",
+      "link": "https://pwc.wd3.myworkdayjobs.com/en-US/Global_Campus_Careers/job/Ulaanbaatar/Tax-Intern_721240WD",
+      "location": "Ulaanbaatar",
+      "posted": "Posted Today",
+      "source": "workday",
+      "tier_hint": "T2",
+      "title": "Tax Intern"
+    },
+    {
+      "category": "business",
+      "company": "Strategy&",
+      "link": "https://pwc.wd3.myworkdayjobs.com/en-US/Global_Campus_Careers/job/Kuching/Intern---Assurance_747618WD",
+      "location": "Kuching",
+      "posted": "Posted Today",
+      "source": "workday",
+      "tier_hint": "T2",
+      "title": "Intern - Assurance"
+    },
+    {
+      "category": "business",
+      "company": "Baird",
+      "link": "https://baird.wd1.myworkdayjobs.com/en-US/Careers/job/GER-Frankfurt/Global-Investment-Banking---M-A-Internship--January---March----Frankfurt_R2026795",
+      "location": "GER-Frankfurt",
+      "posted": "Posted Today",
+      "source": "workday",
+      "tier_hint": "T2",
+      "title": "Global Investment Banking \u2013 M&A Internship (January - March ), Frankfurt"
+    },
+    {
+      "category": "business",
+      "company": "Barclays",
+      "link": "https://barclays.wd3.myworkdayjobs.com/en-US/External_Career_Site_Barclays/job/Chennai-DLF-IT-Park/Finance-CA-Summer-Internship-2026_JR-0000123509",
+      "location": "5 Locations",
+      "posted": "Posted Today",
+      "source": "workday",
+      "tier_hint": "T1",
+      "title": "Finance CA Summer Internship 2026"
+    },
+    {
+      "category": "business",
+      "company": "Blackstone",
+      "link": "https://blackstone.wd1.myworkdayjobs.com/en-US/Blackstone_Campus_Careers/job/Singapore/XMLNAME-2027-Real-Estate-Finance--Off-Cycle-Intern--January-to-June---Singapore_44173",
+      "location": "Singapore",
+      "posted": "",
+      "source": "workday",
+      "tier_hint": "T1",
+      "title": "2027 Real Estate Finance, Off Cycle Intern (January to June), Singapore"
+    },
+    {
+      "category": "business",
+      "company": "Blackstone",
+      "link": "https://blackstone.wd1.myworkdayjobs.com/en-US/Blackstone_Campus_Careers/job/Hong-Kong/XMLNAME-2027-Transaction-Finance-Off-cycle-Intern--January-to-June--Hong-Kong_44171",
+      "location": "Hong Kong",
+      "posted": "",
+      "source": "workday",
+      "tier_hint": "T1",
+      "title": "2027 Transaction Finance Off cycle Intern (January to June) Hong Kong"
+    },
+    {
+      "category": "business",
+      "company": "Deutsche Bank",
+      "link": "https://db.wd3.myworkdayjobs.com/en-US/DBWebsite/job/Milano-Bicocca-Calendario-1/Internship-Cash-Service-Support---Corporate-Bank---Milan--f-m-x-_R0439911",
+      "location": "Milano Bicocca Calendario 1",
+      "posted": "Posted 18 Days Ago",
+      "source": "workday",
+      "tier_hint": "T1",
+      "title": "Internship Cash Service Support - Corporate Bank - Milan (f/m/x)"
+    },
+    {
+      "category": "business",
+      "company": "RBC Capital Markets",
+      "link": "https://rbc.wd3.myworkdayjobs.com/en-US/RBCEARLYTALENT1/job/9-10-TAUNUSANLAGEFRANKFURT-AM-MAIN/XMLNAME-2027-Global-Investment-Banking-Internship---Frankfurt_R-0000182048",
+      "location": "9-10 TAUNUSANLAGE:FRANKFURT AM MAIN",
+      "posted": "Posted Today",
+      "source": "workday",
+      "tier_hint": "T2",
+      "title": "2027 Global Investment Banking Internship - Frankfurt"
+    }
+  ],
+  "generated_at": "2026-07-27T12:59:03+00:00",
+  "run_date": "2026-07-27"
 }
