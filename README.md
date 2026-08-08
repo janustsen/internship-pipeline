@@ -1,5 +1,27 @@
 # internship-pipeline
 
+> ## ⚠️ RETIRED — archive only, as of 2026-08-08
+>
+> **This pipeline no longer runs, and it should not be restarted.** Janus retired it
+> because he found a better tool that does the same job; nothing here is being
+> maintained. The code below is kept for reference and history only.
+>
+> Everything that used to run it is off, deliberately:
+>
+> - **GitHub Actions `collect-internships`** — `disabled_manually`. Do not re-enable it.
+>   The `schedule:` trigger has also been removed from `.github/workflows/collect-internships.yml`,
+>   so re-enabling the workflow alone will not restart collection.
+> - **Cloud routine `internship-watch`** (`trig_01SRWWpNcKmjAaHJ2jTm3KUu`) — disabled in
+>   claude.ai and recorded as retired in the vault's routine register
+>   (`janus-brain/99-SYSTEM/routines/register.json`).
+> - **LaunchAgent `com.janustsen.internship-collector`** — unloaded, and the plist has been
+>   removed from `~/Library/LaunchAgents/`. The repo's own copy at
+>   `deploy/com.janustsen.internship-collector.plist` is a reference artifact.
+>   **It must stay unloaded — do not `launchctl bootstrap` it.**
+>
+> If you ever revive this, treat the API keys in `.env.example` as long expired and rotate
+> everything before the first run.
+
 A two-halves internship **opening-detector** for elite finance / consulting / strategy / quant
 / business roles (Summer 2027 + sophomore tracks), built to surface top-tier postings the day
 they open.
