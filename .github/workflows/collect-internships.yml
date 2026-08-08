@@ -11,14 +11,20 @@ name: collect-internships
 # NOTE: enabling this replaces the Mac launchd job — disable that plist to avoid
 # double-collection (both push the same artifacts to main).
 
+# RETIRED 2026-08-08 (Janus): this pipeline is an archive — see README. The
+# workflow is `disabled_manually` on GitHub AND its `schedule:` block has been
+# removed, so flipping the workflow back to active does not restart collection.
+# Both have to be undone deliberately. The judge routine it fed
+# (`internship-watch`) is disabled too; collecting without it delivers nothing.
+#
+# Former schedule, if this is ever revived: `- cron: "0 10 * * *"` (~06:00 ET).
+# Restore it as ONE run per judge cycle — cloud_collect.py overwrites
+# todays_candidates.json with only that run's not-yet-seen postings and advances
+# seen_postings.json, so a second run before the judge reads the artifact would
+# blank the first run's postings.
+
 on:
-  schedule:
-    # Run ONCE per judge cycle, before the once-daily internship-watch judge.
-    # cloud_collect.py overwrites todays_candidates.json with only this run's
-    # not-yet-seen postings and advances seen_postings.json, so a second run
-    # before the judge reads the artifact would blank the first run's postings.
-    - cron: "0 10 * * *"   # ~06:00 ET — morning sweep
-  workflow_dispatch: {}     # manual "Run workflow" button
+  workflow_dispatch: {}     # manual "Run workflow" button only
 
 permissions:
   contents: write           # push the refreshed artifacts back to main
